@@ -2,7 +2,7 @@ body {
 margin: 20px; 
 background-image: url("img/b006.gif");
 /*background-color: #000000;*/
-font-size: 0.9em;
+font-size: 1.0em;
 color:#5a2222;
 }
 
@@ -14,6 +14,7 @@ max-width:700px;
 margin-right:auto;
 margin-left:auto;
 text-align:center;
+font-size: 0.9em;
 }
 
 .headerfutter{
@@ -23,12 +24,16 @@ margin-left:auto;
 text-align:center;
 }
 
-.returntop {
+.returntop{
 width:500px;
 margin-right:auto;
 margin-left:auto;
 text-align:right;
 font-size: 0.9em;
+}
+
+.splitline{
+width:500px;
 }
 
 .partslist{
@@ -47,7 +52,7 @@ text-align:center;
 /*border: inset;*/
 }
 
-h1 { color: #a2846c; font-size: 1.7em; text-align:center; }
+h1 { color: #a2846c; font-size: 1.2em; text-align:center; }
 h2 { color: #bdb76b; text-align:center; }
 h3 { color: #bd674b; text-align:center; }
 h4 { color: #5a2222; text-align:center; }
@@ -58,8 +63,10 @@ h4 { color: #5a2222; text-align:center; }
 
 /*li { margin-left:120px; text-align:left; }*/
 p { 
-color: #5a2222; 
-line-height: 0.8em;  
+/*color: #5a2222; */
+/*line-height: 1.2em;*/
+font-size:1.0em;
+
 } 
 
 a:link { color: #ba2222; }
