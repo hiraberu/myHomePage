@@ -25,6 +25,10 @@
 
 <hr class="splitline"><!-- 区切り線 -->
 
+<label><input type="checkbox" id="detail_check" onclick="checkbox_cell(this,'detail_display')"/>詳細表示</label>
+<label><input type="checkbox" id="supplement_check" onclick="checkbox_cell(this,'supplement_display')"/>補足表示</label>
+
+
 <table id="roletable">
 
 <tr>
@@ -49,18 +53,18 @@
 <th>票<br>数</th>
 <th>役○<br>陣営●<br>変化</th>
 <th>表<br>記</th>
-<th>サ<br>ブ<br>付<br>与<br><br>自<br>他</th>
+<th>サブ<br>付与<br><br><span class="emphasizebold">自分</span><br>他人</th>
 <th>窓</th>
 <th>窓<br>2</th>
-<th>リール<br><br>[網掛け]<br>コミットに<br>含まれない</th>
+<th>リール<br><br><span class=notcommit>[網掛け]<br>コミットに<br>含まれない</span></th>
 <th>＊<br>日<br>目<br>以<br>降</th>
 <th>回<br>数<br>・<br>奇<br>偶</th>
 <th>ラ<br>ン<br>ダ<br>ム</th>
 <th>能<br>力<br>行<br>使<br>な<br>し</th>
 <th class="explain">特徴</th>
 <th class="explain">関連役職<br>読み</th>
-<th class="detail">説明</th>
-<th class="supplement">補足</th>
+<th id="detail_display" class="detail">説明</th>
+<th id="supplement_display" class="supplement">補足</th>
 </tr>
 <tr>
 <th></th>
@@ -97,7 +101,7 @@
 <th class="detail"></th>
 <th class="supplement"></th>
 </tr>
-<tr><td class="indexnum">0</td><td class="villager">村人</td><td class="villager">村</td><td class="villager">村人</td><td class="villager">村人</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">0</td><td class="villager">村人</td><td class="villager">村</td><td class="villager">村人</td><td class="villager">村人</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain"></td><td class="explain"></td>
 <td class="detail"></td>
@@ -111,21 +115,21 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">2</td><td class="villager">占い師</td><td class="villager">占</td><td class="villager">村人</td><td class="villager">占</td><td>○</td><td>○</td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">2</td><td class="villager">占い師</td><td class="villager">占</td><td class="villager">村人</td><td class="villager">占</td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>占う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain"></td><td class="explain"></td>
 <td class="detail">人間か人狼か知る</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">3</td><td class="villager">霊能者</td><td class="villager">霊</td><td class="villager">村人</td><td class="villager">霊</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">3</td><td class="villager">霊能者</td><td class="villager">霊</td><td class="villager">村人</td><td class="villager">霊</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">▼が人間か人狼か判明<br>狂人・妖魔は人間判定</td><td class="explain"></td>
 <td class="detail">処刑された者が人間か人狼か知る　狂人・妖魔は人間判定</td>
 <td class="supplement">表示されるタイミングは、処刑、突然死メッセージ直後</td>
 </tr>
 
-<tr><td class="indexnum">4</td><td class="madman">狂人</td><td class="madman">狂</td><td class="madman">狂人</td><td class="madman">狂人</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">4</td><td class="madman">狂人</td><td class="madman">狂</td><td class="madman">狂人</td><td class="madman">狂人</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="madmanwin">(狂)</td><td></td><td>スウィッチ</td><td></td><td></td><td></td><td></td>
 <td class="explain"></td><td class="explain"></td>
 <td class="detail"></td>
@@ -237,14 +241,14 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">20</td><td class="villager">銀狼</td><td class="villager">銀</td><td class="villager">村人</td><td class="villager">襲撃</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">20</td><td class="villager">銀狼</td><td class="villager">銀</td><td class="villager">村人</td><td class="villager">襲撃</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>襲う</td><td></td><td></td><td>○</td><td>○</td>
 <td class="explain">村側の人狼<br>襲撃なし可</td><td class="explain">ぎんろう</td>
 <td class="detail">村側の人狼　襲撃しない可<br>相互は人狼優先</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">21</td><td class="villager">超人</td><td class="villager">超</td><td class="villager">村人</td><td class="villager">襲撃効果</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>負傷</td>
+<tr><td class="indexnum">21</td><td class="villager">超人</td><td class="villager">超</td><td class="villager">村人</td><td class="villager">襲撃効果</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">一度だけ襲撃耐える</td><td class="explain">蜥蜴</td>
 <td class="detail">一度だけ襲撃を耐えれる</td>
@@ -286,7 +290,7 @@
 <td class="supplement">教祖が勝利条件を満たしていない状態で、恋人/仇敵/妖魔/人狼が全滅しており、一匹狼の人数が人間と同数以上になれば勝利</td>
 </tr>
 
-<tr><td class="indexnum">27</td><td class="murderer">殺人鬼</td><td class="murderer">殺</td><td class="murderer">殺人鬼</td><td class="murderer">殺人鬼</td><td>邪</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">27</td><td class="murderer">殺人鬼</td><td class="murderer">殺</td><td class="murderer">殺人鬼</td><td class="murderer">殺人鬼</td><td class="emphasize">邪</td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>襲う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">人狼とは別に襲撃<br>人狼と一匹狼も<br>全滅で勝利</td><td class="explain"></td>
 <td class="detail">人狼とは別に1日に1人を襲撃<br>人狼→殺人鬼、殺人鬼→人狼、殺人鬼→殺人鬼の襲撃はすべて有効　相互は人狼優先</td>
@@ -314,7 +318,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">31</td><td class="villager">狛犬</td><td class="villager">狛</td><td class="villager">村人</td><td class="villager">狩</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">31</td><td class="villager">狛犬</td><td class="villager">狛</td><td class="villager">村人</td><td class="villager">狩</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">×</td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>護衛 *自分可</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">自分も護衛できる狩人</td><td class="explain"></td>
 <td class="detail">自身も護衛できる狩人</td>
@@ -405,14 +409,14 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">44</td><td class="villager">王子様</td><td class="villager">子</td><td class="villager">村人</td><td class="villager">処刑</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>失墜</td>
+<tr><td class="indexnum">44</td><td class="villager">王子様</td><td class="villager">子</td><td class="villager">村人</td><td class="villager">処刑</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">失墜</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">処刑回避(1回)</td><td class="explain"></td>
 <td class="detail">一度だけ処刑を回避</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">45</td><td class="lovers">姫様</td><td class="lovers">姫</td><td class="lovers">恋人</td><td class="lovers">求愛者</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>失墜</td>
+<tr><td class="indexnum">45</td><td class="lovers">姫様</td><td class="lovers">姫</td><td class="lovers">恋人</td><td class="lovers">求愛者</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">失墜</td>
 <td class="loverswin">(恋)</td><td></td><td>愛を求める</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">処刑回避(1回)<br>他は求愛者と同じ</td><td class="explain"></td>
 <td class="detail">一度だけ処刑されない求愛者</td>
@@ -461,7 +465,7 @@
 <td class="supplement">護衛成功等で調査対象が死亡しない場合は分からない<br>罠対象にセットした場合罠は発動する</td>
 </tr>
 
-<tr><td class="indexnum">52</td><td class="wolf">白狼</td><td class="wolf">白</td><td class="wolf">人狼</td><td class="wolf">占霊効果</td><td>○</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">52</td><td class="wolf">白狼</td><td class="wolf">白</td><td class="wolf">人狼</td><td class="wolf">占霊効果</td><td class="emphasize">○</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="wolfwin">赤</td><td></td><td>襲う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">占い結果白</td><td class="explain"></td>
 <td class="detail">占い結果が人間と出る人狼　霊結果は人狼</td>
@@ -475,7 +479,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">54</td><td class="wolf">幻狼</td><td class="wolf">幻</td><td class="wolf">人狼</td><td class="wolf">占霊効果</td><td>●</td><td>○</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">54</td><td class="wolf">幻狼</td><td class="wolf">幻</td><td class="wolf">人狼</td><td class="wolf">占霊効果</td><td>●</td><td class="emphasize">○</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="wolfwin">赤</td><td></td><td>襲う *自分可<br>*仲間から可</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">霊結果白 自セット可</td><td class="explain"></td>
 <td class="detail">霊結果が人間と出る人狼　占い結果は人狼</td>
@@ -630,7 +634,7 @@
 </tr>
 
 <tr><td class="indexnum">76</td><td class="villager">少女</td><td class="villager">少</td><td class="villager">村人</td><td class="villager">会話覗き</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>(貫)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td></td><td class="mixwin">混</td><td>夜遊びする</td><td>2</td><td></td><td></td><td>○</td>
+<td></td><td class="mixwin">混</td><td class="notcommit">夜遊びする</td><td>2</td><td></td><td></td><td>○</td>
 <td class="explain">覗く選択で他窓混信<br>で覗ける＆相手に通知<br>セット時護衛貫通</td><td class="explain"></td>
 <td class="detail">覗くをセットするとその夜だけ他窓(赤・妖・鳴・恋・狂)を混信状態で覗ける<br>セット時点で人狼側(覗かれ側)にシスメで通知(後から窓付与された人にはシスメなし)<br>覗いた日の夜に襲われると、護衛されていても必ず襲撃が成功する</td>
 <td class="supplement">この能力はコミットには含まれない<br>混信は赤窓発言として表示される</td>
@@ -790,7 +794,7 @@
 <td class="supplement">表示されるタイミングは、朝の犠牲者、後追いメッセージ直後</td>
 </tr>
 
-<tr><td class="indexnum">99</td><td class="fox">妖獣</td><td class="fox">獣</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td>×</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">99</td><td class="fox">妖獣</td><td class="fox">獣</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td class="emphasize">●</td><td class="emphasize">●</td><td>×</td><td></td><td></td><td>×</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="foxwin">(妖)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">呪殺されない妖魔<br>占霊●判定</td><td class="explain"></td>
 <td class="detail">占われても死なないが人狼判定の出る妖魔</td>
@@ -867,7 +871,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">110</td><td class="villager">執事</td><td class="villager">執</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td>従者</td>
+<tr><td class="indexnum">110</td><td class="villager">執事</td><td class="villager">執</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">従者</td>
 <td></td><td></td><td>仕える</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">初日選択先の<br>従者になる</td><td class="explain"></td>
 <td class="detail">初日に1人を選択してその者の従者になる<br>主人が襲撃で死にそうになると自身が身代わりになる　主人の勝利が自身の勝利</td>
@@ -888,14 +892,14 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">113</td><td class="villager">修行僧</td><td class="villager">修</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td>負傷</td>
+<tr><td class="indexnum">113</td><td class="villager">修行僧</td><td class="villager">修</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td>修行</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">初日に修行先選択<br>負傷で修行先の役職に</td><td class="explain"></td>
 <td class="detail">初日に修行先を選択　自分が襲撃されて負傷状態になると修行対象と同じ役職になる<br>護衛等で襲撃失敗の場合は変わらない</td>
 <td class="supplement">変更される役職は初日に選んだ時点での相手の役職</td>
 </tr>
 
-<tr><td class="indexnum">114</td><td class="villager">共命者</td><td class="villager">命</td><td class="villager">村人</td><td class="villager">共有</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>絆</td>
+<tr><td class="indexnum">114</td><td class="villager">共命者</td><td class="villager">命</td><td class="villager">村人</td><td class="villager">共有</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">絆</td>
 <td class="sharewin">(緑)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">村側からランダムに絆</td><td class="explain"></td>
 <td class="detail">開始時に村人側からランダムで一人と絆状態</td>
@@ -951,7 +955,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">122</td><td class="villager">指導者</td><td class="villager">指</td><td class="villager">村人</td><td class="villager">会話</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>光明</td>
+<tr><td class="indexnum">122</td><td class="villager">指導者</td><td class="villager">指</td><td class="villager">村人</td><td class="villager">会話</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">光明</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">夜でも発言可<br>長期：発言回数減らない</td><td class="explain"></td>
 <td class="detail">夜の間でも発言することができる <br>長期村時では発言回数/アクション回数が減少しない</td>
@@ -993,14 +997,14 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">128</td><td class="villager">侠客</td><td class="villager">侠</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>瀕死</td>
+<tr><td class="indexnum">128</td><td class="villager">侠客</td><td class="villager">侠</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">瀕死</td>
 <td></td><td></td><td>護衛</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">襲撃されても1日生きる<br>護衛は身代わり</td><td class="explain">タフガイ＋メイド<br>きょうかく</td>
 <td class="detail">襲撃されても1日だけ生き延びる　護衛は自分が身代わりになる(1日は生き延びる)狩人</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">129</td><td class="villager">豪傑</td><td class="villager">豪</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>負傷</td>
+<tr><td class="indexnum">129</td><td class="villager">豪傑</td><td class="villager">豪</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td>護衛</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">1度の襲撃耐性<br>護衛は身代わり</td><td class="explain">超人＋メイド</td>
 <td class="detail">1度だけ襲撃に耐える　護衛は自分が身代わりになる狩人<br>(1度目の身代わりは耐性があるので負傷のみになる)</td>
@@ -1105,21 +1109,21 @@
 <td class="supplement">下僕になった者は妖魔陣営(背徳者化)　支配先が死ぬと後追いする</td>
 </tr>
 
-<tr><td class="indexnum">144</td><td class="villager">忠犬</td><td class="villager">忠</td><td class="villager">村人</td><td class="villager">証明</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>絆<br>従者</td>
+<tr><td class="indexnum">144</td><td class="villager">忠犬</td><td class="villager">忠</td><td class="villager">村人</td><td class="villager">証明</td><td class="emphasize">●</td><td class="emphasize">●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">絆<br>従者</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">開始時に村側の1人<br>と絆＆従者</td><td class="explain"></td>
 <td class="detail">開始時に村人側の1人と一方的な絆状態とその従者になる<br>相手側からはわからない(相手側に絆はつかない)</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">145</td><td class="bat">鬣犬</td><td class="bat">鬣</td><td class="bat">蝙蝠</td><td class="bat"></td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">145</td><td class="bat">鬣犬</td><td class="bat">鬣</td><td class="bat">蝙蝠</td><td class="bat"></td><td class="emphasize">●</td><td class="emphasize">●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">占霊結果黒の蝙蝠</td><td class="explain">はいえな</td>
 <td class="detail">占霊結果黒の蝙蝠</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">146</td><td class="villager">山羊</td><td class="villager">贄</td><td class="villager">村人</td><td class="villager">処刑</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>他</td><td></td><td></td><td></td><td>生贄</td>
+<tr><td class="indexnum">146</td><td class="villager">山羊</td><td class="villager">贄</td><td class="villager">村人</td><td class="villager">処刑</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>他</td><td></td><td></td><td></td><td class="emphasizebold">生贄</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">処刑時村側1人蘇生</td><td class="explain"></td>
 <td class="detail">処刑時村人陣営1人蘇生　いない場合は何も起こらない</td>
@@ -1287,7 +1291,7 @@
 <td class="supplement">仲間の人狼がおらず初回以降能力未使用の場合、初回襲撃は無効となり行われない</td>
 </tr>
 
-<tr><td class="indexnum">170</td><td class="wolf">霧狼</td><td class="wolf">霧</td><td class="wolf">人狼</td><td class="wolf">初回襲撃時</td><td>邪</td><td></td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">170</td><td class="wolf">霧狼</td><td class="wolf">霧</td><td class="wolf">人狼</td><td class="wolf">初回襲撃時</td><td class="emphasize">邪</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="wolfwin">赤</td><td></td><td>襲う *自分仲間可</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">初回襲撃先に邪魔判定</td><td class="explain"></td>
 <td class="detail">初回襲撃先に邪魔判定付与　初回襲撃は無効　自身や仲間の人狼にセット可</td>
@@ -1301,7 +1305,7 @@
 <td class="supplement">仲間の人狼がおらず初回以降能力未使用の場合、初回襲撃は無効となり行われない</td>
 </tr>
 
-<tr><td class="indexnum">172</td><td class="madman">半狼</td><td class="madman">半</td><td class="madman">狂人</td><td class="madman">役変化</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+<tr><td class="indexnum">172</td><td class="madman">半狼</td><td class="madman">半</td><td class="madman">狂人</td><td class="madman">役変化</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
 <td class="madmanwin">(狂)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">占/霊で黒が出る狂人<br>被襲撃で人狼になる</td><td class="explain"></td>
 <td class="detail">占い・霊能共に人狼判定が出る狂人　襲撃された時に人狼になる</td>
@@ -1315,7 +1319,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">174</td><td class="fox">魔人</td><td class="fox">魔</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>負傷</td>
+<tr><td class="indexnum">174</td><td class="fox">魔人</td><td class="fox">魔</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td class="foxwin">(妖)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">襲撃/呪殺から1度だけ<br>負傷して逃れられる</td><td class="explain"></td>
 <td class="detail">襲撃/呪殺をされても一度だけ負傷をしながらも逃れられる</td>
@@ -1364,7 +1368,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">181</td><td class="madman">フェイカー</td><td class="madman">贋</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>発狂</td>
+<tr><td class="indexnum">181</td><td class="madman">フェイカー</td><td class="madman">贋</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td class="emphasizebold">発狂</td>
 <td class="madmanwin">(狂)</td><td></td><td>能力をコピーする</td><td></td><td>1</td><td>〇</td><td></td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒鵺<br>≒ガチャピン</td>
 <td class="detail">一度だけ生存者・死亡者全ての中から1人選び能力コピー　コピー時に自身に発狂付加<br>コピーしている間は役職・陣営ごと移るが終了時には元のフェイカーに戻る<br>判定はコピーした役職　終了時もとに戻る</td>
@@ -1413,7 +1417,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">188</td><td class="villager">大神</td><td class="villager">大</td><td class="villager">村人</td><td class="villager">蘇生</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td>1耐</td><td>1耐</td><td></td><td></td><td></td><td>両</td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">188</td><td class="villager">大神</td><td class="villager">大</td><td class="villager">村人</td><td class="villager">蘇生</td><td class="emphasize">●</td><td class="emphasize">●</td><td>○</td><td></td><td></td><td></td><td></td><td>1耐</td><td>1耐</td><td></td><td></td><td></td><td>両</td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>再生する</td><td></td><td>1</td><td></td><td>○</td>
 <td class="explain">他者蘇生　自己蘇生<br>能力使用後は村人表記</td><td class="explain"></td>
 <td class="detail">一度だけ、他者蘇生、襲撃/処刑に耐える、自己蘇生のいずれかができる<br>一度能力使った後は【村人】　大神のまま残れば必ず勝利</td>
@@ -1483,14 +1487,14 @@
 <td class="supplement">ただし【陣営変化】or 悪霊化時は死ぬ</td>
 </tr>
 
-<tr><td class="indexnum">198</td><td class="villager">ねじれ民</td><td class="villager">ね</td><td class="villager">村人</td><td class="villager">ねじれ</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td>※</td><td></td><td></td><td>新参<br>廃人</td>
+<tr><td class="indexnum">198</td><td class="villager">ねじれ民</td><td class="villager">ね</td><td class="villager">村人</td><td class="villager">ねじれ</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td>※</td><td></td><td></td><td class="emphasizebold">新参<br>廃人</td>
 <td></td><td class="sharewin">(緑)</td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">生存でも勝利<br>1%で票ねじれる</td><td class="explain">ねじれ狼</td>
 <td class="detail">村人陣営だが最後まで生存で、どの陣営が勝っても勝利<br>投票時まれにねじれる(1%)</td>
 <td class="supplement">緑窓は2日目から</td>
 </tr>
 
-<tr><td class="indexnum">199</td><td class="wolf">ねじれ狼</td><td class="wolf">じ</td><td class="wolf">人狼</td><td class="wolf">その他</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td>※</td><td></td><td></td><td>新参<br>廃人</td>
+<tr><td class="indexnum">199</td><td class="wolf">ねじれ狼</td><td class="wolf">じ</td><td class="wolf">人狼</td><td class="wolf">その他</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td>※</td><td></td><td></td><td class="emphasizebold">新参<br>廃人</td>
 <td class="wolfwin">赤</td><td class="sharewin">(緑)</td><td>襲う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">生存でも勝利<br>1%で票ねじれる</td><td class="explain">ねじれ民</td>
 <td class="detail">人狼陣営だが最後まで生存で、どの陣営が勝っても勝利<br>投票時まれにねじれる(1%)</td>
@@ -1567,7 +1571,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">210</td><td class="villager">不審者</td><td class="villager">不</td><td class="villager">村人</td><td class="villager">ﾃﾞﾒﾘｯﾄ</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>村人</td><td></td>
+<tr><td class="indexnum">210</td><td class="villager">不審者</td><td class="villager">不</td><td class="villager">村人</td><td class="villager">ﾃﾞﾒﾘｯﾄ</td><td class="emphasize">●</td><td class="emphasize">●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>村人</td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">占霊結果黒　村人表記</td><td class="explain"></td>
 <td class="detail">占い、霊能共に人狼判定が出る村人　村人表記</td>
@@ -1609,7 +1613,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">216</td><td class="villager">曲者</td><td class="villager">曲</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td>発狂</td>
+<tr><td class="indexnum">216</td><td class="villager">曲者</td><td class="villager">曲</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">発狂</td>
 <td></td><td></td><td>離反</td><td>2</td><td></td><td></td><td></td>
 <td class="explain">陣営変化<br>2日目以降、発狂可</td><td class="explain">密偵 くせもの</td>
 <td class="detail">2日目以降離反して狂人になることができる村人</td>
@@ -1729,7 +1733,7 @@
 </tr>
 
 <tr><td class="indexnum">233</td><td class="madman">暴君</td><td class="madman">暴</td><td class="madman">狂人</td><td class="madman">処刑</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="madmanwin">(狂)</td><td></td><td>処刑中止</td><td></td><td>1</td><td></td><td></td>
+<td class="madmanwin">(狂)</td><td></td><td class="notcommit">処刑中止</td><td></td><td>1</td><td></td><td></td>
 <td class="explain">一度だけ処刑を中止</td><td class="explain"></td>
 <td class="detail">一度だけ処刑を中止　セットした日の処刑が中止される　キャンセルできない</td>
 <td class="supplement">この能力はコミットに含まれない</td>
@@ -1778,7 +1782,7 @@
 </tr>
 
 <tr><td class="indexnum">240</td><td class="villager">勇者</td><td class="villager">勇</td><td class="villager">村人</td><td class="villager">証明</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td></td><td></td><td>カッコいいポーズ！！</td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td class="notcommit">カッコいいポーズ！！</td><td></td><td></td><td></td><td></td>
 <td class="explain">1日に1度シスメ出せる</td><td class="explain"></td>
 <td class="detail">1日に一度だけ昼夜関係なく前節の秘技・カッコいいポーズ！！を使用できる<br>【人外変化】している場合は使えない</td>
 <td class="supplement">この能力はコミットに含まれない</td>
@@ -1791,7 +1795,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">242</td><td class="villager">遊び人</td><td class="villager">遊</td><td class="villager">村人</td><td class="villager">役変化</td><td>邪</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td>○</td><td></td><td></td>
+<tr><td class="indexnum">242</td><td class="villager">遊び人</td><td class="villager">遊</td><td class="villager">村人</td><td class="villager">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td>○</td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">投票適当　生存者が開<br>始時の半分以下で賢者</td><td class="explain"></td>
 <td class="detail">遊んでばかりで邪魔になる村側役職　投票時はある程度の確率で適当な投票先に投票<br>生存者数が開始人数の半分になったときに賢者に転職(【陣営変化】していると転職しない)</td>
@@ -1805,7 +1809,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">244</td><td class="villager">ヒーロー</td><td class="villager">ヒ</td><td class="villager">村人</td><td class="villager">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>2</td><td>○</td><td></td><td>加護</td>
+<tr><td class="indexnum">244</td><td class="villager">ヒーロー</td><td class="villager">ヒ</td><td class="villager">村人</td><td class="villager">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>2</td><td>○</td><td></td><td class="emphasizebold">加護</td>
 <td class="sharewin">緑</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">ピンチ時かけ声成功<br>で左記効果と<br>預言結果表示可能<br>霊能/巫女結果判明</td><td class="explain"></td>
 <td class="detail">ピンチ時に特定のキーワードで変身できる <br>ピンチ時：【陣営変化】していない村側の生存者数 ≦ 村側以外の生存者数<br>【変身時の能力】村人陣営の役職からランダムに変身<br>・票数2票(変身当日はさらに＋生存者数)　・共鳴会話可　・予言結果表示可(翌日以降)<br>・襲撃/処刑をどちらか1度回避(+襲撃確定死状態解除)　・霊能/巫女結果判明</td>
@@ -1826,7 +1830,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">247</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">Ｄ</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">ドッペルゲンガー</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>悪霊</td>
+<tr><td class="indexnum">247</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">Ｄ</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">ドッペルゲンガー</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">悪霊</td>
 <td class="foxwin">(妖)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">自分にセットした者を<br>役職ごと乗取＆悪霊化<br>乗取後は妖窓なし</td><td class="explain"></td>
 <td class="detail">自身にセットした者と役職ごと乗っ取り入れ替わる　乗っ取り先は死亡<br>入れ替わり時に妖魔判定(悪霊)付加　判定は乗っ取った役職　終了時もとに戻る</td>
@@ -1875,7 +1879,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">254</td><td class="villager">女騎士</td><td class="villager">捕</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td>従者<br>負傷</td>
+<tr><td class="indexnum">254</td><td class="villager">女騎士</td><td class="villager">捕</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">従者<br>負傷</td>
 <td class="wolfwin">(赤)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">最初の襲撃or占いの<br>従者</td><td class="explain"></td>
 <td class="detail">最初に自分を襲撃した者もしくは占った者(呪殺可能役職のみ)の従者になる<br>襲撃時に従者になる場合は死亡せずに負傷　従者は襲撃耐性なし</td>
@@ -1896,7 +1900,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">257</td><td class="immoral">深きものども</td><td class="immoral">深</td><td class="immoral">背徳</td><td class="immoral">背徳</td><td>○</td><td>○</td><td>〇</td><td></td><td></td><td></td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">257</td><td class="immoral">深きものども</td><td class="immoral">深</td><td class="immoral">背徳</td><td class="immoral">背徳</td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">逆呪殺する背徳者</td><td class="explain"></td>
 <td class="detail">逆呪殺する背徳者</td>
@@ -1917,14 +1921,14 @@
 <td class="supplement">複数人いた場合最後に変更した名称が全員共有した名称になる</td>
 </tr>
 
-<tr><td class="indexnum">260</td><td class="villager">易者</td><td class="villager">易</td><td class="villager">村人</td><td class="villager">占</td><td>●</td><td>●</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">260</td><td class="villager">易者</td><td class="villager">易</td><td class="villager">村人</td><td class="villager">占</td><td class="emphasize">●</td><td class="emphasize">●</td><td>○</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>占う *自分可</td><td></td><td></td><td></td><td></td>
 <td class="explain">自身の占霊結果が黒<br>の占い師</td><td class="explain"></td>
 <td class="detail">占い師と同じように誰か1人を占うことができる　呪殺も可<br>自身の占い・霊結果は黒が出る</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">261</td><td class="madman">犯人</td><td class="madman">罪</td><td class="madman">狂人</td><td class="madman">占妨害</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">261</td><td class="madman">犯人</td><td class="madman">罪</td><td class="madman">狂人</td><td class="madman">占妨害</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="madmanwin">(狂)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">占霊結果黒の狂人</td><td class="explain"></td>
 <td class="detail"></td>
@@ -2009,7 +2013,7 @@
 </tr>
 
 <tr><td class="indexnum">273</td><td class="villager">裁判官</td><td class="villager">裁</td><td class="villager">村人</td><td class="villager">票</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td></td><td></td>
-<td></td><td></td><td>判決</td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td class="notcommit">判決</td><td></td><td></td><td></td><td></td>
 <td class="explain">昼の間だけセット可<br>有罪：+2 / 無罪:-1<br>保留：0票</td><td class="explain"></td>
 <td class="detail">昼の間だけセットアクションが表示される<br>投票前にセットアクションを【有罪】にすると+2、【無罪】にすると-1、【保留】にすると0の投票数になる</td>
 <td class="supplement">この能力はコミットに含まれない</td>
@@ -2044,13 +2048,13 @@
 </tr>
 
 <tr><td class="indexnum">278</td><td class="villager">管理人</td><td class="villager">管</td><td class="villager">村人</td><td class="villager">ねじれ</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td></td><td></td><td>禁則事項</td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td class="notcommit">禁則事項</td><td></td><td></td><td></td><td></td>
 <td class="explain">管理人なだけ<br>全員にLV表示出る</td><td class="explain"></td>
 <td class="detail">設定した禁則事項を発言すると禁則事項ですに変わる　いつでも変えれるっぽい<br>LVは100＋村開始(ゲーム開始からではない)からの白発言数っぽい</td>
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">279</td><td class="wirepuller">黒幕</td><td class="wirepuller">幕</td><td class="wirepuller">黒幕</td><td class="wirepuller">黒幕</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">279</td><td class="wirepuller">黒幕</td><td class="wirepuller">幕</td><td class="wirepuller">黒幕</td><td class="wirepuller">黒幕</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">開始時に全体シスメ<br>1/4を四天王<br>生存で勝利条件に関わ<br>らず黒幕以外強制敗北</td><td class="explain"></td>
 <td class="detail">開始時の存在と、死亡は全体シスメ<br>黒幕生存時は、陣営・勝利条件関わらず黒幕以外の全役職が強制敗北<br>四天王(自覚なし)は陣営は変わっていないが黒幕勝利時に一緒に勝利<br>1度でも死亡すると四天王ではなくなる</td>
@@ -2106,7 +2110,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">287</td><td class="madman">内通者</td><td class="madman">内</td><td class="madman">狂人</td><td class="madman">仲間作成</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>絆<br>発狂</td>
+<tr><td class="indexnum">287</td><td class="madman">内通者</td><td class="madman">内</td><td class="madman">狂人</td><td class="madman">仲間作成</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><span class="emphasizebold">絆</span><br>発狂</td>
 <td class="madmanwin">狂</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">村側1人に狂窓＋発狂<br>相互絆状態になる</td><td class="explain"></td>
 <td class="detail">開始時に村人側の1人を狂人に引き入れ狂鳴会話を使用可能にする狂人</td>
@@ -2268,7 +2272,7 @@
 </tr>
 
 <tr><td class="indexnum">310</td><td class="villager">生還者</td><td class="villager">還</td><td class="villager">村人</td><td class="villager">自蘇生</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>自</td><td></td><td></td><td></td><td></td>
-<td></td><td></td><td>生還</td><td></td><td>1</td><td></td><td>○</td>
+<td></td><td></td><td class="notcommit">生還</td><td></td><td>1</td><td></td><td>○</td>
 <td class="explain">1日墓下に行き<br>戻って来れる</td><td class="explain"></td>
 <td class="detail">霊界に行くか選択できる　霊界に行くことを選ぶと次の日死亡するがその翌日蘇生する<br>蘇生後も選べるが自己蘇生は一度きり</td>
 <td class="supplement">この能力はコミットに含まれない</td>
@@ -2282,7 +2286,7 @@
 </tr>
 
 <tr><td class="indexnum">312</td><td class="villager">独裁者</td><td class="villager">独</td><td class="villager">村人</td><td class="villager">処刑</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td></td><td></td><td>独裁スイッチ</td><td></td><td>1</td><td></td><td></td>
+<td></td><td></td><td class="notcommit">独裁スイッチ</td><td></td><td>1</td><td></td><td></td>
 <td class="explain">指定者を強制処刑</td><td class="explain"></td>
 <td class="detail">一度だけ議論を中止させて指定した者を強制的に処刑できる村人</td>
 <td class="supplement">この能力はコミットに含まれない</td>
@@ -2372,7 +2376,7 @@
 <td class="supplement">仲間の人狼がおらず初回以降能力未使用の場合、初回襲撃は無効となり行われない</td>
 </tr>
 
-<tr><td class="indexnum">325</td><td class="wolf">印狼</td><td class="wolf">印</td><td class="wolf">人狼</td><td class="wolf">処刑</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>失墜<br>病弱</td>
+<tr><td class="indexnum">325</td><td class="wolf">印狼</td><td class="wolf">印</td><td class="wolf">人狼</td><td class="wolf">処刑</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">失墜<br>病弱</td>
 <td class="wolfwin">赤</td><td></td><td>襲う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">処刑回避(1回)<br>病弱(人狼数＋2日余命)</td><td class="explain"></td>
 <td class="detail">一度だけ処刑を回避できる　人狼の数+2日までしか生きられない人狼<br>（開始時に人狼数+2日の余命の病弱化）</td>
@@ -2415,7 +2419,7 @@
 </tr>
 
 <tr><td class="indexnum">331</td><td class="wolf">迅狼</td><td class="wolf">迅</td><td class="wolf">人狼</td><td class="wolf">襲撃時</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="wolfwin">赤</td><td></td><td>襲う(…と…)</td><td>2</td><td>1</td><td>○</td><td></td>
+<td class="wolfwin">赤</td><td></td><td class="notcommit">襲う(…と…)</td><td>2</td><td>1</td><td>○</td><td></td>
 <td class="explain">1度だけ2人同時襲撃</td><td class="explain"></td>
 <td class="detail">二日目以降一度だけ2人を同時に襲撃できる<br>一回目の襲撃の結果、セットした迅狼が死んでしまった場合は二回目の襲撃は行われない</td>
 <td class="supplement">2人目の襲撃先のセットが未設定状態で自動的にキャンセル<br>コミットには含まれない</td>
@@ -2589,7 +2593,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">356</td><td class="villager">狼男</td><td class="villager">男</td><td class="villager">村人</td><td class="villager">ﾃﾞﾒﾘｯﾄ</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">356</td><td class="villager">狼男</td><td class="villager">男</td><td class="villager">村人</td><td class="villager">ﾃﾞﾒﾘｯﾄ</td><td class="emphasize">●</td><td class="emphasize">●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">占霊結果黒・自覚有</td><td class="explain"></td>
 <td class="detail"></td>
@@ -2617,7 +2621,7 @@
 <td class="supplement">村人陣営以外からの投票がなければ蘇生しない</td>
 </tr>
 
-<tr><td class="indexnum">360</td><td class="fox">鵺</td><td class="fox">鵺</td><td class="fox">妖魔</td><td class="fox">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td>悪霊</td>
+<tr><td class="indexnum">360</td><td class="fox">鵺</td><td class="fox">鵺</td><td class="fox">妖魔</td><td class="fox">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td class="emphasizebold">悪霊</td>
 <td class="foxwin">(妖)</td><td></td><td>コピーする</td><td></td><td>1</td><td>○</td><td></td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒フェイカー<br>≒ガチャピン<br>ぬえ</td>
 <td class="detail">一度だけ生存者・死亡者全ての中から1人選び能力コピー　コピー時に自身に悪霊付加<br>コピーしている間は役職・陣営ごと移るが終了時には元の鵺に戻る<br>判定はコピーした役職　終了時もとに戻る</td>
@@ -2884,7 +2888,7 @@
 </tr>
 
 <tr><td class="indexnum">398</td><td class="villager">創造主</td><td class="villager">創</td><td class="villager">村人</td><td class="villager">証明</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td></td><td></td><td>創造</td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td class="notcommit">創造</td><td></td><td></td><td></td><td></td>
 <td class="explain">全員の名前変更可</td><td class="explain"></td>
 <td class="detail">名前を変えることができる</td>
 <td class="supplement"></td>
@@ -3100,7 +3104,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">429</td><td class="villager">幽霊</td><td class="villager">幽</td><td class="villager">村人</td><td class="villager">会話</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td></td><td></td>
+<tr><td class="indexnum">429</td><td class="villager">幽霊</td><td class="villager">幽</td><td class="villager">村人</td><td class="villager">会話</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notcommit">※</td><td></td><td></td><td></td>
 <td></td><td class="gravewin">墓</td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">既に死んでいる</td><td class="explain">骸狼・コンピュータ</td>
 <td class="detail">村が始まった時点で死んでいる　投票は可(コミットには含まれない)</td>
@@ -3163,7 +3167,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">438</td><td class="others">コンピュータ</td><td class="others">電</td><td class="others">その他</td><td class="others">その他</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>×</td><td>※</td><td></td><td></td><td></td>
+<tr><td class="indexnum">438</td><td class="others">コンピュータ</td><td class="others">電</td><td class="others">その他</td><td class="others">その他</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>×</td><td class="notcommit">※</td><td></td><td></td><td></td>
 <td></td><td class="gravewin">墓</td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">開始時から死亡扱い<br>初日に勝利条件決定<br>親愛なる村＝村勝利<br>反逆的な村＝村敗北</td><td class="explain">骸狼・幽霊<br></td>
 <td class="detail">開始時から死亡扱い　蘇生されることもない　墓下からでも発言でき投票も行える<br>初日に勝利条件決定　親愛なる村＝村勝利　反逆的な村＝村敗北</td>
@@ -3198,7 +3202,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">443</td><td class="madman">狼少女</td><td class="madman">幼</td><td class="madman">狂人</td><td class="madman">処刑</td><td>●</td><td>●</td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">443</td><td class="madman">狼少女</td><td class="madman">幼</td><td class="madman">狂人</td><td class="madman">処刑</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="madmanwin">(狂)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">▼で狼は二度襲撃</td><td class="explain"></td>
 <td class="detail">処刑されると、人狼達は怒りのまま　その日の襲撃を二度行う</td>
@@ -3275,7 +3279,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">454</td><td class="villager">監督者</td><td class="villager">督</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td>発狂</td>
+<tr><td class="indexnum">454</td><td class="villager">監督者</td><td class="villager">督</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">発狂</td>
 <td></td><td></td><td>監督</td><td>初</td><td></td><td></td><td></td>
 <td class="explain">初日に村・人狼<br>どちらにつくか選べる</td><td class="explain"></td>
 <td class="detail">1日目に村人側につくか、人狼側につく(暗躍する)か選べる<br>暗躍する場合【発狂】がつく</td>
@@ -3338,7 +3342,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">463</td><td class="bat">蜥蜴</td><td class="bat">蜥</td><td class="bat">蝙蝠</td><td class="bat"></td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td>負傷</td>
+<tr><td class="indexnum">463</td><td class="bat">蜥蜴</td><td class="bat">蜥</td><td class="bat">蝙蝠</td><td class="bat"></td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">1度だけ襲撃耐える</td><td class="explain">超人 とかげ</td>
 <td class="detail">一度だけ襲撃を逃れられる</td>
@@ -3499,7 +3503,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">486</td><td class="fox">逢魔</td><td class="fox">逢</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>悪霊</td>
+<tr><td class="indexnum">486</td><td class="fox">逢魔</td><td class="fox">逢</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">悪霊</td>
 <td class="foxwin">(妖)</td><td></td><td>逢魔時</td><td></td><td></td><td></td><td>○</td>
 <td class="explain">悪霊化を毎晩切替可<br>開始時：悪霊なし</td><td class="explain">＝ガーゴイル</td>
 <td class="detail">開始時は、呪殺されない＋襲撃死する<br>毎夜移り変わるか選べ、移り変わると自身に悪霊がつく　再び選ぶと悪霊が消える</td>
@@ -3555,7 +3559,7 @@
 <td class="supplement">死者選択時に仲間の人狼がいれば仲間が襲撃を行えるが<br>いなければ役職コピーのみ<br>人狼判定がない役職になるとそのまま終了</td>
 </tr>
 
-<tr><td class="indexnum">494</td><td class="wolf">骸狼</td><td class="wolf">骸</td><td class="wolf">人狼</td><td class="wolf">その他</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>※</td><td></td><td></td><td></td>
+<tr><td class="indexnum">494</td><td class="wolf">骸狼</td><td class="wolf">骸</td><td class="wolf">人狼</td><td class="wolf">その他</td><td>●</td><td>●</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="notcommit">※</td><td></td><td></td><td></td>
 <td class="wolfwin">赤</td><td></td><td>襲う</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">既に死亡 死亡しても<br>発言・投票・窓会話可</td><td class="explain">幽霊・コンピュータ</td>
 <td class="detail">既に骸であるが窓会話・襲撃できる カウントなし(生存していても人狼の勝利にならない)<br>死亡しても発言・投票・窓会話できる</td>
@@ -3602,6 +3606,7 @@
 </div> <!-- "all" -->
 
 <script type="text/javascript" src="filter.js"></script>
+<script type="text/javascript" src="showcolumn.js"></script>
 
 </body>
 </html>

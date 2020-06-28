@@ -101,8 +101,8 @@
 }
  /* --- 明細のスタイル指定 ----------------------- */
 #roletable td {
-  text-align    : center;            /* 文字位置   */
-  padding       : 1px 0px;             /* 余白       */
+  /*text-align    : center;*/            /* 文字位置   */
+  /*padding       : 1px 0px;*/             /* 余白       */
   border        : 1px #666666 solid; /* 罫線       */
   white-space   : nowrap;
 }

@@ -15,16 +15,17 @@ font-size:0.7em;
 
 .explain{
 text-align:left;
+padding : 1px 4px;
 }
 
 .detail{
-display:none;
 text-align:left;
+padding : 1px 4px;
 }
 
 .supplement{
-display:none;
 text-align:left;
+padding : 1px 4px;
 }
 
 /* 役職の色 */
@@ -63,4 +64,4 @@ text-align:left;
 .notcommit{ background-color:#cfe2f3; }
 
 /* サブ付与自分等、太字強調用 */
-.emphasizebold{ font-weight:bold; }
+.emphasizebold{ font-weight:bold; color:#990000; }
