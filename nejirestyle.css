@@ -1,0 +1,66 @@
+/*.roleslist{
+margin-right:auto;
+margin-left:auto;
+text-align:center;
+}*/
+
+/*table{ border-collapse: collapse; }*/
+/*table, td, th{ border: 1px #b45f06 dashed; }*/
+
+.indexnum{
+background-color: #990000;
+color:white;
+font-size:0.7em;
+}
+
+.explain{
+text-align:left;
+}
+
+.detail{
+display:none;
+text-align:left;
+}
+
+.supplement{
+display:none;
+text-align:left;
+}
+
+/* 役職の色 */
+.villager{ color:#000000; background-color:#99cc00; } /* 村人 */
+.wolf{ color:#000000; background-color:#ff0000; } /* 人狼 */
+.madman{ color:#000000; background-color:#ff9900; } /* 狂人 */
+.fox{ color:#000000; background-color:#ffff00; } /* 妖魔 */
+.immoral{ color:#008000; background-color:#ffff00; } /* 背徳 */
+.doppel{ color:#000000; background-color:#ffff00; } /* ドッペルゲンガー(確率表は妖魔に入れている) */
+.lovers{ color:#000000; background-color:#ff99cc; } /* 恋人 */
+.revenger{ color:#000000; background-color:#cc99ff; } /* 復讐 */
+.cult{ color:#000000; background-color:#c0c0c0; } /* 教祖 */
+.vampire{ color:#000000; background-color:#99ccff; } /* 吸血鬼 */
+.lonewolf{ color:#ffffff; background-color:#800000; } /* 一匹狼 */
+.murderer{ color:#ffffff; background-color:#3366ff; } /* 殺人鬼 */
+.wirepuller{ color:#ffffff; background-color:#000000; } /* 黒幕 */
+.bat{ color:#ffffff; background-color:#808080; } /* 蝙蝠 */
+.traveller{ color:#ffffff; background-color:#808000; } /* 旅人(確率表はその他に入れている) */
+.forceddefeat{ color:#ffffff; background-color:#008080; } /* 強制敗北(確率表はその他に入れている) */
+.others{ color:#ffffff; background-color:#333399; } /* その他 */
+
+/* 窓の色 */
+.sharewin{ background-color:#8fbc8f; } /* 緑：共有窓 */
+.wolfwin{ background-color:#ff7777; } /* 赤：狼窓 */
+.madmanwin{ background-color:#bdb76b; } /* 狂：狂窓 */
+.foxwin{ background-color:#a69abd; } /* 妖：妖窓 */
+.loverswin{ background-color:#ffc0cb; } /* 恋：恋窓 */
+.gravewin{ background-color:#9fb7cf; } /* 墓：墓 */
+.mixwin{ background-color:#ffe599; } /* 混：混信 */
+.dollwin{ background-color:#b7b7b7; } /* 腹話：腹話 */
+.nonewin{ background-color:transparent; }
+
+/* 強調色 */
+.emphasize{ background-color:#ffff99; }
+/* コミットに含まれない網掛け用 */
+.notcommit{ background-color:#cfe2f3; }
+
+/* サブ付与自分等、太字強調用 */
+.emphasizebold{ font-weight:bold; }
