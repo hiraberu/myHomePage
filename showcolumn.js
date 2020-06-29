@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener('load', function() {
 var array = ["detail","supplement"];
     for(var j=0;j<array.length;j++){
         var id = array[j] + "_display";
@@ -9,7 +9,7 @@ var array = ["detail","supplement"];
             TABLE.rows[i].cells[CELL.cellIndex].style.display = (document.getElementById(obj).checked) ? '' : 'none';
         }
     }
-}
+})
 
 function checkbox_cell( obj,id ){
     var CELL = document.getElementById(id);

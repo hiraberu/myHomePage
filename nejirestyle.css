@@ -1,12 +1,3 @@
-/*.roleslist{
-margin-right:auto;
-margin-left:auto;
-text-align:center;
-}*/
-
-/*table{ border-collapse: collapse; }*/
-/*table, td, th{ border: 1px #b45f06 dashed; }*/
-
 .indexnum{
 background-color: #990000;
 color:white;
@@ -65,3 +56,86 @@ padding : 1px 4px;
 
 /* サブ付与自分等、太字強調用 */
 .emphasizebold{ font-weight:bold; color:#990000; }
+
+.sticky_table th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  /* 高さが変わらないよう改行させない */
+  white-space: nowrap;
+}
+
+.sticky_table th:not(.topfix1):not(.topfix2)::before{
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border-top: 1px #666666 solid;
+  border-bottom: 1px #666666 solid;
+}
+
+/* 一番上の行(#,役職のセル除く) */
+.sticky_table tr:nth-child(1) th:not(.topfix1) {
+  top: 1rem;
+  z-index: 2;
+}
+
+/* フィルタの行(#,役職の下のセル除く) */
+.sticky_table tr:nth-child(2) th:not(.topfix2) {
+  top: 0; /* 2行目は1行目の高さの位置に固定する */
+  z-index: 2;
+}
+
+/* 「#」「役職」のセル */
+.topfix1 {
+  left: 0;
+  top: 1rem;
+  z-index: 3;
+}
+
+/* 「#」「役職」の下のセル */
+.topfix2 {
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.topfix1::before{
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border : 1px #666666 solid;
+}
+
+.topfix2::before{
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border : 1px #666666 solid;
+}
+
+/* 役職名の列 */
+.sticky_table td:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.sticky_table td:nth-child(2)::before {
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border : 1px #666666 solid;
+}

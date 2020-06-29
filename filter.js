@@ -9,9 +9,9 @@ var gTfListSave = {};             // フィルタリストの保存状態
  //===============================================================
  //  オンロードでテーブル初期設定関数をCALL
  //===============================================================
-window.onload = function() {
+window.addEventListener('load', function() {
   tFilterInit();
-}
+})
 
 function tFilterInit(){
  //==============================================================
@@ -29,8 +29,8 @@ function tFilterInit(){
 
   for(var j=0; j < wTD.length; j++){
  
-    // --- 「cmanFilterBtn」の定義があるセルを対象とする ------
-    if(wTD[j].getAttribute('cmanFilterBtn') !== null){
+    // --- 「data-filterbtn」の定義があるセルを対象とする ------
+    if(wTD[j].getAttribute('data-filterbtn') !== null){
 
       // --- フィルタ対象はボタンの次の行から -----------------
       gTfStartRow = wFilterBtnRow + 1;

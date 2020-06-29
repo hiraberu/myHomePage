@@ -5,6 +5,7 @@
 <head>
   <base target="_top">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
   <title>ねじれ役職</title>
   <link rel="stylesheet" type="text/css" href="myhomepagestyle.css">
   <link rel="stylesheet" type="text/css" href="nejirestyle.css">
@@ -25,15 +26,15 @@
 
 <hr class="splitline"><!-- 区切り線 -->
 
-<label><input type="checkbox" id="detail_check" onclick="checkbox_cell(this,'detail_display')"/>詳細表示</label>
-<label><input type="checkbox" id="supplement_check" onclick="checkbox_cell(this,'supplement_display')"/>補足表示</label>
+<label><input type="checkbox" name="detail" id="detail_check" value="" onclick="checkbox_cell(this,'detail_display')">詳細表示</label>
+<label><input type="checkbox" name="supplement" id="supplement_check" value="" onclick="checkbox_cell(this,'supplement_display')">補足表示</label>
 
 
-<table id="roletable">
-
+<table id="roletable" class="sticky_table">
+<thead>
 <tr>
-<th>#</th>
-<th>役職</th>
+<th class="topfix1">#</th>
+<th class="topfix1">役職</th>
 <th>略</th>
 <th>陣営</th>
 <th>陣営<br>詳細</th>
@@ -67,40 +68,42 @@
 <th id="supplement_display" class="supplement">補足</th>
 </tr>
 <tr>
+<th class="topfix2"></th>
+<th class="topfix2"></th>
 <th></th>
-<th></th>
-<th></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
-<th cmanFilterBtn></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
+<th data-filterbtn="1"></th>
 <th class="explain"></th>
 <th class="explain"></th>
 <th class="detail"></th>
 <th class="supplement"></th>
 </tr>
+</thead>
+<tbody>
 <tr><td class="indexnum">0</td><td class="villager">村人</td><td class="villager">村</td><td class="villager">村人</td><td class="villager">村人</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain"></td><td class="explain"></td>
@@ -3600,7 +3603,7 @@
 <td class="detail">村人だと思い込んでいる人狼　赤窓会話、襲撃はできない<br>占われた、LWになったとき自覚する</td>
 <td class="supplement"></td>
 </tr>
-
+</tbody>
 </table>
 
 </div> <!-- "all" -->
