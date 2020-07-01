@@ -76,30 +76,31 @@ padding : 1px 4px;
   border-bottom: 1px #666666 solid;
 }
 
-/* 一番上の行(#,役職のセル除く) */
+/* 一番上のフィルタの行(#,役職の下のセル除く) */
 .sticky_table tr:nth-child(1) th:not(.topfix1) {
+  top: 0; /* 2行目は1行目の高さの位置に固定する */
+  z-index: 3;
+}
+
+
+/* 2番目の行(#,役職のセル除く) */
+.sticky_table tr:nth-child(2) th:not(.topfix2) {
   top: 1rem;
   z-index: 2;
 }
 
-/* フィルタの行(#,役職の下のセル除く) */
-.sticky_table tr:nth-child(2) th:not(.topfix2) {
-  top: 0; /* 2行目は1行目の高さの位置に固定する */
-  z-index: 2;
+/* 「#」「役職」の上のセル */
+.topfix1 {
+  left: 0;
+  top: 0;
+  z-index: 4;
 }
 
 /* 「#」「役職」のセル */
-.topfix1 {
-  left: 0;
-  top: 1rem;
-  z-index: 3;
-}
-
-/* 「#」「役職」の下のセル */
 .topfix2 {
   left: 0;
-  top: 0;
-  z-index: 3;
+  top: 1rem;
+  z-index: 4;
 }
 
 .topfix1::before{
@@ -138,4 +139,8 @@ padding : 1px 4px;
   width : 100% ;
   height : 100% ;
   border : 1px #666666 solid;
+}
+
+.hide_test {
+  /*display:none;*/
 }

@@ -79,9 +79,12 @@
   display    : none;
 }
 /* === フィルタ非表示行と次行の間を二重線にする == */
+/*
 #roletable tr[cmanFilterNone] + tr td{
   border-top : 3px double #777;
 }
+*/
+
  /* --- （参考）テーブル全体のスタイル指定 ------- */
 #roletable {
   width          : 100%;

@@ -20,7 +20,7 @@ function tFilterInit(){
   var wTABLE  = document.getElementById(gTabldID);
   var wTR     = wTABLE.rows;
   var wAddBtn = '';
-  var wFilterBtnRow = 1; // フィルタボタンを付ける行
+  var wFilterBtnRow = 0; // フィルタボタンを付ける行
  
   // ------------------------------------------------------------
   //   テーブル内をフィルタボタンを付ける
@@ -32,8 +32,8 @@ function tFilterInit(){
     // --- 「data-filterbtn」の定義があるセルを対象とする ------
     if(wTD[j].getAttribute('data-filterbtn') !== null){
 
-      // --- フィルタ対象はボタンの次の行から -----------------
-      gTfStartRow = wFilterBtnRow + 1;
+      // --- フィルタ対象はボタンの次の次の行から -----------------
+      gTfStartRow = wFilterBtnRow + 2;
  
       // --- ボタンを追加（画像はsvgを使用） ------------------
       wAddBtn  = '<div class="tfArea">';
@@ -43,6 +43,8 @@ function tFilterInit(){
       wAddBtn += '</div>';
       wAddBtn += '</div>';
       wTD[j].innerHTML = wTD[j].innerHTML+wAddBtn;
+      
+      //console.log(wAddBtn);
  
       // --- フィルタボタンなる列を保存 -----------------------
       gTfColList.push(j);
