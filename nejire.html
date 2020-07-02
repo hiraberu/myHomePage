@@ -9,7 +9,6 @@
   <title>ねじれ役職</title>
   <link rel="stylesheet" type="text/css" href="myhomepagestyle.css">
   <link rel="stylesheet" type="text/css" href="nejirestyle.css">
-  <link rel="stylesheet" type="text/css" href="filterstyle.css">
   <link rel="INDEX" href=".index.html">
 
 </head>
@@ -36,50 +35,84 @@
 
 <hr class="splitline"><!-- 区切り線 -->
 
+<table id="filterlist">
+<tr>
+<td>陣営</td>
+<td class="check_camp">
+<label><input type="checkbox" name="campall" value="all"       onclick="check_all(this,'camp')" checked="checked">すべて</label>
+</td>
+<td class="check_camp">
+<label><input type="checkbox" name="camp" value="村人"             onclick="change_check(this,'camp')" checked="checked">村人</label>
+<label><input type="checkbox" name="camp" value="人狼"             onclick="change_check(this,'camp')" checked="checked">人狼</label>
+<label><input type="checkbox" name="camp" value="狂人"             onclick="change_check(this,'camp')" checked="checked">狂人</label>
+<label><input type="checkbox" name="camp" value="妖魔"             onclick="change_check(this,'camp')" checked="checked">妖魔</label>
+<label><input type="checkbox" name="camp" value="背徳"             onclick="change_check(this,'camp')" checked="checked">背徳</label>
+<label><input type="checkbox" name="camp" value="ドッペルゲンガー" onclick="change_check(this,'camp')" checked="checked">ドッペルゲンガー</label>
+<label><input type="checkbox" name="camp" value="恋人"             onclick="change_check(this,'camp')" checked="checked">恋人</label>
+<label><input type="checkbox" name="camp" value="復讐"             onclick="change_check(this,'camp')" checked="checked">復讐</label><br>
+<label><input type="checkbox" name="camp" value="教祖"             onclick="change_check(this,'camp')" checked="checked">教祖</label>
+<label><input type="checkbox" name="camp" value="吸血鬼"           onclick="change_check(this,'camp')" checked="checked">吸血鬼</label>
+<label><input type="checkbox" name="camp" value="一匹狼"           onclick="change_check(this,'camp')" checked="checked">一匹狼</label>
+<label><input type="checkbox" name="camp" value="殺人鬼"           onclick="change_check(this,'camp')" checked="checked">殺人鬼</label>
+<label><input type="checkbox" name="camp" value="黒幕"             onclick="change_check(this,'camp')" checked="checked">黒幕</label>
+<label><input type="checkbox" name="camp" value="蝙蝠"             onclick="change_check(this,'camp')" checked="checked">蝙蝠</label>
+<label><input type="checkbox" name="camp" value="旅人"             onclick="change_check(this,'camp')" checked="checked">旅人</label>
+<label><input type="checkbox" name="camp" value="強制敗北"         onclick="change_check(this,'camp')" checked="checked">強制敗北</label>
+<label><input type="checkbox" name="camp" value="その他"           onclick="change_check(this,'camp')" checked="checked">その他</label>
+</td>
+</tr>
+<!--
+<tr>
+<td>占い</td>
+<td class="check_fortune">
+<label><input type="checkbox" name="fortuneall" value="all"   onclick="check_all(this,'fortune')" checked="checked">すべて</label>
+</td>
+<td class="check_fortune">
+<label><input type="checkbox" name="fortune" value="(空白)"   onclick="change_check(this,'fortune')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="fortune" value="○"       onclick="change_check(this,'fortune')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="fortune" value="●"       onclick="change_check(this,'fortune')" checked="checked">●：人狼(黒)</label>　
+<label><input type="checkbox" name="fortune" value="邪"       onclick="change_check(this,'fortune')" checked="checked">邪魔</label>
+</td>
+</tr>
+
+<tr>
+<td>霊</td>
+<td class="check_shrman">
+<label><input type="checkbox" name="shrmaneall" value="all"   onclick="check_all(this,'shrman')" checked="checked">すべて</label>
+</td>
+<td class="check_fortune">
+<label><input type="checkbox" name="shrman" value="(空白)"   onclick="change_check(this,'shrman')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="shrman" value="○"       onclick="change_check(this,'shrman')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="shrman" value="●"       onclick="change_check(this,'shrman')" checked="checked">●：人狼(黒)</label>　
+</td>
+</tr>
+
+<tr>
+<td>カウント</td>
+<td class="check_count">
+<label><input type="checkbox" name="countall" value="all"   onclick="check_all(this,'count')" checked="checked">すべて</label>
+</td>
+<td class="check_fortune">
+<label><input type="checkbox" name="count" value="(空白)"   onclick="change_check(this,'count')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="count" value="○"       onclick="change_check(this,'count')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="count" value="●"       onclick="change_check(this,'count')" checked="checked">●：人狼(黒)</label>　
+<label><input type="checkbox" name="count" value="×"       onclick="change_check(this,'count')" checked="checked">×：カウントなし</label>　
+</td>
+</tr>
+-->
+</table>
+
+<p>
+<input type="button" value="フィルタ実行" id="filterbutton" onclick="execFilter()">
 <label><input type="checkbox" name="detail" id="detail_check" value="" onclick="checkbox_cell(this,'detail_display')">詳細表示</label>
 <label><input type="checkbox" name="supplement" id="supplement_check" value="" onclick="checkbox_cell(this,'supplement_display')">補足表示</label>
-
+</p>
 
 <table id="roletable" class="sticky_table">
 <thead>
 <tr>
-<th class="topfix1"></th>
-<th class="topfix1"></th>
-<th></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th data-filterbtn="1"></th>
-<th class="explain"></th>
-<th class="explain"></th>
-<th class="detail"></th>
-<th class="supplement"></th>
-</tr>
-<tr>
-<th class="topfix2">#</th>
-<th class="topfix2">役職</th>
+<th class="topfix">#</th>
+<th class="topfix">役職</th>
 <th>略</th>
 <th>陣営</th>
 <th>陣営<br>詳細</th>
@@ -521,7 +554,7 @@
 </tr>
 
 <tr><td class="indexnum">58</td><td class="fox">妖狐</td><td class="fox">灯</td><td class="fox">妖魔</td><td class="fox">襲撃時</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>狐火</td>
-<td class="foxwin">(妖)</td><td></td><td>狐火</td><td></td><td>1</td><td>〇</td><td>〇</td>
+<td class="foxwin">(妖)</td><td></td><td>狐火</td><td></td><td>1</td><td>○</td><td>○</td>
 <td class="explain">1度だけ1人に狐火<br>被襲撃で襲撃者に狐火<br>襲撃者判明</td><td class="explain"></td>
 <td class="detail">1度だけ1人に狐火(占われると呪殺されて死ぬ)を灯せる<br>襲撃されると襲撃者に狐火　誰が襲撃してきたかも判明<br>(何らかの能力で襲撃成功の場合は発動しない)</td>
 <td class="supplement"></td>
@@ -1109,14 +1142,14 @@
 </tr>
 
 <tr><td class="indexnum">142</td><td class="immoral">ネクロマンサー</td><td class="immoral">ネ</td><td class="immoral">背徳</td><td class="immoral">背徳</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>両</td><td></td><td></td><td></td><td>死徒</td>
-<td class="foxwin">(妖)</td><td></td><td>支配する</td><td></td><td></td><td></td><td>〇</td>
+<td class="foxwin">(妖)</td><td></td><td>支配する</td><td></td><td></td><td></td><td>○</td>
 <td class="explain">死者を死徒化して蘇生<br>非死徒化時死亡で自身<br>を死徒化して自己蘇生</td><td class="explain"></td>
 <td class="detail">死者を死徒(下僕＋悪霊)にして蘇生する　支配した死徒が死亡すると新たに死徒作成可<br>死徒化していない状態で死亡すると一度だけ自身を死徒化して自己蘇生<br>自己蘇生すると死徒化能力を失う</td>
 <td class="supplement">下僕になった者は妖魔陣営(背徳者化)　支配先が死ぬと後追いする</td>
 </tr>
 
 <tr><td class="indexnum">143</td><td class="fox">ドラキュラ</td><td class="fox">伯</td><td class="fox">妖魔</td><td class="fox">仲間作成</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>下僕</td>
-<td class="foxwin">(妖)</td><td></td><td>支配する</td><td>初</td><td></td><td>〇</td><td></td>
+<td class="foxwin">(妖)</td><td></td><td>支配する</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">初日に1人下僕にする</td><td class="explain"></td>
 <td class="detail">初日に任意の対象を支配して下僕にすることができる妖魔</td>
 <td class="supplement">下僕になった者は妖魔陣営(背徳者化)　支配先が死ぬと後追いする</td>
@@ -1256,7 +1289,7 @@
 </tr>
 
 <tr><td class="indexnum">163</td><td class="madman">丑刻参</td><td class="madman">丑</td><td class="madman">狂人</td><td class="madman">占妨害</td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="madmanwin">(狂)</td><td></td><td>呪う</td><td></td><td></td><td>〇</td><td>〇</td>
+<td class="madmanwin">(狂)</td><td></td><td>呪う</td><td></td><td></td><td>○</td><td>○</td>
 <td class="explain">毎晩1人を呪殺可能に<br>能力行使時占われ死</td><td class="explain">業魔<br>うしのこくまいり</td>
 <td class="detail">毎夜、呪いをかけて占いで死亡するようにできる狂人<br>呪いをかけているときは自身は占われると死ぬ</td>
 <td class="supplement"></td>
@@ -1382,7 +1415,7 @@
 </tr>
 
 <tr><td class="indexnum">181</td><td class="madman">フェイカー</td><td class="madman">贋</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td class="emphasizebold">発狂</td>
-<td class="madmanwin">(狂)</td><td></td><td>能力をコピーする</td><td></td><td>1</td><td>〇</td><td></td>
+<td class="madmanwin">(狂)</td><td></td><td>能力をコピーする</td><td></td><td>1</td><td>○</td><td></td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒鵺<br>≒ガチャピン</td>
 <td class="detail">一度だけ生存者・死亡者全ての中から1人選び能力コピー　コピー時に自身に発狂付加<br>コピーしている間は役職・陣営ごと移るが終了時には元のフェイカーに戻る<br>判定はコピーした役職　終了時もとに戻る</td>
 <td class="supplement"></td>
@@ -1403,21 +1436,21 @@
 </tr>
 
 <tr><td class="indexnum">184</td><td class="doppel">犬神</td><td class="doppel">犬</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">入替</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td>自</td><td></td><td></td><td></td><td></td>
-<td class="foxwin">(妖)</td><td></td><td>憑依する</td><td>初</td><td></td><td>〇</td><td></td>
+<td class="foxwin">(妖)</td><td></td><td>憑依する</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">自身死亡時、憑依先が<br>死んでいたら憑依し<br>蘇生＆妖魔判定</td><td class="explain"></td>
 <td class="detail">初日に憑依先を選択<br>自身死亡時、憑依先が既に死んでいたら憑依(名前・チップ変わる)し蘇生<br>憑依したときに初めて妖魔判定付与</td>
 <td class="supplement">役職・サブはそのまま</td>
 </tr>
 
 <tr><td class="indexnum">185</td><td class="doppel">猿神</td><td class="doppel">猿</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">入替</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="foxwin">(妖)</td><td></td><td>転移する(…と…)</td><td>初</td><td></td><td>〇</td><td></td>
+<td class="foxwin">(妖)</td><td></td><td>転移する(…と…)</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">転移先片方死亡で<br>死亡者が生存者に転移<br>転移成功で猿神は妖魔判定</td><td class="explain"></td>
 <td class="detail">初日に転移先を2人選択する　選んだ転移先どちらか死亡で死亡者が生存者に転移<br>転移成功で、生存している猿神に妖魔判定付与</td>
 <td class="supplement">転移が成功すると、転移者は転移先の名前・アイコンになる<br>役職・サブはそのまま</td>
 </tr>
 
 <tr><td class="indexnum">186</td><td class="doppel">蛇神</td><td class="doppel">蛇</td><td class="doppel">ドッペルゲンガー</td><td class="doppel">入替</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="foxwin">(妖)</td><td></td><td>転生する</td><td>初</td><td></td><td>〇</td><td></td>
+<td class="foxwin">(妖)</td><td></td><td>転生する</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">自身死亡時、転生先が<br>生存していたら転生<br>＆妖魔判定</td><td class="explain"></td>
 <td class="detail">初日に転生先を選択<br>自身死亡時、転生先が生存していたら転生(名前・チップ変わる)<br>転生したときに初めて妖魔判定付与</td>
 <td class="supplement">役職・サブはそのまま</td>
@@ -1564,7 +1597,7 @@
 </tr>
 
 <tr><td class="indexnum">207</td><td class="fox">業魔</td><td class="fox">業</td><td class="fox">妖魔</td><td class="fox">呪殺妨害</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-<td class="foxwin">(妖)</td><td></td><td>呪う</td><td></td><td></td><td>〇</td><td>〇</td>
+<td class="foxwin">(妖)</td><td></td><td>呪う</td><td></td><td></td><td>○</td><td>○</td>
 <td class="explain">毎日1人を呪殺可能に<br>能力行使時襲撃死</td><td class="explain">丑刻参</td>
 <td class="detail">毎夜、呪いをかけて占いで死亡するようにできる妖魔<br>呪いをかけているときは自身は襲撃で死ぬ</td>
 <td class="supplement"></td>
@@ -3042,7 +3075,7 @@
 
 <tr><td class="indexnum">418</td><td class="villager">千匹皮</td><td class="villager">千</td><td class="villager">村人</td><td class="villager">妨害</td><td>△</td><td>△</td><td>△</td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>千匹皮</td><td></td><td>1</td><td></td><td>○</td>
-<td class="explain">セットすると占霊●で<br>カウントなし・生存勝利</td><td class="explain"></td>
+<td class="explain">セットすると占霊●<br>カウントなし・生存勝利</td><td class="explain"></td>
 <td class="detail"></td>
 <td class="supplement"></td>
 </tr>
@@ -3618,8 +3651,8 @@
 
 </div> <!-- "all" -->
 
-<script type="text/javascript" src="filter.js"></script>
 <script type="text/javascript" src="showcolumn.js"></script>
+<script type="text/javascript" src="nejirefilter.js"></script>
 
 </body>
 </html>

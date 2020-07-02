@@ -1,3 +1,21 @@
+
+ /* --- フィルタチェックテーブル全体のスタイル指定 ------- */
+#filterlist {
+  width          : 100%;
+  text-align:center;
+  border-collapse: collapse;         /* 境界線結合 */
+  border-spacing : 0;                /* 罫線間余白 */
+  /*font-size      : 9pt;*/              /* 文字サイズ */
+}
+
+ /* --- 明細のスタイル指定 ----------------------- */
+#filterlist td {
+  text-align    : left;            /* 文字位置   */
+  /*padding       : 1px 0px;*/             /* 余白       */
+  border        : 1px #666666 solid; /* 罫線       */
+  white-space   : nowrap;
+}
+
 .indexnum{
 background-color: #990000;
 color:white;
@@ -57,6 +75,40 @@ padding : 1px 4px;
 /* サブ付与自分等、太字強調用 */
 .emphasizebold{ font-weight:bold; color:#990000; }
 
+ /* --- テーブル全体のスタイル指定 ------- */
+#roletable {
+  width          : 100%;
+  border-collapse: collapse;         /* 境界線結合 */
+  border-spacing : 0;                /* 罫線間余白 */
+  font-size      : 9pt;              /* 文字サイズ */
+}
+ /* --- ヘッダーのスタイル指定 ------------------- */
+#roletable th {
+  text-align    : center;            /* 文字位置   */
+  /*font-weight   : bold;*/            /* 太文字     */
+  font-weight   : normal;
+  padding       : 1px 0px;             /* 余白       */
+  /*border        : 1px #666666 solid; *//* 罫線       */
+  border-left     : 1px #666666 solid; /* 罫線       */
+  border-right    : 1px #666666 solid; /* 罫線       */
+  background    : #ffe599;           /* 背景色     */
+  white-space   : nowrap;
+}
+ /* --- 明細のスタイル指定 ----------------------- */
+#roletable td:not(:nth-child(2)) {
+  /*text-align    : center;*/            /* 文字位置   */
+  /*padding       : 1px 0px;*/             /* 余白       */
+  border        : 1px #666666 solid; /* 罫線       */
+  white-space   : nowrap;
+}
+
+ /* --- 役職の部分だけ罫線別 ----------------------- */
+#roletable td:nth-child(2) {
+  /*text-align    : center;*/            /* 文字位置   */
+  /*padding       : 1px 0px;*/             /* 余白       */
+  white-space   : nowrap;
+}
+
 .sticky_table th {
   /* 縦スクロール時に固定する */
   position: -webkit-sticky;
@@ -65,7 +117,7 @@ padding : 1px 4px;
   white-space: nowrap;
 }
 
-.sticky_table th:not(.topfix1):not(.topfix2)::before{
+.sticky_table th:not(.topfix)::before{
   content : "" ;
   position : absolute ;
   top : 0 ;
@@ -76,34 +128,20 @@ padding : 1px 4px;
   border-bottom: 1px #666666 solid;
 }
 
-/* 一番上のフィルタの行(#,役職の下のセル除く) */
-.sticky_table tr:nth-child(1) th:not(.topfix1) {
-  top: 0; /* 2行目は1行目の高さの位置に固定する */
-  z-index: 3;
-}
-
-
-/* 2番目の行(#,役職のセル除く) */
-.sticky_table tr:nth-child(2) th:not(.topfix2) {
-  top: 1rem;
+/* 1番目の行(#,役職のセル除く) */
+.sticky_table tr:nth-child(1) th:not(.topfix) {
+  top: 0;
   z-index: 2;
 }
 
-/* 「#」「役職」の上のセル */
-.topfix1 {
+/* 「#」「役職」のセル */
+.topfix {
   left: 0;
   top: 0;
   z-index: 4;
 }
 
-/* 「#」「役職」のセル */
-.topfix2 {
-  left: 0;
-  top: 1rem;
-  z-index: 4;
-}
-
-.topfix1::before{
+.topfix::before{
   content : "" ;
   position : absolute ;
   top : 0 ;
@@ -113,15 +151,6 @@ padding : 1px 4px;
   border : 1px #666666 solid;
 }
 
-.topfix2::before{
-  content : "" ;
-  position : absolute ;
-  top : 0 ;
-  left : 0 ;
-  width : 100% ;
-  height : 100% ;
-  border : 1px #666666 solid;
-}
 
 /* 役職名の列 */
 .sticky_table td:nth-child(2) {
@@ -139,8 +168,4 @@ padding : 1px 4px;
   width : 100% ;
   height : 100% ;
   border : 1px #666666 solid;
-}
-
-.hide_test {
-  /*display:none;*/
 }
