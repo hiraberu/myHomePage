@@ -61,29 +61,28 @@
 <label><input type="checkbox" name="camp" value="その他"           onclick="change_check(this,'camp')" checked="checked">その他</label>
 </td>
 </tr>
-<!--
 <tr>
 <td>占い</td>
 <td class="check_fortune">
 <label><input type="checkbox" name="fortuneall" value="all"   onclick="check_all(this,'fortune')" checked="checked">すべて</label>
 </td>
 <td class="check_fortune">
-<label><input type="checkbox" name="fortune" value="(空白)"   onclick="change_check(this,'fortune')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="fortune" value="○"       onclick="change_check(this,'fortune')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="fortune" value="●"       onclick="change_check(this,'fortune')" checked="checked">●：人狼(黒)</label>　
+<label><input type="checkbox" name="fortune" value=""         onclick="change_check(this,'fortune')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="fortune" value="○|▲|△" onclick="change_check(this,'fortune')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="fortune" value="●|▲|△" onclick="change_check(this,'fortune')" checked="checked">●：人狼(黒)</label>　
 <label><input type="checkbox" name="fortune" value="邪"       onclick="change_check(this,'fortune')" checked="checked">邪魔</label>
 </td>
 </tr>
 
 <tr>
 <td>霊</td>
-<td class="check_shrman">
-<label><input type="checkbox" name="shrmaneall" value="all"   onclick="check_all(this,'shrman')" checked="checked">すべて</label>
+<td class="check_shaman">
+<label><input type="checkbox" name="shamanall" value="all"   onclick="check_all(this,'shaman')" checked="checked">すべて</label>
 </td>
-<td class="check_fortune">
-<label><input type="checkbox" name="shrman" value="(空白)"   onclick="change_check(this,'shrman')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="shrman" value="○"       onclick="change_check(this,'shrman')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="shrman" value="●"       onclick="change_check(this,'shrman')" checked="checked">●：人狼(黒)</label>　
+<td class="check_shaman">
+<label><input type="checkbox" name="shaman" value=""         onclick="change_check(this,'shaman')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="shaman" value="○|▲|△" onclick="change_check(this,'shaman')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="shaman" value="●|▲|△" onclick="change_check(this,'shaman')" checked="checked">●：人狼(黒)</label>　
 </td>
 </tr>
 
@@ -92,14 +91,82 @@
 <td class="check_count">
 <label><input type="checkbox" name="countall" value="all"   onclick="check_all(this,'count')" checked="checked">すべて</label>
 </td>
-<td class="check_fortune">
-<label><input type="checkbox" name="count" value="(空白)"   onclick="change_check(this,'count')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="count" value="○"       onclick="change_check(this,'count')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="count" value="●"       onclick="change_check(this,'count')" checked="checked">●：人狼(黒)</label>　
+<td class="check_count">
+<label><input type="checkbox" name="count" value=""         onclick="change_check(this,'count')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="count" value="○|▲|△" onclick="change_check(this,'count')" checked="checked">○：人間(白)</label>　
+<label><input type="checkbox" name="count" value="●|▲|△" onclick="change_check(this,'count')" checked="checked">●：人狼(黒)</label>　
 <label><input type="checkbox" name="count" value="×"       onclick="change_check(this,'count')" checked="checked">×：カウントなし</label>　
 </td>
 </tr>
--->
+
+<td>呪殺できる</td>
+<td class="check_curse">
+<label><input type="checkbox" name="curseall" value="all"   onclick="check_all(this,'curse')" checked="checked">すべて</label>
+</td>
+<td class="check_curse">
+<label><input type="checkbox" name="curse" value=""         onclick="change_check(this,'curse')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="curse" value="◎|○"    onclick="change_check(this,'curse')" checked="checked">◎○：呪殺できる</label>　
+<label><input type="checkbox" name="curse" value="×"       onclick="change_check(this,'curse')" checked="checked">×：呪殺できない</label>　
+</td>
+</tr>
+
+<td>逆呪殺にあう</td>
+<td class="check_reverse_curse">
+<label><input type="checkbox" name="reverse_curseall" value="all" onclick="check_all(this,'reverse_curse')" checked="checked">すべて</label>
+</td>
+<td class="check_reverse_curse">
+<label><input type="checkbox" name="reverse_curse" value=""       onclick="change_check(this,'reverse_curse')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="reverse_curse" value="○"     onclick="change_check(this,'reverse_curse')" checked="checked">○：ああ！ 窓に！</label>　
+<label><input type="checkbox" name="reverse_curse" value="×"     onclick="change_check(this,'reverse_curse')" checked="checked">×：逆呪殺されない</label>　
+</td>
+</tr>
+
+<td>呪殺される</td>
+<td class="check_becursed">
+<label><input type="checkbox" name="becursedall" value="all"   onclick="check_all(this,'becursed')" checked="checked">すべて</label>
+</td>
+<td class="check_becursed">
+<label><input type="checkbox" name="becursed" value=""         onclick="change_check(this,'becursed')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="becursed" value="○|△"    onclick="change_check(this,'becursed')" checked="checked">○：呪殺される</label>　
+<label><input type="checkbox" name="becursed" value="×"       onclick="change_check(this,'becursed')" checked="checked">×：呪殺されない</label>　
+</td>
+</tr>
+
+<td>逆呪殺する</td>
+<td class="check_bereverse_cursed">
+<label><input type="checkbox" name="bereverse_cursedall" value="all"   onclick="check_all(this,'bereverse_cursed')" checked="checked">すべて</label>
+</td>
+<td class="check_bereverse_cursed">
+<label><input type="checkbox" name="bereverse_cursed" value=""   onclick="change_check(this,'bereverse_cursed')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="bereverse_cursed" value="●" onclick="change_check(this,'bereverse_cursed')" checked="checked">●：逆呪殺する</label>　
+</td>
+</tr>
+
+<td>噛まれる</td>
+<td class="check_bite">
+<label><input type="checkbox" name="biteall" value="all"   onclick="check_all(this,'bite')" checked="checked">すべて</label>
+</td>
+<td class="check_bite">
+<label><input type="checkbox" name="bite" value=""      onclick="change_check(this,'bite')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="bite" value="○|△" onclick="change_check(this,'bite')" checked="checked">噛まれる</label>　
+<label><input type="checkbox" name="bite" value="耐"    onclick="change_check(this,'bite')" checked="checked">1回の襲撃耐性</label>　
+<label><input type="checkbox" name="bite" value="自衛"  onclick="change_check(this,'bite')" checked="checked">自分護衛可</label>　
+<label><input type="checkbox" name="bite" value="貫"    onclick="change_check(this,'bite')" checked="checked">護衛貫通</label>　
+<label><input type="checkbox" name="bite" value="×|△" onclick="change_check(this,'bite')" checked="checked">噛まれない</label>　
+</td>
+</tr>
+
+<td>吊られる</td>
+<td class="check_hang">
+<label><input type="checkbox" name="hangall" value="all"   onclick="check_all(this,'hang')" checked="checked">すべて</label>
+</td>
+<td class="check_hang">
+<label><input type="checkbox" name="hang" value=""      onclick="change_check(this,'hang')" checked="checked">(空白)</label>　
+<label><input type="checkbox" name="hang" value="耐"    onclick="change_check(this,'hang')" checked="checked">1回の処刑耐性</label>　
+</td>
+</tr>
+
+
 </table>
 
 <p>
@@ -294,7 +361,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">21</td><td class="villager">超人</td><td class="villager">超</td><td class="villager">村人</td><td class="villager">襲撃効果</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
+<tr><td class="indexnum">21</td><td class="villager">超人</td><td class="villager">超</td><td class="villager">村人</td><td class="villager">襲撃効果</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">一度だけ襲撃耐える</td><td class="explain">蜥蜴</td>
 <td class="detail">一度だけ襲撃を耐えれる</td>
@@ -364,7 +431,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">31</td><td class="villager">狛犬</td><td class="villager">狛</td><td class="villager">村人</td><td class="villager">狩</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">×</td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">31</td><td class="villager">狛犬</td><td class="villager">狛</td><td class="villager">村人</td><td class="villager">狩</td><td class="emphasize">●</td><td class="emphasize">●</td><td class="emphasize">×</td><td></td><td></td><td></td><td></td><td>自衛</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>護衛 *自分可</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">自分も護衛できる狩人</td><td class="explain"></td>
 <td class="detail">自身も護衛できる狩人</td>
@@ -938,7 +1005,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">113</td><td class="villager">修行僧</td><td class="villager">修</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">負傷</td>
+<tr><td class="indexnum">113</td><td class="villager">修行僧</td><td class="villager">修</td><td class="villager">村人</td><td class="villager">陣営変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td>修行</td><td>初</td><td></td><td>○</td><td></td>
 <td class="explain">初日に修行先選択<br>負傷で修行先の役職に</td><td class="explain"></td>
 <td class="detail">初日に修行先を選択　自分が襲撃されて負傷状態になると修行対象と同じ役職になる<br>護衛等で襲撃失敗の場合は変わらない</td>
@@ -1050,7 +1117,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">129</td><td class="villager">豪傑</td><td class="villager">豪</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
+<tr><td class="indexnum">129</td><td class="villager">豪傑</td><td class="villager">豪</td><td class="villager">村人</td><td class="villager">狩</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td></td><td></td><td>護衛</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">1度の襲撃耐性<br>護衛は身代わり</td><td class="explain">超人＋メイド</td>
 <td class="detail">1度だけ襲撃に耐える　護衛は自分が身代わりになる狩人<br>(1度目の身代わりは耐性があるので負傷のみになる)</td>
@@ -1064,7 +1131,7 @@
 <td class="supplement">自投票ON時に自投票しても自身の護衛は不可</td>
 </tr>
 
-<tr><td class="indexnum">131</td><td class="others">傭兵</td><td class="others">傭</td><td class="others">その他</td><td class="others">その他</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<tr><td class="indexnum">131</td><td class="others">傭兵</td><td class="others">傭</td><td class="others">その他</td><td class="others">その他</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>自衛</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td></td><td></td><td>護衛 *自分可</td><td></td><td></td><td>○</td><td></td>
 <td class="explain">終了時護衛成功者<br>生存で勝利　自護衛可</td><td class="explain"></td>
 <td class="detail">終了時に護衛成功者が1人でも生存していると勝利陣営関係なく勝利になる狩人<br>自身も護衛可能</td>
@@ -1365,7 +1432,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">174</td><td class="fox">魔人</td><td class="fox">魔</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>△</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
+<tr><td class="indexnum">174</td><td class="fox">魔人</td><td class="fox">魔</td><td class="fox">妖魔</td><td class="fox">耐呪殺</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>△</td><td></td><td>1耐</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="emphasizebold">負傷</td>
 <td class="foxwin">(妖)</td><td></td><td></td><td></td><td></td><td></td><td></td>
 <td class="explain">襲撃/呪殺から1度だけ<br>負傷して逃れられる</td><td class="explain"></td>
 <td class="detail">襲撃/呪殺をされても一度だけ負傷をしながらも逃れられる</td>
