@@ -39,138 +39,323 @@
 <tr>
 <td>陣営</td>
 <td class="check_camp">
-<label><input type="checkbox" name="campall" value="all"       onclick="check_all(this,'camp')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="campall" value="all" >すべて</label>
 </td>
 <td class="check_camp">
-<label><input type="checkbox" name="camp" value="村人"             onclick="change_check(this,'camp')" checked="checked">村人</label>
-<label><input type="checkbox" name="camp" value="人狼"             onclick="change_check(this,'camp')" checked="checked">人狼</label>
-<label><input type="checkbox" name="camp" value="狂人"             onclick="change_check(this,'camp')" checked="checked">狂人</label>
-<label><input type="checkbox" name="camp" value="妖魔"             onclick="change_check(this,'camp')" checked="checked">妖魔</label>
-<label><input type="checkbox" name="camp" value="背徳"             onclick="change_check(this,'camp')" checked="checked">背徳</label>
-<label><input type="checkbox" name="camp" value="ドッペルゲンガー" onclick="change_check(this,'camp')" checked="checked">ドッペルゲンガー</label>
-<label><input type="checkbox" name="camp" value="恋人"             onclick="change_check(this,'camp')" checked="checked">恋人</label>
-<label><input type="checkbox" name="camp" value="復讐"             onclick="change_check(this,'camp')" checked="checked">復讐</label><br>
-<label><input type="checkbox" name="camp" value="教祖"             onclick="change_check(this,'camp')" checked="checked">教祖</label>
-<label><input type="checkbox" name="camp" value="吸血鬼"           onclick="change_check(this,'camp')" checked="checked">吸血鬼</label>
-<label><input type="checkbox" name="camp" value="一匹狼"           onclick="change_check(this,'camp')" checked="checked">一匹狼</label>
-<label><input type="checkbox" name="camp" value="殺人鬼"           onclick="change_check(this,'camp')" checked="checked">殺人鬼</label>
-<label><input type="checkbox" name="camp" value="黒幕"             onclick="change_check(this,'camp')" checked="checked">黒幕</label>
-<label><input type="checkbox" name="camp" value="蝙蝠"             onclick="change_check(this,'camp')" checked="checked">蝙蝠</label>
-<label><input type="checkbox" name="camp" value="旅人"             onclick="change_check(this,'camp')" checked="checked">旅人</label>
-<label><input type="checkbox" name="camp" value="強制敗北"         onclick="change_check(this,'camp')" checked="checked">強制敗北</label>
-<label><input type="checkbox" name="camp" value="その他"           onclick="change_check(this,'camp')" checked="checked">その他</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="村人"            >村人</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="人狼"            >人狼</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="狂人"            >狂人</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="妖魔"            >妖魔</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="背徳"            >背徳</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="ドッペルゲンガー">ドッペルゲンガー</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="恋人"            >恋人</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="復讐"            >復讐</label><br>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="教祖"            >教祖</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="吸血鬼"          >吸血鬼</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="一匹狼"          >一匹狼</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="殺人鬼"          >殺人鬼</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="黒幕"            >黒幕</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="蝙蝠"            >蝙蝠</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="旅人"            >旅人</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="強制敗北"        >強制敗北</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="camp" value="その他"          >その他</label>
 </td>
 </tr>
+
 <tr>
 <td>占い</td>
 <td class="check_fortune">
-<label><input type="checkbox" name="fortuneall" value="all"   onclick="check_all(this,'fortune')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="fortuneall" value="all">すべて</label>
 </td>
 <td class="check_fortune">
-<label><input type="checkbox" name="fortune" value=""         onclick="change_check(this,'fortune')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="fortune" value="○|▲|△" onclick="change_check(this,'fortune')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="fortune" value="●|▲|△" onclick="change_check(this,'fortune')" checked="checked">●：人狼(黒)</label>　
-<label><input type="checkbox" name="fortune" value="邪"       onclick="change_check(this,'fortune')" checked="checked">邪魔</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="fortune" value=""        >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="fortune" value="○|▲|△">○:人間(白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="fortune" value="●|▲|△">●:人狼(黒)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="fortune" value="邪"      >邪魔</label>
 </td>
 </tr>
 
 <tr>
 <td>霊</td>
 <td class="check_shaman">
-<label><input type="checkbox" name="shamanall" value="all"   onclick="check_all(this,'shaman')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="shamanall" value="all">すべて</label>
 </td>
 <td class="check_shaman">
-<label><input type="checkbox" name="shaman" value=""         onclick="change_check(this,'shaman')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="shaman" value="○|▲|△" onclick="change_check(this,'shaman')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="shaman" value="●|▲|△" onclick="change_check(this,'shaman')" checked="checked">●：人狼(黒)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="shaman" value=""        >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="shaman" value="○|▲|△">○:人間(白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="shaman" value="●|▲|△">●:人狼(黒)</label>　
 </td>
 </tr>
 
 <tr>
 <td>カウント</td>
 <td class="check_count">
-<label><input type="checkbox" name="countall" value="all"   onclick="check_all(this,'count')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="countall" value="all">すべて</label>
 </td>
 <td class="check_count">
-<label><input type="checkbox" name="count" value=""         onclick="change_check(this,'count')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="count" value="○|▲|△" onclick="change_check(this,'count')" checked="checked">○：人間(白)</label>　
-<label><input type="checkbox" name="count" value="●|▲|△" onclick="change_check(this,'count')" checked="checked">●：人狼(黒)</label>　
-<label><input type="checkbox" name="count" value="×"       onclick="change_check(this,'count')" checked="checked">×：カウントなし</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="count" value=""        >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="count" value="○|▲|△">○:人間(白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="count" value="●|▲|△">●:人狼(黒)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="count" value="×"      >×:カウントなし</label>　
 </td>
 </tr>
 
+<tr>
 <td>呪殺できる</td>
 <td class="check_curse">
-<label><input type="checkbox" name="curseall" value="all"   onclick="check_all(this,'curse')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="curseall" value="all">すべて</label>
 </td>
 <td class="check_curse">
-<label><input type="checkbox" name="curse" value=""         onclick="change_check(this,'curse')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="curse" value="◎|○"    onclick="change_check(this,'curse')" checked="checked">◎○：呪殺できる</label>　
-<label><input type="checkbox" name="curse" value="×"       onclick="change_check(this,'curse')" checked="checked">×：呪殺できない</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="curse" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="curse" value="◎|○">◎○:呪殺できる</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="curse" value="×"   >×:呪殺できない</label>　
 </td>
 </tr>
 
+<tr>
 <td>逆呪殺にあう</td>
 <td class="check_reverse_curse">
-<label><input type="checkbox" name="reverse_curseall" value="all" onclick="check_all(this,'reverse_curse')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="reverse_curseall" value="all">すべて</label>
 </td>
 <td class="check_reverse_curse">
-<label><input type="checkbox" name="reverse_curse" value=""       onclick="change_check(this,'reverse_curse')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="reverse_curse" value="○"     onclick="change_check(this,'reverse_curse')" checked="checked">○：ああ！ 窓に！</label>　
-<label><input type="checkbox" name="reverse_curse" value="×"     onclick="change_check(this,'reverse_curse')" checked="checked">×：逆呪殺されない</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="reverse_curse" value=""  >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="reverse_curse" value="○">○:ああ！ 窓に！</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="reverse_curse" value="×">×:逆呪殺されない</label>　
 </td>
 </tr>
 
+<tr>
 <td>呪殺される</td>
 <td class="check_becursed">
-<label><input type="checkbox" name="becursedall" value="all"   onclick="check_all(this,'becursed')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="becursedall" value="all">すべて</label>
 </td>
 <td class="check_becursed">
-<label><input type="checkbox" name="becursed" value=""         onclick="change_check(this,'becursed')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="becursed" value="○|△"    onclick="change_check(this,'becursed')" checked="checked">○：呪殺される</label>　
-<label><input type="checkbox" name="becursed" value="×"       onclick="change_check(this,'becursed')" checked="checked">×：呪殺されない</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="becursed" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="becursed" value="○|△">○:呪殺される</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="becursed" value="×"   >×:呪殺されない</label>　
 </td>
 </tr>
 
+<tr>
 <td>逆呪殺する</td>
 <td class="check_bereverse_cursed">
-<label><input type="checkbox" name="bereverse_cursedall" value="all"   onclick="check_all(this,'bereverse_cursed')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="bereverse_cursedall" value="all">すべて</label>
 </td>
 <td class="check_bereverse_cursed">
-<label><input type="checkbox" name="bereverse_cursed" value=""   onclick="change_check(this,'bereverse_cursed')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="bereverse_cursed" value="●" onclick="change_check(this,'bereverse_cursed')" checked="checked">●：逆呪殺する</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bereverse_cursed" value=""  >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bereverse_cursed" value="●">●:逆呪殺する</label>　
 </td>
 </tr>
 
+<tr>
 <td>噛まれる</td>
 <td class="check_bite">
-<label><input type="checkbox" name="biteall" value="all"   onclick="check_all(this,'bite')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="biteall" value="all">すべて</label>
 </td>
 <td class="check_bite">
-<label><input type="checkbox" name="bite" value=""      onclick="change_check(this,'bite')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="bite" value="○|△" onclick="change_check(this,'bite')" checked="checked">噛まれる</label>　
-<label><input type="checkbox" name="bite" value="耐"    onclick="change_check(this,'bite')" checked="checked">1回の襲撃耐性</label>　
-<label><input type="checkbox" name="bite" value="自衛"  onclick="change_check(this,'bite')" checked="checked">自分護衛可</label>　
-<label><input type="checkbox" name="bite" value="貫"    onclick="change_check(this,'bite')" checked="checked">護衛貫通</label>　
-<label><input type="checkbox" name="bite" value="×|△" onclick="change_check(this,'bite')" checked="checked">噛まれない</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value="○|△">噛まれる</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value="耐"   >1回の襲撃耐性</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value="自衛" >自分護衛可</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value="貫"   >護衛貫通</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="bite" value="×|△">噛まれない</label>　
 </td>
 </tr>
 
+<tr>
 <td>吊られる</td>
 <td class="check_hang">
-<label><input type="checkbox" name="hangall" value="all"   onclick="check_all(this,'hang')" checked="checked">すべて</label>
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="hangall" value="all">すべて</label>
 </td>
 <td class="check_hang">
-<label><input type="checkbox" name="hang" value=""      onclick="change_check(this,'hang')" checked="checked">(空白)</label>　
-<label><input type="checkbox" name="hang" value="耐"    onclick="change_check(this,'hang')" checked="checked">1回の処刑耐性</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="hang" value=""  >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="hang" value="耐">1回の処刑耐性</label>　
 </td>
 </tr>
 
+<tr>
+<td>邪魔される</td>
+<td class="check_blocked">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="blockedall" value="all">すべて</label>
+</td>
+<td class="check_blocked">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="blocked" value=""   >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="blocked" value="○">○:邪魔される</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="blocked" value="×">×:邪魔されない</label>　
+</td>
+</tr>
+
+<tr>
+<td>邪魔する</td>
+<td class="check_block">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="blockall" value="all">すべて</label>
+</td>
+<td class="check_block">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="block" value=""   >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="block" value="○">○:邪魔する</label>　
+</td>
+</tr>
+
+<tr>
+<td>生存必須</td>
+<td class="check_alive">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="aliveall" value="all">すべて</label>
+</td>
+<td class="check_alive">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="alive" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="alive" value="○|△">○:生存必須</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="alive" value="※">※:生存でも勝利</label>　
+</td>
+</tr>
+
+<tr>
+<td>蘇生</td>
+<td class="check_revive">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="reviveall" value="all">すべて</label>
+</td>
+<td class="check_revive">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="revive" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="revive" value="○|△">○:生存必須</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="revive" value="※">※:生存でも勝利</label>　
+</td>
+</tr>
+
+<tr>
+<td>票数</td>
+<td class="check_vote">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="voteall" value="all">すべて</label>
+</td>
+<td class="check_vote">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="vote" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="vote" value="2">2票</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="vote" value="0">0票</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="vote" value="0">買収</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="vote" value="※">※:その他</label>　
+</td>
+</tr>
+
+<tr>
+<td>役/陣営変化</td>
+<td class="check_change">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="changeall" value="all">すべて</label>
+</td>
+<td class="check_change">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="change" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="change" value="○">○:役職変化</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="change" value="●">●:陣営変化</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="change" value="△">△:役コピー(終了時戻る)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="change" value="他">他人の役職変化</label>　
+</td>
+</tr>
+
+<tr>
+<td>表記</td>
+<td class="check_show">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="showall" value="all">すべて</label>
+</td>
+<td class="check_show">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="show" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="show" value="村人">村人</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="show" value="狂人">狂人</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="show" value="占い師">占い師</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="show" value="狩人">狩人</label>　
+</td>
+</tr>
+
+<tr>
+<td>サブ付与</td>
+<td class="check_sub">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="suball" value="all">すべて</label>
+</td>
+<td class="check_sub">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value=""     >(空白)</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="狼火">狼火</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="狐火">狐火</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="怪火">怪火</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="麻痺">麻痺</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="熱病">熱病</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="凍傷">凍傷</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="罠">罠</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="悪霊">悪霊</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="下僕">下僕</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="眷属">眷属</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="死徒">死徒</label><br>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="発狂">発狂</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="従者">従者</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="絆">絆</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="負傷">負傷</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="瀕死">瀕死</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="病弱">病弱</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="失墜">失墜</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="毒">毒</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="信者">信者</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="屍者">屍者</label><br>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="奴隷">奴隷</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="怪物">怪物</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="生贄">生贄</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="富者">富者</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="亡霊">亡霊</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="獲物">獲物</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="羊皮">羊皮</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="加護">加護</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="光明">光明</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="暗闇">暗闇</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="sub" value="新参">新参～廃人</label>　
+</td>
+</tr>
+
+<tr>
+<td>窓</td>
+<td class="check_window">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="windowall" value="all">すべて</label>
+</td>
+<td class="check_show">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value=""     >(空白)</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="緑">緑</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="赤">赤</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="狂">狂</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="妖">妖</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="恋">恋</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="墓">墓</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="混">混</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="腹話">腹話</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="×">×</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="window" value="？">？</label>　
+</td>
+</tr>
+
+<td>＊日目以降</td>
+<td class="check_dayafter">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="dayafterall" value="all">すべて</label>
+</td>
+<td class="check_dayafter">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value=""     >(空白)</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value="初">初日</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value="1">1日目から</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value="2">2日目以降</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value="3">3日目以降</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="dayafter" value="4">4日目以降</label>
+</td>
+</tr>
+
+<td>回数・奇遇</td>
+<td class="check_nums">
+<label><input type="checkbox" onclick="check_all(this)"    checked="checked" name="numsall" value="all">すべて</label>
+</td>
+<td class="check_nums">
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="nums" value=""     >(空白)</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="nums" value="1">1回</label>　
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="nums" value="隔">隔日</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="nums" value="奇">奇数日</label>
+<label><input type="checkbox" onclick="change_check(this)" checked="checked" name="nums" value="偶">偶数日</label>
+</td>
+</tr>
 
 </table>
 
 <p>
 <input type="button" value="フィルタ実行" id="filterbutton" onclick="execFilter()">
+<span id="showcount">500役職</span>
 <label><input type="checkbox" name="detail" id="detail_check" value="" onclick="checkbox_cell(this,'detail_display')">詳細表示</label>
 <label><input type="checkbox" name="supplement" id="supplement_check" value="" onclick="checkbox_cell(this,'supplement_display')">補足表示</label>
 </p>
@@ -1180,7 +1365,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">138</td><td class="madman">泥棒</td><td class="madman">泥</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td></td>
+<tr><td class="indexnum">138</td><td class="madman">泥棒</td><td class="madman">泥</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>他</td><td></td><td></td>
 <td class="madmanwin">(狂)</td><td></td><td>奪う</td><td></td><td>1</td><td>○</td><td>○</td>
 <td class="explain">1人の役職を奪う<br>村陣営→【村人】<br>村陣営以外→【狂人】</td><td class="explain"></td>
 <td class="detail">1度だけ選択対象の役職を奪う狂人　自身の役職は変わらない<br>元が村陣営の場合は【村人】、村陣営以外の場合は【狂人】になる</td>
@@ -1481,7 +1666,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">181</td><td class="madman">フェイカー</td><td class="madman">贋</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td class="emphasizebold">発狂</td>
+<tr><td class="indexnum">181</td><td class="madman">フェイカー</td><td class="madman">贋</td><td class="madman">狂人</td><td class="madman">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td class="emphasizebold">発狂</td>
 <td class="madmanwin">(狂)</td><td></td><td>能力をコピーする</td><td></td><td>1</td><td>○</td><td></td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒鵺<br>≒ガチャピン</td>
 <td class="detail">一度だけ生存者・死亡者全ての中から1人選び能力コピー　コピー時に自身に発狂付加<br>コピーしている間は役職・陣営ごと移るが終了時には元のフェイカーに戻る<br>判定はコピーした役職　終了時もとに戻る</td>
@@ -2734,7 +2919,7 @@
 <td class="supplement">村人陣営以外からの投票がなければ蘇生しない</td>
 </tr>
 
-<tr><td class="indexnum">360</td><td class="fox">鵺</td><td class="fox">鵺</td><td class="fox">妖魔</td><td class="fox">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td class="emphasizebold">悪霊</td>
+<tr><td class="indexnum">360</td><td class="fox">鵺</td><td class="fox">鵺</td><td class="fox">妖魔</td><td class="fox">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td>○</td><td></td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td>△</td><td></td><td class="emphasizebold">悪霊</td>
 <td class="foxwin">(妖)</td><td></td><td>コピーする</td><td></td><td>1</td><td>○</td><td></td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒フェイカー<br>≒ガチャピン<br>ぬえ</td>
 <td class="detail">一度だけ生存者・死亡者全ての中から1人選び能力コピー　コピー時に自身に悪霊付加<br>コピーしている間は役職・陣営ごと移るが終了時には元の鵺に戻る<br>判定はコピーした役職　終了時もとに戻る</td>
@@ -2853,7 +3038,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">377</td><td class="villager">コスプレイヤー</td><td class="villager">装</td><td class="villager">村人</td><td class="villager">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>▲</td><td></td><td></td>
+<tr><td class="indexnum">377</td><td class="villager">コスプレイヤー</td><td class="villager">装</td><td class="villager">村人</td><td class="villager">役変化</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td></td><td></td>
 <td></td><td></td><td>コスプレする</td><td></td><td></td><td>○</td><td>○</td>
 <td class="explain">1日その役職になる<br>終了判定はその役職<br>人外になると戻らない</td><td class="explain"></td>
 <td class="detail">コスプレをして1日の間だけその役職になりきる村人<br>1日過ぎると元に戻り、再びコスプレ対象を選べる　戻るタイミングは夜明け<br>村人陣営以外の役職をコスプレすると、元に戻らずずっとその役職</td>
@@ -3490,7 +3675,7 @@
 <td class="supplement"></td>
 </tr>
 
-<tr><td class="indexnum">468</td><td class="bat">ガチャピン</td><td class="bat">緑</td><td class="bat">蝙蝠</td><td class="bat">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td>○</td><td></td><td></td>
+<tr><td class="indexnum">468</td><td class="bat">ガチャピン</td><td class="bat">緑</td><td class="bat">蝙蝠</td><td class="bat">役変化</td><td>○</td><td>○</td><td>×</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td>△</td><td></td><td></td>
 <td></td><td></td><td>挑戦する</td><td></td><td>1</td><td></td><td>○</td>
 <td class="explain">参加者全ての中から<br>1人選び能力コピー<br>判定変化、終了時戻る</td><td class="explain">≒フェイカー<br>≒鵺</td>
 <td class="detail">一度だけ参加者全ての中から1人選び能力コピー<br>コピーしている間は役職・陣営ごと移るが終了時には元のガチャピンに戻る<br>判定はコピーした役職　終了時もとに戻る</td>

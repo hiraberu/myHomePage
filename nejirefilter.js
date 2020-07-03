@@ -1,5 +1,6 @@
-function check_all( obj, name ){
+function check_all( obj ){
   var check_state = obj.checked;
+  const name = obj.name.slice( 0, -3 );
   const group = document.getElementsByName( name );
   for( var i = 0; i < group.length; i++ ){
     group[i].checked = check_state;
@@ -7,10 +8,10 @@ function check_all( obj, name ){
   //console.log(group);
 }
 
-function change_check( obj, name ){
+function change_check( obj ){
   var check_state = obj.checked;
-  const group = document.getElementsByName( name );
-  const all = document.getElementsByName( name + "all" );
+  const group = document.getElementsByName( obj.name );
+  const all = document.getElementsByName( obj.name + "all" );
   var cntCheck = 0;
   
   for( var i = 0; i < group.length; i++ ){
@@ -23,35 +24,44 @@ function change_check( obj, name ){
 }
 
 function execFilter(){
-  // ƒ`ƒFƒbƒN‚·‚éƒOƒ‹[ƒv‚ÌŽí—Þ
-  const check_kind = [ "camp", "fortune", "shaman", "count", "curse", "reverse_curse",
-   "becursed", "bereverse_cursed", "bite", "hang" ];
-  // ã‚ÌƒOƒ‹[ƒv‚»‚ê‚¼‚ê‚Ì—ñ”Ô†
-  const check_row = [ 3, 5, 6, 7, 8, 9, 10, 11, 12, 13 ];
-  // RegExp‚Åƒ`ƒFƒbƒN‚·‚é•¶Žš—ñ
-  var re = [ "", "", "", "", "", "", "", "", "", "" ];
-  // ƒtƒBƒ‹ƒ^‚ð‚©‚¯‚é‚©(‚·‚×‚Ä‚Éƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚½‚ç‚©‚¯‚È‚¢)
-  var enable_filter = [ true, true, true, true, true, true, true, true, true, true ];
-  // ‹ó”’ƒZƒ‹‚ð”²‚«o‚·‚©(‹ó”’‚Éƒ`ƒFƒbƒN‚ª‚ ‚ê‚Î”²‚«o‚·)
-  var enable_nullcell = [ false, false, false, false, false, false, false, false, false, false ];
-  // ‚Ç‚ê‚©‚ÌƒOƒ‹[ƒv‚Å‚·‚×‚Ä‚Ìƒ`ƒFƒbƒN‚ªŠO‚ê‚Ä‚¢‚½‚ç‘S•”•\Ž¦‚µ‚È‚¢‚Ì‚ÅA‚»‚Ìƒtƒ‰ƒO
+  // ãƒã‚§ãƒƒã‚¯ã™ã‚‹ã‚°ãƒ«ãƒ¼ãƒ—ã®ç¨®é¡ž
+  const check_kind = [
+    "camp", "fortune", "shaman", "count", "curse",
+    "reverse_curse", "becursed", "bereverse_cursed", "bite", "hang",
+    "blocked", "block", "alive", "revive", "vote",
+    "change", "show", "sub", "window", "dayafter", "nums" ];
+  // ä¸Šã®ã‚°ãƒ«ãƒ¼ãƒ—ãã‚Œãžã‚Œã®åˆ—ç•ªå·
+  const check_row = [
+    3, 5, 6, 7, 8,
+    9, 10, 11, 12, 13,
+    14, 15, 16, 17, 18,
+    19, 20, 21, 22, 24, 26 ];
+  // RegExpã§ãƒã‚§ãƒƒã‚¯ã™ã‚‹æ–‡å­—åˆ—
+  var re = Array( check_kind.length ); re.fill("");
+  // ãƒ•ã‚£ãƒ«ã‚¿ã‚’ã‹ã‘ã‚‹ã‹(ã™ã¹ã¦ã«ãƒã‚§ãƒƒã‚¯ãŒå…¥ã£ã¦ã„ãŸã‚‰ã‹ã‘ãªã„)
+  var enable_filter = Array( check_kind.length ); enable_filter.fill( true );
+  // ç©ºç™½ã‚»ãƒ«ã‚’æŠœãå‡ºã™ã‹(ç©ºç™½ã«ãƒã‚§ãƒƒã‚¯ãŒã‚ã‚Œã°æŠœãå‡ºã™)
+  var enable_nullcell = Array( check_kind.length ); enable_nullcell.fill( false );
+  // ã©ã‚Œã‹ã®ã‚°ãƒ«ãƒ¼ãƒ—ã§ã™ã¹ã¦ã®ãƒã‚§ãƒƒã‚¯ãŒå¤–ã‚Œã¦ã„ãŸã‚‰å…¨éƒ¨è¡¨ç¤ºã—ãªã„ã®ã§ã€ãã®ãƒ•ãƒ©ã‚°
   var hide_all = false;
   var checkstr = "";
   var table = document.getElementById( "roletable" );
 
-  // ŠeƒOƒ‹[ƒv‚ÅARegExp‚Åƒ`ƒFƒbƒN‚·‚é•¶Žš—ñ‚ðì¬‚·‚é
+  //console.log(check_row.length);
+  // å„ã‚°ãƒ«ãƒ¼ãƒ—ã§ã€RegExpã§ãƒã‚§ãƒƒã‚¯ã™ã‚‹æ–‡å­—åˆ—ã‚’ä½œæˆã™ã‚‹
   for( var g = 0; g < check_kind.length; g++ ){
     checkstr = "";
+    //console.log( check_kind[ g ] );
     enable_nullcell[ g ] = false;
-    // u‚·‚×‚Äv‚Éƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚éŽž‚Í‘S•”•\Ž¦‚·‚é‚Ì‚ÅAƒ`ƒFƒbƒN•¶Žš—ñì¬‚µ‚È‚¢
+    // ã€Œã™ã¹ã¦ã€ã«ãƒã‚§ãƒƒã‚¯ãŒå…¥ã£ã¦ã„ã‚‹æ™‚ã¯å…¨éƒ¨è¡¨ç¤ºã™ã‚‹ã®ã§ã€ãƒã‚§ãƒƒã‚¯æ–‡å­—åˆ—ä½œæˆã—ãªã„
     if( document.getElementsByName( check_kind[ g ] + "all" )[0].checked ){
       enable_filter[ g ] = false;
     }else{
-      // ‚»‚ÌƒOƒ‹[ƒv‚ÌƒtƒBƒ‹ƒ^‚É—p‚¢‚é•¶Žš—v‘f‚ðŽæ“¾
+      // ãã®ã‚°ãƒ«ãƒ¼ãƒ—ã®ãƒ•ã‚£ãƒ«ã‚¿ã«ç”¨ã„ã‚‹æ–‡å­—è¦ç´ ã‚’å–å¾—
       var element = document.getElementsByName( check_kind[ g ] );
       for( var i = 0; i < element.length; i++ ){
         if( element[ i ].checked ){
-          // ‹ó”’‚¾‚¯‚ÍRegExp‚Å”²‚«o‚¹‚È‚¢‚Ì‚Å•Êˆ—‚É‚·‚é
+          // ç©ºç™½ã ã‘ã¯RegExpã§æŠœãå‡ºã›ãªã„ã®ã§åˆ¥å‡¦ç†ã«ã™ã‚‹
           if( "" == element[ i ].value ){
             enable_nullcell[ g ] = true;
           }else{
@@ -59,49 +69,73 @@ function execFilter(){
           }
         }
       }
-      // ƒ`ƒFƒbƒN‚ª1‚Â‚à“ü‚Á‚Ä‚¢‚È‚©‚Á‚½ê‡A‚·‚×‚Ä”ñ•\Ž¦‚É‚·‚éƒtƒ‰ƒO‚ð—§‚Ä‚ÄAŠm”FI—¹
-      if( checkstr.length == 0 ){
-        hide_all = true;
-        break;
+      // ãƒã‚§ãƒƒã‚¯ãŒ1ã¤ã‚‚å…¥ã£ã¦ã„ãªã‹ã£ãŸå ´åˆã€ã™ã¹ã¦éžè¡¨ç¤ºã«ã™ã‚‹ãƒ•ãƒ©ã‚°ã‚’ç«‹ã¦ã¦ã€ç¢ºèªçµ‚äº†
+      if( 0 == checkstr.length ){
+        if( false == enable_nullcell[ g ] ){
+          hide_all = true;
+          break;
+        }else{
+          re[ g ] = "";
+        }
       }else{
-        checkstr = checkstr.slice( 0, -1 ); // ÅŒã‚Ì"|"‚ðÁ‚·
-        re[ g ] = new RegExp( checkstr ); // RegExp‚Ì•¶Žš—ñÝ’è
+        checkstr = checkstr.slice( 0, -1 ); // æœ€å¾Œã®"|"ã‚’æ¶ˆã™
+        re[ g ] = new RegExp( checkstr ); // RegExpã®æ–‡å­—åˆ—è¨­å®š
       }
-      console.log(checkstr);
-      console.log(enable_nullcell[ g ] );
+      //console.log(checkstr);
+      //console.log(enable_nullcell[ g ] );
     }
   }
-  // RegExp‚Ìì¬I—¹
+  // RegExpã®ä½œæˆçµ‚äº†
 
-  // hide_all==true‚Ìê‡‚ÍA‚·‚×‚Ä”ñ•\Ž¦
+  // hide_all==trueã®å ´åˆã¯ã€ã™ã¹ã¦éžè¡¨ç¤º
   if( hide_all ){
     for( var r = 0; r < table.children[ 1 ].children.length; r++ ){
-      var row = table.children[ 1 ].children[ r ]; // r”Ô–Ú‚Ìtr
+      var row = table.children[ 1 ].children[ r ]; // rç•ªç›®ã®tr
       row.style.display = "none";
     }
+    document.getElementById( "showcount" ).innerHTML = "0å½¹è·";
   }else{
-    // Šes‚É‘Î‚µ‚ÄA•\Ž¦/”ñ•\Ž¦‚ðŒ©‚Ä‚¢‚­
+    // å„è¡Œã«å¯¾ã—ã¦ã€è¡¨ç¤º/éžè¡¨ç¤ºã‚’è¦‹ã¦ã„ã
+    var cnt = 0;
     for( var r = 0; r < table.children[ 1 ].children.length; r++ ){
-      var row = table.children[ 1 ].children[ r ]; // r”Ô–Ú‚Ìtr
+      var row = table.children[ 1 ].children[ r ]; // rç•ªç›®ã®tr
       var visible = true;
-      // Šes‚Ìƒ`ƒFƒbƒN‚·‚é€–Ú‚ð‡‚Éƒ`ƒFƒbƒN
+      // å„è¡Œã®ãƒã‚§ãƒƒã‚¯ã™ã‚‹é …ç›®ã‚’é †ã«ãƒã‚§ãƒƒã‚¯
       for( var g = 0; g < check_kind.length; g++ ){
-        if( enable_filter[ g ] == false ){
-          // u‚·‚×‚Äv‚Éƒ`ƒFƒbƒN‚ª“ü‚Á‚Ä‚¢‚éê‡‚Íƒ`ƒFƒbƒN•s—v
-        }else
-        if( enable_nullcell[ g ] && "" == row.children[ check_row[ g ] ].innerHTML ){
-          // ‹ó”’‚ð•\Ž¦‚·‚éÝ’è‚ÅAƒZƒ‹‚Ì’†g‚ª‹ó”’‚Ìê‡‚Í•\Ž¦(ƒtƒ‰ƒO‚»‚Ì‚Ü‚Ü)
-        }else
-        if( re[ g ].test( row.children[ check_row[ g ] ].innerHTML ) ){
-          // ƒ`ƒFƒbƒN•¶Žš—ñ‚ª“ü‚Á‚Ä‚¢‚½ê‡‚Í•\Ž¦(ƒtƒ‰ƒO‚»‚Ì‚Ü‚Ü)
+        if( 18 != g ){
+          if( enable_filter[ g ] == false ){
+            // ã€Œã™ã¹ã¦ã€ã«ãƒã‚§ãƒƒã‚¯ãŒå…¥ã£ã¦ã„ã‚‹å ´åˆã¯ãƒã‚§ãƒƒã‚¯ä¸è¦
+          }else
+          if( enable_nullcell[ g ] && "" == row.children[ check_row[ g ] ].innerHTML ){
+            // ç©ºç™½ã‚’è¡¨ç¤ºã™ã‚‹è¨­å®šã§ã€ã‚»ãƒ«ã®ä¸­èº«ãŒç©ºç™½ã®å ´åˆã¯è¡¨ç¤º(ãƒ•ãƒ©ã‚°ãã®ã¾ã¾)
+          }else
+          if( "" != re[ g ] && re[ g ].test( row.children[ check_row[ g ] ].innerHTML ) ){
+            // ãƒã‚§ãƒƒã‚¯æ–‡å­—åˆ—ãŒå…¥ã£ã¦ã„ãŸå ´åˆã¯è¡¨ç¤º(ãƒ•ãƒ©ã‚°ãã®ã¾ã¾)
+          }else{
+            // ä¸Šè¨˜ä»¥å¤–ã¯éžè¡¨ç¤º
+            visible = false;
+            break;
+          }
         }else{
-          // ã‹LˆÈŠO‚Í”ñ•\Ž¦
-          visible = false;
-          break;
+          if( enable_filter[ g ] == false ){
+            // ã€Œã™ã¹ã¦ã€ã«ãƒã‚§ãƒƒã‚¯ãŒå…¥ã£ã¦ã„ã‚‹å ´åˆã¯ãƒã‚§ãƒƒã‚¯ä¸è¦
+          }else
+          if( enable_nullcell[ g ] && ( "" == row.children[ check_row[ g ] ].innerHTML && "" == row.children[ check_row[ g ] + 1 ].innerHTML ) ){
+            // ç©ºç™½ã‚’è¡¨ç¤ºã™ã‚‹è¨­å®šã§ã€ã‚»ãƒ«ã®ä¸­èº«ãŒç©ºç™½ã®å ´åˆã¯è¡¨ç¤º(ãƒ•ãƒ©ã‚°ãã®ã¾ã¾)
+          }else
+          if( "" != re[ g ] && ( re[ g ].test( row.children[ check_row[ g ] ].innerHTML ) || re[ g ].test( row.children[ check_row[ g ] + 1 ].innerHTML ) ) ){
+            // ãƒã‚§ãƒƒã‚¯æ–‡å­—åˆ—ãŒå…¥ã£ã¦ã„ãŸå ´åˆã¯è¡¨ç¤º(ãƒ•ãƒ©ã‚°ãã®ã¾ã¾)
+          }else{
+            // ä¸Šè¨˜ä»¥å¤–ã¯éžè¡¨ç¤º
+            visible = false;
+            break;
+          }
         }
       }
       row.style.display = visible ? "" : "none";
+      if( visible ){ cnt++; }
     }
+    document.getElementById( "showcount" ).innerHTML = cnt + "å½¹è·";
   }
 }
 
