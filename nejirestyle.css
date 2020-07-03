@@ -81,6 +81,7 @@ padding : 1px 4px;
   border-collapse: collapse;         /* 境界線結合 */
   border-spacing : 0;                /* 罫線間余白 */
   font-size      : 9pt;              /* 文字サイズ */
+  table-layout: fixed;
 }
  /* --- ヘッダーのスタイル指定 ------------------- */
 #roletable th {
