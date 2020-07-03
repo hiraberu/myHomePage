@@ -1,6 +1,9 @@
+label {
+  white-space: nowrap;
+}
 
  /* --- フィルタチェックテーブル全体のスタイル指定 ------- */
-#filterlist {
+.filterlist {
   width          : 100%;
   text-align:center;
   border-collapse: collapse;         /* 境界線結合 */
@@ -8,12 +11,18 @@
   /*font-size      : 9pt;*/              /* 文字サイズ */
 }
 
+.filterlist td:first-child{
+  text-align:center;
+  padding : 0px 2px;
+  white-space   : nowrap;
+}
+
  /* --- 明細のスタイル指定 ----------------------- */
-#filterlist td {
+.filterlist td {
   text-align    : left;            /* 文字位置   */
   /*padding       : 1px 0px;*/             /* 余白       */
   border        : 1px #666666 solid; /* 罫線       */
-  white-space   : nowrap;
+  /*white-space   : nowrap;*/
 }
 
 .indexnum{
@@ -81,7 +90,7 @@ padding : 1px 4px;
   border-collapse: collapse;         /* 境界線結合 */
   border-spacing : 0;                /* 罫線間余白 */
   font-size      : 9pt;              /* 文字サイズ */
-  table-layout: fixed;
+  /*table-layout: fixed;*/
 }
  /* --- ヘッダーのスタイル指定 ------------------- */
 #roletable th {

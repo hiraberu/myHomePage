@@ -1,3 +1,9 @@
+function show_filter( obj ){
+  const name = "check_" + obj.value;
+  var row = document.getElementById( name );
+  row.style.display = obj.checked ? "" : "none";
+}
+
 function check_all( obj ){
   var check_state = obj.checked;
   const name = obj.name.slice( 0, -3 );
@@ -47,12 +53,14 @@ function execFilter(){
   var checkstr = "";
   var table = document.getElementById( "roletable" );
 
-  //console.log(check_row.length);
   // 各グループで、RegExpでチェックする文字列を作成する
   for( var g = 0; g < check_kind.length; g++ ){
     checkstr = "";
-    //console.log( check_kind[ g ] );
     enable_nullcell[ g ] = false;
+    // フィルタが表示されていない(フィルタの項目にチェックが入っていない)場合はフィルタOFFなので、チェック文字列作成しない
+    if( false == document.getElementsByName( check_kind[ g ] + "filter" )[0].checked ){
+      enable_filter[ g ] = false;
+    }else
     // 「すべて」にチェックが入っている時は全部表示するので、チェック文字列作成しない
     if( document.getElementsByName( check_kind[ g ] + "all" )[0].checked ){
       enable_filter[ g ] = false;
@@ -81,8 +89,6 @@ function execFilter(){
         checkstr = checkstr.slice( 0, -1 ); // 最後の"|"を消す
         re[ g ] = new RegExp( checkstr ); // RegExpの文字列設定
       }
-      //console.log(checkstr);
-      //console.log(enable_nullcell[ g ] );
     }
   }
   // RegExpの作成終了
@@ -137,5 +143,12 @@ function execFilter(){
     }
     document.getElementById( "showcount" ).innerHTML = cnt + "役職";
   }
+  /*
+  // 列の幅を出してみた
+  var row = table.children[ 1 ].children[ 0 ]; // r番目のtr
+  for( var c = 0; c < 33; c++ ){
+    console.log( c + "列目：" + row.children[ c ].getBoundingClientRect().width );
+  }
+  */
 }
 
