@@ -109,3 +109,63 @@ padding : 1px 4px;
   white-space   : nowrap;
 }
 
+.sticky_table th {
+  /* 縦スクロール時に固定する */
+  position: -webkit-sticky;
+  position: sticky;
+  /* 高さが変わらないよう改行させない */
+  white-space: nowrap;
+}
+
+.sticky_table th:not(.topfix)::before{
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border-top: 1px #666666 solid;
+  border-bottom: 1px #666666 solid;
+}
+
+/* 1番目の行(#,役職のセル除く) */
+.sticky_table tr:nth-child(1) th:not(.topfix) {
+  top: 0;
+  z-index: 2;
+}
+
+/* 「#」「役職」のセル */
+.topfix {
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.topfix::before{
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border : 1px #666666 solid;
+}
+
+
+/* 役職名の列 */
+.sticky_table td:nth-child(2) {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+.sticky_table td:nth-child(2)::before {
+  content : "" ;
+  position : absolute ;
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  border : 1px #666666 solid;
+}
