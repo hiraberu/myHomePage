@@ -141,7 +141,7 @@ function execFilter(){
       row.style.display = visible ? "" : "none";
       if( visible ){ cnt++; }
     }
-    document.getElementById( "showcount" ).innerHTML = cnt + "役職";
+    document.getElementById( "showcount" ).innerHTML = "(" + cnt + ")";
   }
   /*
   // 列の幅を出してみた
