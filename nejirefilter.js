@@ -9,13 +9,11 @@ function check_all( obj ){
   const name = obj.name.slice( 0, -3 );
   const group = document.getElementsByName( name );
   for( var i = 0; i < group.length; i++ ){
-    group[i].checked = check_state;
+    group[ i ].checked = check_state;
   }
-  //console.log(group);
 }
 
 function change_check( obj ){
-  var check_state = obj.checked;
   const group = document.getElementsByName( obj.name );
   const all = document.getElementsByName( obj.name + "all" );
   var cntCheck = 0;
@@ -24,9 +22,8 @@ function change_check( obj ){
     if( group[i].checked ){
       cntCheck++;
     }
-    all[0].checked = ( cntCheck === group.length );
+    all[ 0 ].checked = ( cntCheck === group.length );
   }
-  //console.log( cntCheck );
 }
 
 /* チェックボックスのチェックによるフィルタ */
