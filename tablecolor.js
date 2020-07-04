@@ -1,45 +1,41 @@
 // とりあえずクリックはなし
-/*
-function roletableClick(event){
-  var wOut = '';
+function roletableClick( event ){
+  var output = '';
  
-  var wElement = (event.srcElement || event.target);
+  var element = ( event.srcElement || event.target );
  
   // --- TDのみ対象とする --------------------------
-  if (wElement.tagName.toUpperCase() == 'TD'){
+  if ( element.tagName.toUpperCase() == "TD" ){
     // --- 行・列・値の取得＆編集 ------------------
-    wOut += '行:' + wElement.cellIndex + '&nbsp;&nbsp;';
-    wOut += '列:' + wElement.parentNode.sectionRowIndex + '&nbsp;&nbsp;';
-    wOut += '値:' + wElement.innerHTML;
+    output += "行:" + element.cellIndex + "  ";
+    output += "列:" + element.parentNode.sectionRowIndex + "  ";
+    output += "値:" + element.innerHTML;
 
-    console.log( wOut );
+    console.log( output );
   }
 }
-*/
 
-function roletableMouseMove(event){
+function roletableMouseMove( event ){
   // 列タイトルの色付けをする(列全部の色付けすると重くなる気がした、項目が分かればよい)
-  var wElement = (event.srcElement || event.target);
+  var element = ( event.srcElement || event.target );
 
-  if (wElement.tagName.toUpperCase() == 'TD'){
-    // --- TDの位置を取得 ----------
-    var wTDindex = wElement.cellIndex;
-    if( wTDindex < 5 ){ return; }
+  if ( element.tagName.toUpperCase() == "TD" ){
+    if( element.cellIndex < 5 ){ return; }
 
-    var wTABLE = wElement.parentNode.parentNode.parentNode;
-    wTABLE.rows[ 0 ].cells[ wTDindex ].style.backgroundColor = '#add8e6';
+    var table = element.parentNode.parentNode.parentNode;
+    table.rows[ 0 ].cells[ element.cellIndex ].style.backgroundColor = "#add8e6";
   }
 }
 
-function roletableMouseOut(event){
-  var wElement = (event.srcElement || event.target);
-  var wTABLE = wElement.parentNode.parentNode.parentNode;
-  var wTR    = wTABLE.rows;
+function roletableMouseOut( event ){
+  var element = ( event.srcElement || event.target );
+  var table = element.parentNode.parentNode.parentNode;
  
-  if(wTR === undefined){return;}
+  if( table.rows === undefined ){ return; }
+
+  var row  = table.rows[ 0 ];
   
-  for (var j = 0; j < wTR[ 0 ].cells.length; j++){
-    var wTD = wTR[ 0 ].cells[ j ];
-    wTD.style.backgroundColor = '';
+  for (var j = 0; j < row.cells.length; j++){
+    row.cells[ j ].style.backgroundColor = "";
   }
 }

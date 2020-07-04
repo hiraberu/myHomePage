@@ -31,11 +31,17 @@
 窓の括弧()は、窓あり設定の場合のみ窓が付く役で、<br>括弧無しは設定に関わらず窓が付く役です<br>
 </p>
 
+<hr class="splitline"><!-- 区切り線 -->
+
+<p>任意フィルタ：<input type="text" id="searchstr" maxlength="8" size="20" onkeydown="checkEnter()"> 
+<input type="button" value="実行" onclick="execStringFilter()"> 
+<input type="button" value="すべて表示" onclick="execResetFilter()"></p>
+
 <table class="filterlist">
 <tr>
 <td>
 フィルタ<br>
-<input type="button" value="実行" id="filterbutton" onclick="execFilter()">
+<input type="button" value="実行" onclick="execFilter()">
 
 </td>
 <td>

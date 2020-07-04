@@ -29,6 +29,7 @@ function change_check( obj ){
   //console.log( cntCheck );
 }
 
+/* チェックボックスのチェックによるフィルタ */
 function execFilter(){
   // チェックするグループの種類
   const check_kind = [
@@ -99,7 +100,7 @@ function execFilter(){
       var row = table.children[ 1 ].children[ r ]; // r番目のtr
       row.style.display = "none";
     }
-    document.getElementById( "showcount" ).innerHTML = "0役職";
+    document.getElementById( "showcount" ).innerHTML = "(0)";
   }else{
     // 各行に対して、表示/非表示を見ていく
     var cnt = 0;
@@ -152,3 +153,53 @@ function execFilter(){
   */
 }
 
+/* 任意文字列のフィルタ */
+function execStringFilter(){
+  // RegExpでチェックする文字列
+  var checkstr = document.getElementById( "searchstr" ).value;
+  console.log( checkstr );
+  if( "" == checkstr ){ return; }
+  const re = new RegExp( checkstr ); // RegExpの文字列設定
+
+  const table = document.getElementById( "roletable" );
+  const show_detail = document.getElementById( "detail_check" ).checked;
+  const show_supplement = document.getElementById( "supplement_check" ).checked;
+
+  // 各行に対して、表示/非表示を見ていく
+  var cnt = 0;
+  for( var r = 0; r < table.children[ 1 ].children.length; r++ ){
+    var row = table.children[ 1 ].children[ r ]; // r番目のtr
+    var visible = false;
+
+    // 各行のチェックする項目を順にチェック
+    for( var c = 0; c < row.cells.length; c++ ){
+      if( false == show_detail && 31 == c ){
+      }else if( false == show_supplement && 32 == c ){
+      }else if( re.test( row.cells[ c ].innerHTML ) ){
+        visible = true;
+        break;
+      }
+    }
+    row.style.display = visible ? "" : "none";
+    if( visible ){ cnt++; }
+  }
+  document.getElementById( "showcount" ).innerHTML = "(" + cnt + ")";
+}
+
+/* すべて表示(フィルタ解除) */
+function execResetFilter(){
+  const table = document.getElementById( "roletable" );
+
+  for( var r = 0; r < table.children[ 1 ].children.length; r++ ){
+    var row = table.children[ 1 ].children[ r ]; // r番目のtr
+    row.style.display = "";
+  }
+  document.getElementById( "showcount" ).innerHTML = "(500)";
+}
+
+/* 任意フィルタの入力ででenterが押された場合、実行する */
+function checkEnter(){
+  if( 13 == window.event.keyCode ){
+    execStringFilter();
+  }
+}
