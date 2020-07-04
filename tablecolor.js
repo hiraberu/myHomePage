@@ -1,3 +1,5 @@
+// とりあえずクリックはなし
+/*
 function roletableClick(event){
   var wOut = '';
  
@@ -13,9 +15,10 @@ function roletableClick(event){
     console.log( wOut );
   }
 }
+*/
 
 function roletableMouseMove(event){
-  // 列の色付けをする(行とセルの色付けはCSSで行っている)
+  // 列タイトルの色付けをする(列全部の色付けすると重くなる気がした、項目が分かればよい)
   var wElement = (event.srcElement || event.target);
 
   if (wElement.tagName.toUpperCase() == 'TD'){
@@ -24,20 +27,7 @@ function roletableMouseMove(event){
     if( wTDindex < 5 ){ return; }
 
     var wTABLE = wElement.parentNode.parentNode.parentNode;
-    var wTR    = wTABLE.rows;
- 
-    for (var i = 0; i < wTR.length; i++) {
-      for (var j = 0; j < wTR[i].cells.length; j++){
-        var wTD = wTR[i].cells[j];
-        //if(wTD.tagName.toUpperCase() == 'TD'){
-          // --- 現在の選択列のみ色が付いてなかったら色付け ----
-          var refstyle = document.defaultView.getComputedStyle( wTD, null );
-          var wBg = '';
-          if(j == wTDindex ){wBg = '#add8e6';}
-          wTD.style.backgroundColor = wBg;
-        //}
-      }
-    }
+    wTABLE.rows[ 0 ].cells[ wTDindex ].style.backgroundColor = '#add8e6';
   }
 }
 
@@ -47,13 +37,9 @@ function roletableMouseOut(event){
   var wTR    = wTABLE.rows;
  
   if(wTR === undefined){return;}
- 
-  for (var i = 0; i < wTR.length; i++) {
-    for (var j = 0; j < wTR[i].cells.length; j++){
-      var wTD = wTR[i].cells[j];
-      //if(wTD.tagName.toUpperCase() == 'TD'){
-        wTD.style.backgroundColor = '';
-      //}
-    }
+  
+  for (var j = 0; j < wTR[ 0 ].cells.length; j++){
+    var wTD = wTR[ 0 ].cells[ j ];
+    wTD.style.backgroundColor = '';
   }
 }

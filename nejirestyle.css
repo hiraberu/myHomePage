@@ -180,14 +180,8 @@ padding : 1px 4px;
   border : 1px #666666 solid;
 }
 
-
- /* --- 明細のｎ行にカーソルが乗ったとき ---------- */
-#roletable tr:hover {
-  background-color    : #add8e6 /*!important*/;           /* 背景色    */
-}
  /* --- セルにカーソルが乗ったとき --------------- */
-#roletable td:hover {
-  background-color    : #ff7f50 !important;           /* 背景色    */
-  color         : #ffffff !important;           /* 文字色    */
+#roletable td:not(:nth-child(-n+5)):hover {
+  background-color    : #add8e6;           /* 背景色    */
 }
 </style>
