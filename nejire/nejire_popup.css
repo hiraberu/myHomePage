@@ -1,0 +1,1501 @@
+* {
+	font-size		: 100%;
+	line-height		: 140%;
+}
+
+
+body {
+	background		: #000;
+	color			: #ddd;
+	margin			: 8px 8px;
+	padding			: 0;
+}
+
+.rolelink{
+  white-space   : nowrap;
+}
+
+.sublink{
+  white-space   : nowrap;
+}
+
+.credit {
+	font-size		: 120%;
+}
+.large_doc {
+	font-size		: 160%;
+}
+a:visited, a:link {
+	color			: #bcb;
+}
+
+a:hover {
+	color			: #fee;
+}
+a:visited.vid, a:link.vid {
+	color			: #ddd;
+	text-decoration	: none;
+}
+a:hover.vid {
+	text-decoration	: underline;
+}
+.love {
+	color			: #f6b;
+}
+.win_res {
+	color			: #e00;
+}
+.lose_res {
+	color			: #00e;
+}
+.announce {
+	border			: 1px solid #445;
+	font-size		: 90%;
+	margin			: 6px 0;
+	padding			: 4px;
+	width			: 530;
+}
+.alllog_announce {
+	border			: 1px solid #554;
+	color			: #994;
+	font-size		: 90%;
+	margin			: 6px 0;
+	padding			: 4px;
+	width			: 530;
+}
+.time_announce {
+	border			: 1px solid #644;
+	color			: #c44;
+	font-size		: 90%;
+	margin			: 6px 0;
+	padding			: 4px;
+	width			: 530;
+}
+.win {
+	color			: #c44;
+	font-size		: 130%;
+	padding			: 4px;
+}
+.whisper {
+	color			: #b66;
+}
+.telepathy {
+	color			: #a69abd;
+}
+.fortune {
+	color			: #96b;
+}
+.fortune_id {
+	color			: #b99;
+}
+.guard {
+	color			: #5a5;
+}
+.safety {
+	color			: #ddd;
+}
+.spirit {
+	color			: #69b;
+}
+.free {
+	color			: #b96;
+}
+.stigmata {
+	color			: #8a2;
+}
+.gammer {
+	color			: #9a8;
+}
+.cupid {
+	color			: #b69;
+}
+.human {
+	color			: #2bb;
+	line-height		: 110%;
+}
+.wolf {
+	color			: #c44;
+	line-height		: 110%;
+}
+.vote, .conf, .flash {
+	color			: #aa6;
+}
+.char_name {
+	color			: #bbb;
+	font-size		: 180%;
+}
+.comp_vote {
+	color			: #dd2;
+	font-weight		: 700;
+	line-height		: 110%;
+}
+.del {
+	color			: #911;
+	font-weight		: 700;
+	line-height		: 110%;
+}
+input.submit {
+	background-color: #444;
+	border			: 1px #aaa solid;
+	color			: #ddd;
+	width			: 100px;
+}
+input.submit2 {
+	background-color: #444;
+	border			: 1px #aaa solid;
+	color			: #ddd;
+}
+input.pass {
+	font-size		: 100%;
+	height			: 24px;
+	width			: 86px;
+}
+select {
+	font-size		: 90%;
+	width			: 165px;
+}
+select.edit {
+	width			: 150px;
+}
+select.postpos {
+	width			: auto;
+}
+select.testament_id {
+	width			: auto;
+}
+.action_text {
+	height			: 23px;
+	width			: 90%;
+}
+.monospace {
+	font-family		: monospace;
+}
+table.main {
+	background		: #000;
+	border			: 1px;
+	width			: 770px;
+}
+table.menu td div {
+	background-color: #444;
+	border			: 1px #666 solid;
+	color			: #ccc;
+	font-size		: 90%;
+	margin			: 0 20px 4px 0;
+	padding			: 2px;
+	text-align		: center;
+	width			: 9em;
+}
+table.mkvil_index {
+	font-size		: 90%;
+}
+table.vil_index {
+	border-collapse	: collapse;
+	color			: #bbb;
+	font-size		: 80%;
+}
+table.vil_index td {
+	border			: 1px #444 solid;
+	padding			: 4px;
+	white-space		: nowrap;
+}
+table.vil_index td.vil_title {
+	background-color: #444;
+	color			: #ccc;
+	font-size		: 130%;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+table.vil_index td.vil_title2 {
+	background-color: #444;
+	color			: #ccc;
+	font-size		: 110%;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+table.vil_index td.space {
+	border			: 0;
+	height			: 20px;
+	padding			: 2px 4px;
+}
+table.char, input, .caption {
+	font-size		: 90%;
+}
+table.list {
+	border			: 3px solid #444;
+	font-size		: 80%;
+	margin			: 20px 0 0;
+	width			: 200px;
+	display			: none;
+}
+table.list td {
+	color			: #bbb;
+	line-height		: 110%;
+	text-align		: left;
+}
+table.list td a:visited, table.list td a:link {
+	color			: #bbb;
+	line-height		: 110%;
+}
+table.list td a:hover {
+	color			: #fff;
+	line-height		: 110%;
+}
+table.list th {
+	background-color: #444;
+	border			: 1px solid #555;
+	padding			: 3px 6px;
+}
+img {
+	border			: 0;
+}
+sizuof {
+	heigt			: 30;
+	width			: 30;
+}
+p {
+	margin			: 12px 0 16px;
+	text-indent		: 1em;
+}
+h2 {
+	background-color: #444;
+	border			: #666 solid;
+	border-width	: 1px 1px 1px 1px;
+	color			: #ccc;
+	font-size		: 130%;
+	margin			: 0;
+	padding			: 2px 8px;
+	width			: 530;
+}
+.loud {
+	color			: #911;
+	display			: inline;
+	font-size		: 120%;
+	font-weight		: 700;
+}
+
+table.message {
+	border-collapse	: collapse;
+	border-spacing	: 0;
+	margin			: 0 0 10px;
+	width			: 540px;
+}
+table.message td, table.vote_t td {
+	padding			: 0;
+}
+table.message td a:visited, table.message td a:link {
+	color			: #bbb;
+	font-size		: 80%;
+	text-decoration	: none;
+}
+table.message td a:hover {
+	color			: #fff;
+	text-decoration	: underline;
+}
+table.message td.howl, table.message span.char_name, table.message span.mes_number, table.message span.mes_res {
+	color			: #bbb;
+	font-size		: 80%;
+}
+table.list img:hover {
+	cursor			: pointer;
+}
+table.message span.mes_number:hover, table.message span.mes_res:hover, table.list span.list_switch {
+	text-decoration	: underline;
+	cursor			: pointer;
+	color			: #fff;
+}
+table.message span.mes_res {
+	display			: none;
+}
+table.message img:hover {
+	cursor			: pointer;
+}
+table.message td a:visited.say, table.message td a:link.say, table.message td a:visited.url, table.message td a:link.url, .popsay {
+	color			: #200;
+	font-size		: 100%;
+	text-decoration	: underline;
+}
+td span.cut a:visited.say, td span.cut a:link.say, td span.cut a:visited.url, td span.cut a:link.url, .cut {
+	color			: #cc9;
+}
+.mes_say {
+	background		: #fff url(../img/say00.jpg) no-repeat right center;
+	padding			: 8px 0 0;
+	width			: 16px;
+}
+.mes_say_body0 {
+	background		: #fff url(../img/say05.jpg) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_say_body1 {
+	background		: #fff url(../img/say06.jpg) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+/* öëÇ´ */
+.mes_whisper {
+	background		: url(../img/whisper00.jpg) no-repeat right  center;
+	padding			: 8px 0 0;
+	width			: 16px;
+}
+.mes_whisper_body0 {
+	background		: #f77 url(../img/whisper05.jpg) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_whisper_body1 {
+	background		: #f77 url(../img/whisper06.jpg) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+/* ïÊâ∫ */
+.mes_groan {
+	background		: url(../img/groan00.jpg) no-repeat right  center;
+	padding			: 8px 0 0;
+	width			: 16px;
+}
+.mes_groan_body0 {
+	background		: #9fb7cf url(../img/groan05.jpg) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_groan_body1 {
+	background		: #9fb7cf url(../img/groan06.jpg) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+/* ì∆ÇËåæ */
+.mes_think {
+	background		: url(../img/think00.jpg) no-repeat right  center;
+	padding			: 8px 0 0;
+	width			: 16px;
+}
+.mes_think_body0 {
+	background		: #939393 url(../img/think05.jpg) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_think_body1 {
+	background		: #939393 url(../img/think06.jpg) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+/* äœêÌ */
+.mes_watch {
+	background		: #DEB887 url(../img/watch00.png) no-repeat right  center;
+	padding			: 8px 0 0;
+	width			: 16px;
+}
+.mes_watch_body0 {
+	background		: #DEB887 url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_watch_body1 {
+	background		: #DEB887 url(../img/say06.png) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+.action_box {
+	border-collapse	: collapse;
+	margin			: 20px 0;
+	width			: 520px;
+}
+.action_body {
+	color			: #000;
+	padding			: 2px;
+}
+.action_balloon {
+	background		: #fff;
+	width			: 100%;
+}
+.action_textarea {
+	font-size		: 10pt;
+	line-height		: 100%;
+	width			: 100%;
+}
+.whisper_textarea {
+	background		: #fcc;
+	font-size		: 10pt;
+	line-height		: 100%;
+	width			: 100%;
+}
+.groan_textarea {
+	background		: #bde;
+	font-size		: 10pt;
+	line-height		: 100%;
+	width			: 100%;
+}
+span.today {
+	color			: #888;
+}
+.time {
+	color			: #888;
+	font-size		: 80%;
+}
+.act_time {
+	color			: #888;
+	font-size		: 90%;
+}
+.act_toggle {
+	background-color: #444;
+	border			: 1px #aaa solid;
+	color			: #ddd;
+	cursor			: pointer;
+	font-size		: 90%;
+	margin			: 0 0 0 40px;
+	padding			: 1px 4px;
+}
+.right {
+	text-align		: right;
+}
+.left, table.vil_main {
+	text-align		: left;
+}
+.center {
+	text-align		: center;
+}
+.small_voice {
+	font-size		: 9pt;
+	line-height		: 100%;
+}
+div#ipop, div#ipop_dummy, div#ipop_skill  {
+	background-color: #000;
+	border			: 1px solid #aaa;
+	display			: none;
+	padding			: 0;
+	position		: absolute;
+	width			: 800px;
+	zIndex			: 9999;
+}
+div#ipop_close, div#ipop_dummy_close, div#ipop_skill_close  {
+	color			: #fff;
+	cursor			: pointer;
+	float			: right;
+}
+div#ipop_title, div#ipop_dummy_title, div#ipop_skill_title {
+	background-color: #333;
+	color			: #fff;
+	cursor			: move;
+}
+.believe {
+	color			: #32CD32;
+}
+.founder {
+	color			: #282;
+}
+.hope_toggle {
+	background-color: #444;
+	border			: 1px #aaa solid;
+	color			: #ddd;
+	cursor			: pointer;
+	font-size		: 90%;
+	padding			: 1px 4px;
+}
+.possessed{
+	color			: #5db;
+}
+.mad{
+	color			: #5db;
+}
+.lonely {
+	color			: #c99;
+}
+.mania {
+	color			: #aa6;
+}
+.cosplay {
+	color			: #aa6;
+}
+.zap {
+	color			: #c85554;
+}
+.revive {
+	color			: #6c0;
+}
+.return {
+	color			: #99CC66;
+}
+.witch {
+	color			: #969;
+}
+.vampire {
+	color			: #a22041;
+}
+.servant {
+	color			: #d13;
+}
+.necro {
+	color			: #d13;
+}
+.zombie {
+	color			: #a22041;
+}
+.silver {
+	color			: #c0c0c0;
+}
+.revenge {
+	color			: #75b;
+}
+.spy {
+	color			: #c72;
+}
+.sympathy {
+	color			: #8FBC8F;
+}
+.flirt {
+	color			: #FFC0CB;
+}
+.scream {
+	color			: #9a8;
+}
+.secret {
+	color			: #FFC0CB;
+}
+.killer {
+	color			: #a25768;
+}
+.assassin {
+	color			: #6e7955;
+}
+.predator {
+	color			: #9790a4;
+}
+.caution {
+	color			: #887938;
+}
+.fugitive {
+	color			: #887938;
+}
+.marshals {
+	color			: #887938;
+}
+.tough {
+	color			: #fbca4d;
+}
+.sick {
+	color			: #B87333;
+}
+.muramasa {
+	color			: #a52a2a;
+}
+.knight {
+	color			: #5a5;
+}
+.maid {
+	color			: #f09199;
+}
+.youma {
+	color			: #a69abd;
+}
+.bat {
+	color			: #9790a4;
+}
+.irregular {
+	color			: #426579;
+}
+.awakening {
+	color			: #f8e58c;
+}
+.trainee {
+	color			: #B384FF;
+}
+.trans {
+	color			: #c7dc68;
+}
+.drunk {
+	color			: #F0E68C;
+}
+.neet {
+	color			: #887f7a;
+}
+.gacha {
+	color			: #6495ED;
+}
+.normal {
+	color			: #aa6;
+}
+.basic {
+	color			: #96b;
+}
+.rare {
+	color			: #e198b4;
+}
+.superrare {
+	color			: #c0c0c0;
+}
+.ultrarare {
+	color			: #FFD700;
+}
+.legendrare {
+	color			: #FFFF00;
+}
+.hunter {
+	color			: #008B8B;
+}
+.thief {
+	color			: #a59aca;
+}
+.gambler {
+	color			: #867ba9;
+}
+.judgment {
+	color			: #867ba9;
+}
+.song {
+	color			: #DEB887;
+}
+.dance {
+	color			: #FFA07A;
+}
+.tamer {
+	color			: #CD853F;
+}
+.librarian {
+	color			: #D2B48C;
+}
+.artist {
+	color			: #E9967A;
+}
+.support {
+	color			: #4682B4;
+}
+.geisha {
+	color			: #DDA0DD;
+}
+.oiran {
+	color			: #eb6ea5;
+}
+.carpenter {
+	color			: #D2691E;
+}
+.author {
+	color			: #8f8667;
+}
+.cook {
+	color			: #cb8347;
+}
+.flower {
+	color			: #f4b3c2;
+}
+.doctor {
+	color			: #9ACD32;
+}
+.pharmacist {
+	color			: #e5abbe;
+}
+.flute {
+	color			: #b88884;
+}
+.coffin {
+	color			: #5b7e91;
+}
+.shoes {
+	color			: #c37854;
+}
+.mask {
+	color			: #bb5535;
+}
+.shadow {
+	color			: #888084;
+}
+.guide {
+	color			: #00afcc;
+}
+.executioner {
+	color			: #8b968d;
+}
+.tyrant {
+	color			: #e9546b;
+}
+.pretty {
+	color			: #FFB6C1;
+}
+.bearer {
+	color			: #f19072;
+}
+.seeker {
+	color			: #b28c6e;
+}
+.baptism {
+	color			: #cd8c5c;
+}
+.treason {
+	color			: #5c9291;
+}
+.reset {
+	color			: #B0C4DE;
+}
+.shuffle {
+	color			: #B0C4DE;
+}
+.oracle {
+	color			: #f6bfbc;
+}
+.oracle_aura {
+	color			: #e6cde3;
+}
+.oracle_skill {
+	color			: #e4ab9b;
+}
+.fortune_aura {
+	color			: #d0af4c;
+}
+.fortune_skill {
+	color			: #80aba9;
+}
+.fortune_judge {
+	color			: #7B68EE;
+}
+.fortune_god {
+	color			: #96b;
+}
+.guard_god {
+	color			: #5a5;
+}
+.defense {
+	color			: #5383c3;
+}
+.fortune_sub {
+	color			: #D19275;
+}
+.tarot {
+	color			: #9370DB;
+}
+.spirit_aura {
+	color			: #9079ad;
+}
+.spirit_skill {
+	color			: #a6a5c4;
+}
+.aura {
+	color			: #f8e58c;
+	line-height		: 110%;
+}
+.boy {
+	color			: #89c3eb;
+}
+.girl {
+	color			: #e198b4;
+}
+.mary {
+	color			: #8FBC8F;
+}
+.sleep {
+	color			: #5F9EA0;
+}
+.little_red  {
+	color			: #DB7093;
+}
+.alice {
+	color			: #87CEFA;
+}
+.snow_white {
+	color			: #c1e4e9;
+}
+.sleeping_beauty {
+	color			: #c4a3bf;
+}
+.cinderella {
+	color			: #abced8;
+}
+.match_girl {
+	color			: #df7163;
+}
+.allerleirauh {
+	color			: #ab6953;
+}
+.nadeshiko {
+	color			: #eebbcb;
+}
+.clammbon {
+	color			: #fcd575;
+}
+.computer {
+	color			: #5a79ba;
+}
+.gargoyle {
+	color			: #898880;
+}
+.gachapin {
+	color			: #93ca76;
+}
+.mukku {
+	color			: #ec6d71;
+}
+.spider {
+	color			: #b69;
+}
+.dog {
+	color			: #3e62ad;
+}
+.monkey {
+	color			: #a69425;
+}
+.serpent {
+	color			: #47885e;
+}
+.death {
+	color			: #7d7d7d;
+}
+.ookami {
+	color			: #ec6d51;
+}
+.joker {
+	color			: #7d7d7d;
+}
+.dragonball {
+	color			: #FF8C00;
+}
+.panty {
+	color			: #FFC0CB;
+}
+.oko {
+	color			: #FF0000;
+}
+.calumon {
+	color			: #d4dcda;
+}
+.black {
+	color			: #7d7d7d;
+}
+.wool {
+	color			: #d4dcda;
+}
+.soul {
+	color			: #c7dc68;
+}
+.yatuhusa {
+	color			: #dccb18;
+}
+.senri {
+	color			: #b0ca71;
+}
+.tanuki {
+	color			: #88cb7f;
+}
+.tengu {
+	color			: #FF6347;
+}
+.thunder {
+	color			: #DAA520;
+}
+.hina {
+	color			: #556B2F;
+}
+.tatari {
+	color			: #8B008B;
+}
+.tsukumo {
+	color			: #20B2AA;
+}
+.yatagarasu {
+	color			: #f8b862;
+}
+.god {
+	color			: #84a2d4;
+}
+.shine {
+	color			: #FFD700;
+}
+.dark {
+	color			: #696969;
+}
+.mouse {
+	color			: #95949a;
+}
+.jester {
+	color			: #F0E68C;
+}
+.gogo {
+	color			: #F0E68C;
+}
+.hero {
+	color			: #F0E68C;
+}
+.loyal {
+	color			: #84b9cb;
+}
+.slave {
+	color			: #d0576b;
+}
+.prisoner {
+	color			: #8B0000;
+}
+.monster {
+	color			: #5F9EA0;
+}
+.beast {
+	color			: #ab6953;
+}
+.moon {
+	color			: #e0de94;
+}
+.trader {
+	color			: #e6b422;
+}
+.rich {
+	color			: #e6b422;
+}
+.trap {
+	color			: #008B8B;
+}
+.poison {
+	color			: #824880;
+}
+.paralyze {
+	color			: #EEE8AA;
+}
+.heat {
+	color			: #a25768;
+}
+.cold {
+	color			: #87CEEB;
+}
+.monk {
+	color			: #c7b370;
+}
+.bond {
+	color			: #ebd842;
+}
+.successor {
+	color			: #d3a243;
+}
+.senior {
+	color			: #d3a243;
+}
+.steinsgate {
+	color			: #8491c3;
+}
+.journalist {
+	color			: #B8860B;
+}
+.inspect {
+	color			: #BC8F8F;
+}
+.detective {
+	color			: #BC8F8F;
+}
+.priest {
+	color			: #e0815e;
+}
+.bishop {
+	color			: #698aab;
+}
+.sister {
+	color			: #FF4500;
+}
+.father {
+	color			: #6A5ACD;
+}
+.prayer {
+	color			: #F4A460;
+}
+.reveal {
+	color			: #5F9EA0;
+}
+.dowser {
+	color			: #808000;
+}
+.shepherd {
+	color			: #deb068;
+}
+.rancher {
+	color			: #99ab4e;
+}
+.clergyman {
+	color			: #6A5ACD;
+}
+.apocalypse {
+	color			: #c44;
+}
+.psychic {
+	color			: #69b;
+}
+.sacrifice {
+	color			: #95859c;
+}
+.scapegoat {
+	color			: #c97586;
+}
+.dolls {
+	color			: #A9A9A9;
+}
+.taboo {
+	color			: #BA55D3;
+}
+.mediator {
+	color			: #D8BFD8;
+}
+.item {
+	color			: #bf794e;
+}
+.research {
+	color			: #6B8E23;
+}
+.commander {
+	color			: #9ACD32;
+}
+.agent {
+	color			: #008080;
+}
+.leader {
+	color			: #6c9bd2;
+}
+.imperial {
+	color			: #FFD700;
+}
+.baker {
+	color			: #D98719;
+}
+.bartender {
+	color			: #B8860B;
+}
+.esper {
+	color			: #FFCC66;
+}
+.sales {
+	color			: #b96;
+}
+.student {
+	color			: #89c3eb;
+}
+.shogun {
+	color			: #5959AB;
+}
+.dictator {
+	color			: #5959AB;
+}
+.outlaw {
+	color			: #CD853F;
+}
+.ruler {
+	color			: #706caa;
+}
+.warden {
+	color			: #888e7e;
+}
+.cure {
+	color			: #FFDAB9;
+}
+.grave {
+	color			: #a6a5c4;
+}
+.liar {
+	color			: #9e8b8e;
+}
+.curse {
+	color			: #aa4c8f;
+}
+.phantom {
+	color			: #95949a;
+}
+.weak {
+	color			: #9e9478;
+}
+.exorcist {
+	color			: #87CEEB;
+}
+.beacon {
+	color			: #6c848d;
+}
+.wisp {
+	color			: #895b8a;
+}
+.fear {
+	color			: #aa4c8f;
+}
+.lantern {
+	color			: #9a8;
+}
+.chaos {
+	color			: #c9171e;
+}
+.cthulhu {
+	color			: #915c8b;
+}
+.immoral {
+	color			: #a69abd;
+}
+.ddd {
+	color			: #a69abd;
+}
+.doppel {
+	color			: #a69abd;
+}
+.fang {
+	color			: #c53d43;
+}
+.rebirth {
+	color			: #ffea00;
+}
+.fake {
+	color			: #9d5b8b;
+}
+.change {
+	color			: #ada250;
+}
+.reincarnation {
+	color			: #a8c97f;
+}
+.follower {
+	color			: #84a2d4;
+}
+.remove {
+	color			: #68699b;
+}
+.fate {
+	color			: #9079ad;
+}
+.help {
+	color			: #eebbcb;
+}
+.anti {
+	color			: #a58f86;
+}
+.lvupper {
+	color			: #84a2d4;
+}
+.nejireid {
+	color			: #b48a76;
+}
+.nejire {
+	color			: #84a2d4;
+}
+.nejire1 {
+	color			: #89c3eb;
+}
+.nejire2 {
+	color			: #98d98e;
+}
+.nejire3 {
+	color			: #ec6d71;
+}
+.nejire4 {
+	color			: #ffdb4f;
+}
+.testament {
+	color			: #aa6;
+}
+span.cut {
+	cursor			: pointer;
+	text-decoration	: underline;
+}
+span.notitle {
+	color			: moccasin;
+}
+span.open {
+	cursor			: pointer;
+	text-decoration	: underline;
+}
+span.small {
+	font-size		: 80%;
+}
+.textcounter {
+	font-size		: 80%;
+	color			: #ccc;
+}
+.textwarning {
+	color			: #600;
+}   
+.textexceeded {
+	color			: #e00;
+}
+.win_rec {
+	color			: #c44;
+}
+.lose_rec {
+	color			: #69b;
+}
+.announce2 {
+	width			: 770px;
+	border			: 1px solid #445;
+	font-size		: 90%;
+	margin			: 6px 0;
+	padding			: 4px;
+}
+.top_announce {
+	border			: 1px solid #445;
+	font-size		: 90%;
+	background-color: #402;
+	margin			: 6px 0;
+	padding			: 4px;
+}
+table.vil_main2 {
+	font-size		: 100%;
+	width			: 9em;
+	color			: #bbb;
+	border-collapse	: collapse;
+}
+table.vil_index2 {
+	font-size		: 80%;
+	width			: 750px;
+	color			: #bbb;
+	border-collapse	: collapse;
+}
+table.vil_index2 td.vil_title2 {
+	font-size		: 130%;
+	color			: #ccc;
+	background-color: #444;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+table.vil_index2 td {
+	white-space		: nowrap;
+	border			: 1px #444 solid;
+	padding			: 4px;
+}
+table.vil_index2 td.vil_title2 {
+	font-size		: 130%;
+	color			: #ccc;
+	background-color: #444;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+table.vil_index2 td.space {
+	border			: 0;
+	height			: 20px;
+	padding			: 2px 4px;
+}
+table.vil_record {
+	font-size		: 80%;
+	color			: #bbb;
+	border-collapse	: collapse;
+	text-align		: center;
+}
+table.vil_record td {
+	white-space		: nowrap;
+	border			: 1px #444 solid;
+	padding			: 4px;
+	text-align		: center;
+}
+h3 {
+	width			: 500px;
+	font-size		: 120%;
+	border			: #666 solid;
+	color			: #ccc;
+	background-color: #444;
+	border-width	: 1px;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+h4 {
+	width			: 730px;
+	font-size		: 120%;
+	border			: #666 solid;
+	color			: #ccc;
+	background-color: #444;
+	border-width	: 1px;
+	margin			: 0;
+	padding			: 2px 8px;
+}
+table.message td a:link.vil_ref,table.message td a:visited.vil_ref {
+	color			: #585;
+	font-size		: 120%;
+}
+/* ã§ñ¬ */
+.mes_sympathy {
+	width			: 16px;
+	background		: #8FBC8F url(../img/think00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_sympathy_body0 {
+	background		: #8FBC8F url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_sympathy_body1 {
+	background		: #8FBC8F url(../img/say06.png) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+.sympathy_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #8FBC8F;
+}
+/* îOòb */
+.mes_telepathy {
+	width			: 16px;
+	background		: #a69abd url(../img/think00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_telepathy_body0 {
+	background		: #a69abd url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_telepathy_body1 {
+	background		: #a69abd url(../img/say06.png) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+.telepathy_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #a69abd;
+}
+/* ñßòb */
+.mes_flirt {
+	width			: 16px;
+	background		: #FFC0CB url(../img/think00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_flirt_body0 {
+	background		: #FFC0CB url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_flirt_body1 {
+	background		: #FFC0CB url(../img/say06.png) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+.flirt_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #FFE4E1;
+}
+/* ã∂ñ¬ */
+.mes_scream {
+	width			: 16px;
+	background		: #BDB76B url(../img/think00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_scream_body0 {
+	background		: #BDB76B url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_scream_body1 {
+	background		: #BDB76B url(../img/say06.png) no-repeat bottom;
+	color			: #000;
+	padding			: 0 12px 8px;
+}
+.scream_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #BDB76B;
+}
+/* îÈòb */
+.mes_secret {
+	width			: 16px;
+	background		: #6e4a55 url(../img/think00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_secret_body0 {
+	background		: #6e4a55 url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_secret_body1 {
+	background		: #6e4a55 url(../img/say06.png) no-repeat bottom;
+	padding			: 0 12px 8px;
+	color			: #fff
+}
+.mes_secret_body0 .loud, .mes_secret_body0 .say, .mes_secret_body0 .url, .mes_secret_body0 .popsay{
+	color			: #fff !important;
+}
+.secret_address{
+	font-size		: 85%;
+	border-bottom	: 1px dashed #fff;
+	color			: #fff;
+	padding-bottom	: 2px;
+	margin-bottom	: 3px;
+	font-weight		: bold;
+}
+.secret_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	color			: #fff;
+	line-height		: 100%;
+	background		: #6e4a55;
+}
+/* ìΩñº */
+.mes_unknown {
+	width			: 16px;
+	background		: #626063 url(../img/say00.png) no-repeat right center;
+	padding			: 8px 0 0;
+}
+.mes_unknown_body0 {
+	background		: #626063 url(../img/say05.png) no-repeat top;
+	padding			: 8px 0 0;
+}
+.mes_unknown_body1 {
+	background		: #626063 url(../img/say06.png) no-repeat bottom;
+	color			: #fff;
+	padding			: 0 12px 8px;
+}
+.mes_unknown_body0 .loud, .mes_unknown_body0 .say, .mes_unknown_body0 .url, .mes_unknown_body0 .popsay{
+	color			: #fff !important;
+}
+/* GM */
+.mes_gm {
+    width			: 16px;
+    background		: #555 url(../img/watch00.png) no-repeat right center;
+    padding			: 8px 0 0;
+}
+.mes_gm_body0 {
+    background		: url(../img/nejirehowl.png) no-repeat 100% 100% #000;
+    padding			: 8px 10px;
+	border			: 3px solid #555;
+}
+.mes_gm_body1 {
+	color			: #ccc;
+}
+.mes_gm_body1 .popsay,
+.mes_gm_body1 a{
+	color			: #ccc !important;
+}
+.gm_textarea {
+    width: 100%;
+    font-size: 10pt;
+	color:#fff;
+    line-height: 100%;
+    background:url(../img/gmbg.png) no-repeat 100% 100% #000;
+}
+.dolls_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #A9A9A9;
+}
+.testament_textarea {
+	width			: 100%;
+	font-size		: 10pt;
+	line-height		: 100%;
+	background		: #dcdddd;
+}
+.call_number {
+	color			: #FF0;
+	font-weight		: 700;
+}
+span.kinsoku {
+	padding			: 2px;
+	border-color	: #990000;
+	border-width	: 1px;
+	border-style	: solid;
+	height			: 15px;
+	width			: 55px;
+	background		: #FEC6C6;
+	color			: #990000;
+	font-size		: 10pt;
+}
+table.message td a.hashtag {
+//	font-weight		: bold;
+	color			: #06f;
+	font-size		: 12pt;
+}
+.mes_unknown_body1 .hashtag, .mes_secret_body1 .hashtag, .mes_gm_body1 .hashtag {
+	color			: #55ACEE !important;
+}
+strong {
+	font-weight		: bold;
+	text-decoration	: underline;
+}
+on {
+	color			: #caac71;
+	text-decoration	: underline;
+}
+div{
+	word-wrap		: break-word;
+	word-break		: break-all;
+}
+
+#side{
+	width			:205px;
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>role244</title>
+  <link rel="stylesheet" type="text/css" href="nejire_popup.css">
+
+</head>
+<body>
+<div><a name="244" class="large_doc">ヒーロー（ヒ）</a>【村人陣営】</div>
+ピンチの時に変身することで様々な恩恵を授かる村側役職です。
+<br>通常時はただの村人ですが村側がピンチの時に特定のキーワード（下記参照）を発言すると村に有利な能力を得てさらに村人陣営の役職からランダムに変身します。
+<br>
+<br>ピンチ時：【陣営変化】していない村側の生存者数が村側以外の生存者数の同数以下の状況
+<br>変身時の能力
+<br>・票数が2票になる（＋変身した当日のみさらに+生存者数）
+<br>・襲撃/処刑をどちらか1度回避できる（＋襲撃確定死状態解除）
+<br>・共鳴会話可能
+<br>・予言結果表示可能（翌日以降）
+<br>・霊能/巫女結果判明
+<br>
+<br>但し変身した場合は最後まで生存していることが勝利条件の一つになります。
+<br>サブ役職などで【人外変化】している場合は変身できません。
+<br>通常発言でのみ変身できます。独り言や共鳴などでは無効です。
+<br>ピンチ時以外の時に変身しようとすると失敗してその後はずっと護衛無効状態になります。
+<br>条件は厳しいですが変身できると一発逆転のチャンスになります。
+<br>この役職が編成に含まれると強制的に墓下公開オフ、ID公開オフ、票数公開オフになります。
+
+<div onclick="open_menu('hero');return false">
+<br><a style="cursor:pointer;">以下変身時のかけ声</a>
+</div>
+
+<div id="hero" style="display:none;clear:both;">
+<br>変身時のかけ声によって変身時のメッセージと変身後の名称が微妙に変わります。（性能は変わりません）
+<br>かけ声は【】まで含みます。
+<br>追加の文字等は【】の中前提です。（先頭、末尾は【】の外ではなく内）
+<br>基本的に全角文字前提です。（「!」と「空白」（スペース）は全角半角両方とも可能）
+<br>
+<br>【変身】
+<br>・先頭に「大」「超」のどちらか一文字だけ入力可能です。
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>・間に「ッ」「・」「空白」の内の一文字だけ入力可能です。
+<br>・変身後の名称が二種類あります。
+<br>
+<br>【シュワッチ】【デュワ】
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【蒸着】
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【チェンジ】【チェング】
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>・「ェ」の後ろに「ィ」「イ」を好みの数だけ入力可能です。
+<br>・「ェ」を好みの数だけ増やすことが可能です。
+<br>
+<br>【メイクアップ】【ハニーフラッシュ】
+<br>・末尾に「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【テイルオン】
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【トランスフォーム】
+<br>・末尾に「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【卍解】
+<br>・末尾に「ッ」「!」「！」を好みの数だけ入力可能です。
+<br>・間に「ッ」「・」「！」「空白」の内の一文字だけ入力可能です。
+<br>・先頭と末尾に「空白」を入れることができます。
+<br>
+<br>【テクマクマヤコンテクマクマヤコン】
+<br>・間に「・」「空白」の内の一文字だけ入力可能です。
+<br>
+<br>【クリリンのことかー】
+<br>・末尾に「!」「！」を好みの数だけ入力可能です。
+<br>・「ー」（全角長音）を「―」（ダッシュ）に置き換えることができます。
+<br>・「ー」「―」を好みの数だけ増やすことが可能です。
+<br>・「ー」「―」の後ろに「っ」を一文字だけ入力可能です。
+<br>
+<br>【この紋所が目に入らぬか】
+<br>・末尾に「!」「！」を好みの数だけ入力可能です。
+<br>
+<br>【余の顔を見忘れたか】
+<br>・末尾に「!」「！」を好みの数だけ入力可能です。
+<br>・「を」を「、」「空白」に置き換えることができます。
+<br>・「を」を消すことが可能です。
+<br>
+<br>上記以外のかけ声では今のところ変身はしません。（変身失敗判定も行われない）
+<br>気分次第で増えたり減ったりします。
+<br>（重くなりそうだと判断したら減らします）
+<br>
+</div>
+
+<BR>
+<table cellpadding=0 class="action_box">
+<tr>
+<td width="64"><img src="./data/img/nejire00.png"></td>
+<td width="16"><img src="./data/img/say00b.jpg"></td>
+<td>
+<table cellpadding=0 cellspacing=0 class="action_balloon">
+<tr>
+<td width="8"><img src="./data/img/say01.jpg"></td>
+<td></td>
+<td width="8"><img src="./data/img/say02.jpg"></td>
+</tr>
+<tr>
+<td></td>
+<td class="action_body">
+
+ID:ioNwtvRG (ヒーロー)
+
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td class="action_body">
+投票：
+<select name="vote_id">
+<option value = -1>未設定 *
+<option value = "2">管理者 あどみん
+</select>
+<input type="submit" value="変更" class="submit">
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td class="action_body">
+<textarea name="message" rows="5" class="action_textarea"></textarea><br>
+<input type="submit" value="発言" class="submit">
+(30/30)
+<input name="think" value="on" type="checkbox">独り言
+<input name="loud" value="on" type="checkbox">大声
+<input name="small_voice" value="on" type="checkbox">AA
+<span class="act_toggle">▲</span>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td class="action_body"><br>
+ID:ioNwtvRG
+<select name="postpos" class="postpos">
+<option value = "0">は、
+<option value = "1">が、
+<option value = "2">　
+</select>
+<select name="action_id">
+<option value = "" selected>
+<option value = "2">管理者 あどみん
+</select>
+<input type="text" name="message" class="action_text" maxlength="50" autocomplete="off">
+<input type="submit" value="アクション" class="submit">
+(30/30)
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+
+<td>
+
+</td>
+<td></td>
+</tr>
+<tr>
+<td><img src="./data/img/say03.jpg"></td>
+<td></td>
+<td><img src="./data/img/say04.jpg"></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+能力発動メッセージ
+<div class="announce hero">ID:ioNwtvRG は スーパー占い師 に変身しました。</div>
+<div class="announce hero">ID:ioNwtvRG は 変身失敗です。</div>
+終了時メッセージ
+<div class="announce hero">ID:ioNwtvRG は 占い師 の姿から元の ヒーロー に戻ります。</div>
+関連役職<br> 
+<a class="rolelink" href="nejire_role193.html">ROM民</a> 
+<a class="rolelink" href="nejire_role242.html">遊び人</a> 
+<br>
+関連サブ役職<br>
+<a class="sublink" href="nejire_sub22.html">獲物</a> 
+<a class="sublink" href="nejire_sub28.html">負傷</a> 
+<a class="sublink" href="nejire_sub31.html">失墜</a> 
+</table></body>
+</html>
