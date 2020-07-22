@@ -225,3 +225,40 @@ padding : 1px 4px;
   background-color : gray;
 }
 */
+/*
+#descframe{
+ position: fixed;
+ top:0;
+ right:0;
+}
+*/
+
+.container {
+  position: relative;
+  /*width: 1000px;*/ /*必要な幅に設定*/
+  /*margin: auto;*/ /*ブラウザ中央に配置*/
+}
+
+.container:after { /*clearfix設定*/
+  content:"";
+  display:block;
+  clear:both;
+}
+.divleft{
+  /*position: absolute;*/
+  margin-right:570px;
+  /*width: 49%;*/ /*左カラム幅設定*/
+  /*float: left;*/ /*左にフロート配置*/
+}
+
+.divright{
+  /*position: absolute;*/
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /*top:0;*/
+  /*right:0;*/
+  width: 570px;
+  /*width: 49%;*/ /*右カラム幅設定*/
+  /*float: right;*/ /*右のフロート配置*/
+}
