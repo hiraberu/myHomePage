@@ -254,11 +254,13 @@ padding : 1px 4px;
 .divright{
   /*position: absolute;*/
   position: fixed;
-  bottom: 0;
-  right: 0;
-  /*top:0;*/
-  /*right:0;*/
+  bottom:0;
+  right:0;
   width: 570px;
   /*width: 49%;*/ /*右カラム幅設定*/
   /*float: right;*/ /*右のフロート配置*/
+}
+
+.plusalpha{
+  font-size: 80%;
 }
