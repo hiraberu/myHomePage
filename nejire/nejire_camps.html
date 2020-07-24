@@ -15,33 +15,35 @@
 
 <body>
 <div class="all">
+
+<div class="split">
+    <div class="split-item split-left">
+        <div class="split-left__inner">
+
 <!-- ヘッダーはじまり -->
 <div class="headerfutter">
 <img src="../img/Title.png" width="200" height="67" alt="title">
 </div>
 <!-- ヘッダー終わり -->
 
-<div class="returntop"><a href="../index.html">トップページへ戻る</a></div>
+<div class="returntop plusalpha"><a href="../index.html">トップページへ戻る</a></div>
 
 <hr class="splitline"><!-- 区切り線 -->
 
-<p>ねじれの陣営別役職一覧です</p>
+<p class="plusalpha">ねじれの陣営別役職一覧です<br>
+表の役職をクリックすると、その役職説明が表示されます</p>
 
-<p>表の役職をクリックすると、その役職説明が表示されます</p>
-
-<span class="groups"><img src="img/human.png" width="16" height="16" alt="reverse_melt">:人間カウント</span> 
-<span class="groups"><img src="img/wolf.png" width="16" height="16" alt="wolf">:人狼カウント</span> 
-<span class="groups"><img src="img/nocount.png" width="16" height="16" alt="nocount">:カウントなし</span> 
-<span class="groups"><img src="img/black.png" width="16" height="16" alt="wolf">:占霊判定【人狼】</span> 
-<span class="groups"><img src="img/jyama.png" width="16" height="16" alt="jyama">:占判定【邪魔】</span> 
-<span class="groups"><img src="img/melt.png" width="16" height="16" alt="melt">:溶ける</span> 
-<span class="groups"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt">:逆呪殺する</span> 
+<span class="groups plusalpha"><img src="img/human.png" width="16" height="16" alt="reverse_melt">:人間カウント</span> 
+<span class="groups plusalpha"><img src="img/wolf.png" width="16" height="16" alt="wolf">:人狼カウント</span> 
+<span class="groups plusalpha"><img src="img/nocount.png" width="16" height="16" alt="nocount">:カウントなし</span> 
+<span class="groups plusalpha"><img src="img/black.png" width="16" height="16" alt="wolf">:占霊判定【人狼】</span> 
+<span class="groups plusalpha"><img src="img/jyama.png" width="16" height="16" alt="jyama">:占判定【邪魔】</span> 
+<span class="groups plusalpha"><img src="img/melt.png" width="16" height="16" alt="melt">:溶ける</span> 
+<span class="groups plusalpha"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt">:逆呪殺する</span> 
 
 
 <hr class="splitline"><!-- 区切り線 -->
 
-<div class="container">
-<div class="divleft">
 <table class="camplist">
   <tr>
     <td class="villager" colspan="2"><b>村側陣営</b>…全ての陣営を排除して勝利になります。
@@ -1037,13 +1039,16 @@
 
 </table>
 
+        </div><!--split-left__inner-->
+    </div><!--split-item split-left-->
+    <div class="split-item split-right">
+        <div class="split-right__inner">
+          <iframe id="descframe" name="nejire_org_description" onLoad="change_height_css()" src="nejire_roleinit.html" width="594" frameborder="2" style="border:2"></iframe>
+        </div><!--split-right__inner-->
+    </div><!--split-item split-right-->
+</div><!--split-->
 </div>
 
-<div class="divright">
-<iframe id="descframe" name="nejire_org_description" onLoad="adjust_frame_css(this.id)" scrolling="no" src="nejire_roleinit.html" width="564" height="500" frameborder="2" style="border:2"></iframe>
-</div>
-
-</div>
 
 </div> <!-- "all" -->
 
