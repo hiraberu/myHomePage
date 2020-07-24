@@ -33,12 +33,16 @@
 <p class="plusalpha">ねじれの陣営別役職一覧です<br>
 表の役職をクリックすると、その役職説明が表示されます</p>
 
-<span class="groups plusalpha"><img src="img/human.png" width="16" height="16" alt="reverse_melt">:人間カウント</span> 
-<span class="groups plusalpha"><img src="img/wolf.png" width="16" height="16" alt="wolf">:人狼カウント</span> 
-<span class="groups plusalpha"><img src="img/nocount.png" width="16" height="16" alt="nocount">:カウントなし</span> 
-<span class="groups plusalpha"><img src="img/black.png" width="16" height="16" alt="wolf">:占霊判定【人狼】</span> 
-<span class="groups plusalpha"><img src="img/jyama.png" width="16" height="16" alt="jyama">:占判定【邪魔】</span> 
-<span class="groups plusalpha"><img src="img/melt.png" width="16" height="16" alt="melt">:溶ける</span> 
+<p class="plusalpha">直接入力：<input type="text" id="searchstr" maxlength="10" size="20" onkeydown="checkDirectInputEnter()"> 
+<input type="button" value="表示" onclick="execDirectInput()"> <span id="showid"></span></p>
+
+
+<span class="groups plusalpha"><img src="img/human.png" width="16" height="16" alt="reverse_melt">:人間カウント</span> / 
+<span class="groups plusalpha"><img src="img/wolf.png" width="16" height="16" alt="wolf">:人狼カウント</span> / 
+<span class="groups plusalpha"><img src="img/nocount.png" width="16" height="16" alt="nocount">:カウントなし</span> / 
+<span class="groups plusalpha"><img src="img/black.png" width="16" height="16" alt="wolf">:占霊判定【人狼】</span> / 
+<span class="groups plusalpha"><img src="img/jyama.png" width="16" height="16" alt="jyama">:占判定【邪魔】</span> / 
+<span class="groups plusalpha"><img src="img/melt.png" width="16" height="16" alt="melt">:溶ける</span> / 
 <span class="groups plusalpha"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt">:逆呪殺する</span> 
 
 
@@ -1053,6 +1057,7 @@
 </div> <!-- "all" -->
 
 <script type="text/javascript" src="adjust_frame_css.js"></script>
+<script type="text/javascript" src="nejiredirectinput.js"></script>
 
 </body>
 </html>
