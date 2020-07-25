@@ -18,14 +18,14 @@ text-align:center;
 }
 
 .headerfutter{
-max-width:500px;
+width:500px;
 margin-right:auto;
 margin-left:auto;
 text-align:center;
 }
 
 .returntop{
-max-width:500px;
+width:500px;
 margin-right:auto;
 margin-left:auto;
 text-align:right;
@@ -33,11 +33,11 @@ font-size: 0.9em;
 }
 
 .splitline{
-max-width:500px;
+width:500px;
 }
 
 .caution{
-font-size:70%;
+font-size:65%;
 }
 
 .partslist{
