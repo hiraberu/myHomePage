@@ -76,7 +76,6 @@ element.addEventListener( "load", function(event){
 })
 
 function change_url( role_url ){
-  console.log( "URL:" + role_url );
   if( "" != role_url ){
     /* 番号を抜き出す */
     var num = Number( role_url.slice( -8, -5 ) );
