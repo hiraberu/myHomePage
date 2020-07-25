@@ -93,6 +93,7 @@ padding : 1px 4px;
 .traveller{ color:#ffffff; background-color:#808000; } /* 旅人(確率表はその他に入れている) */
 .forceddefeat{ color:#ffffff; background-color:#008080; } /* 強制敗北(確率表はその他に入れている) */
 .others{ color:#ffffff; background-color:#333399; } /* その他 */
+.sub{ color:#000000; background-color:#eeeeee; } /* サブ役職 */
 
 /* 窓の色 */
 .sharewin{ background-color:#8fbc8f; } /* 緑：共有窓 */
