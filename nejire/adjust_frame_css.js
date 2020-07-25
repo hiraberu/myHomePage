@@ -23,5 +23,4 @@ window.onresize = change_height_css;
 function change_height_css(){
   var myFrame = document.getElementById( "ORG_DESC" );
   myFrame.style.height = (document.documentElement.clientHeight-12)+"px";
-  /*console.log( myFrame.src );*/
 }

@@ -68,8 +68,15 @@ function checkDirectInputEnter(){
   }
 }
 
+var element = document.getElementById( "ORG_DESC" )
+
+element.addEventListener( "load", function(event){
+  let url = document.getElementById("ORG_DESC").contentWindow.location.href;
+  change_url(url);
+})
+
 function change_url( role_url ){
-  console.log( "URLeee:" + role_url );
+  console.log( "URL:" + role_url );
   if( "" != role_url ){
     /* 番号を抜き出す */
     var num = Number( role_url.slice( -8, -5 ) );
