@@ -154,7 +154,7 @@ function execFilter(){
 function execStringFilter(){
   // RegExpでチェックする文字列
   var checkstr = document.getElementById( "searchstr" ).value;
-  console.log( checkstr );
+  /*console.log( checkstr );*/
   if( "" == checkstr ){ return; }
   const re = new RegExp( checkstr ); // RegExpの文字列設定
 

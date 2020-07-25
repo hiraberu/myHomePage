@@ -80,7 +80,7 @@ function change_url( role_url ){
     /* 番号を抜き出す */
     var num = Number( role_url.slice( -8, -5 ) );
     if( !isNaN( num ) ){
-      document.getElementById( "showid" ).innerHTML = "[" + String( num ) + "]";
+      document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
     }else{
       document.getElementById( "showid" ).innerHTML = "";
     }

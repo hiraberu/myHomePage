@@ -40,10 +40,6 @@
 <p class="plusalpha">ねじれの陣営別役職一覧です<br>
 表の役職をクリックすると、その役職説明が表示されます</p>
 
-<p class="plusalpha">直接入力(ID可)：<input type="text" id="searchstr" value="" maxlength="10" size="20" onkeydown="checkDirectInputEnter()"> 
-<input type="button" value="表示" onclick="execDirectInput()"> <span id="showid">　</span> </p>
-
-
 <span class="groups plusalpha"><img src="img/human.png" width="16" height="16" alt="human">:人間カウント</span> / 
 <span class="groups plusalpha"><img src="img/wolf.png" width="16" height="16" alt="wolf">:人狼カウント</span> / 
 <span class="groups plusalpha"><img src="img/nocount.png" width="16" height="16" alt="nocount">:カウントなし</span> / 
@@ -1144,6 +1140,9 @@
     </div><!--split-item split-left-->
     <div class="split-item split-right">
         <div class="split-right__inner">
+          <p id="SEARCH">直接入力(役職番号可)：<input type="text" id="searchstr" value="" maxlength="10" size="20" onkeydown="checkDirectInputEnter()"> 
+            <input type="button" value="表示" onclick="execDirectInput()"> <span id="showid">　</span> </p>
+            
           <iframe id="ORG_DESC" name="ORG_DESC" title="description" src="desc/nejire_roleinit.html" width="594" frameborder="1">　</iframe>
         </div><!--split-right__inner-->
     </div><!--split-item split-right-->

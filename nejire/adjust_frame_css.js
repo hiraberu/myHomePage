@@ -22,5 +22,5 @@ window.onresize = change_height_css;
 
 function change_height_css(){
   var myFrame = document.getElementById( "ORG_DESC" );
-  myFrame.style.height = (document.documentElement.clientHeight-12)+"px";
+  myFrame.style.height = (document.documentElement.clientHeight-document.getElementById( "SEARCH" ).clientHeight-12)+"px";
 }
