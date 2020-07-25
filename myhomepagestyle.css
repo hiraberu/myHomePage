@@ -36,6 +36,10 @@ font-size: 0.9em;
 max-width:500px;
 }
 
+.caution{
+font-size:70%;
+}
+
 .partslist{
 margin-right:auto;
 margin-left:auto;

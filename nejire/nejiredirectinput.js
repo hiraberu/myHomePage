@@ -8,7 +8,7 @@ function execDirectInput(){
   
   if( !isNaN( num ) ){
     if( 0 <= num && num < 500 ){
-      role_url = "nejire_role" + ( "000" + num ).slice( -3 ) + ".html";
+      role_url = "desc/nejire_role" + ( "000" + num ).slice( -3 ) + ".html";
     }else{
       num = -1;
     }
@@ -56,7 +56,7 @@ function execDirectInput(){
     }
   }
   if( "" != role_url ){
-    document.getElementById( "descframe" ).src = role_url;
+    document.getElementById( "ORG_DESC" ).src = role_url;
     document.getElementById( "showid" ).innerHTML = ( -1 == num ) ? "" : "[" + String( num ) + "]";
   }
 }
@@ -65,5 +65,18 @@ function execDirectInput(){
 function checkDirectInputEnter(){
   if( 13 == window.event.keyCode ){
     execDirectInput();
+  }
+}
+
+function change_url( role_url ){
+  console.log( "URLeee:" + role_url );
+  if( "" != role_url ){
+    /* 番号を抜き出す */
+    var num = Number( role_url.slice( -8, -5 ) );
+    if( !isNaN( num ) ){
+      document.getElementById( "showid" ).innerHTML = "[" + String( num ) + "]";
+    }else{
+      document.getElementById( "showid" ).innerHTML = "";
+    }
   }
 }

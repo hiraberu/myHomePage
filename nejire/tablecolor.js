@@ -23,13 +23,13 @@ function roletableClick( event ){
   if ( element.tagName.toUpperCase() == "TD" ){
     // 役職クリック時のみポップアップ
     if( 1 == element.cellIndex ){
-      var role_url = "nejire_role" + ( "000" + element.parentNode.sectionRowIndex ).slice( -3 ) + ".html";
+      var role_url = "desc/nejire_role" + ( "000" + element.parentNode.sectionRowIndex ).slice( -3 ) + ".html";
 
       // srcは絶対パスになっているので、文字列数固定なので最後の19文字を比較
-      if( document.getElementById( "nejire_org_description" ).src.slice( -19 ) == role_url ){
+      if( document.getElementById( "ORG_DESC" ).src.slice( -19 ) == role_url ){
         popup.classList.toggle("show");
       }else{
-        document.getElementById( "nejire_org_description" ).src = role_url;
+        document.getElementById( "ORG_DESC" ).src = role_url;
         popup.classList.add("show");
       }
     }else{

@@ -27,14 +27,17 @@
 <!-- ヘッダー終わり -->
 
 <div class="returntop plusalpha"><a href="../index.html">トップページへ戻る</a></div>
+<div class="caution">※ このページはりゅがねじれ天国説明書を元に作成したものです。<br>ねじれ天国の国主とは一切関係ありません。りゅが内容を保証することもありません。<br>
+間違い・要望等ありましたら、気軽に<a href="https://twitter.com/hiraberu2?lang=ja">twitter</a>
+からDM頂けたら有難いです。</div>
 
 <hr class="splitline"><!-- 区切り線 -->
 
 <p class="plusalpha">ねじれの陣営別役職一覧です<br>
 表の役職をクリックすると、その役職説明が表示されます</p>
 
-<p class="plusalpha">直接入力：<input type="text" id="searchstr" maxlength="10" size="20" onkeydown="checkDirectInputEnter()"> 
-<input type="button" value="表示" onclick="execDirectInput()"> <span id="showid"></span></p>
+<p class="plusalpha">直接入力：<input type="text" id="searchstr" value="" maxlength="10" size="20" onkeydown="checkDirectInputEnter()"> 
+<input type="button" value="表示" onclick="execDirectInput()"> <span id="showid">　</span> </p>
 
 
 <span class="groups plusalpha"><img src="img/human.png" width="16" height="16" alt="reverse_melt">:人間カウント</span> / 
@@ -48,996 +51,1001 @@
 
 <hr class="splitline"><!-- 区切り線 -->
 
+
 <table class="camplist">
   <tr>
-    <td class="villager" colspan="2"><b>村側陣営</b>…全ての陣営を排除して勝利になります。
-    <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。</td>
-
+    <td colspan="2"><a class="judgelink" href="desc/nejire_roleinit.html" target="ORG_DESC">判定</a>…終了判定・勝敗判定
     </td>
   </tr>
   <tr>
-    <td class="villager">村人</td><td><a class="rolelink" class="villager" href="nejire_role000.html" target="nejire_org_description">村人</a></td>
+    <td class="villager" colspan="2"><strong>村側陣営</strong>…全ての陣営を排除して勝利になります。
+    <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。
+    </td>
+  </tr>
+  <tr>
+    <td class="villager">村人</td><td><a class="rolelink" href="desc/nejire_role000.html" target="ORG_DESC">村人</a></td>
   </tr>
   <tr>
     <td class="groups">占い師</td>
     <td>
-    <a class="rolelink" href="nejire_role002.html" target="nejire_org_description">占い師</a> 
-    <a class="rolelink" href="nejire_role011.html" target="nejire_org_description">中身占い師</a> 
-    <a class="rolelink" href="nejire_role033.html" target="nejire_org_description">邪気眼使い</a> 
-    <a class="rolelink" href="nejire_role060.html" target="nejire_org_description">気占師</a> 
-    <a class="rolelink" href="nejire_role061.html" target="nejire_org_description">学者</a> 
-    <a class="rolelink" href="nejire_role115.html" target="nejire_org_description">観測者</a> 
-    <a class="rolelink" href="nejire_role156.html" target="nejire_org_description">陰陽師</a> 
-    <a class="rolelink" href="nejire_role220.html" target="nejire_org_description">隠者</a> 
-    <a class="rolelink" href="nejire_role221.html" target="nejire_org_description">墓守</a> 
-    <a class="rolelink" href="nejire_role222.html" target="nejire_org_description">風水師</a> 
-    <a class="rolelink" href="nejire_role252.html" target="nejire_org_description">占星術師</a> 
-    <a class="rolelink" href="nejire_role260.html" target="nejire_org_description">易者<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role282.html" target="nejire_org_description">数秘術師</a> 
-    <a class="rolelink" href="nejire_role302.html" target="nejire_org_description">水晶占い師</a> 
-    <a class="rolelink" href="nejire_role303.html" target="nejire_org_description">手相占い師</a> 
-    <a class="rolelink" href="nejire_role306.html" target="nejire_org_description">ルーン占い師</a> 
-    <a class="rolelink" href="nejire_role404.html" target="nejire_org_description">魔術師</a> 
-    <a class="rolelink" href="nejire_role405.html" target="nejire_org_description">唱門師</a> 
-    <a class="rolelink" href="nejire_role421.html" target="nejire_org_description">神子</a> 
-    <a class="rolelink" href="nejire_role456.html" target="nejire_org_description">八卦見</a> 
+    <a class="rolelink" href="desc/nejire_role002.html" target="ORG_DESC">占い師</a> 
+    <a class="rolelink" href="desc/nejire_role011.html" target="ORG_DESC">中身占い師</a> 
+    <a class="rolelink" href="desc/nejire_role033.html" target="ORG_DESC">邪気眼使い</a> 
+    <a class="rolelink" href="desc/nejire_role060.html" target="ORG_DESC">気占師</a> 
+    <a class="rolelink" href="desc/nejire_role061.html" target="ORG_DESC">学者</a> 
+    <a class="rolelink" href="desc/nejire_role115.html" target="ORG_DESC">観測者</a> 
+    <a class="rolelink" href="desc/nejire_role156.html" target="ORG_DESC">陰陽師</a> 
+    <a class="rolelink" href="desc/nejire_role220.html" target="ORG_DESC">隠者</a> 
+    <a class="rolelink" href="desc/nejire_role221.html" target="ORG_DESC">墓守</a> 
+    <a class="rolelink" href="desc/nejire_role222.html" target="ORG_DESC">風水師</a> 
+    <a class="rolelink" href="desc/nejire_role252.html" target="ORG_DESC">占星術師</a> 
+    <a class="rolelink" href="desc/nejire_role260.html" target="ORG_DESC">易者<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role282.html" target="ORG_DESC">数秘術師</a> 
+    <a class="rolelink" href="desc/nejire_role302.html" target="ORG_DESC">水晶占い師</a> 
+    <a class="rolelink" href="desc/nejire_role303.html" target="ORG_DESC">手相占い師</a> 
+    <a class="rolelink" href="desc/nejire_role306.html" target="ORG_DESC">ルーン占い師</a> 
+    <a class="rolelink" href="desc/nejire_role404.html" target="ORG_DESC">魔術師</a> 
+    <a class="rolelink" href="desc/nejire_role405.html" target="ORG_DESC">唱門師</a> 
+    <a class="rolelink" href="desc/nejire_role421.html" target="ORG_DESC">神子</a> 
+    <a class="rolelink" href="desc/nejire_role456.html" target="ORG_DESC">八卦見</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">霊能者</td>
     <td>
-    <a class="rolelink" href="nejire_role003.html" target="nejire_org_description">霊能者</a> 
-    <a class="rolelink" href="nejire_role029.html" target="nejire_org_description">稲荷<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role062.html" target="nejire_org_description">導師</a> 
-    <a class="rolelink" href="nejire_role063.html" target="nejire_org_description">霊媒師</a> 
-    <a class="rolelink" href="nejire_role269.html" target="nejire_org_description">記者</a> 
-    <a class="rolelink" href="nejire_role274.html" target="nejire_org_description">捜査官</a> 
-    <a class="rolelink" href="nejire_role281.html" target="nejire_org_description">審神者</a> 
-    <a class="rolelink" href="nejire_role305.html" target="nejire_org_description">ドルイド</a> 
-    <a class="rolelink" href="nejire_role420.html" target="nejire_org_description">覚者</a> 
+    <a class="rolelink" href="desc/nejire_role003.html" target="ORG_DESC">霊能者</a> 
+    <a class="rolelink" href="desc/nejire_role029.html" target="ORG_DESC">稲荷<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role062.html" target="ORG_DESC">導師</a> 
+    <a class="rolelink" href="desc/nejire_role063.html" target="ORG_DESC">霊媒師</a> 
+    <a class="rolelink" href="desc/nejire_role269.html" target="ORG_DESC">記者</a> 
+    <a class="rolelink" href="desc/nejire_role274.html" target="ORG_DESC">捜査官</a> 
+    <a class="rolelink" href="desc/nejire_role281.html" target="ORG_DESC">審神者</a> 
+    <a class="rolelink" href="desc/nejire_role305.html" target="ORG_DESC">ドルイド</a> 
+    <a class="rolelink" href="desc/nejire_role420.html" target="ORG_DESC">覚者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">狩人</td>
     <td>
-    <a class="rolelink" href="nejire_role005.html" target="nejire_org_description">狩人</a> 
-    <a class="rolelink" href="nejire_role016.html" target="nejire_org_description">風来狩人</a> 
-    <a class="rolelink" href="nejire_role031.html" target="nejire_org_description">狛犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role034.html" target="nejire_org_description">邪気腕使い</a> 
-    <a class="rolelink" href="nejire_role036.html" target="nejire_org_description">悪鬼</a> 
-    <a class="rolelink" href="nejire_role037.html" target="nejire_org_description">騎士</a> 
-    <a class="rolelink" href="nejire_role046.html" target="nejire_org_description">メイド</a> 
-    <a class="rolelink" href="nejire_role124.html" target="nejire_org_description">侍</a> 
-    <a class="rolelink" href="nejire_role128.html" target="nejire_org_description">侠客</a>
-    <a class="rolelink" href="nejire_role129.html" target="nejire_org_description">豪傑</a> 
-    <a class="rolelink" href="nejire_role130.html" target="nejire_org_description">門番</a> 
-    <a class="rolelink" href="nejire_role224.html" target="nejire_org_description">狩猟者</a> 
-    <a class="rolelink" href="nejire_role311.html" target="nejire_org_description">守護者<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role422.html" target="nejire_org_description">楽士</a> 
-    <a class="rolelink" href="nejire_role423.html" target="nejire_org_description">英雄</a> 
-    <a class="rolelink" href="nejire_role425.html" target="nejire_org_description">庭師</a> 
-    <a class="rolelink" href="nejire_role426.html" target="nejire_org_description">山伏</a> 
-    <a class="rolelink" href="nejire_role427.html" target="nejire_org_description">番人</a> 
-    <a class="rolelink" href="nejire_role457.html" target="nejire_org_description">昼行灯</a> 
+    <a class="rolelink" href="desc/nejire_role005.html" target="ORG_DESC">狩人</a> 
+    <a class="rolelink" href="desc/nejire_role016.html" target="ORG_DESC">風来狩人</a> 
+    <a class="rolelink" href="desc/nejire_role031.html" target="ORG_DESC">狛犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role034.html" target="ORG_DESC">邪気腕使い</a> 
+    <a class="rolelink" href="desc/nejire_role036.html" target="ORG_DESC">悪鬼</a> 
+    <a class="rolelink" href="desc/nejire_role037.html" target="ORG_DESC">騎士</a> 
+    <a class="rolelink" href="desc/nejire_role046.html" target="ORG_DESC">メイド</a> 
+    <a class="rolelink" href="desc/nejire_role124.html" target="ORG_DESC">侍</a> 
+    <a class="rolelink" href="desc/nejire_role128.html" target="ORG_DESC">侠客</a>
+    <a class="rolelink" href="desc/nejire_role129.html" target="ORG_DESC">豪傑</a> 
+    <a class="rolelink" href="desc/nejire_role130.html" target="ORG_DESC">門番</a> 
+    <a class="rolelink" href="desc/nejire_role224.html" target="ORG_DESC">狩猟者</a> 
+    <a class="rolelink" href="desc/nejire_role311.html" target="ORG_DESC">守護者<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role422.html" target="ORG_DESC">楽士</a> 
+    <a class="rolelink" href="desc/nejire_role423.html" target="ORG_DESC">英雄</a> 
+    <a class="rolelink" href="desc/nejire_role425.html" target="ORG_DESC">庭師</a> 
+    <a class="rolelink" href="desc/nejire_role426.html" target="ORG_DESC">山伏</a> 
+    <a class="rolelink" href="desc/nejire_role427.html" target="ORG_DESC">番人</a> 
+    <a class="rolelink" href="desc/nejire_role457.html" target="ORG_DESC">昼行灯</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">巫女</td>
     <td>
-    <a class="rolelink" href="nejire_role064.html" target="nejire_org_description">巫女</a> 
-    <a class="rolelink" href="nejire_role065.html" target="nejire_org_description">神官</a> 
-    <a class="rolelink" href="nejire_role066.html" target="nejire_org_description">神主</a> 
-    <a class="rolelink" href="nejire_role268.html" target="nejire_org_description">刑事</a> 
-    <a class="rolelink" href="nejire_role280.html" target="nejire_org_description">祈祷師</a> 
-    <a class="rolelink" href="nejire_role304.html" target="nejire_org_description">シャーマン</a> 
+    <a class="rolelink" href="desc/nejire_role064.html" target="ORG_DESC">巫女</a> 
+    <a class="rolelink" href="desc/nejire_role065.html" target="ORG_DESC">神官</a> 
+    <a class="rolelink" href="desc/nejire_role066.html" target="ORG_DESC">神主</a> 
+    <a class="rolelink" href="desc/nejire_role268.html" target="ORG_DESC">刑事</a> 
+    <a class="rolelink" href="desc/nejire_role280.html" target="ORG_DESC">祈祷師</a> 
+    <a class="rolelink" href="desc/nejire_role304.html" target="ORG_DESC">シャーマン</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">共有者</td>
     <td>
-    <a class="rolelink" href="nejire_role006.html" target="nejire_org_description">共有者</a> 
-    <a class="rolelink" href="nejire_role017.html" target="nejire_org_description">共鳴者</a> 
-    <a class="rolelink" href="nejire_role114.html" target="nejire_org_description">共命者</a> 
-    <a class="rolelink" href="nejire_role284.html" target="nejire_org_description">共演者</a> 
-    <a class="rolelink" href="nejire_role285.html" target="nejire_org_description">共振者</a> 
+    <a class="rolelink" href="desc/nejire_role006.html" target="ORG_DESC">共有者</a> 
+    <a class="rolelink" href="desc/nejire_role017.html" target="ORG_DESC">共鳴者</a> 
+    <a class="rolelink" href="desc/nejire_role114.html" target="ORG_DESC">共命者</a> 
+    <a class="rolelink" href="desc/nejire_role284.html" target="ORG_DESC">共演者</a> 
+    <a class="rolelink" href="desc/nejire_role285.html" target="ORG_DESC">共振者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">猫又</td>
     <td>
-    <a class="rolelink" href="nejire_role030.html" target="nejire_org_description">猫又<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role100.html" target="nejire_org_description">仙狸<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role101.html" target="nejire_org_description">刑部狸<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role102.html" target="nejire_org_description">八房<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role103.html" target="nejire_org_description">八咫烏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role336.html" target="nejire_org_description">夜雀<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role337.html" target="nejire_org_description">天狗<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role338.html" target="nejire_org_description">雷獣<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role396.html" target="nejire_org_description">付喪神<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role030.html" target="ORG_DESC">猫又<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role100.html" target="ORG_DESC">仙狸<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role101.html" target="ORG_DESC">刑部狸<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role102.html" target="ORG_DESC">八房<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role103.html" target="ORG_DESC">八咫烏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role336.html" target="ORG_DESC">夜雀<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role337.html" target="ORG_DESC">天狗<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role338.html" target="ORG_DESC">雷獣<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role396.html" target="ORG_DESC">付喪神<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">襲撃系</td>
     <td>
-    <a class="rolelink" href="nejire_role020.html" target="nejire_org_description">銀狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role043.html" target="nejire_org_description">暗殺者</a> 
-    <a class="rolelink" href="nejire_role212.html" target="nejire_org_description">辻斬り</a> 
-    <a class="rolelink" href="nejire_role308.html" target="nejire_org_description">求道者</a> 
+    <a class="rolelink" href="desc/nejire_role020.html" target="ORG_DESC">銀狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role043.html" target="ORG_DESC">暗殺者</a> 
+    <a class="rolelink" href="desc/nejire_role212.html" target="ORG_DESC">辻斬り</a> 
+    <a class="rolelink" href="desc/nejire_role308.html" target="ORG_DESC">求道者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">情報開示系</td>
     <td>
-    <a class="rolelink" href="nejire_role118.html" target="nejire_org_description">予言者</a> 
-    <a class="rolelink" href="nejire_role121.html" target="nejire_org_description">集計人</a> 
-    <a class="rolelink" href="nejire_role148.html" target="nejire_org_description">僧侶</a> 
-    <a class="rolelink" href="nejire_role149.html" target="nejire_org_description">和尚</a> 
-    <a class="rolelink" href="nejire_role150.html" target="nejire_org_description">シスター</a> 
-    <a class="rolelink" href="nejire_role151.html" target="nejire_org_description">神父</a> 
-    <a class="rolelink" href="nejire_role283.html" target="nejire_org_description">探知師</a> 
-    <a class="rolelink" href="nejire_role300.html" target="nejire_org_description">タロット占い師</a> 
-    <a class="rolelink" href="nejire_role372.html" target="nejire_org_description">リーダー</a> 
-    <a class="rolelink" href="nejire_role402.html" target="nejire_org_description">羊飼い</a> 
-    <a class="rolelink" href="nejire_role416.html" target="nejire_org_description">案内人</a> 
+    <a class="rolelink" href="desc/nejire_role118.html" target="ORG_DESC">予言者</a> 
+    <a class="rolelink" href="desc/nejire_role121.html" target="ORG_DESC">集計人</a> 
+    <a class="rolelink" href="desc/nejire_role148.html" target="ORG_DESC">僧侶</a> 
+    <a class="rolelink" href="desc/nejire_role149.html" target="ORG_DESC">和尚</a> 
+    <a class="rolelink" href="desc/nejire_role150.html" target="ORG_DESC">シスター</a> 
+    <a class="rolelink" href="desc/nejire_role151.html" target="ORG_DESC">神父</a> 
+    <a class="rolelink" href="desc/nejire_role283.html" target="ORG_DESC">探知師</a> 
+    <a class="rolelink" href="desc/nejire_role300.html" target="ORG_DESC">タロット占い師</a> 
+    <a class="rolelink" href="desc/nejire_role372.html" target="ORG_DESC">リーダー</a> 
+    <a class="rolelink" href="desc/nejire_role402.html" target="ORG_DESC">羊飼い</a> 
+    <a class="rolelink" href="desc/nejire_role416.html" target="ORG_DESC">案内人</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">複合系役職</td>
     <td>
-    <a class="rolelink" href="nejire_role068.html" target="nejire_org_description">賢者</a> 
-    <a class="rolelink" href="nejire_role069.html" target="nejire_org_description">仙人</a> 
-    <a class="rolelink" href="nejire_role070.html" target="nejire_org_description">聖人</a> 
-    <a class="rolelink" href="nejire_role225.html" target="nejire_org_description">研究者</a> 
+    <a class="rolelink" href="desc/nejire_role068.html" target="ORG_DESC">賢者</a> 
+    <a class="rolelink" href="desc/nejire_role069.html" target="ORG_DESC">仙人</a> 
+    <a class="rolelink" href="desc/nejire_role070.html" target="ORG_DESC">聖人</a> 
+    <a class="rolelink" href="desc/nejire_role225.html" target="ORG_DESC">研究者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">他者蘇生</td>
     <td>
-    <a class="rolelink" href="nejire_role039.html" target="nejire_org_description">魔女</a> 
-    <a class="rolelink" href="nejire_role067.html" target="nejire_org_description">聖母</a> 
-    <a class="rolelink" href="nejire_role158.html" target="nejire_org_description">召喚師</a> 
-    <a class="rolelink" href="nejire_role159.html" target="nejire_org_description">錬金術師</a> 
-    <a class="rolelink" href="nejire_role188.html" target="nejire_org_description">大神<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role270.html" target="nejire_org_description">薬師</a> 
-    <a class="rolelink" href="nejire_role357.html" target="nejire_org_description">フランケンシュタイン</a> 
-    <a class="rolelink" href="nejire_role415.html" target="nejire_org_description">花売り</a> 
-    <a class="rolelink" href="nejire_role435.html" target="nejire_org_description">撫子</a> 
+    <a class="rolelink" href="desc/nejire_role039.html" target="ORG_DESC">魔女</a> 
+    <a class="rolelink" href="desc/nejire_role067.html" target="ORG_DESC">聖母</a> 
+    <a class="rolelink" href="desc/nejire_role158.html" target="ORG_DESC">召喚師</a> 
+    <a class="rolelink" href="desc/nejire_role159.html" target="ORG_DESC">錬金術師</a> 
+    <a class="rolelink" href="desc/nejire_role188.html" target="ORG_DESC">大神<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role270.html" target="ORG_DESC">薬師</a> 
+    <a class="rolelink" href="desc/nejire_role357.html" target="ORG_DESC">フランケンシュタイン</a> 
+    <a class="rolelink" href="desc/nejire_role415.html" target="ORG_DESC">花売り</a> 
+    <a class="rolelink" href="desc/nejire_role435.html" target="ORG_DESC">撫子</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">自己蘇生</td>
     <td>
-    <a class="rolelink" href="nejire_role071.html" target="nejire_org_description">天人</a> 
-    <a class="rolelink" href="nejire_role193.html" target="nejire_org_description">ROM民</a> 
-    <a class="rolelink" href="nejire_role310.html" target="nejire_org_description">生還者</a> 
-    <a class="rolelink" href="nejire_role358.html" target="nejire_org_description">赤ずきん</a> 
-    <a class="rolelink" href="nejire_role359.html" target="nejire_org_description">アリス</a>
-    <a class="rolelink" href="nejire_role472.html" target="nejire_org_description">白雪姫</a> 
-    <a class="rolelink" href="nejire_role473.html" target="nejire_org_description">いばら姫</a>
+    <a class="rolelink" href="desc/nejire_role071.html" target="ORG_DESC">天人</a> 
+    <a class="rolelink" href="desc/nejire_role193.html" target="ORG_DESC">ROM民</a> 
+    <a class="rolelink" href="desc/nejire_role310.html" target="ORG_DESC">生還者</a> 
+    <a class="rolelink" href="desc/nejire_role358.html" target="ORG_DESC">赤ずきん</a> 
+    <a class="rolelink" href="desc/nejire_role359.html" target="ORG_DESC">アリス</a>
+    <a class="rolelink" href="desc/nejire_role472.html" target="ORG_DESC">白雪姫</a> 
+    <a class="rolelink" href="desc/nejire_role473.html" target="ORG_DESC">いばら姫</a>
     </td>
   </tr>
   <tr>
     <td class="groups">役職変化系</td>
     <td>
-    <a class="rolelink" href="nejire_role048.html" target="nejire_org_description">覚醒者</a> 
-    <a class="rolelink" href="nejire_role208.html" target="nejire_org_description">適格者</a> 
-    <a class="rolelink" href="nejire_role242.html" target="nejire_org_description">遊び人</a> 
-    <a class="rolelink" href="nejire_role244.html" target="nejire_org_description">ヒーロー</a> 
-    <a class="rolelink" href="nejire_role251.html" target="nejire_org_description">ものまね士</a> 
-    <a class="rolelink" href="nejire_role296.html" target="nejire_org_description">課金者</a> 
-    <a class="rolelink" href="nejire_role301.html" target="nejire_org_description">見習い占い師</a> 
-    <a class="rolelink" href="nejire_role377.html" target="nejire_org_description">コスプレイヤー</a> 
-    <a class="rolelink" href="nejire_role458.html" target="nejire_org_description">申し子</a> 
-    <a class="rolelink" href="nejire_role459.html" target="nejire_org_description">特異点</a> 
+    <a class="rolelink" href="desc/nejire_role048.html" target="ORG_DESC">覚醒者</a> 
+    <a class="rolelink" href="desc/nejire_role208.html" target="ORG_DESC">適格者</a> 
+    <a class="rolelink" href="desc/nejire_role242.html" target="ORG_DESC">遊び人</a> 
+    <a class="rolelink" href="desc/nejire_role244.html" target="ORG_DESC">ヒーロー</a> 
+    <a class="rolelink" href="desc/nejire_role251.html" target="ORG_DESC">ものまね士</a> 
+    <a class="rolelink" href="desc/nejire_role296.html" target="ORG_DESC">課金者</a> 
+    <a class="rolelink" href="desc/nejire_role301.html" target="ORG_DESC">見習い占い師</a> 
+    <a class="rolelink" href="desc/nejire_role377.html" target="ORG_DESC">コスプレイヤー</a> 
+    <a class="rolelink" href="desc/nejire_role458.html" target="ORG_DESC">申し子</a> 
+    <a class="rolelink" href="desc/nejire_role459.html" target="ORG_DESC">特異点</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">陣営変化系</td>
     <td>
-    <a class="rolelink" href="nejire_role032.html" target="nejire_org_description">神話マニア</a> 
-    <a class="rolelink" href="nejire_role049.html" target="nejire_org_description">潜在者</a> 
-    <a class="rolelink" href="nejire_role110.html" target="nejire_org_description">執事</a> 
-    <a class="rolelink" href="nejire_role112.html" target="nejire_org_description">継承者</a> 
-    <a class="rolelink" href="nejire_role113.html" target="nejire_org_description">修行僧</a> 
-    <a class="rolelink" href="nejire_role209.html" target="nejire_org_description">冒険者</a> 
-    <a class="rolelink" href="nejire_role216.html" target="nejire_org_description">曲者</a> 
-    <a class="rolelink" href="nejire_role227.html" target="nejire_org_description">転生者</a> 
-    <a class="rolelink" href="nejire_role236.html" target="nejire_org_description">酔払い</a> 
-    <a class="rolelink" href="nejire_role237.html" target="nejire_org_description">NEET</a> 
-    <a class="rolelink" href="nejire_role254.html" target="nejire_org_description">女騎士</a> 
-    <a class="rolelink" href="nejire_role297.html" target="nejire_org_description">学生</a> 
-    <a class="rolelink" href="nejire_role406.html" target="nejire_org_description">能楽師</a> 
-    <a class="rolelink" href="nejire_role407.html" target="nejire_org_description">影法師</a> 
-    <a class="rolelink" href="nejire_role411.html" target="nejire_org_description">契約者</a> 
-    <a class="rolelink" href="nejire_role454.html" target="nejire_org_description">監督者</a> 
-    <a class="rolelink" href="nejire_role474.html" target="nejire_org_description">灰かぶり</a> 
+    <a class="rolelink" href="desc/nejire_role032.html" target="ORG_DESC">神話マニア</a> 
+    <a class="rolelink" href="desc/nejire_role049.html" target="ORG_DESC">潜在者</a> 
+    <a class="rolelink" href="desc/nejire_role110.html" target="ORG_DESC">執事</a> 
+    <a class="rolelink" href="desc/nejire_role112.html" target="ORG_DESC">継承者</a> 
+    <a class="rolelink" href="desc/nejire_role113.html" target="ORG_DESC">修行僧</a> 
+    <a class="rolelink" href="desc/nejire_role209.html" target="ORG_DESC">冒険者</a> 
+    <a class="rolelink" href="desc/nejire_role216.html" target="ORG_DESC">曲者</a> 
+    <a class="rolelink" href="desc/nejire_role227.html" target="ORG_DESC">転生者</a> 
+    <a class="rolelink" href="desc/nejire_role236.html" target="ORG_DESC">酔払い</a> 
+    <a class="rolelink" href="desc/nejire_role237.html" target="ORG_DESC">NEET</a> 
+    <a class="rolelink" href="desc/nejire_role254.html" target="ORG_DESC">女騎士</a> 
+    <a class="rolelink" href="desc/nejire_role297.html" target="ORG_DESC">学生</a> 
+    <a class="rolelink" href="desc/nejire_role406.html" target="ORG_DESC">能楽師</a> 
+    <a class="rolelink" href="desc/nejire_role407.html" target="ORG_DESC">影法師</a> 
+    <a class="rolelink" href="desc/nejire_role411.html" target="ORG_DESC">契約者</a> 
+    <a class="rolelink" href="desc/nejire_role454.html" target="ORG_DESC">監督者</a> 
+    <a class="rolelink" href="desc/nejire_role474.html" target="ORG_DESC">灰かぶり</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">会話関連</td>
     <td>
-    <a class="rolelink" href="nejire_role018.html" target="nejire_org_description">イタコ</a> 
-    <a class="rolelink" href="nejire_role076.html" target="nejire_org_description">少女</a> 
-    <a class="rolelink" href="nejire_role119.html" target="nejire_org_description">降霊者</a> 
-    <a class="rolelink" href="nejire_role122.html" target="nejire_org_description">指導者</a> 
-    <a class="rolelink" href="nejire_role123.html" target="nejire_org_description">未練者</a> 
-    <a class="rolelink" href="nejire_role152.html" target="nejire_org_description">人形遣い</a> 
-    <a class="rolelink" href="nejire_role255.html" target="nejire_org_description">話術士</a> 
-    <a class="rolelink" href="nejire_role428.html" target="nejire_org_description">先生</a> 
-    <a class="rolelink" href="nejire_role429.html" target="nejire_org_description">幽霊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role430.html" target="nejire_org_description">通訳</a> 
-    <a class="rolelink" href="nejire_role475.html" target="nejire_org_description">マッチ売りの少女</a> 
+    <a class="rolelink" href="desc/nejire_role018.html" target="ORG_DESC">イタコ</a> 
+    <a class="rolelink" href="desc/nejire_role076.html" target="ORG_DESC">少女</a> 
+    <a class="rolelink" href="desc/nejire_role119.html" target="ORG_DESC">降霊者</a> 
+    <a class="rolelink" href="desc/nejire_role122.html" target="ORG_DESC">指導者</a> 
+    <a class="rolelink" href="desc/nejire_role123.html" target="ORG_DESC">未練者</a> 
+    <a class="rolelink" href="desc/nejire_role152.html" target="ORG_DESC">人形遣い</a> 
+    <a class="rolelink" href="desc/nejire_role255.html" target="ORG_DESC">話術士</a> 
+    <a class="rolelink" href="desc/nejire_role428.html" target="ORG_DESC">先生</a> 
+    <a class="rolelink" href="desc/nejire_role429.html" target="ORG_DESC">幽霊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role430.html" target="ORG_DESC">通訳</a> 
+    <a class="rolelink" href="desc/nejire_role475.html" target="ORG_DESC">マッチ売りの少女</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">票数操作関連</td>
     <td>
-    <a class="rolelink" href="nejire_role023.html" target="nejire_org_description">座敷童子<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role078.html" target="nejire_org_description">村長</a> 
-    <a class="rolelink" href="nejire_role079.html" target="nejire_org_description">王様</a> 
-    <a class="rolelink" href="nejire_role106.html" target="nejire_org_description">角兎<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role154.html" target="nejire_org_description">ギャンブラー</a> 
-    <a class="rolelink" href="nejire_role262.html" target="nejire_org_description">商人</a> 
-    <a class="rolelink" href="nejire_role263.html" target="nejire_org_description">社長</a> 
-    <a class="rolelink" href="nejire_role264.html" target="nejire_org_description">芸者</a> 
-    <a class="rolelink" href="nejire_role265.html" target="nejire_org_description">画家</a> 
-    <a class="rolelink" href="nejire_role266.html" target="nejire_org_description">秘書</a> 
-    <a class="rolelink" href="nejire_role267.html" target="nejire_org_description">花魁</a> 
-    <a class="rolelink" href="nejire_role273.html" target="nejire_org_description">裁判官</a> 
-    <a class="rolelink" href="nejire_role341.html" target="nejire_org_description">鬼女</a> 
-    <a class="rolelink" href="nejire_role342.html" target="nejire_org_description">雀鬼</a> 
-    <a class="rolelink" href="nejire_role397.html" target="nejire_org_description">厄神様<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role410.html" target="nejire_org_description">叛逆者</a> 
+    <a class="rolelink" href="desc/nejire_role023.html" target="ORG_DESC">座敷童子<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role078.html" target="ORG_DESC">村長</a> 
+    <a class="rolelink" href="desc/nejire_role079.html" target="ORG_DESC">王様</a> 
+    <a class="rolelink" href="desc/nejire_role106.html" target="ORG_DESC">角兎<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role154.html" target="ORG_DESC">ギャンブラー</a> 
+    <a class="rolelink" href="desc/nejire_role262.html" target="ORG_DESC">商人</a> 
+    <a class="rolelink" href="desc/nejire_role263.html" target="ORG_DESC">社長</a> 
+    <a class="rolelink" href="desc/nejire_role264.html" target="ORG_DESC">芸者</a> 
+    <a class="rolelink" href="desc/nejire_role265.html" target="ORG_DESC">画家</a> 
+    <a class="rolelink" href="desc/nejire_role266.html" target="ORG_DESC">秘書</a> 
+    <a class="rolelink" href="desc/nejire_role267.html" target="ORG_DESC">花魁</a> 
+    <a class="rolelink" href="desc/nejire_role273.html" target="ORG_DESC">裁判官</a> 
+    <a class="rolelink" href="desc/nejire_role341.html" target="ORG_DESC">鬼女</a> 
+    <a class="rolelink" href="desc/nejire_role342.html" target="ORG_DESC">雀鬼</a> 
+    <a class="rolelink" href="desc/nejire_role397.html" target="ORG_DESC">厄神様<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role410.html" target="ORG_DESC">叛逆者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">襲撃妨害役職</td>
     <td>
-    <a class="rolelink" href="nejire_role042.html" target="nejire_org_description">逃亡者</a> 
-    <a class="rolelink" href="nejire_role050.html" target="nejire_org_description">罠師</a> 
-    <a class="rolelink" href="nejire_role051.html" target="nejire_org_description">探偵</a> 
-    <a class="rolelink" href="nejire_role104.html" target="nejire_org_description">夕鶴<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role125.html" target="nejire_org_description">忍者</a> 
-    <a class="rolelink" href="nejire_role271.html" target="nejire_org_description">医師</a> 
-    <a class="rolelink" href="nejire_role307.html" target="nejire_org_description">ハンター</a> 
-    <a class="rolelink" href="nejire_role418.html" target="nejire_org_description">千匹皮</a> 
-    <a class="rolelink" href="nejire_role424.html" target="nejire_org_description">夜廻</a> 
+    <a class="rolelink" href="desc/nejire_role042.html" target="ORG_DESC">逃亡者</a> 
+    <a class="rolelink" href="desc/nejire_role050.html" target="ORG_DESC">罠師</a> 
+    <a class="rolelink" href="desc/nejire_role051.html" target="ORG_DESC">探偵</a> 
+    <a class="rolelink" href="desc/nejire_role104.html" target="ORG_DESC">夕鶴<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role125.html" target="ORG_DESC">忍者</a> 
+    <a class="rolelink" href="desc/nejire_role271.html" target="ORG_DESC">医師</a> 
+    <a class="rolelink" href="desc/nejire_role307.html" target="ORG_DESC">ハンター</a> 
+    <a class="rolelink" href="desc/nejire_role418.html" target="ORG_DESC">千匹皮</a> 
+    <a class="rolelink" href="desc/nejire_role424.html" target="ORG_DESC">夜廻</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">その他セットアクション役職</td>
     <td>
-    <a class="rolelink" href="nejire_role157.html" target="nejire_org_description">祓魔師</a> 
-    <a class="rolelink" href="nejire_role223.html" target="nejire_org_description">調停官</a> 
-    <a class="rolelink" href="nejire_role248.html" target="nejire_org_description">吟遊詩人</a> 
-    <a class="rolelink" href="nejire_role249.html" target="nejire_org_description">踊り子</a> 
-    <a class="rolelink" href="nejire_role253.html" target="nejire_org_description">調合士</a> 
-    <a class="rolelink" href="nejire_role309.html" target="nejire_org_description">追跡者</a> 
-    <a class="rolelink" href="nejire_role433.html" target="nejire_org_description">司書</a> 
-    <a class="rolelink" href="nejire_role434.html" target="nejire_org_description">歌姫</a> 
+    <a class="rolelink" href="desc/nejire_role157.html" target="ORG_DESC">祓魔師</a> 
+    <a class="rolelink" href="desc/nejire_role223.html" target="ORG_DESC">調停官</a> 
+    <a class="rolelink" href="desc/nejire_role248.html" target="ORG_DESC">吟遊詩人</a> 
+    <a class="rolelink" href="desc/nejire_role249.html" target="ORG_DESC">踊り子</a> 
+    <a class="rolelink" href="desc/nejire_role253.html" target="ORG_DESC">調合士</a> 
+    <a class="rolelink" href="desc/nejire_role309.html" target="ORG_DESC">追跡者</a> 
+    <a class="rolelink" href="desc/nejire_role433.html" target="ORG_DESC">司書</a> 
+    <a class="rolelink" href="desc/nejire_role434.html" target="ORG_DESC">歌姫</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">処刑関連役職</td>
     <td>
-    <a class="rolelink" href="nejire_role116.html" target="nejire_org_description">断罪者</a> 
-    <a class="rolelink" href="nejire_role117.html" target="nejire_org_description">贖罪者</a> 
-    <a class="rolelink" href="nejire_role120.html" target="nejire_org_description">粛正人</a> 
-    <a class="rolelink" href="nejire_role258.html" target="nejire_org_description">激おこぷんぷん丸</a> 
-    <a class="rolelink" href="nejire_role261.html" target="nejire_org_description">作家</a> 
-    <a class="rolelink" href="nejire_role340.html" target="nejire_org_description">聖女</a> 
-    <a class="rolelink" href="nejire_role312.html" target="nejire_org_description">独裁者</a> 
-    <a class="rolelink" href="nejire_role343.html" target="nejire_org_description">上様</a> 
-    <a class="rolelink" href="nejire_role412.html" target="nejire_org_description">弁護士</a> 
-    <a class="rolelink" href="nejire_role413.html" target="nejire_org_description">検事</a> 
-    <a class="rolelink" href="nejire_role417.html" target="nejire_org_description">処刑人</a> 
-    <a class="rolelink" href="nejire_role419.html" target="nejire_org_description">看板娘</a> 
+    <a class="rolelink" href="desc/nejire_role116.html" target="ORG_DESC">断罪者</a> 
+    <a class="rolelink" href="desc/nejire_role117.html" target="ORG_DESC">贖罪者</a> 
+    <a class="rolelink" href="desc/nejire_role120.html" target="ORG_DESC">粛正人</a> 
+    <a class="rolelink" href="desc/nejire_role258.html" target="ORG_DESC">激おこぷんぷん丸</a> 
+    <a class="rolelink" href="desc/nejire_role261.html" target="ORG_DESC">作家</a> 
+    <a class="rolelink" href="desc/nejire_role340.html" target="ORG_DESC">聖女</a> 
+    <a class="rolelink" href="desc/nejire_role312.html" target="ORG_DESC">独裁者</a> 
+    <a class="rolelink" href="desc/nejire_role343.html" target="ORG_DESC">上様</a> 
+    <a class="rolelink" href="desc/nejire_role412.html" target="ORG_DESC">弁護士</a> 
+    <a class="rolelink" href="desc/nejire_role413.html" target="ORG_DESC">検事</a> 
+    <a class="rolelink" href="desc/nejire_role417.html" target="ORG_DESC">処刑人</a> 
+    <a class="rolelink" href="desc/nejire_role419.html" target="ORG_DESC">看板娘</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">襲撃時効果役職</td>
     <td>
-    <a class="rolelink" href="nejire_role021.html" target="nejire_org_description">超人</a> 
-    <a class="rolelink" href="nejire_role105.html" target="nejire_org_description">蓑亀<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role147.html" target="nejire_org_description">子羊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role226.html" target="nejire_org_description">埋毒者</a> 
-    <a class="rolelink" href="nejire_role260.html" target="nejire_org_description">大工</a> 
-    <a class="rolelink" href="nejire_role374.html" target="nejire_org_description">タフガイ</a> 
-    <a class="rolelink" href="nejire_role414.html" target="nejire_org_description">料理人</a> 
-    <a class="rolelink" href="nejire_role432.html" target="nejire_org_description">旗手</a> 
+    <a class="rolelink" href="desc/nejire_role021.html" target="ORG_DESC">超人</a> 
+    <a class="rolelink" href="desc/nejire_role105.html" target="ORG_DESC">蓑亀<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role147.html" target="ORG_DESC">子羊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role226.html" target="ORG_DESC">埋毒者</a> 
+    <a class="rolelink" href="desc/nejire_role260.html" target="ORG_DESC">大工</a> 
+    <a class="rolelink" href="desc/nejire_role374.html" target="ORG_DESC">タフガイ</a> 
+    <a class="rolelink" href="desc/nejire_role414.html" target="ORG_DESC">料理人</a> 
+    <a class="rolelink" href="desc/nejire_role432.html" target="ORG_DESC">旗手</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">処刑時効果役職</td>
     <td>
-    <a class="rolelink" href="nejire_role044.html" target="nejire_org_description">王子様</a> 
-    <a class="rolelink" href="nejire_role146.html" target="nejire_org_description">山羊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role044.html" target="ORG_DESC">王子様</a> 
+    <a class="rolelink" href="desc/nejire_role146.html" target="ORG_DESC">山羊<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">証明役職</td>
     <td>
-    <a class="rolelink" href="nejire_role010.html" target="nejire_org_description">聖痕者</a> 
-    <a class="rolelink" href="nejire_role015.html" target="nejire_org_description">烙印者</a> 
-    <a class="rolelink" href="nejire_role108.html" target="nejire_org_description">貴族</a> 
-    <a class="rolelink" href="nejire_role109.html" target="nejire_org_description">領主</a> 
-    <a class="rolelink" href="nejire_role144.html" target="nejire_org_description">忠犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role196.html" target="nejire_org_description">絶対者</a> 
-    <a class="rolelink" href="nejire_role240.html" target="nejire_org_description">勇者</a> 
-    <a class="rolelink" href="nejire_role272.html" target="nejire_org_description">司令官</a> 
-    <a class="rolelink" href="nejire_role373.html" target="nejire_org_description">エスパー</a> 
-    <a class="rolelink" href="nejire_role376.html" target="nejire_org_description">パン屋</a> 
-    <a class="rolelink" href="nejire_role378.html" target="nejire_org_description">酒場のマスター</a> 
-    <a class="rolelink" href="nejire_role398.html" target="nejire_org_description">創造主</a> 
-    <a class="rolelink" href="nejire_role408.html" target="nejire_org_description">探索者</a> 
-    <a class="rolelink" href="nejire_role409.html" target="nejire_org_description">洗礼者</a> 
+    <a class="rolelink" href="desc/nejire_role010.html" target="ORG_DESC">聖痕者</a> 
+    <a class="rolelink" href="desc/nejire_role015.html" target="ORG_DESC">烙印者</a> 
+    <a class="rolelink" href="desc/nejire_role108.html" target="ORG_DESC">貴族</a> 
+    <a class="rolelink" href="desc/nejire_role109.html" target="ORG_DESC">領主</a> 
+    <a class="rolelink" href="desc/nejire_role144.html" target="ORG_DESC">忠犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role196.html" target="ORG_DESC">絶対者</a> 
+    <a class="rolelink" href="desc/nejire_role240.html" target="ORG_DESC">勇者</a> 
+    <a class="rolelink" href="desc/nejire_role272.html" target="ORG_DESC">司令官</a> 
+    <a class="rolelink" href="desc/nejire_role373.html" target="ORG_DESC">エスパー</a> 
+    <a class="rolelink" href="desc/nejire_role376.html" target="ORG_DESC">パン屋</a> 
+    <a class="rolelink" href="desc/nejire_role378.html" target="ORG_DESC">酒場のマスター</a> 
+    <a class="rolelink" href="desc/nejire_role398.html" target="ORG_DESC">創造主</a> 
+    <a class="rolelink" href="desc/nejire_role408.html" target="ORG_DESC">探索者</a> 
+    <a class="rolelink" href="desc/nejire_role409.html" target="ORG_DESC">洗礼者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">自動発動役職</td>
     <td>
-    <a class="rolelink" href="nejire_role107.html" target="nejire_org_description">旧鼠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role250.html" target="nejire_org_description">魔物使い</a> 
-    <a class="rolelink" href="nejire_role339.html" target="nejire_org_description">神龍<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role107.html" target="ORG_DESC">旧鼠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role250.html" target="ORG_DESC">魔物使い</a> 
+    <a class="rolelink" href="desc/nejire_role339.html" target="ORG_DESC">神龍<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">デメリット役職</td>
     <td>
-    <a class="rolelink" href="nejire_role077.html" target="nejire_org_description">迷い子<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role175.html" target="nejire_org_description">囚人</a> 
-    <a class="rolelink" href="nejire_role210.html" target="nejire_org_description">不審者<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role211.html" target="nejire_org_description">夢遊病者</a> 
-    <a class="rolelink" href="nejire_role259.html" target="nejire_org_description">†漆黒の堕天使†<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role352.html" target="nejire_org_description">帽子屋</a>
-    <a class="rolelink" href="nejire_role356.html" target="nejire_org_description">狼男<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role394.html" target="nejire_org_description">亡者<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role395.html" target="nejire_org_description">忌み子<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role431.html" target="nejire_org_description">市民</a> 
+    <a class="rolelink" href="desc/nejire_role077.html" target="ORG_DESC">迷い子<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role175.html" target="ORG_DESC">囚人</a> 
+    <a class="rolelink" href="desc/nejire_role210.html" target="ORG_DESC">不審者<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role211.html" target="ORG_DESC">夢遊病者</a> 
+    <a class="rolelink" href="desc/nejire_role259.html" target="ORG_DESC">†漆黒の堕天使†<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role352.html" target="ORG_DESC">帽子屋</a>
+    <a class="rolelink" href="desc/nejire_role356.html" target="ORG_DESC">狼男<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role394.html" target="ORG_DESC">亡者<img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role395.html" target="ORG_DESC">忌み子<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role431.html" target="ORG_DESC">市民</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">リセット</td>
     <td>
-    <a class="rolelink" href="nejire_role214.html" target="nejire_org_description">魔法使い</a> 
-    <a class="rolelink" href="nejire_role238.html" target="nejire_org_description">手品師</a> 
-    <a class="rolelink" href="nejire_role239.html" target="nejire_org_description">救世主</a> 
+    <a class="rolelink" href="desc/nejire_role214.html" target="ORG_DESC">魔法使い</a> 
+    <a class="rolelink" href="desc/nejire_role238.html" target="ORG_DESC">手品師</a> 
+    <a class="rolelink" href="desc/nejire_role239.html" target="ORG_DESC">救世主</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">ねじれ</td>
     <td>
-    <a class="rolelink" href="nejire_role035.html" target="nejire_org_description">クルモン</a> 
-    <a class="rolelink" href="nejire_role192.html" target="nejire_org_description">パブリッカー</a> 
-    <a class="rolelink" href="nejire_role195.html" target="nejire_org_description">Lv上げ民</a> 
-    <a class="rolelink" href="nejire_role198.html" target="nejire_org_description">ねじれ民</a> 
-    <a class="rolelink" href="nejire_role278.html" target="nejire_org_description">管理人</a> 
-    <a class="rolelink" href="nejire_role399.html" target="nejire_org_description">総統閣下</a> 
+    <a class="rolelink" href="desc/nejire_role035.html" target="ORG_DESC">クルモン</a> 
+    <a class="rolelink" href="desc/nejire_role192.html" target="ORG_DESC">パブリッカー</a> 
+    <a class="rolelink" href="desc/nejire_role195.html" target="ORG_DESC">Lv上げ民</a> 
+    <a class="rolelink" href="desc/nejire_role198.html" target="ORG_DESC">ねじれ民</a> 
+    <a class="rolelink" href="desc/nejire_role278.html" target="ORG_DESC">管理人</a> 
+    <a class="rolelink" href="desc/nejire_role399.html" target="ORG_DESC">総統閣下</a> 
     </td>
   </tr>
 
   <tr>
-    <td class="wolf" colspan="2"><b>人狼陣営</b>…恋人、仇敵、妖魔を注意しつつ村側陣営を襲います。
+    <td class="wolf" colspan="2"><strong>人狼陣営</strong>…恋人、仇敵、妖魔を注意しつつ村側陣営を襲います。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。</td>
   </tr>
   <tr>
-    <td class="wolf">人狼</td><td><a class="rolelink" href="nejire_role001.html" target="nejire_org_description">人狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a></td>
+    <td class="wolf">人狼</td><td><a class="rolelink" href="desc/nejire_role001.html" target="ORG_DESC">人狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a></td>
   </tr>
   <tr>
     <td class="groups">襲撃時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role024.html" target="nejire_org_description">智狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role025.html" target="nejire_org_description">餓狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role089.html" target="nejire_org_description">憑狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role321.html" target="nejire_org_description">雷狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role322.html" target="nejire_org_description">熱狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role323.html" target="nejire_org_description">凍狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <!--<a class="rolelink" href="nejire_role324.html" target="nejire_org_description">灯狼<img src="img/wolf.png" width="16" height="16" alt="wolf"></a> -->
-    <a class="rolelink" href="nejire_role327.html" target="nejire_org_description">堅狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role331.html" target="nejire_org_description">迅狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role024.html" target="ORG_DESC">智狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role025.html" target="ORG_DESC">餓狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role089.html" target="ORG_DESC">憑狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role321.html" target="ORG_DESC">雷狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role322.html" target="ORG_DESC">熱狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role323.html" target="ORG_DESC">凍狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <!--<a class="rolelink" href="desc/nejire_role324.html" target="ORG_DESC">灯狼<img src="img/wolf.png" width="16" height="16" alt="wolf"></a> -->
+    <a class="rolelink" href="desc/nejire_role327.html" target="ORG_DESC">堅狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role331.html" target="ORG_DESC">迅狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">初回襲撃時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role090.html" target="nejire_org_description">狡狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role169.html" target="nejire_org_description">黒狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role170.html" target="nejire_org_description">霧狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/jyama.png" width="16" height="16" alt="jyama"></a> 
-    <a class="rolelink" href="nejire_role171.html" target="nejire_org_description">牙狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role324.html" target="nejire_org_description">灯狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role090.html" target="ORG_DESC">狡狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role169.html" target="ORG_DESC">黒狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role170.html" target="ORG_DESC">霧狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/jyama.png" width="16" height="16" alt="jyama"></a> 
+    <a class="rolelink" href="desc/nejire_role171.html" target="ORG_DESC">牙狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role324.html" target="ORG_DESC">灯狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">襲撃失敗時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role091.html" target="nejire_org_description">鋭狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role200.html" target="nejire_org_description">魔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role320.html" target="nejire_org_description">毒狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role329.html" target="nejire_org_description">瘴狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role492.html" target="nejire_org_description">刻狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role091.html" target="ORG_DESC">鋭狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role200.html" target="ORG_DESC">魔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role320.html" target="ORG_DESC">毒狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role329.html" target="ORG_DESC">瘴狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role492.html" target="ORG_DESC">刻狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">投票時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role084.html" target="nejire_org_description">古狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role088.html" target="nejire_org_description">賢狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role168.html" target="nejire_org_description">帝狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role084.html" target="ORG_DESC">古狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role088.html" target="ORG_DESC">賢狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role168.html" target="ORG_DESC">帝狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">処刑時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role325.html" target="nejire_org_description">印狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role325.html" target="ORG_DESC">印狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">占い/霊能時効果</td>
     <td>
-    <a class="rolelink" href="nejire_role052.html" target="nejire_org_description">白狼<span class="plusalpha">(占○)</span><img src="img/wolf.png" width="16" height="16" alt="wolf"></a> 
-    <a class="rolelink" href="nejire_role053.html" target="nejire_org_description">呪狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role054.html" target="nejire_org_description">幻狼<span class="plusalpha">(霊○)</span><img src="img/wolf.png" width="16" height="16" alt="wolf"></a> 
+    <a class="rolelink" href="desc/nejire_role052.html" target="ORG_DESC">白狼<span class="plusalpha">(占○)</span><img src="img/wolf.png" width="16" height="16" alt="wolf"></a> 
+    <a class="rolelink" href="desc/nejire_role053.html" target="ORG_DESC">呪狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role054.html" target="ORG_DESC">幻狼<span class="plusalpha">(霊○)</span><img src="img/wolf.png" width="16" height="16" alt="wolf"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">護衛時効果</td>
     <td>
-    <a class="rolelink" href="nejire_role490.html" target="nejire_org_description">虎狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role490.html" target="ORG_DESC">虎狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">会話関連</td>
     <td>
-    <a class="rolelink" href="nejire_role055.html" target="nejire_org_description">金狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role085.html" target="nejire_org_description">静狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role201.html" target="nejire_org_description">冥狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role326.html" target="nejire_org_description">響狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role491.html" target="nejire_org_description">鐘狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role055.html" target="ORG_DESC">金狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role085.html" target="ORG_DESC">静狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role201.html" target="ORG_DESC">冥狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role326.html" target="ORG_DESC">響狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role491.html" target="ORG_DESC">鐘狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">変化関連</td>
     <td>
-    <a class="rolelink" href="nejire_role328.html" target="nejire_org_description">朔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role330.html" target="nejire_org_description">仔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role493.html" target="nejire_org_description">影狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role328.html" target="ORG_DESC">朔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role330.html" target="ORG_DESC">仔狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role493.html" target="ORG_DESC">影狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">役職把握関連</td>
     <td>
-    <a class="rolelink" href="nejire_role086.html" target="nejire_org_description">仁狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role087.html" target="nejire_org_description">識狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role496.html" target="nejire_org_description">送り狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role086.html" target="ORG_DESC">仁狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role087.html" target="ORG_DESC">識狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role496.html" target="ORG_DESC">送り狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">仲間作成関連</td>
     <td>
-    <a class="rolelink" href="nejire_role488.html" target="nejire_org_description">桜狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role489.html" target="nejire_org_description">月狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role497.html" target="nejire_org_description">子連れ狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role488.html" target="ORG_DESC">桜狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role489.html" target="ORG_DESC">月狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role497.html" target="ORG_DESC">子連れ狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">蘇生関連</td>
     <td>
-    <a class="rolelink" href="nejire_role203.html" target="nejire_org_description">神狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role203.html" target="ORG_DESC">神狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">終了時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role202.html" target="nejire_org_description">豺狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role202.html" target="ORG_DESC">豺狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">その他</td>
     <td>
-    <a class="rolelink" href="nejire_role197.html" target="nejire_org_description">絶対人狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role199.html" target="nejire_org_description">ねじれ狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role494.html" target="nejire_org_description">骸狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role495.html" target="nejire_org_description">天狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role499.html" target="nejire_org_description">人狼猫<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role197.html" target="ORG_DESC">絶対人狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role199.html" target="ORG_DESC">ねじれ狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role494.html" target="ORG_DESC">骸狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role495.html" target="ORG_DESC">天狼<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role499.html" target="ORG_DESC">人狼猫<img src="img/wolf.png" width="16" height="16" alt="wolf"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   
   <tr>
-    <td class="madman">狂人</td><td><a class="rolelink" href="nejire_role004.html" target="nejire_org_description">狂人</a></td>
+    <td class="madman">狂人</td><td><a class="rolelink" href="desc/nejire_role004.html" target="ORG_DESC">狂人</a></td>
   </tr>
   <tr>       
     <td class="groups">占い妨害関連</td>
     <td>
-    <a class="rolelink" href="nejire_role014.html" target="nejire_org_description">邪魔狂人</a> 
-    <a class="rolelink" href="nejire_role136.html" target="nejire_org_description">凶人<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role160.html" target="nejire_org_description">ペテン師</a> 
-    <a class="rolelink" href="nejire_role161.html" target="nejire_org_description">放火魔</a> 
-    <a class="rolelink" href="nejire_role162.html" target="nejire_org_description">工作員</a> 
-    <a class="rolelink" href="nejire_role163.html" target="nejire_org_description">丑刻参</a> 
-    <a class="rolelink" href="nejire_role176.html" target="nejire_org_description">四月馬鹿</a> 
-    <a class="rolelink" href="nejire_role261.html" target="nejire_org_description">犯人<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a>
-    <a class="rolelink" href="nejire_role348.html" target="nejire_org_description">呪怨者</a> 
-    <a class="rolelink" href="nejire_role442.html" target="nejire_org_description">狼少年</a> 
+    <a class="rolelink" href="desc/nejire_role014.html" target="ORG_DESC">邪魔狂人</a> 
+    <a class="rolelink" href="desc/nejire_role136.html" target="ORG_DESC">凶人<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role160.html" target="ORG_DESC">ペテン師</a> 
+    <a class="rolelink" href="desc/nejire_role161.html" target="ORG_DESC">放火魔</a> 
+    <a class="rolelink" href="desc/nejire_role162.html" target="ORG_DESC">工作員</a> 
+    <a class="rolelink" href="desc/nejire_role163.html" target="ORG_DESC">丑刻参</a> 
+    <a class="rolelink" href="desc/nejire_role176.html" target="ORG_DESC">四月馬鹿</a> 
+    <a class="rolelink" href="desc/nejire_role261.html" target="ORG_DESC">犯人<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a>
+    <a class="rolelink" href="desc/nejire_role348.html" target="ORG_DESC">呪怨者</a> 
+    <a class="rolelink" href="desc/nejire_role442.html" target="ORG_DESC">狼少年</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">仲間把握関連</td>
     <td>
-    <a class="rolelink" href="nejire_role008.html" target="nejire_org_description">Ｃ国狂人</a> 
-    <a class="rolelink" href="nejire_role009.html" target="nejire_org_description">狂信者</a> 
-    <a class="rolelink" href="nejire_role230.html" target="nejire_org_description">共犯者</a> 
-    <a class="rolelink" href="nejire_role286.html" target="nejire_org_description">共謀者</a> 
-    <a class="rolelink" href="nejire_role440.html" target="nejire_org_description">首謀者</a> 
+    <a class="rolelink" href="desc/nejire_role008.html" target="ORG_DESC">Ｃ国狂人</a> 
+    <a class="rolelink" href="desc/nejire_role009.html" target="ORG_DESC">狂信者</a> 
+    <a class="rolelink" href="desc/nejire_role230.html" target="ORG_DESC">共犯者</a> 
+    <a class="rolelink" href="desc/nejire_role286.html" target="ORG_DESC">共謀者</a> 
+    <a class="rolelink" href="desc/nejire_role440.html" target="ORG_DESC">首謀者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">役職把握関連</td>
     <td>
-    <a class="rolelink" href="nejire_role288.html" target="nejire_org_description">インチキ占い師</a> 
-    <a class="rolelink" href="nejire_role289.html" target="nejire_org_description">インチキ霊能者</a> 
-    <a class="rolelink" href="nejire_role290.html" target="nejire_org_description">インチキ巫女</a> 
-    <a class="rolelink" href="nejire_role291.html" target="nejire_org_description">エージェント</a> 
-    <a class="rolelink" href="nejire_role441.html" target="nejire_org_description">事情通</a> 
+    <a class="rolelink" href="desc/nejire_role288.html" target="ORG_DESC">インチキ占い師</a> 
+    <a class="rolelink" href="desc/nejire_role289.html" target="ORG_DESC">インチキ霊能者</a> 
+    <a class="rolelink" href="desc/nejire_role290.html" target="ORG_DESC">インチキ巫女</a> 
+    <a class="rolelink" href="desc/nejire_role291.html" target="ORG_DESC">エージェント</a> 
+    <a class="rolelink" href="desc/nejire_role441.html" target="ORG_DESC">事情通</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">罠設置</td>
     <td>
-    <a class="rolelink" href="nejire_role134.html" target="nejire_org_description">詐欺師</a> 
-    <a class="rolelink" href="nejire_role135.html" target="nejire_org_description">爆弾魔</a> 
-    <a class="rolelink" href="nejire_role346.html" target="nejire_org_description">病犬</a> 
-    <a class="rolelink" href="nejire_role347.html" target="nejire_org_description">雪男</a> 
+    <a class="rolelink" href="desc/nejire_role134.html" target="ORG_DESC">詐欺師</a> 
+    <a class="rolelink" href="desc/nejire_role135.html" target="ORG_DESC">爆弾魔</a> 
+    <a class="rolelink" href="desc/nejire_role346.html" target="ORG_DESC">病犬</a> 
+    <a class="rolelink" href="desc/nejire_role347.html" target="ORG_DESC">雪男</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">役職変化関連</td>
     <td>
-    <a class="rolelink" href="nejire_role138.html" target="nejire_org_description">泥棒</a> 
-    <a class="rolelink" href="nejire_role172.html" target="nejire_org_description">半狼<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role181.html" target="nejire_org_description">フェイカー</a> 
-    <a class="rolelink" href="nejire_role217.html" target="nejire_org_description">密偵</a> 
+    <a class="rolelink" href="desc/nejire_role138.html" target="ORG_DESC">泥棒</a> 
+    <a class="rolelink" href="desc/nejire_role172.html" target="ORG_DESC">半狼<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role181.html" target="ORG_DESC">フェイカー</a> 
+    <a class="rolelink" href="desc/nejire_role217.html" target="ORG_DESC">密偵</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">入れ替わり関連</td>
     <td>
-    <a class="rolelink" href="nejire_role132.html" target="nejire_org_description">奇術師</a> 
-    <a class="rolelink" href="nejire_role133.html" target="nejire_org_description">道化師</a> 
-    <a class="rolelink" href="nejire_role139.html" target="nejire_org_description">怪盗</a> 
-    <a class="rolelink" href="nejire_role194.html" target="nejire_org_description">匿名ID民</a> 
+    <a class="rolelink" href="desc/nejire_role132.html" target="ORG_DESC">奇術師</a> 
+    <a class="rolelink" href="desc/nejire_role133.html" target="ORG_DESC">道化師</a> 
+    <a class="rolelink" href="desc/nejire_role139.html" target="ORG_DESC">怪盗</a> 
+    <a class="rolelink" href="desc/nejire_role194.html" target="ORG_DESC">匿名ID民</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">会話覗き関連</td>
     <td>
-    <a class="rolelink" href="nejire_role234.html" target="nejire_org_description">覗き魔</a>         
-    <a class="rolelink" href="nejire_role349.html" target="nejire_org_description">密告者</a> 
+    <a class="rolelink" href="desc/nejire_role234.html" target="ORG_DESC">覗き魔</a>         
+    <a class="rolelink" href="desc/nejire_role349.html" target="ORG_DESC">密告者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">仲間作成関連</td>
     <td>
-    <a class="rolelink" href="nejire_role177.html" target="nejire_org_description">破綻者</a> 
-    <a class="rolelink" href="nejire_role287.html" target="nejire_org_description">内通者</a>          
+    <a class="rolelink" href="desc/nejire_role177.html" target="ORG_DESC">破綻者</a> 
+    <a class="rolelink" href="desc/nejire_role287.html" target="ORG_DESC">内通者</a>          
     </td>
   </tr>
   <tr>
     <td class="groups">蘇生関連</td>
     <td>
-    <a class="rolelink" href="nejire_role229.html" target="nejire_org_description">反魂者</a> 
+    <a class="rolelink" href="desc/nejire_role229.html" target="ORG_DESC">反魂者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">その他セットアクション役職</td>
     <td>
-    <a class="rolelink" href="nejire_role153.html" target="nejire_org_description">傀儡師</a> 
-    <a class="rolelink" href="nejire_role231.html" target="nejire_org_description">脅迫者</a> 
-    <a class="rolelink" href="nejire_role235.html" target="nejire_org_description">ハッカー</a> 
-    <a class="rolelink" href="nejire_role344.html" target="nejire_org_description">刺客</a> 
-    <a class="rolelink" href="nejire_role345.html" target="nejire_org_description">縛師</a> 
+    <a class="rolelink" href="desc/nejire_role153.html" target="ORG_DESC">傀儡師</a> 
+    <a class="rolelink" href="desc/nejire_role231.html" target="ORG_DESC">脅迫者</a> 
+    <a class="rolelink" href="desc/nejire_role235.html" target="ORG_DESC">ハッカー</a> 
+    <a class="rolelink" href="desc/nejire_role344.html" target="ORG_DESC">刺客</a> 
+    <a class="rolelink" href="desc/nejire_role345.html" target="ORG_DESC">縛師</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">投票操作役職</td>
     <td>
-    <a class="rolelink" href="nejire_role155.html" target="nejire_org_description">イカサマ師</a> 
-    <a class="rolelink" href="nejire_role179.html" target="nejire_org_description">革命家</a> 
-    <a class="rolelink" href="nejire_role228.html" target="nejire_org_description">圧制者</a> 
-    <a class="rolelink" href="nejire_role350.html" target="nejire_org_description">支配者</a> 
+    <a class="rolelink" href="desc/nejire_role155.html" target="ORG_DESC">イカサマ師</a> 
+    <a class="rolelink" href="desc/nejire_role179.html" target="ORG_DESC">革命家</a> 
+    <a class="rolelink" href="desc/nejire_role228.html" target="ORG_DESC">圧制者</a> 
+    <a class="rolelink" href="desc/nejire_role350.html" target="ORG_DESC">支配者</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">身代わり/襲撃/処刑耐性役職</td>
     <td>
-    <a class="rolelink" href="nejire_role137.html" target="nejire_org_description">強人</a> 
-    <a class="rolelink" href="nejire_role233.html" target="nejire_org_description">暴君</a> 
-    <a class="rolelink" href="nejire_role292.html" target="nejire_org_description">外道</a> 
-    <a class="rolelink" href="nejire_role293.html" target="nejire_org_description">鬼畜</a> 
-    <a class="rolelink" href="nejire_role355.html" target="nejire_org_description">ハートの女王</a> 
+    <a class="rolelink" href="desc/nejire_role137.html" target="ORG_DESC">強人</a> 
+    <a class="rolelink" href="desc/nejire_role233.html" target="ORG_DESC">暴君</a> 
+    <a class="rolelink" href="desc/nejire_role292.html" target="ORG_DESC">外道</a> 
+    <a class="rolelink" href="desc/nejire_role293.html" target="ORG_DESC">鬼畜</a> 
+    <a class="rolelink" href="desc/nejire_role355.html" target="ORG_DESC">ハートの女王</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">追加処刑/襲撃役職</td>
     <td>
-    <a class="rolelink" href="nejire_role178.html" target="nejire_org_description">煽動者</a> 
-    <a class="rolelink" href="nejire_role232.html" target="nejire_org_description">通り魔</a>
-    <a class="rolelink" href="nejire_role351.html" target="nejire_org_description">殺戮者</a> 
-    <a class="rolelink" href="nejire_role443.html" target="nejire_org_description">狼少女<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role178.html" target="ORG_DESC">煽動者</a> 
+    <a class="rolelink" href="desc/nejire_role232.html" target="ORG_DESC">通り魔</a>
+    <a class="rolelink" href="desc/nejire_role351.html" target="ORG_DESC">殺戮者</a> 
+    <a class="rolelink" href="desc/nejire_role443.html" target="ORG_DESC">狼少女<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a> 
     </td>
   </tr>
   <tr>
-  <tr>
-    <td class="madman">サブ役職</td><td><a class="sublink" href="nejire_sub07.html" target="nejire_org_description">発狂</a></td>
+    <td class="madman">サブ役職</td><td><a class="sublink" href="desc/nejire_sub07.html" target="ORG_DESC">発狂</a></td>
   </tr>
-  <tr>
   
   <tr>
-    <td class="fox" colspan="2"><b>妖魔陣営</b>…占われないように気をつけ生存を目指します。
+    <td class="fox" colspan="2"><strong>妖魔陣営</strong>…占われないように気をつけ生存を目指します。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="madman">発狂</span>は除く。</td>
   </tr>
   <tr>
-    <td class="fox">妖魔</td><td><a class="rolelink" href="nejire_role007.html" target="nejire_org_description">妖魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a></td>
+    <td class="fox">妖魔</td><td><a class="rolelink" href="desc/nejire_role007.html" target="ORG_DESC">妖魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a></td>
   </tr>
   <tr>
     <td class="groups">呪殺耐性</td>
     <td>
-    <a class="rolelink" href="nejire_role028.html" target="nejire_org_description">狐<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role099.html" target="nejire_org_description">妖獣<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role174.html" target="nejire_org_description">魔人<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role187.html" target="nejire_org_description">邪神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role243.html" target="nejire_org_description">まもの<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role486.html" target="nejire_org_description">逢魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role028.html" target="ORG_DESC">狐<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role099.html" target="ORG_DESC">妖獣<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role174.html" target="ORG_DESC">魔人<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role187.html" target="ORG_DESC">邪神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role243.html" target="ORG_DESC">まもの<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role486.html" target="ORG_DESC">逢魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">呪殺妨害関連</td>
     <td>
-    <a class="rolelink" href="nejire_role093.html" target="nejire_org_description">妖蛇<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role205.html" target="nejire_org_description">悪魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role207.html" target="nejire_org_description">業魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role363.html" target="nejire_org_description">鬼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role093.html" target="ORG_DESC">妖蛇<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role205.html" target="ORG_DESC">悪魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role207.html" target="ORG_DESC">業魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role363.html" target="ORG_DESC">鬼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">役職把握関連</td>
     <td>
-    <a class="rolelink" href="nejire_role096.html" target="nejire_org_description">妖犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role097.html" target="nejire_org_description">妖猿<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role098.html" target="nejire_org_description">妖雉<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role498.html" target="nejire_org_description">狐狗狸さん<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role096.html" target="ORG_DESC">妖犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role097.html" target="ORG_DESC">妖猿<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role098.html" target="ORG_DESC">妖雉<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role498.html" target="ORG_DESC">狐狗狸さん<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">罠設置関連</td>
     <td>
-    <a class="rolelink" href="nejire_role094.html" target="nejire_org_description">妖鼬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role334.html" target="nejire_org_description">病魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role362.html" target="nejire_org_description">雪女<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role094.html" target="ORG_DESC">妖鼬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role334.html" target="ORG_DESC">病魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role362.html" target="ORG_DESC">雪女<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">入れ替わり関連</td>
     <td>
-    <a class="rolelink" href="nejire_role092.html" target="nejire_org_description">妖狸<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role095.html" target="nejire_org_description">妖蟲<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role140.html" target="nejire_org_description">這い寄る混沌<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
+    <a class="rolelink" href="desc/nejire_role092.html" target="ORG_DESC">妖狸<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role095.html" target="ORG_DESC">妖蟲<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role140.html" target="ORG_DESC">這い寄る混沌<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
     </td>
   </tr>
   <tr>
     <td class="groups">蘇生関連</td>
     <td>
-    <a class="rolelink" href="nejire_role056.html" target="nejire_org_description">妖精<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role056.html" target="ORG_DESC">妖精<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">セットアクション役職</td>
     <td>
-    <a class="rolelink" href="nejire_role204.html" target="nejire_org_description">小悪魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role335.html" target="nejire_org_description">睡魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role204.html" target="ORG_DESC">小悪魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role335.html" target="ORG_DESC">睡魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">役職変化</td>
     <td>
-    <a class="rolelink" href="nejire_role360.html" target="nejire_org_description">鵺<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role360.html" target="ORG_DESC">鵺<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">襲撃時発動</td>
     <td>
-    <a class="rolelink" href="nejire_role058.html" target="nejire_org_description">妖狐<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role361.html" target="nejire_org_description">九尾<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role058.html" target="ORG_DESC">妖狐<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role361.html" target="ORG_DESC">九尾<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">会話覗き関連</td>
     <td>
-    <a class="rolelink" href="nejire_role057.html" target="nejire_org_description">妖兎<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role332.html" target="nejire_org_description">閻魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role057.html" target="ORG_DESC">妖兎<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role332.html" target="ORG_DESC">閻魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">会話関連</td>
     <td>
-    <a class="rolelink" href="nejire_role059.html" target="nejire_org_description">妖狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role141.html" target="nejire_org_description">旧支配者<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
-    <a class="rolelink" href="nejire_role206.html" target="nejire_org_description">使い魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role241.html" target="nejire_org_description">魔王<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role059.html" target="ORG_DESC">妖狼<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role141.html" target="ORG_DESC">旧支配者<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
+    <a class="rolelink" href="desc/nejire_role206.html" target="ORG_DESC">使い魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role241.html" target="ORG_DESC">魔王<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="groups">仲間作成関連</td>
     <td>
-    <a class="rolelink" href="nejire_role143.html" target="nejire_org_description">ドラキュラ<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role333.html" target="nejire_org_description">淫魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
-    <a class="rolelink" href="nejire_role484.html" target="nejire_org_description">夜魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role485.html" target="nejire_org_description">海魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
+    <a class="rolelink" href="desc/nejire_role143.html" target="ORG_DESC">ドラキュラ<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role333.html" target="ORG_DESC">淫魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
+    <a class="rolelink" href="desc/nejire_role484.html" target="ORG_DESC">夜魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role485.html" target="ORG_DESC">海魔<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a>
     </td>
   </tr>
   <tr>
     <td class="groups">その他</td>
     <td>
-    <a class="rolelink" href="nejire_role479.html" target="nejire_org_description">ナイトメア<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role487.html" target="nejire_org_description">群馬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role479.html" target="ORG_DESC">ナイトメア<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role487.html" target="ORG_DESC">群馬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
     </td>
   </tr>
   <tr>
     <td class="doppel">ドッペルゲンガー</td>
     <td>
-    <a class="rolelink" href="nejire_role184.html" target="nejire_org_description">犬神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role185.html" target="nejire_org_description">猿神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role186.html" target="nejire_org_description">蛇神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role247.html" target="nejire_org_description">ドッペルゲンガー</a> 
+    <a class="rolelink" href="desc/nejire_role184.html" target="ORG_DESC">犬神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role185.html" target="ORG_DESC">猿神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role186.html" target="ORG_DESC">蛇神<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role247.html" target="ORG_DESC">ドッペルゲンガー</a> 
     </td>
   </tr>
   <tr>
     <td class="immoral">背徳者</td>
     <td>
-    <a class="rolelink" href="nejire_role080.html" target="nejire_org_description">背徳者</a> 
-    <a class="rolelink" href="nejire_role081.html" target="nejire_org_description">異端者</a> 
-    <a class="rolelink" href="nejire_role082.html" target="nejire_org_description">崇拝者</a> 
-    <a class="rolelink" href="nejire_role083.html" target="nejire_org_description">冒涜者</a> 
-    <a class="rolelink" href="nejire_role142.html" target="nejire_org_description">ネクロマンサー</a> 
-    <a class="rolelink" href="nejire_role173.html" target="nejire_org_description">半妖</a> 
-    <a class="rolelink" href="nejire_role257.html" target="nejire_org_description">深きものども<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
-    <a class="rolelink" href="nejire_role444.html" target="nejire_org_description">背信者</a> 
-    <a class="rolelink" href="nejire_role445.html" target="nejire_org_description">殉教者</a> 
-    <a class="rolelink" href="nejire_role446.html" target="nejire_org_description">倒錯者</a> 
-    <a class="rolelink" href="nejire_role447.html" target="nejire_org_description">歪曲者</a> 
-    <a class="rolelink" href="nejire_role466.html" target="nejire_org_description">ゾンビ</a> 
+    <a class="rolelink" href="desc/nejire_role080.html" target="ORG_DESC">背徳者</a> 
+    <a class="rolelink" href="desc/nejire_role081.html" target="ORG_DESC">異端者</a> 
+    <a class="rolelink" href="desc/nejire_role082.html" target="ORG_DESC">崇拝者</a> 
+    <a class="rolelink" href="desc/nejire_role083.html" target="ORG_DESC">冒涜者</a> 
+    <a class="rolelink" href="desc/nejire_role142.html" target="ORG_DESC">ネクロマンサー</a> 
+    <a class="rolelink" href="desc/nejire_role173.html" target="ORG_DESC">半妖</a> 
+    <a class="rolelink" href="desc/nejire_role257.html" target="ORG_DESC">深きものども<img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a> 
+    <a class="rolelink" href="desc/nejire_role444.html" target="ORG_DESC">背信者</a> 
+    <a class="rolelink" href="desc/nejire_role445.html" target="ORG_DESC">殉教者</a> 
+    <a class="rolelink" href="desc/nejire_role446.html" target="ORG_DESC">倒錯者</a> 
+    <a class="rolelink" href="desc/nejire_role447.html" target="ORG_DESC">歪曲者</a> 
+    <a class="rolelink" href="desc/nejire_role466.html" target="ORG_DESC">ゾンビ</a> 
+    </td>
   </tr>
+  <tr>
     <td class="fox">サブ役職</td>
     <td>
-    <a class="sublink" href="nejire_sub04.html" target="nejire_org_description">下僕</a>
-    <a class="sublink" href="nejire_sub05.html" target="nejire_org_description">眷属</a>
+    <a class="sublink" href="desc/nejire_sub04.html" target="ORG_DESC">下僕</a>
+    <a class="sublink" href="desc/nejire_sub05.html" target="ORG_DESC">眷属</a>
     </td>
   </tr>
   
   <tr>
-    <td class="lovers" colspan="2"><b>恋人陣営</b>…恋人になった人は元の自分の陣営を裏切って勝利を目指します。
+    <td class="lovers" colspan="2"><strong>恋人陣営</strong>…恋人になった人は元の自分の陣営を裏切って勝利を目指します。
     </td>
   </tr>
   <tr>
     <td class="groups">求愛者</td>
     <td>
-    <a class="rolelink" href="nejire_role013.html" target="nejire_org_description">求愛者</a> 
-    <a class="rolelink" href="nejire_role038.html" target="nejire_org_description">悪女</a> 
-    <a class="rolelink" href="nejire_role045.html" target="nejire_org_description">姫様</a> 
-    <a class="rolelink" href="nejire_role047.html" target="nejire_org_description">リア充</a> 
-    <a class="rolelink" href="nejire_role182.html" target="nejire_org_description">ストーカー</a> 
-    <a class="rolelink" href="nejire_role245.html" target="nejire_org_description">ヒロイン</a> 
-    <a class="rolelink" href="nejire_role315.html" target="nejire_org_description">共愛者</a> 
-    <a class="rolelink" href="nejire_role317.html" target="nejire_org_description">溺愛者</a> 
-    <a class="rolelink" href="nejire_role319.html" target="nejire_org_description">マゾ</a> 
-    <a class="rolelink" href="nejire_role388.html" target="nejire_org_description">花嫁</a> 
-    <a class="rolelink" href="nejire_role390.html" target="nejire_org_description">乙女</a> 
+    <a class="rolelink" href="desc/nejire_role013.html" target="ORG_DESC">求愛者</a> 
+    <a class="rolelink" href="desc/nejire_role038.html" target="ORG_DESC">悪女</a> 
+    <a class="rolelink" href="desc/nejire_role045.html" target="ORG_DESC">姫様</a> 
+    <a class="rolelink" href="desc/nejire_role047.html" target="ORG_DESC">リア充</a> 
+    <a class="rolelink" href="desc/nejire_role182.html" target="ORG_DESC">ストーカー</a> 
+    <a class="rolelink" href="desc/nejire_role245.html" target="ORG_DESC">ヒロイン</a> 
+    <a class="rolelink" href="desc/nejire_role315.html" target="ORG_DESC">共愛者</a> 
+    <a class="rolelink" href="desc/nejire_role317.html" target="ORG_DESC">溺愛者</a> 
+    <a class="rolelink" href="desc/nejire_role319.html" target="ORG_DESC">マゾ</a> 
+    <a class="rolelink" href="desc/nejire_role388.html" target="ORG_DESC">花嫁</a> 
+    <a class="rolelink" href="desc/nejire_role390.html" target="ORG_DESC">乙女</a> 
     </td>
   </tr>
   <tr>
     <td class="groups">キューピッド</td>
     <td>
-    <a class="rolelink" href="nejire_role012.html" target="nejire_org_description">キューピッド</a> 
-    <a class="rolelink" href="nejire_role075.html" target="nejire_org_description">絡新婦</a> 
-    <a class="rolelink" href="nejire_role190.html" target="nejire_org_description">女神</a> 
-    <a class="rolelink" href="nejire_role276.html" target="nejire_org_description">アイドル</a> 
-    <a class="rolelink" href="nejire_role480.html" target="nejire_org_description">女豹</a>
-    <a class="rolelink" href="nejire_role482.html" target="nejire_org_description">天女</a>
+    <a class="rolelink" href="desc/nejire_role012.html" target="ORG_DESC">キューピッド</a> 
+    <a class="rolelink" href="desc/nejire_role075.html" target="ORG_DESC">絡新婦</a> 
+    <a class="rolelink" href="desc/nejire_role190.html" target="ORG_DESC">女神</a> 
+    <a class="rolelink" href="desc/nejire_role276.html" target="ORG_DESC">アイドル</a> 
+    <a class="rolelink" href="desc/nejire_role480.html" target="ORG_DESC">女豹</a>
+    <a class="rolelink" href="desc/nejire_role482.html" target="ORG_DESC">天女</a>
     </td>
   </tr>
   <tr>
     <td class="lovers">サブ役職</td>
     <td>
-    <a class="sublink" href="nejire_sub00.html" target="nejire_org_description">恋人</a>
-    <a class="sublink" href="nejire_sub10.html" target="nejire_org_description">仲人</a>
+    <a class="sublink" href="desc/nejire_sub00.html" target="ORG_DESC">恋人</a>
+    <a class="sublink" href="desc/nejire_sub10.html" target="ORG_DESC">仲人</a>
     </td>
   </tr>
 
   <tr>
-    <td class="revenger" colspan="2"><b>復讐者陣営</b>…敵対する仇敵を倒して生存を目指します。
+    <td class="revenger" colspan="2"><strong>復讐者陣営</strong>…敵対する仇敵を倒して生存を目指します。
     </td>
   </tr>
   <tr>
     <td class="groups">復讐者</td>
     <td>
-    <a class="rolelink" href="nejire_role040.html" target="nejire_org_description">復讐者</a> 
-    <a class="rolelink" href="nejire_role073.html" target="nejire_org_description">復讐鬼</a> 
-    <a class="rolelink" href="nejire_role246.html" target="nejire_org_description">ライバル</a> 
-    <a class="rolelink" href="nejire_role314.html" target="nejire_org_description">共闘者</a> 
-    <a class="rolelink" href="nejire_role316.html" target="nejire_org_description">決闘者</a> 
-    <a class="rolelink" href="nejire_role318.html" target="nejire_org_description">サド</a> 
-    <a class="rolelink" href="nejire_role389.html" target="nejire_org_description">剣闘士</a> 
-    <a class="rolelink" href="nejire_role391.html" target="nejire_org_description">阿修羅</a> 
+    <a class="rolelink" href="desc/nejire_role040.html" target="ORG_DESC">復讐者</a> 
+    <a class="rolelink" href="desc/nejire_role073.html" target="ORG_DESC">復讐鬼</a> 
+    <a class="rolelink" href="desc/nejire_role246.html" target="ORG_DESC">ライバル</a> 
+    <a class="rolelink" href="desc/nejire_role314.html" target="ORG_DESC">共闘者</a> 
+    <a class="rolelink" href="desc/nejire_role316.html" target="ORG_DESC">決闘者</a> 
+    <a class="rolelink" href="desc/nejire_role318.html" target="ORG_DESC">サド</a> 
+    <a class="rolelink" href="desc/nejire_role389.html" target="ORG_DESC">剣闘士</a> 
+    <a class="rolelink" href="desc/nejire_role391.html" target="ORG_DESC">阿修羅</a> 
     </td>
   </tr>
+  <tr>
     <td class="groups">戦乙女</td>
     <td>
-    <a class="rolelink" href="nejire_role041.html" target="nejire_org_description">戦乙女</a> 
-    <a class="rolelink" href="nejire_role072.html" target="nejire_org_description">裏切者</a> 
-    <a class="rolelink" href="nejire_role191.html" target="nejire_org_description">闘神</a> 
-    <a class="rolelink" href="nejire_role481.html" target="nejire_org_description">羅刹</a>
-    <a class="rolelink" href="nejire_role483.html" target="nejire_org_description">夜叉</a>
+    <a class="rolelink" href="desc/nejire_role041.html" target="ORG_DESC">戦乙女</a> 
+    <a class="rolelink" href="desc/nejire_role072.html" target="ORG_DESC">裏切者</a> 
+    <a class="rolelink" href="desc/nejire_role191.html" target="ORG_DESC">闘神</a> 
+    <a class="rolelink" href="desc/nejire_role481.html" target="ORG_DESC">羅刹</a>
+    <a class="rolelink" href="desc/nejire_role483.html" target="ORG_DESC">夜叉</a>
     </td>
   </tr>
   <tr>
     <td class="revenger">サブ役職</td>
     <td>
-    <a class="sublink" href="nejire_sub01.html" target="nejire_org_description">仇敵</a>
-    <a class="sublink" href="nejire_sub11.html" target="nejire_org_description">証人</a>
+    <a class="sublink" href="desc/nejire_sub01.html" target="ORG_DESC">仇敵</a>
+    <a class="sublink" href="desc/nejire_sub11.html" target="ORG_DESC">証人</a>
     </td>
   </tr>
   
   <tr>
-    <td class="cult" colspan="2"><b>教祖陣営</b>…生存者全てを信者にすることを目指します。
+    <td class="cult" colspan="2"><strong>教祖陣営</strong>…生存者全てを信者にすることを目指します。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>は除く。</td>
   </tr>
   <tr>
     <td colspan="2">
-    <a class="rolelink" href="nejire_role022.html" target="nejire_org_description">教祖</a> 
-    <a class="rolelink" href="nejire_role164.html" target="nejire_org_description">宗祖</a> 
-    <a class="rolelink" href="nejire_role165.html" target="nejire_org_description">開祖</a> 
-    <a class="rolelink" href="nejire_role166.html" target="nejire_org_description">始祖</a> 
-    <a class="rolelink" href="nejire_role167.html" target="nejire_org_description">元祖</a> 
-    <a class="rolelink" href="nejire_role294.html" target="nejire_org_description">教主</a> 
-    <a class="rolelink" href="nejire_role295.html" target="nejire_org_description">教皇</a> 
+    <a class="rolelink" href="desc/nejire_role022.html" target="ORG_DESC">教祖</a> 
+    <a class="rolelink" href="desc/nejire_role164.html" target="ORG_DESC">宗祖</a> 
+    <a class="rolelink" href="desc/nejire_role165.html" target="ORG_DESC">開祖</a> 
+    <a class="rolelink" href="desc/nejire_role166.html" target="ORG_DESC">始祖</a> 
+    <a class="rolelink" href="desc/nejire_role167.html" target="ORG_DESC">元祖</a> 
+    <a class="rolelink" href="desc/nejire_role294.html" target="ORG_DESC">教主</a> 
+    <a class="rolelink" href="desc/nejire_role295.html" target="ORG_DESC">教皇</a> 
     </td>
   </tr>
 
   <tr>
-    <td class="vampire" colspan="2"><b>吸血鬼陣営</b>…死亡した屍者の数が生存者数を上回ることを目指します。
+    <td class="vampire" colspan="2"><strong>吸血鬼陣営</strong>…死亡した屍者の数が生存者数を上回ることを目指します。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。</td>
   </tr>
   <tr>
     <td colspan="2">
-    <a class="rolelink" href="nejire_role074.html" target="nejire_org_description">吸血鬼</a> 
-    <a class="rolelink" href="nejire_role380.html" target="nejire_org_description">鮮血鬼</a> 
-    <a class="rolelink" href="nejire_role381.html" target="nejire_org_description">純血鬼</a> 
-    <a class="rolelink" href="nejire_role382.html" target="nejire_org_description">採血鬼</a> 
-    <a class="rolelink" href="nejire_role383.html" target="nejire_org_description">増血鬼</a> 
-    <a class="rolelink" href="nejire_role384.html" target="nejire_org_description">屍鬼</a> 
-    <a class="rolelink" href="nejire_role385.html" target="nejire_org_description">殲鬼</a> 
-    <a class="rolelink" href="nejire_role386.html" target="nejire_org_description">吸血姫</a> 
-    <a class="rolelink" href="nejire_role387.html" target="nejire_org_description">吸血公</a>
+    <a class="rolelink" href="desc/nejire_role074.html" target="ORG_DESC">吸血鬼</a> 
+    <a class="rolelink" href="desc/nejire_role380.html" target="ORG_DESC">鮮血鬼</a> 
+    <a class="rolelink" href="desc/nejire_role381.html" target="ORG_DESC">純血鬼</a> 
+    <a class="rolelink" href="desc/nejire_role382.html" target="ORG_DESC">採血鬼</a> 
+    <a class="rolelink" href="desc/nejire_role383.html" target="ORG_DESC">増血鬼</a> 
+    <a class="rolelink" href="desc/nejire_role384.html" target="ORG_DESC">屍鬼</a> 
+    <a class="rolelink" href="desc/nejire_role385.html" target="ORG_DESC">殲鬼</a> 
+    <a class="rolelink" href="desc/nejire_role386.html" target="ORG_DESC">吸血姫</a> 
+    <a class="rolelink" href="desc/nejire_role387.html" target="ORG_DESC">吸血公</a>
   </tr>
 
   <tr>
-    <td class="lonewolf" colspan="2"><b>一匹狼陣営</b>…人狼を排除し、生存を目指します。
+    <td class="lonewolf" colspan="2"><strong>一匹狼陣営</strong>…人狼を排除し、生存を目指します。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。</td>
   </tr>
   <tr>
     <td colspan="2">
-    <a class="rolelink" href="nejire_role026.html" target="nejire_org_description">一匹狼<img src="img/wolf.png" width="16" height="16" alt="wolf"></a>
+    <a class="rolelink" href="desc/nejire_role026.html" target="ORG_DESC">一匹狼<img src="img/wolf.png" width="16" height="16" alt="wolf"></a>
   </tr>
 
   <tr>
-    <td class="murderer" colspan="2"><b>殺人鬼陣営</b>…人狼と一匹狼を排除し、生存を目指します。
+    <td class="murderer" colspan="2"><strong>殺人鬼陣営</strong>…人狼と一匹狼を排除し、生存を目指します。
     <span class="lovers">恋人</span>/<span class="revenger">仇敵</span>/<span class="fox">下僕</span>/<span class="fox">眷属</span>/<span class="madman">発狂</span>/<span class="lovers">仲人</span>/<span class="revenger">証人</span>は除く。</td>
   </tr>
   <tr>
     <td colspan="2">
-    <a class="rolelink" href="nejire_role027.html" target="nejire_org_description">殺人鬼</a>
+    <a class="rolelink" href="desc/nejire_role027.html" target="ORG_DESC">殺人鬼</a>
   </tr>
 
   <tr>
-    <td class="wirepuller" colspan="2"><b>黒幕陣営</b>…生存を目指します。
+    <td class="wirepuller" colspan="2"><strong>黒幕陣営</strong>…生存を目指します。
     </td>
   </tr>
   <tr>
     <td colspan="2">
-    <a class="rolelink" href="nejire_role279.html" target="nejire_org_description">黒幕<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a>
+    <a class="rolelink" href="desc/nejire_role279.html" target="ORG_DESC">黒幕<img src="img/human.png" width="16" height="16" alt="human"><img src="img/black.png" width="16" height="16" alt="black"></a>
     </td>
   </tr>
   <tr>
     <td class="wirepuller">サブ役職</td>
     <td>
-    <a class="sublink" href="nejire_sub15.html" target="nejire_org_description">四天王</a>
+    <a class="sublink" href="desc/nejire_sub15.html" target="ORG_DESC">四天王</a>
     </td>
   </tr>
   
   <tr>
-    <td class="others" colspan="2"><b>その他の陣営</b>…どの陣営にも属しません。特定の勝敗判定が下されます。</td>
+    <td class="others" colspan="2"><strong>その他の陣営</strong>…どの陣営にも属しません。特定の勝敗判定が下されます。</td>
   </tr>
 
   <tr>
     <td class="bat">蝙蝠</td>
     <td>
-    <a class="rolelink" href="nejire_role019.html" target="nejire_org_description">蝙蝠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role145.html" target="nejire_org_description">鬣犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
-    <a class="rolelink" href="nejire_role277.html" target="nejire_org_description">ハムスター<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
-    <a class="rolelink" href="nejire_role353.html" target="nejire_org_description">三月兎</a> 
-    <a class="rolelink" href="nejire_role354.html" target="nejire_org_description">眠り鼠</a> 
-    <a class="rolelink" href="nejire_role364.html" target="nejire_org_description">狢<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role365.html" target="nejire_org_description">貂<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role366.html" target="nejire_org_description">梟<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role367.html" target="nejire_org_description">獏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role368.html" target="nejire_org_description">蜘蛛<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role369.html" target="nejire_org_description">蝦蟇<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role370.html" target="nejire_org_description">蟒蛇<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role371.html" target="nejire_org_description">蛞蝓<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role392.html" target="nejire_org_description">天使<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role393.html" target="nejire_org_description">堕天使<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a>
-    <a class="rolelink" href="nejire_role448.html" target="nejire_org_description">不死鳥<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role460.html" target="nejire_org_description">鴉<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role461.html" target="nejire_org_description">鼠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role462.html" target="nejire_org_description">燕<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role463.html" target="nejire_org_description">鶏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role462.html" target="nejire_org_description">禿鷹<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role463.html" target="nejire_org_description">蜥蜴<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role464.html" target="nejire_org_description">宇宙人<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role465.html" target="nejire_org_description">ロボット<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role467.html" target="nejire_org_description">ガーゴイル<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role468.html" target="nejire_org_description">ガチャピン<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role469.html" target="nejire_org_description">ムック<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role476.html" target="nejire_org_description">時計ウサギ<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role477.html" target="nejire_org_description">チェシャ猫<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
-    <a class="rolelink" href="nejire_role478.html" target="nejire_org_description">小夜啼鳥<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role019.html" target="ORG_DESC">蝙蝠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role145.html" target="ORG_DESC">鬣犬<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/black.png" width="16" height="16" alt="black"></a> 
+    <a class="rolelink" href="desc/nejire_role277.html" target="ORG_DESC">ハムスター<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/melt.png" width="16" height="16" alt="melt"></a> 
+    <a class="rolelink" href="desc/nejire_role353.html" target="ORG_DESC">三月兎</a> 
+    <a class="rolelink" href="desc/nejire_role354.html" target="ORG_DESC">眠り鼠</a> 
+    <a class="rolelink" href="desc/nejire_role364.html" target="ORG_DESC">狢<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role365.html" target="ORG_DESC">貂<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role366.html" target="ORG_DESC">梟<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role367.html" target="ORG_DESC">獏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role368.html" target="ORG_DESC">蜘蛛<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role369.html" target="ORG_DESC">蝦蟇<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role370.html" target="ORG_DESC">蟒蛇<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role371.html" target="ORG_DESC">蛞蝓<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role392.html" target="ORG_DESC">天使<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role393.html" target="ORG_DESC">堕天使<img src="img/nocount.png" width="16" height="16" alt="nocount"><img src="img/reverse_melt.png" width="16" height="16" alt="reverse_melt"></a>
+    <a class="rolelink" href="desc/nejire_role448.html" target="ORG_DESC">不死鳥<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role460.html" target="ORG_DESC">鴉<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role461.html" target="ORG_DESC">鼠<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role462.html" target="ORG_DESC">燕<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role463.html" target="ORG_DESC">鶏<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role462.html" target="ORG_DESC">禿鷹<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role463.html" target="ORG_DESC">蜥蜴<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role464.html" target="ORG_DESC">宇宙人<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role465.html" target="ORG_DESC">ロボット<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role467.html" target="ORG_DESC">ガーゴイル<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role468.html" target="ORG_DESC">ガチャピン<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role469.html" target="ORG_DESC">ムック<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role476.html" target="ORG_DESC">時計ウサギ<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role477.html" target="ORG_DESC">チェシャ猫<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
+    <a class="rolelink" href="desc/nejire_role478.html" target="ORG_DESC">小夜啼鳥<img src="img/nocount.png" width="16" height="16" alt="nocount"></a> 
     </td>
   </tr>
   <tr>
     <td class="traveller">旅人</td>
     <td>
-    <a class="rolelink" href="nejire_role111.html" target="nejire_org_description">旅人</a> 
-    <a class="rolelink" href="nejire_role213.html" target="nejire_org_description">用心棒</a> 
-    <a class="rolelink" href="nejire_role215.html" target="nejire_org_description">二重人格</a> 
-    <a class="rolelink" href="nejire_role275.html" target="nejire_org_description">情報屋</a> 
-    <a class="rolelink" href="nejire_role313.html" target="nejire_org_description">傾奇者</a> 
-    <a class="rolelink" href="nejire_role375.html" target="nejire_org_description">プレデター</a> 
-    <a class="rolelink" href="nejire_role379.html" target="nejire_org_description">トリックスター</a> 
-    <a class="rolelink" href="nejire_role450.html" target="nejire_org_description">人魚姫</a> 
+    <a class="rolelink" href="desc/nejire_role111.html" target="ORG_DESC">旅人</a> 
+    <a class="rolelink" href="desc/nejire_role213.html" target="ORG_DESC">用心棒</a> 
+    <a class="rolelink" href="desc/nejire_role215.html" target="ORG_DESC">二重人格</a> 
+    <a class="rolelink" href="desc/nejire_role275.html" target="ORG_DESC">情報屋</a> 
+    <a class="rolelink" href="desc/nejire_role313.html" target="ORG_DESC">傾奇者</a> 
+    <a class="rolelink" href="desc/nejire_role375.html" target="ORG_DESC">プレデター</a> 
+    <a class="rolelink" href="desc/nejire_role379.html" target="ORG_DESC">トリックスター</a> 
+    <a class="rolelink" href="desc/nejire_role450.html" target="ORG_DESC">人魚姫</a> 
     </td>
   </tr>
   <tr>
     <td class="forceddefeat">強制敗北</td>
     <td>
-    <a class="rolelink" href="nejire_role126.html" target="nejire_org_description">盗賊</a> 
-    <a class="rolelink" href="nejire_role127.html" target="nejire_org_description">墓荒らし</a> 
-    <a class="rolelink" href="nejire_role183.html" target="nejire_org_description">ジョーカー</a> 
+    <a class="rolelink" href="desc/nejire_role126.html" target="ORG_DESC">盗賊</a> 
+    <a class="rolelink" href="desc/nejire_role127.html" target="ORG_DESC">墓荒らし</a> 
+    <a class="rolelink" href="desc/nejire_role183.html" target="ORG_DESC">ジョーカー</a> 
     </td>
   </tr>
   <tr>
     <td class="others">その他</td>
     <td>
-    <a class="rolelink" href="nejire_role131.html" target="nejire_org_description">傭兵</a> 
-    <a class="rolelink" href="nejire_role180.html" target="nejire_org_description">フォロワー</a> 
-    <a class="rolelink" href="nejire_role189.html" target="nejire_org_description">死神</a> 
-    <a class="rolelink" href="nejire_role218.html" target="nejire_org_description">愚者</a> 
-    <a class="rolelink" href="nejire_role219.html" target="nejire_org_description">咎人</a> 
-    <a class="rolelink" href="nejire_role256.html" target="nejire_org_description">イレギュラー</a> 
-    <a class="rolelink" href="nejire_role298.html" target="nejire_org_description">べるが民</a> 
-    <a class="rolelink" href="nejire_role299.html" target="nejire_org_description">べるが狼</a> 
-    <a class="rolelink" href="nejire_role400.html" target="nejire_org_description">笛吹き</a> 
-    <a class="rolelink" href="nejire_role401.html" target="nejire_org_description">棺担ぎ</a> 
-    <a class="rolelink" href="nejire_role403.html" target="nejire_org_description">靴磨き</a> 
-    <a class="rolelink" href="nejire_role436.html" target="nejire_org_description">ツンデレ</a> 
-    <a class="rolelink" href="nejire_role437.html" target="nejire_org_description">ヤンデレ</a> 
-    <a class="rolelink" href="nejire_role438.html" target="nejire_org_description">コンピュータ</a> 
-    <a class="rolelink" href="nejire_role439.html" target="nejire_org_description">クラムボン</a> 
-    <a class="rolelink" href="nejire_role449.html" target="nejire_org_description">婆娑羅</a> 
-    <a class="rolelink" href="nejire_role451.html" target="nejire_org_description">天邪鬼</a> 
-    <a class="rolelink" href="nejire_role452.html" target="nejire_org_description">無法者</a> 
-    <a class="rolelink" href="nejire_role453.html" target="nejire_org_description">裁定者</a> 
-    <a class="rolelink" href="nejire_role455.html" target="nejire_org_description">不死者</a> 
-    <a class="rolelink" href="nejire_role470.html" target="nejire_org_description">エルフ</a> 
-    <a class="rolelink" href="nejire_role471.html" target="nejire_org_description">ドワーフ</a> 
+    <a class="rolelink" href="desc/nejire_role131.html" target="ORG_DESC">傭兵</a> 
+    <a class="rolelink" href="desc/nejire_role180.html" target="ORG_DESC">フォロワー</a> 
+    <a class="rolelink" href="desc/nejire_role189.html" target="ORG_DESC">死神</a> 
+    <a class="rolelink" href="desc/nejire_role218.html" target="ORG_DESC">愚者</a> 
+    <a class="rolelink" href="desc/nejire_role219.html" target="ORG_DESC">咎人</a> 
+    <a class="rolelink" href="desc/nejire_role256.html" target="ORG_DESC">イレギュラー</a> 
+    <a class="rolelink" href="desc/nejire_role298.html" target="ORG_DESC">べるが民</a> 
+    <a class="rolelink" href="desc/nejire_role299.html" target="ORG_DESC">べるが狼</a> 
+    <a class="rolelink" href="desc/nejire_role400.html" target="ORG_DESC">笛吹き</a> 
+    <a class="rolelink" href="desc/nejire_role401.html" target="ORG_DESC">棺担ぎ</a> 
+    <a class="rolelink" href="desc/nejire_role403.html" target="ORG_DESC">靴磨き</a> 
+    <a class="rolelink" href="desc/nejire_role436.html" target="ORG_DESC">ツンデレ</a> 
+    <a class="rolelink" href="desc/nejire_role437.html" target="ORG_DESC">ヤンデレ</a> 
+    <a class="rolelink" href="desc/nejire_role438.html" target="ORG_DESC">コンピュータ</a> 
+    <a class="rolelink" href="desc/nejire_role439.html" target="ORG_DESC">クラムボン</a> 
+    <a class="rolelink" href="desc/nejire_role449.html" target="ORG_DESC">婆娑羅</a> 
+    <a class="rolelink" href="desc/nejire_role451.html" target="ORG_DESC">天邪鬼</a> 
+    <a class="rolelink" href="desc/nejire_role452.html" target="ORG_DESC">無法者</a> 
+    <a class="rolelink" href="desc/nejire_role453.html" target="ORG_DESC">裁定者</a> 
+    <a class="rolelink" href="desc/nejire_role455.html" target="ORG_DESC">不死者</a> 
+    <a class="rolelink" href="desc/nejire_role470.html" target="ORG_DESC">エルフ</a> 
+    <a class="rolelink" href="desc/nejire_role471.html" target="ORG_DESC">ドワーフ</a> 
     </td>
   </tr>
 
@@ -1047,12 +1055,10 @@
     </div><!--split-item split-left-->
     <div class="split-item split-right">
         <div class="split-right__inner">
-          <iframe id="descframe" name="nejire_org_description" onLoad="change_height_css()" src="nejire_roleinit.html" width="594" frameborder="2" style="border:2"></iframe>
+          <iframe id="ORG_DESC" name="ORG_DESC" title="description" onload="change_url(this.src)" src="desc/nejire_roleinit.html" width="594" frameborder="1">　</iframe>
         </div><!--split-right__inner-->
     </div><!--split-item split-right-->
 </div><!--split-->
-</div>
-
 
 </div> <!-- "all" -->
 

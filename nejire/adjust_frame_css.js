@@ -1,4 +1,4 @@
-/* �t���[�����ɓǂݍ��ރh�L�������g�T�C�Y�ɂ���č�����ύX(���̂��g�����Ƃɂ����̂Ŗ��g�p) */
+/* フレーム内に読み込むドキュメントサイズによって高さを変更(下のを使うことにしたので未使用) */
 function adjust_frame_css(F){
   if(document.getElementById(F)) {
     var myF = document.getElementById(F);
@@ -13,11 +13,15 @@ function adjust_frame_css(F){
   }
 }
 
-/* �E�B���h�E�̃T�C�Y�ɍ��킹�āA�����\���̈�̍�����ύX */
+/* ウィンドウのサイズに合わせて、説明表示領域の高さを変更 */
+window.addEventListener( 'load', function(){
+  change_height_css();
+})
 
 window.onresize = change_height_css;
 
 function change_height_css(){
-  var myFrame = document.getElementById( "descframe" );
+  var myFrame = document.getElementById( "ORG_DESC" );
   myFrame.style.height = (document.documentElement.clientHeight-12)+"px";
+  /*console.log( myFrame.src );*/
 }
