@@ -109,11 +109,10 @@ function change_sub(num) {
 
     var height = 400;
     var element = myFrame.contentWindow.document.documentElement;
-    console.log( document.all );
-    console.log( element );
     if( document.all ){
       height = element.scrollHeight;
     }else{
+      console.log( element.offsetHeight );
       height = element.offsetHeight;
     }
     myFrame.style.height = height + "px";
