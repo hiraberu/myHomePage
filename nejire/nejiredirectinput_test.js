@@ -98,7 +98,6 @@ function changeview( inc ){
      // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
     }
   }
-  document.getElementById( "searchstr" ).focus();
 }
 
 document.getElementById( "ORG_DESC" ).addEventListener( "load", function(event){
@@ -132,7 +131,6 @@ function change_url( role_url ){
       change_sub( -1 );
     }
   }
-  document.getElementById( "searchstr" ).focus();
 }
 
 function change_sub(num) {
@@ -181,5 +179,4 @@ function subshowhide( val ){
       change_sub( -1 );
     }
   }
-  document.getElementById( "searchstr" ).focus();
 }
