@@ -103,27 +103,27 @@ document.getElementById( "ORG_DESC" ).addEventListener( "load", function(event){
 
 function change_url( role_url ){
   if( "" != role_url ){
-    const btnprev = document.querySelector( "#PREV_BUTTON" );
-    const btnnext = document.querySelector( "#NEXT_BUTTON" );
+    const btnprev = document.getElementById( "PREV_BUTTON" );
+    const btnnext = document.getElementById( "NEXT_BUTTON" );
   /* 番号を抜き出す */
     var num = Number( role_url.slice( -8, -5 ) );
     if( !isNaN( num ) ){
       document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
       change_sub( num );
       if( 0 == num ){
-        btnprev.disabled = ture;
-        btnnext.disabled = false;
+        btnprev.disabled = "disabled";
+        btnnext.disabled = "";
       }else if( 499 == num ){
-        btnprev.disabled = false;
-        btnnext.disabled = ture;
+        btnprev.disabled = "";
+        btnnext.disabled = "disabled";
       }else{
-        btnprev.disabled = false;
-        btnnext.disabled = false;
+        btnprev.disabled = "";
+        btnnext.disabled = "";
       }
     }else{
       document.getElementById( "showid" ).innerHTML = "";
-      btnprev.disabled = ture;
-      btnnext.disabled = ture;
+      btnprev.disabled = "disabled";
+      btnnext.disabled = "disabled";
       change_sub( -1 );
     }
   }
