@@ -80,18 +80,6 @@ h2 { color: #bdb76b; text-align:center; }
 h3 { color: #bd674b; text-align:center; }
 h4 { color: #5a2222; text-align:center; }
 
-/*strong { color:#5a2222; }*/
-
-.list{ margin-left:210px; text-align:left; margin-right:130pt; }
-
-/*li { margin-left:120px; text-align:left; }*/
-p { 
-/*color: #5a2222; */
-/*line-height: 1.2em;*/
-/*font-size:1.0em;*/
-
-} 
-
 a:link { color: #ba2222; }
 a:visited { color: #ca6aaa; }
 a:hover { color: mediumvioletred; background-color: #eedddd; } 
