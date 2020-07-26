@@ -15,12 +15,17 @@ function adjust_frame_css(F){
 
 /* ウィンドウのサイズに合わせて、説明表示領域の高さを変更 */
 window.addEventListener( 'load', function(){
-  change_height_css();
+  change_windowsize();
 })
 
-window.onresize = change_height_css;
+window.onresize = change_windowsize;
 
-function change_height_css(){
+function change_windowsize(){
   var myFrame = document.getElementById( "ORG_DESC" );
   myFrame.style.height = (document.documentElement.clientHeight-document.getElementById( "SEARCH" ).clientHeight-12)+"px";
+
+  // 左側に表示するやつも位置調整
+  myFrame = document.getElementById( "ORG_DESC_SUB" );
+  myFrame.style.top = ( document.getElementById( "SEARCH" ).clientHeight + 4 ) + "px";
+  myFrame.style.left = (document.getElementsByClassName('split-left')[0].clientWidth - 220) + "px";
 }
