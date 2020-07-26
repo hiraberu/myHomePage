@@ -109,6 +109,7 @@ function change_sub(num) {
 
     var height = 400;
     var element = myFrame.contentWindow.document.documentElement;
+    console.log( document.all );
     if( document.all ){
       height = element.scrollHeight;
     }else{
