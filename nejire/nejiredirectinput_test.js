@@ -87,10 +87,15 @@ function changeview( inc ){
   var numstr = document.getElementById( "showid" ).innerHTML.slice(9,-10);
   var num = Number( numstr );
   if( !isNaN( num ) ){
+    var checkstr = document.getElementById( "searchstr" ).value;
+    if( num == Number( checkstr ) ){
+      checkstr = String( num + inc );
+    }
     num += inc;
     if( 0 <= num && num < 500 ){
       document.getElementById( "ORG_DESC" ).src = "desc/nejire_role" + ( "000" + num ).slice( -3 ) + ".html";
-      // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
+      document.getElementById( "searchstr" ).value = checkstr; 
+     // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
     }
   }
   document.getElementById( "searchstr" ).focus();
