@@ -139,7 +139,8 @@ function change_sub(num) {
     var role_url = "desc/nejire_role" + ("000" + num).slice(-3) + "_sub.html";
     myFrame.src = role_url;
     myFrame.style.display = "";
-
+    /*
+    // サイズの範囲は大差ない(286~322)のでhtmlの方で最大サイズにしておく
     var height = 400;
     var elem = myFrame.contentWindow.document.documentElement;
     if( document.all ){
@@ -149,6 +150,7 @@ function change_sub(num) {
       height = elem.offsetHeight;
     }
     myFrame.style.height = height + "px";
+    */
   }else{
     myFrame.style.display = "none";
   }
