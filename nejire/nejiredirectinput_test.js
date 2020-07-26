@@ -64,8 +64,9 @@ function execDirectInput(){
   }
   if( "" != role_url ){
     document.getElementById( "ORG_DESC" ).src = role_url;
-    document.getElementById( "showid" ).innerHTML = ( -1 == num ) ? "" : "<strong>[" + String( num ) + "]</strong>";
-    change_sub( num );
+    // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
+    /*document.getElementById( "showid" ).innerHTML = ( -1 == num ) ? "" : "<strong>[" + String( num ) + "]</strong>";*/
+    /*change_sub( num );*/
   }
 }
 
