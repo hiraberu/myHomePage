@@ -103,25 +103,27 @@ document.getElementById( "ORG_DESC" ).addEventListener( "load", function(event){
 
 function change_url( role_url ){
   if( "" != role_url ){
-    /* 番号を抜き出す */
+    const btnprev = document.querySelector( "#PREV_BUTTON" );
+    const btnnext = document.querySelector( "#NEXT_BUTTON" );
+  /* 番号を抜き出す */
     var num = Number( role_url.slice( -8, -5 ) );
     if( !isNaN( num ) ){
       document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
       change_sub( num );
       if( 0 == num ){
-        document.getElementById( "PREV_BUTTON" ).disabled = ture;
-        document.getElementById( "NEXT_BUTTON" ).disabled = false;
+        btnprev.disabled = ture;
+        btnnext.disabled = false;
       }else if( 499 == num ){
-        document.getElementById( "PREV_BUTTON" ).disabled = false;
-        document.getElementById( "NEXT_BUTTON" ).disabled = ture;
+        btnprev.disabled = false;
+        btnnext.disabled = ture;
       }else{
-        document.getElementById( "PREV_BUTTON" ).disabled = false;
-        document.getElementById( "NEXT_BUTTON" ).disabled = false;
+        btnprev.disabled = false;
+        btnnext.disabled = false;
       }
     }else{
       document.getElementById( "showid" ).innerHTML = "";
-      document.getElementById( "PREV_BUTTON" ).disabled = ture;
-      document.getElementById( "NEXT_BUTTON" ).disabled = ture;
+      btnprev.disabled = ture;
+      btnnext.disabled = ture;
       change_sub( -1 );
     }
   }
