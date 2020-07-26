@@ -136,11 +136,12 @@ function change_url( role_url ){
 }
 
 function change_sub(num) {
-  // 表示しない場合は何もしない
-  if( document.getElementById("SUB_SHOW").value == "<<" ){ return; }
   /* サブ表示があれば表示する */
   var myFrame = document.getElementById("ORG_DESC_SUB");
   if (-1 != existsub.indexOf(num)) {
+    document.getElementById( "ORG_DESC_SUB" ).disabled = "";
+    // 表示しない場合は何もしない
+    if( document.getElementById("SUB_SHOW").value == "<<" ){ return; }
     var role_url = "desc/nejire_role" + ("000" + num).slice(-3) + "_sub.html";
     myFrame.src = role_url;
     myFrame.style.display = "";
@@ -158,6 +159,7 @@ function change_sub(num) {
     */
   }else{
     myFrame.style.display = "none";
+    document.getElementById( "ORG_DESC_SUB" ).disabled = "disabled";
   }
 }
 
