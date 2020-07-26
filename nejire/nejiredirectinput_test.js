@@ -79,10 +79,8 @@ function checkDirectInputEnter(){
 var element = document.getElementById( "ORG_DESC" )
 
 element.addEventListener( "load", function(event){
-  try{
-    let url = document.getElementById("ORG_DESC").contentWindow.location.href;
-    change_url(url);
-  }catch(e){ console.log( "load:DOMException" ); }
+  let url = document.getElementById("ORG_DESC").contentWindow.location.href;
+  change_url(url);
 })
 
 function change_url( role_url ){
@@ -110,15 +108,13 @@ function change_sub(num) {
     myFrame.style.display = "";
 
     var height = 400;
-    try{
-      var element = myFrame.contentWindow.document.documentElement;
-      if( document.all ){
-        height = element.scrollHeight;
-      }else{
-        height = element.offsetHeight;
-      }
-      myFrame.style.height = height + "px";
-    }catch(e){ console.log( "sub:DOMException" ); }
+    var element = myFrame.contentWindow.document.documentElement;
+    if( document.all ){
+      height = element.scrollHeight;
+    }else{
+      height = element.offsetHeight;
+    }
+    myFrame.style.height = height + "px";
   }else{
     myFrame.style.display = "none";
   }
