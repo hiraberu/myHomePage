@@ -65,21 +65,38 @@ function execDirectInput(){
   if( "" != role_url ){
     document.getElementById( "ORG_DESC" ).src = role_url;
     // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
-    /*document.getElementById( "showid" ).innerHTML = ( -1 == num ) ? "" : "<strong>[" + String( num ) + "]</strong>";*/
-    /*change_sub( num );*/
   }
 }
 
 /* 直接入力ででenterが押された場合、実行する */
 function checkDirectInputEnter(){
-  if( 13 == window.event.keyCode ){
-    execDirectInput();
+  switch( window.event.keyCode ){
+    case 13:
+      execDirectInput(); // Enter
+      break;
+    case 38:
+      changeview(-1); // ↑
+      break;
+    case 40:
+      changeview(1); // ↓
+      break;
   }
 }
 
-var element = document.getElementById( "ORG_DESC" )
+function changeview( inc ){
+  var numstr = document.getElementById( "showid" ).innerHTML.slice(9,-10);
+  var num = Number( numstr );
+  if( !isNaN( num ) ){
+    num += inc;
+    if( 0 <= num && num < 500 ){
+      document.getElementById( "ORG_DESC" ).src = "desc/nejire_role" + ( "000" + num ).slice( -3 ) + ".html";
+      // srcが変わるので loadが呼ばれて、change_urlが呼ばれる
+    }
+  }
+  document.getElementById( "searchstr" ).focus();
+}
 
-element.addEventListener( "load", function(event){
+document.getElementById( "ORG_DESC" ).addEventListener( "load", function(event){
   let url = document.getElementById("ORG_DESC").contentWindow.location.href;
   change_url(url);
 })
@@ -91,11 +108,24 @@ function change_url( role_url ){
     if( !isNaN( num ) ){
       document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
       change_sub( num );
+      if( 0 == num ){
+        document.getElementById( "PREV_BUTTON" ).disabled = ture;
+        document.getElementById( "NEXT_BUTTON" ).disabled = false;
+      }else if( 499 == num ){
+        document.getElementById( "PREV_BUTTON" ).disabled = false;
+        document.getElementById( "NEXT_BUTTON" ).disabled = ture;
+      }else{
+        document.getElementById( "PREV_BUTTON" ).disabled = false;
+        document.getElementById( "NEXT_BUTTON" ).disabled = false;
+      }
     }else{
       document.getElementById( "showid" ).innerHTML = "";
+      document.getElementById( "PREV_BUTTON" ).disabled = ture;
+      document.getElementById( "NEXT_BUTTON" ).disabled = ture;
       change_sub( -1 );
     }
   }
+  document.getElementById( "searchstr" ).focus();
 }
 
 function change_sub(num) {
@@ -109,12 +139,12 @@ function change_sub(num) {
     myFrame.style.display = "";
 
     var height = 400;
-    var element = myFrame.contentWindow.document.documentElement;
+    var elem = myFrame.contentWindow.document.documentElement;
     if( document.all ){
-      height = element.scrollHeight;
+      height = elem.scrollHeight;
     }else{
-      console.log( element.offsetHeight );
-      height = element.offsetHeight;
+      console.log( elem.offsetHeight );
+      height = elem.offsetHeight;
     }
     myFrame.style.height = height + "px";
   }else{
@@ -140,4 +170,5 @@ function subshowhide( val ){
       change_sub( -1 );
     }
   }
+  document.getElementById( "searchstr" ).focus();
 }
