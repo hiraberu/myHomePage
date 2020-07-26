@@ -269,3 +269,8 @@ padding : 1px 4px;
   top:4px;
   bottom:4px;
 }
+
+#ORG_DESC_SUB{
+  position: fixed;
+  margin-right: 594px;
+}
