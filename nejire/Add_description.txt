@@ -1,0 +1,78 @@
+[041]
+魔法使い後のランダムではダミーを選定した
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16180#form" target="_blank" rel="noopener noreferrer">[16180村]</a>
+[103]
+八咫烏本人も暗闇になる
+[104]
+能力発動メッセージには処刑時身代わりがあるが、それははなさそう
+<!--<a href="http://nejiten.halfmoon.jp/index.cgi?vid=14709#form" target="_blank" rel="noopener noreferrer">[14709村]</a>-->
+[124]
+殺人鬼・一匹狼護衛成功時は侍は死なず、殺人鬼・一匹狼だけが死ぬ
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16230#form" target="_blank" rel="noopener noreferrer">[16230村]</a>
+[153]
+人形遣いの狂人版とあるが、人形遣いはダミーの口だけなので違うっぽい
+[181]
+鵺と同じならコピーすると狂窓なくなるハズ(未確認)
+[182]
+相手は自覚なく、恋陣営でもない。相手が死んだら、後追いする。
+[197]
+長期：処刑後復活する場合は、襲撃が終わった後に復活(26)なので、他の人狼がセットしていないとランダムになる
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16158#form" target="_blank" rel="noopener noreferrer">[16158村]</a><br>
+短期：処刑後すぐ復活している
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16143#form" target="_blank" rel="noopener noreferrer">[16143村]</a>
+[204]
+セットメッセージに契約しない、もある。
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16149#form" target="_blank" rel="noopener noreferrer">[16149村]</a>
+<div class="announce bond">ID:Pu42TihB は契約しません。</div>
+[225]
+能力は【村人】(素村)の場合のみ無能力者
+[255]
+長期は昼間も一日中会話可。話術呼んでないときは緑窓消えるので注意！
+[299]
+赤窓はないっぽい
+[302]
+説明にある(ランダム)にはならないはず
+[303]
+説明にある(ランダム)にはならないはず
+[304]
+旅人・特殊は同陣営
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=14753&date=3&part=1" target="_blank" rel="noopener noreferrer">[14753村]</a>
+[352]
+狂窓なし(狂人表記で窓なしはこれと三月兎)
+[353]
+狂窓なし(狂人表記で窓なしはこれと帽子屋)
+[360]
+コピーすると妖窓なくなる
+[389]
+立会人はダミー選択可
+[398]
+殺戮者の名前を変えたら、次の朝死ぬ
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16032&date=5&part=1" target="_blank" rel="noopener noreferrer">[16032村]</a>
+[408]
+狼以外襲撃の場合のシスメが少し違った(狼襲撃の場合は未調査)
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16228&date=7&part=1" target="_blank" rel="noopener noreferrer">[16228村]</a>
+<div class="announce seeker">静まりかえった夜の中、<br>悲鳴とも恐怖に駆られた笑いとも取れるような ID:Pq7m2kED の半狂乱の声が、真夜中の村にこだまします。</div>
+[433]
+借りた本の役職になるように書いてあるが実際はならない<br>
+図書の返却メッセージは借りた側には出なさそう
+[441]
+占い師いない場合他の役職表示されているが実際はいないと表示される
+[460]
+共鳴会話OFFでも鴉の窓はできる
+[480]
+女豹が死んだら恋人は後追いする。恋人死んでも女豹は単体残される(勝利なし)
+[484]
+護衛では悪霊化はさせるが本人は死なない
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16227&date=3&part=1" target="_blank" rel="noopener noreferrer">[16227村]</a>
+
+[s12]
+背徳者が従者になっても妖魔がいなくなれば後追いはする
+
+
+---------------------------------------------------------------------
+
+<span class="memo">
+</span>
+<hr><!-- 区切り線 -->
+
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16149#form" target="_blank" rel="noopener noreferrer">[16149村]</a>
