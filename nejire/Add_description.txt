@@ -46,12 +46,13 @@
 旅人・特殊は同陣営
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=14753&date=3&part=1" target="_blank" rel="noopener noreferrer">[14753村]</a>
 [325]
+LWの場合は余命1日で止まり毒が回る。この状態で襲撃が失敗すると死亡する。<br>
 LWの時は耐えしのぐ
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16462&date=5" target="_blank" rel="noopener noreferrer">[16462村]</a>
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=15689&date=4" target="_blank" rel="noopener noreferrer">[15689村]</a>
 <div class="announce sick">ID:y8BivWCP は既に限界ですが、なんとか耐えしのいでいます。</div>
 <div class="announce sick">ID:y8BivWCP の余命はあと 1日 です。</div>
-耐えしのいだら毒が回り噛み失敗で死ぬっぽい
+耐えしのいだら毒が回り噛み失敗で死ぬ
 <div class="announce poison">ID:y8BivWCP は身体中に毒が周り、倒れました。</div>
 [352]
 狂窓なし(狂人表記で窓なしはこれと三月兎)
