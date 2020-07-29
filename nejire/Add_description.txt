@@ -28,17 +28,31 @@
 <div class="announce bond">ID:Pu42TihB は契約しません。</div>
 [225]
 能力は【村人】(素村)の場合のみ無能力者
+[243]
+くしゃみ時の発言：『へっくしょん！　まもの』<br>
+くしゃみには語尾は付かない
 [255]
 長期は昼間も一日中会話可。話術呼んでないときは緑窓消えるので注意！
 [299]
 赤窓はないっぽい
 [302]
+水晶占い師は得票数が2票以上だった者を全て占うとなっていますが、正確には「2名以上から投票された者を全て占う」占い師です。
+裁判官等の投票数を操作する役職が1人で2票入れても水晶占い師は占えません。<br>
+<br>
 説明にある(ランダム)にはならないはず
 [303]
 説明にある(ランダム)にはならないはず
 [304]
 旅人・特殊は同陣営
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=14753&date=3&part=1" target="_blank" rel="noopener noreferrer">[14753村]</a>
+[325]
+LWの時は耐えしのぐ
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16462&date=5" target="_blank" rel="noopener noreferrer">[16462村]</a>
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=15689&date=4" target="_blank" rel="noopener noreferrer">[15689村]</a>
+<div class="announce sick">ID:y8BivWCP は既に限界ですが、なんとか耐えしのいでいます。</div>
+<div class="announce sick">ID:y8BivWCP の余命はあと 1日 です。</div>
+耐えしのいだら毒が回り噛み失敗で死ぬっぽい
+<div class="announce poison">ID:y8BivWCP は身体中に毒が周り、倒れました。</div>
 [352]
 狂窓なし(狂人表記で窓なしはこれと三月兎)
 [353]
@@ -74,8 +88,8 @@
 ---------------------------------------------------------------------
 
 <span class="memo">
-気占いも正常⇔異常が反転するし、学者はすべて村人判定になる<br>
-隠者は影響なし
+くしゃみ時の発言：『へっくしょん！　まもの』<br>
+くしゃみには語尾は付かない
 </span>
 <hr><!-- 区切り線 -->
 
