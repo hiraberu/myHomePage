@@ -85,6 +85,15 @@ LWの時は耐えしのぐ
 [s12]
 背徳者が従者になっても妖魔がいなくなれば後追いはする
 
+[roleinit]
+■ 主な勝利条件変化サブ役職優先順位 ■<br>
+<span class="loyal">(従者)</span>：主人の勝利
+ ＞ <span class="cupid">(恋人)</span>・<span class="revenge">(仇敵)</span>
+ ＞ <span class="servant">(死徒)</span>・<span class="servant">(下僕)</span>・<span class="cthulhu">(眷属)</span>
+ ＞ <span class="mad">(発狂)</span>
+ ＞ 元の陣営<br>
+<span class="servant">(死徒)</span>＝<span class="servant">(下僕)</span>＋<span class="ddd">(悪霊)</span><br>
+※ 悪霊は陣営変化なし・自覚なし
 
 ---------------------------------------------------------------------
 
