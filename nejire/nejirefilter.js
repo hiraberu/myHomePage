@@ -129,6 +129,9 @@ function execFilter(){
           }else
           if( "" != re[ g ] && ( re[ g ].test( row.children[ check_row[ g ] ].innerHTML ) || re[ g ].test( row.children[ check_row[ g ] + 1 ].innerHTML ) ) ){
             // チェック文字列が入っていた場合は表示(フラグそのまま)
+          }else
+          if( "" != re[ g ] && ( re[ g ].test( "墓" ) ) && r == 192 ){
+            // パブリッカーのみ墓見れるので墓の場合も表示
           }else{
             // 上記以外は非表示
             visible = false;
