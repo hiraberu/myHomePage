@@ -1,3 +1,6 @@
+[011]
+呪殺できない、逆呪殺もされない
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=15961&date=4&part=1" target="_blank" rel="noopener noreferrer">[15961村]</a>
 [041]
 魔法使い後のランダムではダミーを選定した
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16180#form" target="_blank" rel="noopener noreferrer">[16180村]</a>
@@ -11,6 +14,9 @@
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16230#form" target="_blank" rel="noopener noreferrer">[16230村]</a>
 [153]
 人形遣いの狂人版とあるが、人形遣いはダミーの口だけなので違うっぽい
+[165]
+教祖は、はじめの1/4信者にはならない
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16903#form" target="_blank" rel="noopener noreferrer">[16903村]</a>
 [176]
 気占いも正常⇔異常が反転、学者はすべて村人判定、隠者は影響なし
 [181]
@@ -60,6 +66,9 @@ LWの時は耐えしのぐ
 狂窓なし(狂人表記で窓なしはこれと帽子屋)
 [360]
 コピーすると妖窓なくなる
+[383]
+吸血鬼は、はじめの1/4屍者にはならない
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16903#form" target="_blank" rel="noopener noreferrer">[16903村]</a>
 [389]
 立会人はダミー選択可
 [398]
