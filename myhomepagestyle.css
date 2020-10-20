@@ -75,6 +75,21 @@ text-align:center;
 /*border: inset;*/
 }
 
+.amonglist{
+margin-right:auto;
+margin-left:auto;
+text-align:center;
+border: groove darkgray;
+/*border-collapse: collapse;*/
+}
+
+.among{
+border: solid 1px dimgray;
+padding: 0px 4px;
+text-align:center;
+/*border: inset;*/
+}
+
 h1 { color: #a2846c; font-size: 1.2em; text-align:center; }
 h2 { color: #bdb76b; text-align:center; }
 h3 { color: #bd674b; text-align:center; }
