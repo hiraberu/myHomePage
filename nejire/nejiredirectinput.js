@@ -27,12 +27,11 @@ function execDirectInput(){
     /* 役職リンクを調べる */
     var element = document.getElementsByClassName( "rolelink" );
     /* 完全一致するものを検索 */
-    console.log( checkstr );
     for( var i = 0; i < element.length; i++ ){
-      console.log( element[ i ].innerHTML );
-      if( checkstr === element[ i ].innerHTML ){
-        console.log( checkstr );
-        console.log(element[ i ].innerHTML );
+      /* アイコン追加で完全一致できていなかったので、アイコン以降の文字列なしにして一致を見る */
+      var index = element[ i ].innerHTML.indexOf('<');
+      var rolestr = (-1 === index) ? element[ i ].innerHTML : element[ i ].innerHTML.substring( 0,index );
+      if( checkstr === rolestr ){
         role_url = element[ i ].href;
         break;
       }
