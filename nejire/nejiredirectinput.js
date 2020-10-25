@@ -28,7 +28,7 @@ function execDirectInput(){
     var element = document.getElementsByClassName( "rolelink" );
     /* 完全一致するものを検索 */
     for( var i = 0; i < element.length; i++ ){
-      if( checkstr == element[ i ].innerHTML ){
+      if( checkstr === element[ i ].innerHTML ){
         role_url = element[ i ].href;
         break;
       }
