@@ -27,7 +27,9 @@ function execDirectInput(){
     /* 役職リンクを調べる */
     var element = document.getElementsByClassName( "rolelink" );
     /* 完全一致するものを検索 */
+    console.log( checkstr );
     for( var i = 0; i < element.length; i++ ){
+      console.log( element[ i ].innerHTML );
       if( checkstr === element[ i ].innerHTML ){
         console.log( checkstr );
         console.log(element[ i ].innerHTML );
