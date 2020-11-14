@@ -28,7 +28,10 @@ function execDirectInput(){
     var element = document.getElementsByClassName( "rolelink" );
     /* 完全一致するものを検索 */
     for( var i = 0; i < element.length; i++ ){
-      if( checkstr == element[ i ].innerHTML ){
+      /* アイコン追加で完全一致できていなかったので、アイコン以降の文字列なしにして一致を見る */
+      var index = element[ i ].innerHTML.indexOf('<');
+      var rolestr = (-1 === index) ? element[ i ].innerHTML : element[ i ].innerHTML.substring( 0,index );
+      if( checkstr === rolestr ){
         role_url = element[ i ].href;
         break;
       }
@@ -113,6 +116,7 @@ function change_url( role_url ){
     var num = Number( role_url.slice( -8, -5 ) );
     if( !isNaN( num ) ){
       document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
+      document.getElementById( "oldlog" ).innerHTML = '<a href="http://nejiten.halfmoon.jp/index.cgi?cmd=job&sid=' + String( num ) + '" target="_blank" rel="noopener noreferrer">ログ</a>';
       change_sub( num );
       if( 0 == num ){
         btnprev.disabled = "disabled";
@@ -126,6 +130,7 @@ function change_url( role_url ){
       }
     }else{
       document.getElementById( "showid" ).innerHTML = "";
+      document.getElementById( "oldlog" ).innerHTML = "";
       btnprev.disabled = "disabled";
       btnnext.disabled = "disabled";
       change_sub( -1 );
