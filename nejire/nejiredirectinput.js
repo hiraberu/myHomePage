@@ -116,6 +116,7 @@ function change_url( role_url ){
     var num = Number( role_url.slice( -8, -5 ) );
     if( !isNaN( num ) ){
       document.getElementById( "showid" ).innerHTML = "<strong>[" + String( num ) + "]</strong>";
+      document.getElementById( "oldlog" ).innerHTML = '&nbsp;<a href="http://nejiten.halfmoon.jp/index.cgi?cmd=job&sid=' + String( num ) + '" target="_blank" rel="noopener noreferrer">ログ</a>';
       change_sub( num );
       if( 0 == num ){
         btnprev.disabled = "disabled";
@@ -129,6 +130,7 @@ function change_url( role_url ){
       }
     }else{
       document.getElementById( "showid" ).innerHTML = "";
+      document.getElementById( "oldlog" ).innerHTML = "";
       btnprev.disabled = "disabled";
       btnnext.disabled = "disabled";
       change_sub( -1 );
