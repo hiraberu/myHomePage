@@ -115,10 +115,10 @@ LWの時は耐えしのぐ
 
 ---------------------------------------------------------------------
 
-<span class="memo">
+<div class="memo">
 くしゃみ時の発言：『へっくしょん！　まもの』<br>
 くしゃみには語尾は付かない
-</span>
+</div>
 <hr><!-- 区切り線 -->
 
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16149#form" target="_blank" rel="noopener noreferrer">[16149村]</a>
