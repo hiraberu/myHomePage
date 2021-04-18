@@ -30,7 +30,7 @@
 [182]
 相手は自覚なく、恋陣営でもない。相手が死んだら、後追いする。
 [195]Lv上げ民
-毎日LVが100上がる(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)<br>
+毎日LVが100上がる(<a class="LVlink" href="nejire_LV.html">LVとは</a>)<br>
 共鳴会話ONの場合、短期は2日目、長期は3日目に<span class="sympathy">緑窓</span>付与<br>
 Lv上げ民は、全員のLVが見えるようになる<br>
 <br>
@@ -55,7 +55,7 @@ Lv上げ民は、全員のLVが見えるようになる<br>
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16143#form" target="_blank" rel="noopener noreferrer">[16143村]</a>
 
 [198]ねじれ民
-3の倍数の日にLVが100上がる(短期・長期共)(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)
+3の倍数の日にLVが100上がる(短期・長期共)(<a class="LVlink" href="nejire_LV.html">LVとは</a>)
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=17112#form" target="_blank" rel="noopener noreferrer">[17112村]</a><br>
 共鳴会話ONの場合、LVが100上がることにより3日目に<span class="sympathy">緑窓</span>付与<br>
 全員のLVが見えるようになる<br>
@@ -65,10 +65,10 @@ LVが100定期的に上がるので、LVが見える役職である<br>
 ・他にねじれ民・ねじれ狼・LV上げ民がいた場合<br>
 は、LVの上がり方で、ねじれ民かねじれ狼であることはバレる<br>
 <br>
-<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+<a class="LVlink" href="nejire_LV.html">LVとは</a>
 
 [199]ねじれ狼
-3の倍数の日にLVが100上がる(短期・長期共)(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)<br>
+3の倍数の日にLVが100上がる(短期・長期共)(<a class="LVlink" href="nejire_LV.html">LVとは</a>)<br>
 共鳴会話ONの場合、LVが100上がることにより3日目に<span class="sympathy">緑窓</span>付与<br>
 全員のLVが見えるようになる<br>
 <br>
@@ -184,19 +184,19 @@ LWの時は耐えしのぐ
 
 [s44]新参
 LVが100～199の状態<br>
-<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+<a class="LVlink" href="nejire_LV.html">LVとは</a>
 
 [s45]中参
 LVが200～499の状態<br>
-<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+<a class="LVlink" href="nejire_LV.html">LVとは</a>
 
 [s46]古参
 LVが500～999の状態<br>
-<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+<a class="LVlink" href="nejire_LV.html">LVとは</a>
 
 [s47]廃人
 LVが1000以上の状態<br>
-<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+<a class="LVlink" href="nejire_LV.html">LVとは</a>
 
 [roleinit]
 ■ 勝利条件変化サブ役職優先順位 ■<br>
