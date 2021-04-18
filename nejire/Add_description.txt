@@ -7,8 +7,14 @@
 [103]
 八咫烏本人も暗闇になる
 [104]
-能力発動メッセージには処刑時身代わりがあるが、それははなさそう
+能力発動メッセージには処刑時身代わりがあるが、実際はなさそう<br>
 <!--<a href="http://nejiten.halfmoon.jp/index.cgi?vid=14709#form" target="_blank" rel="noopener noreferrer">[14709村]</a>-->
+中身占い師の身代わりにもなる
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=10527&date=4&id=10" target="_blank" rel="noopener noreferrer">[10527村]</a><br>
+襲撃身代わり時にはメッセージが出る<br>
+
+<div class="announce scapegoat">ID:PNw2HU5q は 執務官 Rain の身代わりになりました。</div>
+
 [124]
 殺人鬼・一匹狼護衛成功時は侍は死なず、殺人鬼・一匹狼だけが死ぬ
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16230#form" target="_blank" rel="noopener noreferrer">[16230村]</a>
@@ -23,11 +29,54 @@
 鵺と同じならコピーすると狂窓なくなるハズ(未確認)
 [182]
 相手は自覚なく、恋陣営でもない。相手が死んだら、後追いする。
+[195]Lv上げ民
+毎日LVが100上がる(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)<br>
+共鳴会話ONの場合、短期は2日目、長期は3日目に<span class="sympathy">緑窓</span>付与<br>
+Lv上げ民は、全員のLVが見えるようになる<br>
+<br>
+毎日、能力により誰かのLVを上げることができる<br>
+また、Lv上げ民に投票した人のLVも上がる<br>
+能力・投票によりLVを上げられた人は<br>
+・LVが+100される<br>
+・共鳴会話ONの場合、<span class="sympathy">緑窓</span>付与<br>
+・全員のLVが見えるようになる<br>
+<br>
+※ LVが100を超えて新参になっても、LV上げ民によるLVアップがないと、<span class="sympathy">緑窓</span>付与されたり、LVが見えるようにはなりません<br>
+
+<br>
+ダミーがLv上げ民のとき、ランダム緑窓付与
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=13931#form" target="_blank" rel="noopener noreferrer">[13931村]</a><br>
+
+
 [197]
 長期：処刑後復活する場合は、襲撃が終わった後に復活(26)なので、他の人狼がセットしていないとランダムになる
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16158#form" target="_blank" rel="noopener noreferrer">[16158村]</a><br>
 短期：処刑後すぐ復活している
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16143#form" target="_blank" rel="noopener noreferrer">[16143村]</a>
+
+[198]ねじれ民
+3の倍数の日にLVが100上がる(短期・長期共)(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17112#form" target="_blank" rel="noopener noreferrer">[17112村]</a><br>
+共鳴会話ONの場合、LVが100上がることにより3日目に<span class="sympathy">緑窓</span>付与<br>
+全員のLVが見えるようになる<br>
+<br>
+LVが100定期的に上がるので、LVが見える役職である<br>
+・管理人がいた場合(全員が全員のLVを見ることが可能)<br>
+・他にねじれ民・ねじれ狼・LV上げ民がいた場合<br>
+は、LVの上がり方で、ねじれ民かねじれ狼であることはバレる<br>
+<br>
+<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+
+[199]ねじれ狼
+3の倍数の日にLVが100上がる(短期・長期共)(<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>)<br>
+共鳴会話ONの場合、LVが100上がることにより3日目に<span class="sympathy">緑窓</span>付与<br>
+全員のLVが見えるようになる<br>
+<br>
+LVが100定期的に上がるので、LVが見える役職である<br>
+・管理人がいた場合(全員が全員のLVを見ることが可能)<br>
+・他にねじれ民・ねじれ狼・LV上げ民がいた場合<br>
+は、LVの上がり方で、ねじれ民かねじれ狼であることはバレる<br>
+
 [204]
 セットメッセージに契約しない、もある。
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16149#form" target="_blank" rel="noopener noreferrer">[16149村]</a>
@@ -37,6 +86,11 @@
 [243]
 くしゃみ時の発言：『へっくしょん！　まもの』<br>
 くしゃみには語尾は付かない
+[249]
+村陣営に踊った場合は「踊りを見て元気になりました。」<br>
+村陣営以外に踊った場合は「ふしぎなおどりを見て気力が削がれました。」<br>
+となり、シスメが違うので聞かれて答える場合に注意！
+
 [255]
 長期は昼間も一日中会話可。話術呼んでないときは緑窓消えるので注意！
 [258]
@@ -48,6 +102,18 @@
 【ムカ着火ファイアー】<br>
 【カム着火ｲﾝﾌｪﾙﾉｫｫｫｵｵｵｳ】<br>
 【げきオコスティックファイナリアリティぷんぷんドリーム】
+
+[278]管理人
+この役職が編成に入ると、開始時全員がLV+100され、全員が全員のLVを見ることが可能となる<br>
+共鳴会話ONの場合、LVが100上がることにより全員に<span class="sympathy">緑窓</span>付与<br>
+管理人は禁則事項となる言葉を設定でき、自由に変更可<br>
+管理人が複数居た場合は、それぞれが禁則事項となる言葉を設定可<br>
+<br>
+処刑時、被襲撃時のメッセージも変わる
+
+<div class="announce vote">投票の結果、ID:y8BivWCP が引退しました。</div>
+<div class="announce whisper">ID:y8BivWCP 『Beluga引退します。』</div>
+
 [299]
 赤窓はないっぽい
 [302]
@@ -87,9 +153,14 @@ LWの時は耐えしのぐ
 狼以外襲撃の場合のシスメが少し違った(狼襲撃の場合は未調査)
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16228&date=7&part=1" target="_blank" rel="noopener noreferrer">[16228村]</a>
 <div class="announce seeker">静まりかえった夜の中、<br>悲鳴とも恐怖に駆られた笑いとも取れるような ID:Pq7m2kED の半狂乱の声が、真夜中の村にこだまします。</div>
-[433]
+[433]司書
 借りた本の役職になるように書いてあるが実際はならない<br>
-図書の返却メッセージは借りた側には出なさそう
+図書の返却メッセージは借りた側には出なさそう<br>
+
+返却時の能力は自分へのセット扱いのため、自分に凍傷等の罠が設置された場合、その罠にかかる
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17112&date=14&part=1" target="_blank" rel="noopener noreferrer">[17112村]</a>
+
+
 [441]
 占い師いない場合他の役職表示されているが実際はいないと表示される
 [448]
@@ -97,6 +168,11 @@ LWの時は耐えしのぐ
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16182&date=5&part=1" target="_blank" rel="noopener noreferrer">[16182村]</a>
 [460]
 共鳴会話OFFでも鴉の窓はできる
+[467]ガーゴイル
+能力は自分へのセット扱いのため、自分に凍傷等の罠が設置された場合、その罠にかかる
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17039&date=6&id=7" target="_blank" rel="noopener noreferrer">[16182村]</a>
+
+
 [480]
 女豹が死んだら恋人は後追いする。恋人死んでも女豹は単体残される(勝利なし)
 [484]
@@ -105,6 +181,22 @@ LWの時は耐えしのぐ
 
 [s12]
 背徳者が従者になっても妖魔がいなくなれば後追いはする
+
+[s44]新参
+LVが100～199の状態<br>
+<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+
+[s45]中参
+LVが200～499の状態<br>
+<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+
+[s46]古参
+LVが500～999の状態<br>
+<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
+
+[s47]廃人
+LVが1000以上の状態<br>
+<a class="commandlink" href="nejire_LV.html" target="ORG_DESC">LVとは</a>
 
 [roleinit]
 ■ 勝利条件変化サブ役職優先順位 ■<br>
