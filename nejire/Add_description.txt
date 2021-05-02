@@ -126,6 +126,19 @@ LVが100定期的に上がるので、LVが見える役職である<br>
 [304]
 旅人・特殊は同陣営
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=14753&date=3&part=1" target="_blank" rel="noopener noreferrer">[14753村]</a>
+
+[317]溺愛者
+求愛者、キューピッドなどの恋人化の処理順は以下<br>
+求愛者→姫様→ヒロイン→溺愛者→乙女→ストーカ→キューピッド→女神→天女→悪女→共愛者→花嫁→淫魔<br>
+処理順の遅い花嫁をコピーした場合、花嫁の矢はランダム実行<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16919&date=3&part=1" target="_blank" rel="noopener noreferrer">[16919村]</a><br>
+求愛者コピーは、処理順が前なので、コピーした処理は行われない<br>
+同様にそれ以降の処理で初日セットあるものはランダム実行<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17123&date=3&part=1" target="_blank" rel="noopener noreferrer">[17123村]</a>
+
+[324]
+シスメが違う<br>
+<div class="announce lantern">気狂い論争 チェシャ は 要理教師 シャロン に火影を灯しました。</div>
+
+
 [325]
 LWの場合は余命1日で止まり毒が回る。この状態で襲撃が失敗すると死亡する。<br>
 LWの時は耐えしのぐ
@@ -150,7 +163,12 @@ LWの時は耐えしのぐ
 殺戮者の名前を変えたら、次の朝死ぬ
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16032&date=5&part=1" target="_blank" rel="noopener noreferrer">[16032村]</a>
 [408]
-狼以外襲撃の場合のシスメが少し違った(狼襲撃の場合は未調査)
+シスメが少し違う<br>
+狼襲撃の場合
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=15827&date=5&part=1" target="_blank" rel="noopener noreferrer">[15827村]</a>
+<div class="announce seeker">人狼の遠吠えとともに、<br>悲鳴とも恐怖に駆られた笑いとも取れるような ID:Pq7m2kED の半狂乱の声が、真夜中の村にこだまします。</div>
+
+狼以外襲撃の場合
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16228&date=7&part=1" target="_blank" rel="noopener noreferrer">[16228村]</a>
 <div class="announce seeker">静まりかえった夜の中、<br>悲鳴とも恐怖に駆られた笑いとも取れるような ID:Pq7m2kED の半狂乱の声が、真夜中の村にこだまします。</div>
 [433]司書
@@ -166,6 +184,11 @@ LWの時は耐えしのぐ
 [448]
 説明書では特殊陣営となっているが蝙蝠陣営
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16182&date=5&part=1" target="_blank" rel="noopener noreferrer">[16182村]</a>
+
+[450]
+セットは踊り等で能力行使無効にされた場合も復活しない
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17137&date=4&part=1" target="_blank" rel="noopener noreferrer">[17137村]</a>
+
 [460]
 共鳴会話OFFでも鴉の窓はできる
 [467]ガーゴイル

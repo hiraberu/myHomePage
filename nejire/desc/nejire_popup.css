@@ -1507,3 +1507,8 @@ div{
 .memo a{
 	white-space: nowrap;
 }
+
+/* 最初に出てくる白文字のシスメ */
+.top_msg{
+	color			: #ddd;
+}
