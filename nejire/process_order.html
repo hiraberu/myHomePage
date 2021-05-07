@@ -82,6 +82,30 @@
     <td class="sys_msg comment"></td>
   </tr>
 
+<!-- ********************************************************************************** -->
+<tr class="sys_msg long_header">
+  <td class="sys_msg long_small_header">コンピュータ等死亡結果</td>
+  <td class="sys_msg long_no_header">28'</td>
+  <td class="sys_msg long_header">巫女の神託</td>
+  <td class="sys_msg long_small_header comment">内容は28と同じ</td>
+</tr>
+<!-- ********************************************************************************** -->
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refside"></td>
+  <td class="sys_msg">※ 内容は28と同じなので28参照</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refside"></td>
+  <td class="sys_msg"></td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<!-- 
   <tr class="sys_msg">
     <td class="sys_msg refrole villager">仙人・神官</td>
     <td class="sys_msg refside"></td>
@@ -96,7 +120,7 @@
     <td class="announce oracle_skill">紅の遊撃隊 シャルロッテ は 村人 だったようです。</td>
     <td class="sys_msg comment">コンピュータ等の死亡結果</td>
   </tr>
-
+ -->
   <tr class="sys_msg">
     <td class="sys_msg refrole wolf">人狼全員</td>
     <td class="sys_msg refside wolf">人狼全員</td>
@@ -261,15 +285,29 @@
   </tr>
 
   <tr class="sys_msg">
-    <td class="sys_msg refrole madman" rowspan="2">内通者</td>
+    <td class="sys_msg refrole madman" rowspan="2">共謀者</td>
+    <td class="sys_msg refside">共謀者側</td>
+    <td class="announce scream">あなたと共謀するのは 配達人 サヴェリオ です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <!-- <td class="sys_msg refrole">共謀者</td> -->
     <td class="sys_msg refside">相手側</td>
+    <td class="announce scream">あなたと共謀するのは 戯曲家 シュラミト です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole madman" rowspan="2">内通者</td>
+    <td class="sys_msg refside">内通者側</td>
     <td class="announce scream">あなたと内通しているのは 踊り子 キトリ です。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
   <tr class="sys_msg">
     <!-- <td class="sys_msg refrole">内通者</td> -->
-    <td class="sys_msg refside">内通者側</td>
+    <td class="sys_msg refside">相手側</td>
     <td class="announce scream">あなたと内通しているのは 天馬騎士 ユーディト です。</td>
     <td class="sys_msg comment"></td>
   </tr>
@@ -1100,6 +1138,13 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole msg_result">処刑</td>
+    <td class="sys_msg refside">全体</td>
+    <td class="announce vote">投票の結果、虚構審判 エース が引退しました。</td>
+    <td class="sys_msg comment">管理人が居る場合</td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole">加護(八房)</td>
     <td class="sys_msg refside">全体</td>
     <td class="announce vote">青玉 フィーラ を処刑するには畏れ多かったので、処刑は取りやめました。</td>
@@ -1232,7 +1277,14 @@
     <td class="sys_msg refrole others">クラムボン</td>
     <td class="sys_msg refside"></td>
     <td class="announce clammbon">読師 アリエル は わらっていたよ。</td>
-    <td class="sys_msg comment"></td>
+    <td class="sys_msg comment">成功時</td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole others">クラムボン</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce clammbon">虚構審判 エース は 死んでしまったよ………。</td>
+    <td class="sys_msg comment">失敗時</td>
   </tr>
 
   <tr class="sys_msg">
@@ -3755,6 +3807,13 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️天狗</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce tengu">天狗の仕業で、全員の姿が 鋳掛屋 ウェンディ になります。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole villager">🖍️話術士</td>
   <td class="sys_msg refside"></td>
   <td class="announce sympathy">祭壇奉仕者 セラ と語り合っていた、士官 ルスラン が共に襲われました。</td>
@@ -4261,7 +4320,7 @@
   <td class="sys_msg refside"></td>
   <td class="announce cupid">白鳥 オデット は トゥイードル ダム を誘惑しました。<br>
     トゥイードル ダム は 白鳥 オデット に恋に落ちました。</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">同時投票人数分出る</td>
 </tr>
 
 <tr class="sys_msg">
@@ -4269,7 +4328,7 @@
   <td class="sys_msg refside"></td>
   <td class="announce revenge">紫水晶 アメジスタ は 煙水晶 キーツ を惑わせました。<br>
     煙水晶 キーツ は 紫水晶 アメジスタ に復讐を誓いました。</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">同時投票人数分出る</td>
 </tr>
 
 <tr class="sys_msg">
@@ -4557,6 +4616,31 @@
   <!-- 刑事の後 -->
 </tr>
 
+<!-- ********************************************************************************** -->
+<tr class="sys_msg effect_header">
+  <td class="sys_msg effect_no_header" colspan="2"></td>
+  <td class="sys_msg effect_header">犠牲者が出た</td>
+  <td class="sys_msg effect_small_header comment"></td>
+</tr>
+<!-- ********************************************************************************** -->
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refside">初日全体</td>
+  <td class="announce top_msg">ついに犠牲者が出てしまいました。やはり人狼はいたのです。<br>
+    話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+<!-- 
+<tr class="sys_msg">
+  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refside"></td>
+  <td class="announce top_msg">長く不安な夜が明けました。狼の遠吠えと、足音を聞いた者も何人かいます。<br>
+    話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+ -->
+
  <!-- ********************************************************************************** -->
 <tr class="sys_msg normal_header">
   <td class="sys_msg normal_no_header" colspan="2">29</td>
@@ -4716,31 +4800,6 @@
 </tr>
 
 <!-- ********************************************************************************** -->
-<tr class="sys_msg effect_header">
-  <td class="sys_msg effect_no_header" colspan="2"></td>
-  <td class="sys_msg effect_header">犠牲者が出た</td>
-  <td class="sys_msg effect_small_header comment"></td>
-</tr>
-<!-- ********************************************************************************** -->
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside">初日全体</td>
-  <td class="announce top_msg">ついに犠牲者が出てしまいました。やはり人狼はいたのです。<br>
-    話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-<!-- 
-<tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside"></td>
-  <td class="announce top_msg">長く不安な夜が明けました。狼の遠吠えと、足音を聞いた者も何人かいます。<br>
-    話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
- -->
-
-<!-- ********************************************************************************** -->
 <tr class="sys_msg normal_header">
   <td class="sys_msg normal_no_header" colspan="2">31</td>
   <td class="sys_msg normal_header">夜明け時の変化</td>
@@ -4853,6 +4912,13 @@
   <td class="sys_msg refside"></td>
   <td class="announce alice">焼鳥の民 仁 から処刑される夢を見ていた 新世紀幼女BOUちゃん は夢から覚めました。</td>
   <td class="sys_msg comment">28~32のどこか(おそらくここ)</td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️天狗</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce tengu">天狗の仕業で、全員の姿が 鋳掛屋 ウェンディ になりました。</td>
+  <td class="sys_msg comment"></td>
 </tr>
 
 <tr class="sys_msg">
