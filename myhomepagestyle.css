@@ -200,6 +200,14 @@ text-align:center;
 /*border: inset;*/
 }
 
+.win_back{
+  background-color:#fffafa;
+}
+
+.loose_back{
+  background-color:#faffff;
+}
+
 h1 { color: #a2846c; font-size: 1.2em; text-align:center; }
 h2 { color: #bdb76b; text-align:center; }
 h3 { color: #bd674b; text-align:center; }
