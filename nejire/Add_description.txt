@@ -18,6 +18,10 @@
 
 <div class="announce scapegoat">ID:PNw2HU5q は 執務官 Rain の身代わりになりました。</div>
 
+[117]贖罪者
+投票先が村人陣営でも、護衛貫通役職の場合は身代わりは起こらないっぽい。
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=16156#form" target="_blank" rel="noopener noreferrer">[16156村]</a><br>
+
 [124]
 殺人鬼・一匹狼護衛成功時は侍は死なず、殺人鬼・一匹狼だけが死ぬ
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16230#form" target="_blank" rel="noopener noreferrer">[16230村]</a>
@@ -151,10 +155,15 @@ LWの時は耐えしのぐ
 <div class="announce sick">ID:y8BivWCP の余命はあと 1日 です。</div>
 耐えしのいだら毒が回り噛み失敗で死ぬ
 <div class="announce poison">ID:y8BivWCP は身体中に毒が周り、倒れました。</div>
+[336]夜雀
+「襲撃者全て」は襲撃役職全てではなく、夜雀を襲撃した人のことを指す
 [352]
 狂窓なし(狂人表記で窓なしはこれと三月兎)
 [353]
 狂窓なし(狂人表記で窓なしはこれと帽子屋)
+[359]アリス
+夢から覚めるのは夜明け時の変化(31)で、蘇生は(27)と(28)の間なので、実際蘇生されるのは次の日
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17233&date=8&part=1" target="_blank" rel="noopener noreferrer">[17233村]</a>
 [360]
 コピーすると妖窓なくなる
 [383]
@@ -201,6 +210,11 @@ LWの時は耐えしのぐ
 
 [480]
 女豹が死んだら恋人は後追いする。恋人死んでも女豹は単体残される(勝利なし)
+
+[481]
+進行中は<span class="revenge">(仇敵)</span>ではなく<span class="revenge">(宿敵)</span>と表示されるらしい
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17233&type=think&date=8&id=33" target="_blank" rel="noopener noreferrer">[17233村]</a>
+
 [484]
 護衛では悪霊化はさせるが本人は死なない
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16227&date=3&part=1" target="_blank" rel="noopener noreferrer">[16227村]</a>

@@ -38,7 +38,7 @@
 <p class="headerfutter">ねじれの処理順リストです</p>
 <p class="caution_large">※ 過去ログで確認したものをリストにしているだけなので、全て網羅はできてはいません。<br>
   <span class="normal_header">ピンク</span>：ねじれ天国説明書の優先順位に記載のあるもの。その中にある🖍️印のものは、優先順位にないシスメを追記。<br>
-  <span class="effect_header">水色</span>：このページを作成するに当たって追加した、主に何かの処理に不随するシスメ。<br>
+  <span class="effect_header">水色</span>：このページを作成するに当たって追加した、主に何かの処理に付随するシスメ。<br>
   <span class="long_header">紫色</span>：長期の場合の処刑に関する処理で、襲撃に関する処理と同じ処理が行われるもの。<br>
   <br>
   <strong>《注》各グループ内の順序は確認できたものは処理順で並べていますが(1と2は処理順確認済)、
@@ -84,7 +84,7 @@
 
 <!-- ********************************************************************************** -->
 <tr class="sys_msg long_header">
-  <td class="sys_msg long_small_header">コンピュータ等死亡結果</td>
+  <td class="sys_msg long_small_header">初日墓下死亡結果</td>
   <td class="sys_msg long_no_header">28'</td>
   <td class="sys_msg long_header">巫女の神託</td>
   <td class="sys_msg long_small_header comment">内容は28と同じ</td>
@@ -95,7 +95,7 @@
   <td class="sys_msg refrole"></td>
   <td class="sys_msg refside"></td>
   <td class="sys_msg">※ 内容は28と同じなので28参照</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">幽霊・コンピュータ</td>
 </tr>
 
 <tr class="sys_msg">
@@ -104,6 +104,14 @@
   <td class="sys_msg"></td>
   <td class="sys_msg comment"></td>
 </tr>
+
+<!-- ********************************************************************************** -->
+<!-- <tr class="sys_msg effect_header">
+  <td class="sys_msg effect_header" colspan="2"></td>
+  <td class="sys_msg effect_header">初日ダミー発言</td>
+  <td class="sys_msg effect_small_header comment"></td>
+</tr> -->
+<!-- ********************************************************************************** -->
 
 <!-- 
   <tr class="sys_msg">
@@ -126,6 +134,13 @@
     <td class="sys_msg refside wolf">人狼全員</td>
     <td class="announce whisper">この村に潜む人狼は、青薔薇 ロザベラ、狼毒 アルル です。</td>
     <td class="sys_msg comment">C国狂人・狂信者も見えるハズ</td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole madman">首謀者</td>
+    <td class="sys_msg refside wolf">人狼全員</td>
+    <td class="announce whisper">この村に潜む首謀者は、不知火 シラヌイ です。</td>
+    <td class="sys_msg comment"></td>
   </tr>
 
   <tr class="sys_msg">
@@ -157,6 +172,13 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole madman">共犯者</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce scream">この村に潜む狂人は、好奇心 エメット、泣き女 シーナ、用心棒 アルビーネ、中毒 カイン、観測者 マリーベル です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole bat_">鴉</td>
     <td class="sys_msg refside bat_">蝙蝠</td>
     <td class="announce bat">この村に潜む蝙蝠は、狼娘 チノ、赤のお茶会 ソーサ― です。</td>
@@ -164,17 +186,17 @@
   </tr>
 
   <tr class="sys_msg">
-    <td class="sys_msg refrole others">コンピュータ</td>
+    <td class="sys_msg refrole others" rowspan="2">コンピュータ</td>
     <td class="sys_msg refside"></td>
     <td class="announce computer">紅の遊撃隊 シャルロッテ は親愛なる友人である村人の幸福を願います。</td>
-    <td class="sys_msg comment"></td>
+    <td class="sys_msg comment">親愛なる村</td>
   </tr>
 
   <tr class="sys_msg">
-    <td class="sys_msg refrole others">コンピュータ</td>
+    <!-- <td class="sys_msg refrole others">コンピュータ</td> -->
     <td class="sys_msg refside"></td>
     <td class="announce computer">奇譚 古い書物 は反逆的兆候が見られるこの村を排除します。</td>
-    <td class="sys_msg comment"></td>
+    <td class="sys_msg comment">反逆的な村</td>
   </tr>
 
   <tr class="sys_msg">
@@ -271,6 +293,20 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole villager" rowspan="2">共命者</td>
+    <td class="sys_msg refside">相手側</td>
+    <td class="announce bond">あなたと命を共にするのは、フルーツタルト モード です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <!-- <td class="sys_msg refrole">共命者</td> -->
+    <td class="sys_msg refside">共命者側</td>
+    <td class="announce bond">あなたと命を共にするのは、かき氷 マリル です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole bat_" rowspan="2">時計ウサギ</td>
     <td class="sys_msg refside">時計ウサギ側</td>
     <td class="announce sympathy">どうやら パンプキンパイ カルロ の後を 小豆饅頭 カエデ が迷い込むように付いてきたようです。</td>
@@ -316,6 +352,13 @@
     <td class="sys_msg refrole madman">共犯者</td>
     <td class="sys_msg refside"></td>
     <td class="announce scream">この村に潜む狂人は、奇譚 古い書物、忍者 コウガ です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole villager">忠犬</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce bond">太鼓打ち ダイコク は 金魚 カナコ と深い絆を結んでいます。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -424,6 +467,13 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole others">フォロワー</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce follower">殺人鬼 リッパー は、白のテーブル ナイフ、赤の城壁 ルーク をフォローしています。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole villager">貴族</td>
     <td class="sys_msg refside">奴隷側</td>
     <td class="announce slave">クラゲ リウム は 仔鹿 フォウ の奴隷です。</td>
@@ -431,9 +481,9 @@
   </tr>
 
   <tr class="sys_msg">
-    <td class="sys_msg refrole villager">忠犬</td>
-    <td class="sys_msg refside"></td>
-    <td class="announce bond">太鼓打ち ダイコク は 金魚 カナコ と深い絆を結んでいます。</td>
+    <td class="sys_msg refrole villager">領主</td>
+    <td class="sys_msg refside">従者側</td>
+    <td class="announce loyal">飼い猫 ダイナ は メイド ルイーズ の従者です。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -462,13 +512,6 @@
     <td class="sys_msg refrole villager">管理人</td>
     <td class="sys_msg refside"></td>
     <td class="announce nejire">あどみん 『新しいBelugaをつくりました。』</td>
-    <td class="sys_msg comment"></td>
-  </tr>
-
-  <tr class="sys_msg">
-    <td class="sys_msg refrole others">フォロワー</td>
-    <td class="sys_msg refside"></td>
-    <td class="announce follower">殺人鬼 リッパー は、白のテーブル ナイフ、赤の城壁 ルーク をフォローしています。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -505,7 +548,10 @@
     <td class="sys_msg refside">全体</td>
     <td class="announce mary">隠れたるより現るるはなし…</td>
     <td class="sys_msg comment" rowspan="4">覗きの居る場合
-      <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16656&date=2&part=1" target="_blank" rel="noopener noreferrer">[16656村]</a>
+      <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16656&date=2&part=1" target="_blank" rel="noopener noreferrer">[16656村]</a><br>
+      <br>
+      ダミーが居る場合、<br>ダミーが発言
+      <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16145&date=1" target="_blank" rel="noopener noreferrer">[16145村]</a><br>
     </td>
   </tr>
 
@@ -1144,6 +1190,7 @@
     <td class="sys_msg comment">管理人が居る場合</td>
   </tr>
 
+  <!-- 暴君の処刑取りやめもある -->
   <tr class="sys_msg">
     <td class="sys_msg refrole">加護(八房)</td>
     <td class="sys_msg refside">全体</td>
@@ -1157,6 +1204,13 @@
     <td class="sys_msg refrole villager">弁護士</td>
     <td class="sys_msg refside">全体</td>
     <td class="announce vote">石油王 イルル を処刑するには畏れ多かったので、処刑は取りやめました。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole bat_">チェシャ猫</td>
+    <td class="sys_msg refside">全体</td>
+    <td class="announce vote">トランプ スペード を処刑するには畏れ多かったので、処刑は取りやめました。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -1225,6 +1279,13 @@
   </tr>
     
   <tr class="sys_msg">
+    <td class="sys_msg refrole madman">狼少女</td>
+    <td class="sys_msg refside wolf">人狼全員</td>
+    <td class="announce whisper">我が子同様の 緑のゆうれい ヴェルデ が処刑され、人狼達は怒りのまま今夜の襲撃を行います。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+    
+  <tr class="sys_msg">
     <td class="sys_msg refrole">龍玉(追放によるもの)</td>
     <td class="sys_msg refside">受取者</td>
     <td class="announce dragonball">芝桜 ウタタ が所持していた 1個 の龍玉が、都忘れ ユウナギ の手に渡りました。</td>
@@ -1234,7 +1295,7 @@
   <tr class="sys_msg">
     <td class="sys_msg refrole villager">アリス</td>
     <td class="sys_msg refside"></td>
-    <td class="announce alice">新世紀幼女BOUちゃん は 焼鳥の民 仁 に処刑される不思議な夢を見ました。</td>
+    <td class="announce alice">鳥頭 ピニャータ は 奇術師 ベニカ に処刑される不思議な夢を見ました。</td>
     <td class="sys_msg comment"></td>
   </tr>
   
@@ -1257,6 +1318,13 @@
     <td class="sys_msg refside"></td>
     <td class="announce vote">貂の呪いで、学術士 ヒューゴ が道連れにされました。</td>
     <td class="sys_msg comment">道連れの巫女結果は霊能結果後</td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole villager">山羊</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce sacrifice">性別不詳の侯爵 吟ギン を生贄として 主に尽くしたい執事 楸ヒサギ が蘇ります。</td>
+    <td class="sys_msg comment"></td>
   </tr>
 
   <tr class="sys_msg">
@@ -1316,23 +1384,15 @@
   </tr>
 
   <tr class="sys_msg">
-    <td class="sys_msg refrole"><span class="fox">妖猿</span>・<span class="wolf">識狼</span></td>
+    <td class="sys_msg refrole">
+      <span class="villager">霊媒師</span>・
+      <span class="wolf">識狼</span><br>
+      <span class="madman">インチキ霊能者</span><br>
+      <span class="fox">妖猿</span>・
+      <span class="bat_">蟒蛇</span>
+    </td>
     <td class="sys_msg refside"></td>
     <td class="announce spirit_skill">卯の花 ウイ は 神龍 だったようです。</td>
-    <td class="sys_msg comment"></td>
-  </tr>
-
-  <tr class="sys_msg">
-    <td class="sys_msg refrole villager">ギャンブラー</td>
-    <td class="sys_msg refside"></td>
-    <td class="announce gambler">補佐官 シール の現在の持ち票は 3 票です。</td>
-    <td class="sys_msg comment"></td>
-  </tr>
-
-  <tr class="sys_msg">
-    <td class="sys_msg refrole madman">イカサマ師</td>
-    <td class="sys_msg refside"></td>
-    <td class="announce gambler">クロフクロウ ワイズ の現在の持ち票は 4 票です。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -1358,11 +1418,32 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole villager">記者</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce journalist">商人 アルカ の死顔は苦悶の表情でした。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole villager">観測者</td>
     <td class="sys_msg refside"></td>
     <td class="announce steinsgate">栄養教諭 オルネア は 送り狼 だったようです。</td>
     <td class="sys_msg comment"></td>
     <!-- 審神者の後 -->
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole villager">ギャンブラー</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce gambler">補佐官 シール の現在の持ち票は 3 票です。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
+    <td class="sys_msg refrole madman">イカサマ師</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce gambler">クロフクロウ ワイズ の現在の持ち票は 4 票です。</td>
+    <td class="sys_msg comment"></td>
   </tr>
 
   <tr class="sys_msg">
@@ -1483,6 +1564,13 @@
   </tr>
 
   <tr class="sys_msg">
+    <td class="sys_msg refrole">麻痺</td>
+    <td class="sys_msg refside"></td>
+    <td class="announce paralyze">海賊 ピーター は痺れて動けません。</td>
+    <td class="sys_msg comment"></td>
+  </tr>
+
+  <tr class="sys_msg">
     <td class="sys_msg refrole wolf">印狼</td>
     <td class="sys_msg refside"></td>
     <td class="announce sick">白の女王 エリザベス の余命はあと 3日 です。</td>
@@ -1507,13 +1595,6 @@
     <td class="sys_msg refrole wolf">印狼</td>
     <td class="sys_msg refside"></td>
     <td class="announce sick">無表情 ロイ は病に倒れました。</td>
-    <td class="sys_msg comment"></td>
-  </tr>
-
-  <tr class="sys_msg">
-    <td class="sys_msg refrole">麻痺</td>
-    <td class="sys_msg refside"></td>
-    <td class="announce paralyze">海賊 ピーター は痺れて動けません。</td>
     <td class="sys_msg comment"></td>
   </tr>
 
@@ -2280,13 +2361,6 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole wolf">黒狼</td>
-  <td class="sys_msg refside"></td>
-  <td class="announce beacon">化学者 カズィ は 魔物憑き アナベル に狼煙を仕掛けました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
   <td class="sys_msg refrole wolf">霧狼</td>
   <td class="sys_msg refside"></td>
   <td class="announce phantom">花園 オニユリ は 門番 グリフォン の周囲を霧でつつみ妨害します。</td>
@@ -2339,6 +2413,13 @@
   <td class="sys_msg refrole madman">放火魔</td>
   <td class="sys_msg refside"></td>
   <td class="announce beacon">カモミールティー モニカ は ずんだ餅 イツキ に放火しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole wolf">黒狼</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce beacon">化学者 カズィ は 魔物憑き アナベル に狼煙を仕掛けました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -2469,30 +2550,9 @@
     <!-- ********************************************************************************** -->
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole wolf">人狼猫</td>
+  <td class="sys_msg refrole villager">女騎士</td>
   <td class="sys_msg refside"></td>
-  <td class="announce sleep">野良犬 タロウ は我に返り、人狼猫 だと自覚しました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole fox">半妖</td>
-  <td class="sys_msg refside"></td>
-  <td class="announce telepathy">白の城壁 キャス は 眠っていた血が目覚め 妖魔 になりました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole villager">灰かぶり</td>
-  <td class="sys_msg refside"></td>
-  <td class="announce cinderella">息女 カミラ は 不思議な魔法をかけられ 忠犬 になりました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole wolf">桜狼</td>
-  <td class="sys_msg refside"></td>
-  <td class="announce possessed">衛兵 ダンテ は咲き乱れる桜の如き 大学生 リーノ を見ると、心を掻き乱されました。</td>
+  <td class="announce loyal">宮廷魔術師 クヴァルツ は 用心棒 ゴリアテ を信じて忠誠を誓います。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -2504,9 +2564,59 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole immoral_">殉教者</td>
+  <td class="sys_msg refrole villager">灰かぶり</td>
   <td class="sys_msg refside"></td>
-  <td class="announce scapegoat">暖かな恋の歌 メロウ は 俺は勝利者になる エース の身代わりになりました。</td>
+  <td class="announce cinderella">息女 カミラ は 不思議な魔法をかけられ 忠犬 になりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">帽子屋</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce sleep">役員 モリヤ は我に返り、帽子屋 だと自覚しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole bat_">三月兎</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce sleep">黒の眷属 アルカード は我に返り、三月兎 だと自覚しました。</td>
+  <td class="sys_msg comment"></td>
+  <!-- 16986 唱門師占われた→このシスメ→占いシスメ -->
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole bat_">眠り鼠</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce sleep">パドレ ドロシー は眠りから目覚めて、眠り鼠 だと自覚しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole wolf">人狼猫</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce sleep">野良犬 タロウ は我に返り、人狼猫 だと自覚しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole wolf">桜狼</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce possessed">衛兵 ダンテ は咲き乱れる桜の如き 大学生 リーノ を見ると、心を掻き乱されました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole fox">半妖</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce telepathy">白の城壁 キャス は 眠っていた血が目覚め 妖魔 になりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole fox">悪魔</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce telepathy">祓われた 中毒 カイン は 毒舌家 セルマ に憑きました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -2514,6 +2624,13 @@
   <td class="sys_msg refrole fox">魔人</td>
   <td class="sys_msg refside"></td>
   <td class="announce tough">挿絵画家 キルステン は傷を負いましたが、なんとか逃れました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole immoral_">殉教者</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce scapegoat">暖かな恋の歌 メロウ は 俺は勝利者になる エース の身代わりになりました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -2801,8 +2918,8 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager">大神</td>
   <td class="sys_msg refside"></td>
-  <td class="announce ookami">スケ番 メル は 司祭 ロルコ を再生させました。<br>
-    スケ番 メル の 大神 はどこかへ去って行きました。</td>
+  <td class="announce ookami">白のテーブル スプーン は 甘党 ドロシー を再生させました。<br>
+    白のテーブル スプーン の 大神 はどこかへ去って行きました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3098,10 +3215,17 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole villager">山伏</td>
+  <td class="sys_msg refrole villager" rowspan="2">山伏</td>
   <td class="sys_msg refside"></td>
   <td class="announce guard">三味線 クオン は、オーボエ アニタ を護衛しています。</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">護衛時</td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole villager">山伏</td> -->
+  <td class="sys_msg refside"></td>
+  <td class="announce guard">メイド ルイーズ の霊力によって調べたところ、腹話術師 エゴマ は 人狼 だったようです。</td>
+  <td class="sys_msg comment">死者調査時</td>
 </tr>
 
 <tr class="sys_msg">
@@ -3135,7 +3259,7 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager">侠客</td>
   <td class="sys_msg refside"></td>
-  <td class="announce guard">手芸部 ライラ は、七不思議 アケミ を護衛しています。</td>
+  <td class="announce guard">眼鏡学教諭 アザレア は、学芸会補佐 ピーター を護衛しています。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3377,6 +3501,13 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole">🖍️狼少女による2回目</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce whisper">さらに アカシックレコード ツルギィ は、シロツメクサ リウム を襲撃します。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole wolf">刻狼</td>
   <td class="sys_msg refside"></td>
   <td class="announce whisper">襲撃に失敗しましたが 狼娘 チノ は 息女 カミラ を負傷させました。</td>
@@ -3403,7 +3534,7 @@
   <!-- <td class="sys_msg refside"></td> -->
   <td class="sys_msg">悪鬼(護衛成功時) 猫又(被襲撃時) 貂(被襲撃時) 仙狸(被襲撃時) 埋毒者(被襲撃時) <br>
     メイド(被襲撃時) ハンター(被襲撃時) 撫子(被襲撃時) 罠(被襲撃時) 毒(被襲撃時)</td>
-  <td class="sys_msg comment">※：色は各襲撃役のシスメの色<br>　　人狼の場合、人狼全員に表示される</td>
+  <td class="sys_msg comment">※：色は各襲撃役のシスメの色<br>人狼は、人狼全員に表示される</td>
 </tr>
 
 <tr class="sys_msg">
@@ -3458,7 +3589,7 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager">埋毒者(被襲撃時)</td>
   <td class="sys_msg refside">襲撃側</td>
-  <td class="announce poison">時計屋 ナタリア の身体に流れる毒が、星盗り ヤドヴィガ を蝕みます。</td>
+  <td class="announce poison">黒ごまプリン マコ の身体に流れる毒が、バースデーケーキ ラナ を蝕みます。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3508,14 +3639,14 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager" rowspan="2">🖍️侠客(護衛成功時)</td>
   <td class="sys_msg refside"></td>
-  <td class="announce slave">組鐘奏者 アンナ は 読師 アリエル の身代わりになりました。</td>
+  <td class="announce slave">眼鏡学教諭 アザレア は 学芸会補佐 ピーター の身代わりになりました。</td>
   <td class="sys_msg comment" rowspan="2">上下セット</td>
 </tr>
 
 <tr class="sys_msg">
   <!-- <td class="sys_msg refrole">侠客</td> -->
   <td class="sys_msg refside"></td>
-  <td class="announce tough">組鐘奏者 アンナ は瀕死の重傷ですが、根性で耐えました。</td>
+  <td class="announce tough">眼鏡学教諭 アザレア は瀕死の重傷ですが、根性で耐えました。</td>
   <!-- <td class="sys_msg comment"></td> -->
 </tr>
 
@@ -3586,9 +3717,37 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️赤ずきん(被襲撃時)</td>
+  <td class="sys_msg refside">襲撃先</td>
+  <td class="announce little_red">狛狐 朱 は はにかみ屋 佳子 に丸呑みにされました。</td>
+  <td class="sys_msg comment">狼のみ・襲撃者の1人の名前が出る</td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️子羊(被襲撃時)</td>
+  <td class="sys_msg refside">襲撃側</td>
+  <td class="announce whisper">青年 ノエル は羊の皮を被りました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️贖罪者</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce slave">木偶 アレン は 白花霊吐 フローラ の身代わりになりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole villager">🖍️夕鶴(占い系被襲撃時)</td>
   <td class="sys_msg refside"></td>
   <td class="announce slave">翠玉 エメリア は 珪孔雀石 クラリス の身代わりになりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️忠犬(絆先被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce slave">人魚 ローレライ は 通信班 オルカ の身代わりになりました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3607,20 +3766,6 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole villager">🖍️赤ずきん(被襲撃時)</td>
-  <td class="sys_msg refside">襲撃先</td>
-  <td class="announce little_red">狛狐 朱 は はにかみ屋 佳子 に丸呑みにされました。</td>
-  <td class="sys_msg comment">狼のみ・襲撃者の1人の名前が出る</td>
-</tr>
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole villager">🖍️子羊(被襲撃時)</td>
-  <td class="sys_msg refside">襲撃側</td>
-  <td class="announce whisper">青年 ノエル は羊の皮を被りました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
   <td class="sys_msg refrole madman" rowspan="2">🖍️外道(被襲撃時)</td>
   <td class="sys_msg refside"></td>
   <td class="announce slave">妖精 ルーマ は 兔娘 キャロル を身代わりにしました。</td>
@@ -3635,6 +3780,34 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole madman" rowspan="2">🖍️鬼畜(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce slave">怠惰 フェゴール は 狼娘 チノ を身代わりにしました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole madman">鬼畜</td> -->
+  <td class="sys_msg refside">身代わり側</td>
+  <td class="announce scapegoat">狼娘 チノ は 怠惰 フェゴール の身代わりになりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole cult" rowspan="2">🖍️教皇(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce slave">司祭 フラウディア は 処刑人 ザイダ を身代わりにしました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole">教皇</td> -->
+  <td class="sys_msg refside">身代わり側</td>
+  <td class="announce scapegoat">処刑人 ザイダ は 司祭 フラウディア の身代わりになりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole vampire_" rowspan="2">🖍️吸血公(被襲撃時)</td>
   <td class="sys_msg refside"></td>
   <td class="announce slave">シスター リン は 破落戸 エル を身代わりにしました。</td>
@@ -3643,8 +3816,29 @@
 
 <tr class="sys_msg">
   <!-- <td class="sys_msg refrole">吸血公</td> -->
-  <td class="sys_msg refside">セット先</td>
+  <td class="sys_msg refside">身代わり側</td>
   <td class="announce scapegoat">破落戸 エル は シスター リン の身代わりになりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole madman">🖍️半狼</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce whisper">殿様 ダイカン は 眠っていた血が目覚め 人狼 になりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager" rowspan="2">🖍️女騎士</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce tough">雨合羽 リコチェット は傷を負いましたが、なんとか撃退しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole villager">女騎士</td> -->
+  <td class="sys_msg refside"></td>
+  <td class="announce prisoner">雨合羽 リコチェット は 保健委員 セラ に捕らわれました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3656,9 +3850,16 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole immoral_">🖍️半妖(被襲撃時)</td>
+  <td class="sys_msg refrole fox">🖍️海魔(被襲撃時)</td>
   <td class="sys_msg refside"></td>
-  <td class="announce telepathy">絶対音感 リル は 眠っていた血が目覚め 妖魔 になりました。</td>
+  <td class="announce servant">瑠璃 ルリ は 翠玉 エメリア に魅入られ、下僕となりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole fox">🖍️九尾(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce fear">猫被り シャルロッテ は 体育委員 ライモンド 怪火を灯しました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3670,9 +3871,9 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole fox">🖍️九尾(被襲撃時)</td>
+  <td class="sys_msg refrole immoral_">🖍️半妖(被襲撃時)</td>
   <td class="sys_msg refside"></td>
-  <td class="announce fear">猫被り シャルロッテ は 体育委員 ライモンド 怪火を灯しました。</td>
+  <td class="announce telepathy">絶対音感 リル は 眠っていた血が目覚め 妖魔 になりました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3717,7 +3918,8 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager">🖍️八房(被襲撃時)</td>
   <td class="sys_msg refside">加護</td>
-  <td class="announce yatuhusa">八房の霊玉が、助っ人 リーネリス を守護します。</td>
+  <td class="announce yatuhusa">八房の霊玉が、令和生まれ令和育ちの百億人に一人の超々天才赤ちゃん大学院生 東東 を守護します。</td>
+    <!-- 八房の霊玉が、助っ人 リーネリス を守護します。 -->
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3750,11 +3952,26 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️調合士(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce tough">鉛筆削り は傷を負いましたが、なんとか撃退しました。</td>
+  <td class="sys_msg comment">襲撃耐性付与時のみ</td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole fox">🖍️魔人(被襲撃時)</td>
   <td class="sys_msg refside"></td>
   <td class="announce tough">月の民 モフモフ は傷を負いましたが、なんとか撃退しました。</td>
   <td class="sys_msg comment"></td>
 </tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole bat_">🖍️蜥蜴(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce tough">戦う幼兵 マチルダ は傷を負いましたが、なんとか撃退しました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+<!-- さつじんおに リッパー は傷を負いましたが、なんとか撃退しました。 -->
 
 <tr class="sys_msg">
   <td class="sys_msg refrole revenger">🖍️闘神の仇敵(被襲撃時)</td>
@@ -3792,6 +4009,13 @@
 </tr>
 
 <tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️覚醒者(被襲撃時)</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce awakening">クラゲ リウム は 秘められた力が覚醒して 中身占い師 になりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
   <td class="sys_msg refrole villager">🖍️探索者(被襲撃時)</td>
   <td class="sys_msg refside">全体</td>
   <td class="announce seeker">人狼の遠吠えとともに、<br>
@@ -3803,6 +4027,13 @@
   <td class="sys_msg refrole villager">🖍️八咫烏</td>
   <td class="sys_msg refside">全体</td>
   <td class="announce yatagarasu">八咫烏の導きで、光に照らされ 旭光 になりました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager">🖍️夜雀</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce dark">夜雀のさえずりを聴いて、襲撃者の視界は闇に包まれました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -3896,7 +4127,7 @@
   <td class="sys_msg refrole villager" rowspan="2">求道者</td>
   <td class="sys_msg refside"></td>
   <td class="announce monk">バースデーケーキ ラナ は、黒ごまプリン マコ を襲撃します。</td>
-  <td class="sys_msg comment" rowspan="2">上下セット</td>
+  <td class="sys_msg comment" rowspan="2">上下セット<br>22のシスメあればこの間に入る</td>
 </tr>
 
 <tr class="sys_msg">
@@ -4054,14 +4285,14 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager" rowspan="2">降霊者</td>
   <td class="sys_msg refside"></td>
-  <td class="announce psychic">トゥイードル ダム は ウミガメモドキ ウロコ の霊を降ろしました。</td>
+  <td class="announce psychic">鬼提灯 コトハ は 売店 ミルラ の霊を降ろしました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
 <tr class="sys_msg">
   <!-- <td class="sys_msg refrole">降霊者</td> -->
   <td class="sys_msg refside">セット先</td>
-  <td class="announce psychic">ウミガメモドキ ウロコ は一時的に現世に呼び寄せられました。</td>
+  <td class="announce psychic">売店 ミルラ は一時的に現世に呼び寄せられました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -4332,16 +4563,16 @@
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole">🖍️熱病</td>
-  <td class="sys_msg refside"></td>
-  <td class="announce heat">雪うさぎ ユキメ は熱病にかかりました。</td>
+  <td class="sys_msg refside">🖍️凍傷</td>
+  <td class="sys_msg refrole"></td>
+  <td class="announce cold">星遊び シーニー は凍傷にかかりました。</td>
   <td class="sys_msg comment">罠、厄神様</td>
 </tr>
 
 <tr class="sys_msg">
-  <td class="sys_msg refside">🖍️凍傷</td>
-  <td class="sys_msg refrole"></td>
-  <td class="announce cold">星遊び シーニー は凍傷にかかりました。</td>
+  <td class="sys_msg refrole">🖍️熱病</td>
+  <td class="sys_msg refside"></td>
+  <td class="announce heat">雪うさぎ ユキメ は熱病にかかりました。</td>
   <td class="sys_msg comment">罠、厄神様</td>
 </tr>
 
@@ -4457,6 +4688,13 @@
   <td class="sys_msg comment"></td>
 </tr>
 
+<tr class="sys_msg">
+  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refside"></td>
+  <td class="announce revive">不思議な事に、引退していた筈の 小豆饅頭 カエデ が復帰しました。</td>
+  <td class="sys_msg comment">管理人が居る場合</td>
+</tr>
+
 <!-- ********************************************************************************** -->
 <tr class="sys_msg effect_header">
   <td class="sys_msg effect_no_header" colspan="2"></td>
@@ -4468,7 +4706,7 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole others">笛吹き(成功時)</td>
   <td class="sys_msg refside"></td>
-  <td class="announce flute">偃月の夜紅葉 雪華 は 赤頭巾の姫君 しずか を何処かへ誘いました。</td>
+  <td class="announce flute">偃月の夜紅葉 雪華 は 杏の狂い花 アナベル を何処かへ誘いました。</td>
   <td class="sys_msg comment">蘇生後、無残シスメの前</td>
 </tr>
 
@@ -4629,17 +4867,16 @@
   <td class="sys_msg refside">初日全体</td>
   <td class="announce top_msg">ついに犠牲者が出てしまいました。やはり人狼はいたのです。<br>
     話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">犠牲者あり時</td>
 </tr>
-<!-- 
+
 <tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
+  <td class="sys_msg refrole">初日全体</td>
   <td class="sys_msg refside"></td>
   <td class="announce top_msg">長く不安な夜が明けました。狼の遠吠えと、足音を聞いた者も何人かいます。<br>
     話し合いの結果、村人達は人狼を処刑するために投票を行うことにしました。</td>
-  <td class="sys_msg comment"></td>
+  <td class="sys_msg comment">犠牲者なし時</td>
 </tr>
- -->
 
  <!-- ********************************************************************************** -->
 <tr class="sys_msg normal_header">
@@ -4653,6 +4890,20 @@
   <td class="sys_msg refrole" colspan="2">説明書の「優先順位」に記載の役職</td>
   <!-- <td class="sys_msg refside"></td> -->
   <td class="sys_msg">恋人 下僕 眷属 絆</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <td class="sys_msg refrole villager" rowspan="2">🖍️総統閣下</td>
+  <td class="sys_msg refside">全体</td>
+  <td class="announce imperial">学芸会会長 ウェンディ 閣下逝去！</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole">総統閣下</td> -->
+  <td class="sys_msg refside">全体(複数)</td>
+  <td class="announce imperial">天才発明家 ヴィクトル が後を追いました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -4709,20 +4960,6 @@
   <td class="sys_msg refrole">絆</td>
   <td class="sys_msg refside">全体</td>
   <td class="announce bond">蒼の神学者 ユスティ は絆に引きずられるように 掃除人 ジズ の後を追いました。</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
-  <td class="sys_msg refrole villager" rowspan="2">🖍️総統閣下</td>
-  <td class="sys_msg refside">全体</td>
-  <td class="announce imperial">学芸会会長 ウェンディ 閣下逝去！</td>
-  <td class="sys_msg comment"></td>
-</tr>
-
-<tr class="sys_msg">
-  <!-- <td class="sys_msg refrole">総統閣下</td> -->
-  <td class="sys_msg refside">全体(複数)</td>
-  <td class="announce imperial">天才発明家 ヴィクトル が後を追いました。</td>
   <td class="sys_msg comment"></td>
 </tr>
 
@@ -4910,7 +5147,7 @@
 <tr class="sys_msg">
   <td class="sys_msg refrole villager">🖍️アリス</td>
   <td class="sys_msg refside"></td>
-  <td class="announce alice">焼鳥の民 仁 から処刑される夢を見ていた 新世紀幼女BOUちゃん は夢から覚めました。</td>
+  <td class="announce alice">奇術師 ベニカ から処刑される夢を見ていた 鳥頭 ピニャータ は夢から覚めました。</td>
   <td class="sys_msg comment">28~32のどこか(おそらくここ)</td>
 </tr>
 
@@ -5168,11 +5405,20 @@
 <!-- ********************************************************************************** -->
 
 <tr class="sys_msg">
-  <td class="sys_msg refrole fox" rowspan="2">妖魔勝利</td>
+  <td class="sys_msg refrole fox" rowspan="3">妖魔勝利</td>
   <td class="sys_msg refside"></td>
   <td class="announce top_msg">もう人狼に抵抗できるほど村人は残っていません。<br>
     生き残った村人もすべて人狼に襲われてしまいました。<br>
     しかし、その人狼もまた村に潜んでいた妖魔によって滅ぼされました。</td>
+  <td class="sys_msg comment"></td>
+</tr>
+
+<tr class="sys_msg">
+  <!-- <td class="sys_msg refrole"></td> -->
+  <td class="sys_msg refside">人狼全滅時</td>
+  <td class="announce top_msg">すべての人狼を退治しました。<br>
+    多くの犠牲を重ね、ついに村に平和が訪れたかのように…<br>
+    いや、そんな！　あの手は何だ！　ああ！　窓に！　窓に！</td>
   <td class="sys_msg comment"></td>
 </tr>
 
