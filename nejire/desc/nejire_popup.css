@@ -1531,3 +1531,9 @@ div{
 .top_msg{
 	color			: #ddd;
 }
+
+.change_accent{
+	color:rgb(66, 46, 179);
+	background-color: rgb(245, 227, 241);
+	font-weight: bold;
+}
