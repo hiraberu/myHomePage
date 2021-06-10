@@ -7,6 +7,9 @@
 [046]メイド
 メイド自身が被襲撃時も、身代わり時も、護衛先に出るシスメは「見守っていたようです。」なので、護衛先の人はどちらが襲撃されたかは分からない。
 メイド自身には身代わり時には「身代わりになりました。」シスメが出るので身代わりか、被襲撃かは分かる。
+[072]裏切者
+進行中は<span class="revenge">(仇敵)</span>ではなく<span class="revenge">(宿敵)</span>と表示されるらしい
+<a href="http://nejiten.halfmoon.jp/index.cgi?vid=17307&date=2&part=1" target="_blank" rel="noopener noreferrer">[17303村]</a>
 [103]
 八咫烏本人も暗闇になる
 [104]
@@ -211,7 +214,7 @@ LWの時は耐えしのぐ
 [480]
 女豹が死んだら恋人は後追いする。恋人死んでも女豹は単体残される(勝利なし)
 
-[481]
+[481]羅刹
 進行中は<span class="revenge">(仇敵)</span>ではなく<span class="revenge">(宿敵)</span>と表示されるらしい
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=17233&type=think&date=8&id=33" target="_blank" rel="noopener noreferrer">[17233村]</a>
 
