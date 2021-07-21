@@ -3,6 +3,7 @@ margin: 20px;
 background-image: url("img/b006.gif");
 /*background-color: #000000;*/
 /*font-size: 1.0em;*/
+-webkit-text-size-adjust: 100%;
 color:#5a2222;
 }
 
