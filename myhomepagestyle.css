@@ -1,3 +1,12 @@
+/* @media screen and (max-width: 640px) {
+ 
+  img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  }
+} */
+
 body { 
 margin: 20px; 
 background-image: url("img/b006.gif");
@@ -217,4 +226,9 @@ h4 { color: #5a2222; text-align:center; }
 a:link { color: #ba2222; }
 a:visited { color: #ca6aaa; }
 a:hover { color: mediumvioletred; background-color: #eedddd; } 
+a.linkimage:hover { background-color:transparent; }
 address{ /*font-style:normal;*/ text-align:center; }
+
+.fa-twitter{
+  color:#00ACEE;
+}

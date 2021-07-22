@@ -1478,10 +1478,10 @@ table.message td a.hashtag {
 .mes_unknown_body1 .hashtag, .mes_secret_body1 .hashtag, .mes_gm_body1 .hashtag {
 	color			: #55ACEE !important;
 }
-strong {
+/* strong {
 	font-weight		: bold;
 	text-decoration	: underline;
-}
+} */
 on {
 	color			: #caac71;
 	text-decoration	: underline;
