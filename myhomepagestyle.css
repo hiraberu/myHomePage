@@ -95,6 +95,13 @@ color:#5a2222;
   text-align: center;
 }
 
+.group_small_header{
+	color: #faf1fc;
+	background-color: #777;
+  font-size :80%;
+  text-align: center;
+}
+
 .normal_small_header{
   /* color:#5a2222; */
 	background-color: #ead1dc;
@@ -106,6 +113,7 @@ color:#5a2222;
 	background-color: #ead1dc;
   font-weight: bold;
   font-size :95%;
+  /* display: block; */
 }
 
 .normal_no_header{
@@ -232,3 +240,148 @@ address{ /*font-style:normal;*/ text-align:center; }
 .fa-twitter{
   color:#00ACEE;
 }
+
+.notshowcheck{
+  display:none;
+}
+
+/* labelのあるところは行のどこクリックでもOpen/Closeできるようにする */
+table.sys_msg_list td label{
+  display: block;
+}
+
+/* table.sys_msg_list td label::before{
+  display: inline-block;
+  content: '\f101';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 8px;
+  background-color:rgba(50,50,50,0.4);
+  border: 1px solid #5a2222;
+  border-radius:4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color:#5a2222;
+} */
+
+.fa-angle-double-right, .fa-angle-double-down{
+  /* display: inline-block; */
+  /* content: '\f101';
+  font-family: 'Font Awesome 5 Free'; */
+  /* font-weight: 900; */
+  margin-right: 8px;
+  background-color:rgba(50,50,50,0.4);
+  /* border: 1px solid #5a2222; */
+  border-radius:4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color:#5a2222;
+}
+/* 
+#firstnightcheck:checked ~ .sys_msg_list label[for="firstnightcheck"]::before{ transform: rotate(90deg); }
+#suddencheck:checked ~ .sys_msg_list label[for="suddencheck"]::before{ transform: rotate(90deg); }
+#prevotecheck:checked ~ .sys_msg_list label[for="prevotecheck"]::before{ transform: rotate(90deg); }
+#votecheck:checked ~ .sys_msg_list label[for="votecheck"]::before{ transform: rotate(90deg); }
+#hangcheck:checked ~ .sys_msg_list label[for="hangcheck"]::before{ transform: rotate(90deg); }
+#posthangcheck:checked ~ .sys_msg_list label[for="posthangcheck"]::before{ transform: rotate(90deg); }
+#submorningcheck:checked ~ .sys_msg_list label[for="submorningcheck"]::before{ transform: rotate(90deg); }
+#id1check:checked ~ .sys_msg_list label[for="id1check"]::before{ transform: rotate(90deg); }
+#id2check:checked ~ .sys_msg_list label[for="id2check"]::before{ transform: rotate(90deg); }
+#id3check:checked ~ .sys_msg_list label[for="id3check"]::before{ transform: rotate(90deg); }
+#id4check:checked ~ .sys_msg_list label[for="id4check"]::before{ transform: rotate(90deg); }
+#id5check:checked ~ .sys_msg_list label[for="id5check"]::before{ transform: rotate(90deg); }
+#id6check:checked ~ .sys_msg_list label[for="id6check"]::before{ transform: rotate(90deg); }
+#id7check:checked ~ .sys_msg_list label[for="id7check"]::before{ transform: rotate(90deg); }
+#id8check:checked ~ .sys_msg_list label[for="id8check"]::before{ transform: rotate(90deg); }
+#id9check:checked ~ .sys_msg_list label[for="id9check"]::before{ transform: rotate(90deg); }
+#id10check:checked ~ .sys_msg_list label[for="id10check"]::before{ transform: rotate(90deg); }
+#id11check:checked ~ .sys_msg_list label[for="id11check"]::before{ transform: rotate(90deg); }
+#id12check:checked ~ .sys_msg_list label[for="id12check"]::before{ transform: rotate(90deg); }
+#id12_29check:checked ~ .sys_msg_list label[for="id12_29check"]::before{ transform: rotate(90deg); }
+#id12_30check:checked ~ .sys_msg_list label[for="id12_30check"]::before{ transform: rotate(90deg); }
+#id12_33check:checked ~ .sys_msg_list label[for="id12_33check"]::before{ transform: rotate(90deg); }
+#id13check:checked ~ .sys_msg_list label[for="id13check"]::before{ transform: rotate(90deg); }
+#id14check:checked ~ .sys_msg_list label[for="id14check"]::before{ transform: rotate(90deg); }
+#id15precheck:checked ~ .sys_msg_list label[for="id15precheck"]::before{ transform: rotate(90deg); }
+#id15check:checked ~ .sys_msg_list label[for="id15check"]::before{ transform: rotate(90deg); }
+#id16check:checked ~ .sys_msg_list label[for="id16check"]::before{ transform: rotate(90deg); }
+#id17check:checked ~ .sys_msg_list label[for="id17check"]::before{ transform: rotate(90deg); }
+#id18check:checked ~ .sys_msg_list label[for="id18check"]::before{ transform: rotate(90deg); }
+#id19check:checked ~ .sys_msg_list label[for="id19check"]::before{ transform: rotate(90deg); }
+#id19_attackcheck:checked ~ .sys_msg_list label[for="id19_attackcheck"]::before{ transform: rotate(90deg); }
+#id20precheck:checked ~ .sys_msg_list label[for="id20precheck"]::before{ transform: rotate(90deg); }
+#id20check:checked ~ .sys_msg_list label[for="id20check"]::before{ transform: rotate(90deg); }
+#id21check:checked ~ .sys_msg_list label[for="id21check"]::before{ transform: rotate(90deg); }
+#id22check:checked ~ .sys_msg_list label[for="id22check"]::before{ transform: rotate(90deg); }
+#id23check:checked ~ .sys_msg_list label[for="id23check"]::before{ transform: rotate(90deg); }
+#id24check:checked ~ .sys_msg_list label[for="id24check"]::before{ transform: rotate(90deg); }
+#id25check:checked ~ .sys_msg_list label[for="id25check"]::before{ transform: rotate(90deg); }
+#id26check:checked ~ .sys_msg_list label[for="id26check"]::before{ transform: rotate(90deg); }
+#id27check:checked ~ .sys_msg_list label[for="id27check"]::before{ transform: rotate(90deg); }
+#id27_revivecheck:checked ~ .sys_msg_list label[for="id27_revivecheck"]::before{ transform: rotate(90deg); }
+#id27_foundcheck:checked ~ .sys_msg_list label[for="id27_foundcheck"]::before{ transform: rotate(90deg); }
+#id28check:checked ~ .sys_msg_list label[for="id28check"]::before{ transform: rotate(90deg); }
+#id28_victimcheck:checked ~ .sys_msg_list label[for="id28_victimcheck"]::before{ transform: rotate(90deg); }
+#id29check:checked ~ .sys_msg_list label[for="id29check"]::before{ transform: rotate(90deg); }
+#id30check:checked ~ .sys_msg_list label[for="id30check"]::before{ transform: rotate(90deg); }
+#id31check:checked ~ .sys_msg_list label[for="id31check"]::before{ transform: rotate(90deg); }
+#id32check:checked ~ .sys_msg_list label[for="id32check"]::before{ transform: rotate(90deg); }
+#id33check:checked ~ .sys_msg_list label[for="id33check"]::before{ transform: rotate(90deg); }
+#id34check:checked ~ .sys_msg_list label[for="id34check"]::before{ transform: rotate(90deg); }
+#endcheck:checked ~ .sys_msg_list label[for="endcheck"]::before{ transform: rotate(90deg); }
+#winnercheck:checked ~ .sys_msg_list label[for="winnercheck"]::before{ transform: rotate(90deg); }
+
+#firstnightcheck:not(:checked) ~ .sys_msg_list tbody#firstnightitem{ display:none; }
+#suddencheck:not(:checked) ~ .sys_msg_list tbody#suddenitem{ display:none; }
+#prevotecheck:not(:checked) ~ .sys_msg_list tbody#prevoteitem{ display:none; }
+#votecheck:not(:checked) ~ .sys_msg_list tbody#voteitem{ display:none; }
+#hangcheck:not(:checked) ~ .sys_msg_list tbody#hangitem{ display:none; }
+#posthangcheck:not(:checked) ~ .sys_msg_list tbody#posthangitem{ display:none; }
+#submorningcheck:not(:checked) ~ .sys_msg_list tbody#submorningitem{ display:none; }
+#id1check:not(:checked) ~ .sys_msg_list tbody#id1item{ display:none; }
+#id2check:not(:checked) ~ .sys_msg_list tbody#id2item{ display:none; }
+#id3check:not(:checked) ~ .sys_msg_list tbody#id3item{ display:none; }
+#id4check:not(:checked) ~ .sys_msg_list tbody#id4item{ display:none; }
+#id5check:not(:checked) ~ .sys_msg_list tbody#id5item{ display:none; }
+#id6check:not(:checked) ~ .sys_msg_list tbody#id6item{ display:none; }
+#id7check:not(:checked) ~ .sys_msg_list tbody#id7item{ display:none; }
+#id8check:not(:checked) ~ .sys_msg_list tbody#id8item{ display:none; }
+#id9check:not(:checked) ~ .sys_msg_list tbody#id9item{ display:none; }
+#id10check:not(:checked) ~ .sys_msg_list tbody#id10item{ display:none; }
+#id11check:not(:checked) ~ .sys_msg_list tbody#id11item{ display:none; }
+#id12check:not(:checked) ~ .sys_msg_list tbody#id12item{ display:none; }
+#id12_29check:not(:checked) ~ .sys_msg_list tbody#id12_29item{ display:none; }
+#id12_30check:not(:checked) ~ .sys_msg_list tbody#id12_30item{ display:none; }
+#id12_33check:not(:checked) ~ .sys_msg_list tbody#id12_33item{ display:none; }
+#id13check:not(:checked) ~ .sys_msg_list tbody#id13item{ display:none; }
+#id14check:not(:checked) ~ .sys_msg_list tbody#id14item{ display:none; }
+#id15precheck:not(:checked) ~ .sys_msg_list tbody#id15preitem{ display:none; }
+#id15check:not(:checked) ~ .sys_msg_list tbody#id15item{ display:none; }
+#id16check:not(:checked) ~ .sys_msg_list tbody#id16item{ display:none; }
+#id17check:not(:checked) ~ .sys_msg_list tbody#id17item{ display:none; }
+#id18check:not(:checked) ~ .sys_msg_list tbody#id18item{ display:none; }
+#id19check:not(:checked) ~ .sys_msg_list tbody#id19item{ display:none; }
+#id19_attackcheck:not(:checked) ~ .sys_msg_list tbody#id19_attackitem{ display:none; }
+#id20precheck:not(:checked) ~ .sys_msg_list tbody#id20preitem{ display:none; }
+#id20check:not(:checked) ~ .sys_msg_list tbody#id20item{ display:none; }
+#id21check:not(:checked) ~ .sys_msg_list tbody#id21item{ display:none; }
+#id22check:not(:checked) ~ .sys_msg_list tbody#id22item{ display:none; }
+#id23check:not(:checked) ~ .sys_msg_list tbody#id23item{ display:none; }
+#id24check:not(:checked) ~ .sys_msg_list tbody#id24item{ display:none; }
+#id25check:not(:checked) ~ .sys_msg_list tbody#id25item{ display:none; }
+#id26check:not(:checked) ~ .sys_msg_list tbody#id26item{ display:none; }
+#id27check:not(:checked) ~ .sys_msg_list tbody#id27item{ display:none; }
+#id27_revivecheck:not(:checked) ~ .sys_msg_list tbody#id27_reviveitem{ display:none; }
+#id27_foundcheck:not(:checked) ~ .sys_msg_list tbody#id27_founditem{ display:none; }
+#id28check:not(:checked) ~ .sys_msg_list tbody#id28item{ display:none; }
+#id28_victimcheck:not(:checked) ~ .sys_msg_list tbody#id28_victimitem{ display:none; }
+#id29check:not(:checked) ~ .sys_msg_list tbody#id29item{ display:none; }
+#id30check:not(:checked) ~ .sys_msg_list tbody#id30item{ display:none; }
+#id31check:not(:checked) ~ .sys_msg_list tbody#id31item{ display:none; }
+#id32check:not(:checked) ~ .sys_msg_list tbody#id32item{ display:none; }
+#id33check:not(:checked) ~ .sys_msg_list tbody#id33item{ display:none; }
+#id34check:not(:checked) ~ .sys_msg_list tbody#id34item{ display:none; }
+#endcheck:not(:checked) ~ .sys_msg_list tbody#enditem{ display:none; }
+#winnercheck:not(:checked) ~ .sys_msg_list tbody#winneritem{ display:none; }
+
+ */
