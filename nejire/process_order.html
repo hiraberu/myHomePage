@@ -43,8 +43,10 @@
         <br>1つのログに全部出てくるわけではないので、他は説明書の順に掲載したり、不確定要素は含まれます。</strong>
     </p>
 
-    <input type="button" value="展開" onclick="showall(true)">
-    <input type="button" value="折りたたみ" onclick="showall(false)">
+    <div class="headerfutter">
+      <input type="button" value="展開" onclick="showall(true)">
+      <input type="button" value="折りたたみ" onclick="showall(false)">
+    </div>
 
     <input type="checkbox" onclick="showdetail(this)" id="firstnightcheck" class="notshowcheck" checked>
     <input type="checkbox" onclick="showdetail(this)" id="suddencheck" class="notshowcheck" checked>
@@ -98,53 +100,6 @@
     <input type="checkbox" onclick="showdetail(this)" id="id34check" class="notshowcheck" checked>
     <input type="checkbox" onclick="showdetail(this)" id="endcheck" class="notshowcheck" checked>
     <input type="checkbox" onclick="showdetail(this)" id="winnercheck" class="notshowcheck" checked>
-
-    <!-- <table class="sys_msg_list">
-      <tr>
-        <td class="sys_msg group_header"><label for="firstnightcheck"><i class="fas fa-angle-double-down fa-fw"></i>初日夜<br><span
-              class="group_small_header">(長期：2日目朝)</span></label></td>
-        <td>
-          <div class="sys_msg long_header">[28']巫女の神託<span class="long_small_header">(初日墓下死亡結果)</span></div>
-        </td>
-      </tr>
-      <tr>
-        <td class="sys_msg group_header">処刑</td>
-        <td>
-          <div class="sys_msg long_header">[28']巫女の神託(凸)</div>
-          <div class="sys_msg effect_header"><label for="prevotecheck"><i class="fas fa-angle-double-down fa-fw"></i>投票に関する処理</label></div>
-          <div class="sys_msg effect_header">投票</div>
-          <div class="sys_msg effect_header">処刑</div>
-          <div class="sys_msg effect_header">処刑に関する処理</div>
-        </td>
-      </tr>
-      <tr>
-        <td class="sys_msg group_header">朝</td>
-        <td>
-          <div class="sys_msg effect_header">サブ効果による朝の処理</div>
-        </td>
-      </tr>
-      <tr>
-        <td class="sys_msg group_header">朝<br><span class="group_small_header">(1日目のみ)</span></td>
-        <td>
-          <div class="sys_msg normal_header">[1]求愛者、キューピッドなどの恋人化</div>
-          <div class="sys_msg normal_header">[2]復讐者、戦乙女などの仇敵化</div>
-          <div class="sys_msg normal_header">[3]吸血鬼の死徒化、崇拝者の眷属化、冒涜者の悪霊化</div>
-          <div class="sys_msg normal_header">[4]継承者の後継、修行僧の修行、従者/奴隷化</div>
-          <div class="sys_msg normal_header">[5]犬神、猿神、蛇神の憑依/転移/転生先の選択</div>
-        </td>
-      </tr>
-      <tr>
-        <td class="sys_msg group_header">朝</td>
-        <td>
-          <div class="sys_msg normal_header">[6]吟遊詩人のうたう、踊り子の踊り</div>
-          <div class="sys_msg normal_header">[7]絡新婦の誘惑、ネクロマンサーの支配、神話マニア/フェイカーのコピー</div>
-          <div class="sys_msg normal_header">[8]罠師の罠、召喚師の生贄化、契約者の契約、調合士の調合</div>
-          <div class="sys_msg normal_header">[9]教祖の布教</div>
-          <div class="sys_msg normal_header">[10]吸血鬼の吸血</div>
-        </td>
-      </tr>
-    </table>
-    <br> -->
 
     <table class="sys_msg_list">
       <!-- ********************************************************************************** -->
@@ -686,7 +641,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="suddencheck"><i class="fas fa-angle-double-down fa-fw"></i>凸に関する処理</label></td>
+        <td class="sys_msg effect_header"><label for="suddencheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>凸に関する処理</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -726,7 +682,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="prevotecheck"><i class="fas fa-angle-double-down fa-fw"></i>投票に関する処理</label></td>
+        <td class="sys_msg effect_header"><label for="prevotecheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>投票に関する処理</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -778,7 +735,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="votecheck"><i class="fas fa-angle-double-down fa-fw"></i>投票</label></td>
+        <td class="sys_msg effect_header"><label for="votecheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>投票</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -802,7 +760,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="hangcheck"><i class="fas fa-angle-double-down fa-fw"></i>処刑</label></td>
+        <td class="sys_msg effect_header"><label for="hangcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>処刑</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -928,7 +887,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="posthangcheck"><i class="fas fa-angle-double-down fa-fw"></i>処刑に関する処理</label></td>
+        <td class="sys_msg effect_header"><label for="posthangcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>処刑に関する処理</label></td>
         <td class="sys_msg effect_small_header comment">処刑者ごとに表示される</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1200,7 +1160,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="submorningcheck"><i class="fas fa-angle-double-down fa-fw"></i>サブ効果による朝の処理</label></td>
+        <td class="sys_msg effect_header"><label for="submorningcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>サブ効果による朝の処理</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1278,17 +1239,10 @@
       </tbody>
 
       <!-- ********************************************************************************** -->
-      <!-- <tr class="sys_msg group_header">
-  <td class="sys_msg group_header" colspan="4">
-    2日目朝　(長期：3日目朝)
-  </td>
-</tr> -->
-      <!-- ********************************************************************************** -->
-
-      <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">1</td>
-        <td class="sys_msg normal_header"><label for="id1check"><i class="fas fa-angle-double-down fa-fw"></i>求愛者、キューピッドなどの恋人化（1日目限定）</label></td>
+        <td class="sys_msg normal_header"><label for="id1check"><i
+              class="fas fa-angle-double-down fa-fw"></i>求愛者、キューピッドなどの恋人化（1日目限定）</label></td>
         <td class="sys_msg comment normal_small_header">処理順確認済</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1426,7 +1380,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">2</td>
-        <td class="sys_msg normal_header"><label for="id2check"><i class="fas fa-angle-double-down fa-fw"></i>復讐者、戦乙女などの仇敵化（1日目限定）</label></td>
+        <td class="sys_msg normal_header"><label for="id2check"><i
+              class="fas fa-angle-double-down fa-fw"></i>復讐者、戦乙女などの仇敵化（1日目限定）</label></td>
         <td class="sys_msg comment normal_small_header">夜叉以外処理順確認済</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1530,7 +1485,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">3</td>
-        <td class="sys_msg normal_header"><label for="id3check"><i class="fas fa-angle-double-down fa-fw"></i>吸血鬼の死徒化、崇拝者の眷属化、冒涜者の悪霊化（1日目限定）</label></td>
+        <td class="sys_msg normal_header"><label for="id3check"><i
+              class="fas fa-angle-double-down fa-fw"></i>吸血鬼の死徒化、崇拝者の眷属化、冒涜者の悪霊化（1日目限定）</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1576,7 +1532,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">4</td>
-        <td class="sys_msg normal_header"><label for="id4check"><i class="fas fa-angle-double-down fa-fw"></i>継承者の後継、修行僧の修行、従者/奴隷化（1日目限定）</label></td>
+        <td class="sys_msg normal_header"><label for="id4check"><i
+              class="fas fa-angle-double-down fa-fw"></i>継承者の後継、修行僧の修行、従者/奴隷化（1日目限定）</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1698,7 +1655,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">5</td>
-        <td class="sys_msg normal_header"><label for="id5check"><i class="fas fa-angle-double-down fa-fw"></i>犬神、猿神、蛇神の憑依/転移/転生先の選択（1日目限定）</label></td>
+        <td class="sys_msg normal_header"><label for="id5check"><i
+              class="fas fa-angle-double-down fa-fw"></i>犬神、猿神、蛇神の憑依/転移/転生先の選択（1日目限定）</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1736,7 +1694,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">6</td>
-        <td class="sys_msg normal_header"><label for="id6check"><i class="fas fa-angle-double-down fa-fw"></i>吟遊詩人のうたう、踊り子の踊り</label></td>
+        <td class="sys_msg normal_header"><label for="id6check"><i
+              class="fas fa-angle-double-down fa-fw"></i>吟遊詩人のうたう、踊り子の踊り</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1865,7 +1824,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">7</td>
-        <td class="sys_msg normal_header"><label for="id7check"><i class="fas fa-angle-double-down fa-fw"></i>絡新婦の誘惑、ネクロマンサーの支配、神話マニア/フェイカーのコピー</label></td>
+        <td class="sys_msg normal_header"><label for="id7check"><i
+              class="fas fa-angle-double-down fa-fw"></i>絡新婦の誘惑、ネクロマンサーの支配、神話マニア/フェイカーのコピー</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -1991,7 +1951,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">8</td>
-        <td class="sys_msg normal_header"><label for="id8check"><i class="fas fa-angle-double-down fa-fw"></i>罠師の罠、召喚師の生贄化、契約者の契約、調合士の調合</label></td>
+        <td class="sys_msg normal_header"><label for="id8check"><i
+              class="fas fa-angle-double-down fa-fw"></i>罠師の罠、召喚師の生贄化、契約者の契約、調合士の調合</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2108,7 +2069,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">9</td>
-        <td class="sys_msg normal_header"><label for="id9check"><i class="fas fa-angle-double-down fa-fw"></i>教祖の布教</label></td>
+        <td class="sys_msg normal_header"><label for="id9check"><i
+              class="fas fa-angle-double-down fa-fw"></i>教祖の布教</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2190,7 +2152,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">10</td>
-        <td class="sys_msg normal_header"><label for="id10check"><i class="fas fa-angle-double-down fa-fw"></i>吸血鬼の吸血</label></td>
+        <td class="sys_msg normal_header"><label for="id10check"><i
+              class="fas fa-angle-double-down fa-fw"></i>吸血鬼の吸血</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2288,7 +2251,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">11</td>
-        <td class="sys_msg normal_header"><label for="id11check"><i class="fas fa-angle-double-down fa-fw"></i>商人の取引、傀儡師の傀儡化など</label></td>
+        <td class="sys_msg normal_header"><label for="id11check"><i
+              class="fas fa-angle-double-down fa-fw"></i>商人の取引、傀儡師の傀儡化など</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2382,7 +2346,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">12</td>
-        <td class="sys_msg normal_header"><label for="id12check"><i class="fas fa-angle-double-down fa-fw"></i>クルモンのくるくる～</label></td>
+        <td class="sys_msg normal_header"><label for="id12check"><i
+              class="fas fa-angle-double-down fa-fw"></i>クルモンのくるくる～</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2421,7 +2386,8 @@
       <tr class="sys_msg long_header">
         <!-- <td class="sys_msg long_small_header">長期吊りに対するシスメ</td> -->
         <td class="sys_msg long_no_header" colspan="2">29'</td>
-        <td class="sys_msg long_header"><label for="id12_29check"><i class="fas fa-angle-double-down fa-fw"></i>恋人/下僕/眷属/絆の後追い</label></td>
+        <td class="sys_msg long_header"><label for="id12_29check"><i
+              class="fas fa-angle-double-down fa-fw"></i>恋人/下僕/眷属/絆の後追い</label></td>
         <td class="sys_msg long_small_header comment">長期吊りに対するシスメ</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2433,20 +2399,14 @@
           <td class="sys_msg">※位置がここになるだけで、他は29と同じ</td>
           <td class="sys_msg comment"></td>
         </tr>
-
-        <!-- <tr class="sys_msg">
-        <td class="sys_msg refrole"></td>
-        <td class="sys_msg refside"></td>
-        <td class="sys_msg"></td>
-        <td class="sys_msg comment"></td>
-      </tr> -->
       </tbody>
 
       <!-- ********************************************************************************** -->
       <tr class="sys_msg long_header">
         <!-- <td class="sys_msg long_small_header">長期吊りに対するシスメ</td> -->
         <td class="sys_msg long_no_header" colspan="2">30'</td>
-        <td class="sys_msg long_header"><label for="id12_30check"><i class="fas fa-angle-double-down fa-fw"></i>仇敵の復讐、師匠の継承</label></td>
+        <td class="sys_msg long_header"><label for="id12_30check"><i
+              class="fas fa-angle-double-down fa-fw"></i>仇敵の復讐、師匠の継承</label></td>
         <td class="sys_msg long_small_header comment">長期吊りに対するシスメ</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2458,20 +2418,14 @@
           <td class="sys_msg">※位置がここになるだけで、他は30と同じ</td>
           <td class="sys_msg comment"></td>
         </tr>
-
-        <!-- <tr class="sys_msg">
-        <td class="sys_msg refrole"></td>
-        <td class="sys_msg refside"></td>
-        <td class="sys_msg"></td>
-        <td class="sys_msg comment"></td>
-      </tr> -->
       </tbody>
 
       <!-- ********************************************************************************** -->
       <tr class="sys_msg long_header">
         <!-- <td class="sys_msg long_small_header">長期吊り後の終了判定</td> -->
         <td class="sys_msg long_no_header" colspan="2">33'</td>
-        <td class="sys_msg long_header"><label for="id12_33check"><i class="fas fa-angle-double-down fa-fw"></i>終了判定</label></td>
+        <td class="sys_msg long_header"><label for="id12_33check"><i
+              class="fas fa-angle-double-down fa-fw"></i>終了判定</label></td>
         <td class="sys_msg long_small_header comment">長期吊り後の終了判定</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2488,7 +2442,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">13</td>
-        <td class="sys_msg normal_header"><label for="id13check"><i class="fas fa-angle-double-down fa-fw"></i>邪魔狂人の邪魔</label></td>
+        <td class="sys_msg normal_header"><label for="id13check"><i
+              class="fas fa-angle-double-down fa-fw"></i>邪魔狂人の邪魔</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2625,7 +2580,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">14</td>
-        <td class="sys_msg normal_header"><label for="id14check"><i class="fas fa-angle-double-down fa-fw"></i>旅人の加勢</label></td>
+        <td class="sys_msg normal_header"><label for="id14check"><i
+              class="fas fa-angle-double-down fa-fw"></i>旅人の加勢</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2689,7 +2645,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2">15'</td>
-        <td class="sys_msg effect_header"><label for="id15precheck"><i class="fas fa-angle-double-down fa-fw"></i>占い師の占いに対する効果</label></td>
+        <td class="sys_msg effect_header"><label for="id15precheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>占い師の占いに対する効果</label></td>
         <td class="sys_msg effect_small_header comment">それぞれの占い系の処理の直前に出る</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -2784,7 +2741,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">15</td>
-        <td class="sys_msg normal_header"><label for="id15check"><i class="fas fa-angle-double-down fa-fw"></i>占い師の占い</label></td>
+        <td class="sys_msg normal_header"><label for="id15check"><i
+              class="fas fa-angle-double-down fa-fw"></i>占い師の占い</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3052,7 +3010,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">16</td>
-        <td class="sys_msg normal_header"><label for="id16check"><i class="fas fa-angle-double-down fa-fw"></i>大神の再生、聖母の蘇生</label></td>
+        <td class="sys_msg normal_header"><label for="id16check"><i
+              class="fas fa-angle-double-down fa-fw"></i>大神の再生、聖母の蘇生</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3105,7 +3064,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">17</td>
-        <td class="sys_msg normal_header"><label for="id17check"><i class="fas fa-angle-double-down fa-fw"></i>死者の導き</label></td>
+        <td class="sys_msg normal_header"><label for="id17check"><i
+              class="fas fa-angle-double-down fa-fw"></i>死者の導き</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3129,7 +3089,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">18</td>
-        <td class="sys_msg normal_header"><label for="id18check"><i class="fas fa-angle-double-down fa-fw"></i>盗賊の盗み</label></td>
+        <td class="sys_msg normal_header"><label for="id18check"><i
+              class="fas fa-angle-double-down fa-fw"></i>盗賊の盗み</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3167,7 +3128,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">19</td>
-        <td class="sys_msg normal_header"><label for="id19check"><i class="fas fa-angle-double-down fa-fw"></i>詐欺師などの準備、ギャンブラーなどの賭など</label></td>
+        <td class="sys_msg normal_header"><label for="id19check"><i
+              class="fas fa-angle-double-down fa-fw"></i>詐欺師などの準備、ギャンブラーなどの賭など</label></td>
         <td class="sys_msg comment normal_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3219,7 +3181,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="id19_attackcheck"><i class="fas fa-angle-double-down fa-fw"></i>人狼の「襲撃します」シスメ</label></td>
+        <td class="sys_msg effect_header"><label for="id19_attackcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>人狼の「襲撃します」シスメ</label></td>
         <td class="sys_msg comment effect_small_header">襲撃しますシスメだけ先</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3236,7 +3199,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2">20'</td>
-        <td class="sys_msg effect_header"><label for="id20precheck"><i class="fas fa-angle-double-down fa-fw"></i>護衛系の護衛による効果</label></td>
+        <td class="sys_msg effect_header"><label for="id20precheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>護衛系の護衛による効果</label></td>
         <td class="sys_msg effect_small_header comment">それぞれの護衛系の処理の直前に出る</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3267,7 +3231,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">20</td>
-        <td class="sys_msg normal_header"><label for="id20check"><i class="fas fa-angle-double-down fa-fw"></i>狩人の護衛、探偵の調査、逃亡者の逃亡</label></td>
+        <td class="sys_msg normal_header"><label for="id20check"><i
+              class="fas fa-angle-double-down fa-fw"></i>狩人の護衛、探偵の調査、逃亡者の逃亡</label></td>
         <td class="sys_msg comment normal_small_header">襲撃に伴うシスメは襲撃の後</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3570,7 +3535,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">21</td>
-        <td class="sys_msg normal_header"><label for="id21check"><i class="fas fa-angle-double-down fa-fw"></i>人狼の襲撃</label></td>
+        <td class="sys_msg normal_header"><label for="id21check"><i
+              class="fas fa-angle-double-down fa-fw"></i>人狼の襲撃</label></td>
         <td class="sys_msg comment normal_small_header">実際は襲撃に伴う効果</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -3681,7 +3647,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">22</td>
-        <td class="sys_msg normal_header"><label for="id22check"><i class="fas fa-angle-double-down fa-fw"></i>悪鬼、猫又、仙狸の呪い、罠など</label></td>
+        <td class="sys_msg normal_header"><label for="id22check"><i
+              class="fas fa-angle-double-down fa-fw"></i>悪鬼、猫又、仙狸の呪い、罠など</label></td>
         <td class="sys_msg comment normal_small_header">人狼以外の襲撃の場合はそのすぐ後</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4240,19 +4207,12 @@
           <td class="sys_msg comment">龍玉保持者被襲撃時</td>
         </tr>
       </tbody>
-      <!-- 
-<tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside"></td>
-  <td class="announce"></td>
-  <td class="sys_msg comment"></td>
-</tr>
- -->
 
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">23</td>
-        <td class="sys_msg normal_header"><label for="id23check"><i class="fas fa-angle-double-down fa-fw"></i>人狼以外の襲撃</label></td>
+        <td class="sys_msg normal_header"><label for="id23check"><i
+              class="fas fa-angle-double-down fa-fw"></i>人狼以外の襲撃</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4344,7 +4304,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">24</td>
-        <td class="sys_msg normal_header"><label for="id24check"><i class="fas fa-angle-double-down fa-fw"></i>調停官の調停、研究者の研究、魔女の薬、蘇生系</label></td>
+        <td class="sys_msg normal_header"><label for="id24check"><i
+              class="fas fa-angle-double-down fa-fw"></i>調停官の調停、研究者の研究、魔女の薬、蘇生系</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4521,7 +4482,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">25</td>
-        <td class="sys_msg normal_header"><label for="id25check"><i class="fas fa-angle-double-down fa-fw"></i>コピー、入れかえ系</label></td>
+        <td class="sys_msg normal_header"><label for="id25check"><i
+              class="fas fa-angle-double-down fa-fw"></i>コピー、入れかえ系</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4665,7 +4627,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">26</td>
-        <td class="sys_msg normal_header"><label for="id26check"><i class="fas fa-angle-double-down fa-fw"></i>カウンター系</label></td>
+        <td class="sys_msg normal_header"><label for="id26check"><i
+              class="fas fa-angle-double-down fa-fw"></i>カウンター系</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4799,19 +4762,12 @@
           <td class="sys_msg comment"></td>
         </tr>
       </tbody>
-      <!-- 
-<tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside"></td>
-  <td class="announce"></td>
-  <td class="sys_msg comment"></td>
-</tr>
- -->
 
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">27</td>
-        <td class="sys_msg normal_header"><label for="id27check"><i class="fas fa-angle-double-down fa-fw"></i>リセット系</label></td>
+        <td class="sys_msg normal_header"><label for="id27check"><i
+              class="fas fa-angle-double-down fa-fw"></i>リセット系</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4856,7 +4812,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="id27_revivecheck"><i class="fas fa-angle-double-down fa-fw"></i>蘇生</label></td>
+        <td class="sys_msg effect_header"><label for="id27_revivecheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>蘇生</label></td>
         <td class="sys_msg effect_small_header comment">各種蘇生シスメは全てここ</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4884,7 +4841,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="id27_foundcheck"><i class="fas fa-angle-double-down fa-fw"></i>死者発見</label></td>
+        <td class="sys_msg effect_header"><label for="id27_foundcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>死者発見</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -4937,18 +4895,11 @@
         </tr>
       </tbody>
 
-      <!-- 
- <tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside"></td>
-  <td class="announce"></td>
-  <td class="sys_msg comment"></td>
-</tr>
- -->
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">28</td>
-        <td class="sys_msg normal_header"><label for="id28check"><i class="fas fa-angle-double-down fa-fw"></i>巫女の信託</label></td>
+        <td class="sys_msg normal_header"><label for="id28check"><i
+              class="fas fa-angle-double-down fa-fw"></i>巫女の信託</label></td>
         <td class="sys_msg comment normal_small_header">無残・凸・▼の後追い<br>▲の後追いとセットで表示される</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5058,7 +5009,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="id28_victimcheck"><i class="fas fa-angle-double-down fa-fw"></i>犠牲者が出た</label></td>
+        <td class="sys_msg effect_header"><label for="id28_victimcheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>犠牲者が出た</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5084,7 +5036,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">29</td>
-        <td class="sys_msg normal_header"><label for="id29check"><i class="fas fa-angle-double-down fa-fw"></i>恋人/下僕/眷属/絆の後追い</label></td>
+        <td class="sys_msg normal_header"><label for="id29check"><i
+              class="fas fa-angle-double-down fa-fw"></i>恋人/下僕/眷属/絆の後追い</label></td>
         <td class="sys_msg comment normal_small_header">長期吊りは上の29'</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5186,7 +5139,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">30</td>
-        <td class="sys_msg normal_header"><label for="id30check"><i class="fas fa-angle-double-down fa-fw"></i>仇敵の復讐、師匠の継承</label></td>
+        <td class="sys_msg normal_header"><label for="id30check"><i
+              class="fas fa-angle-double-down fa-fw"></i>仇敵の復讐、師匠の継承</label></td>
         <td class="sys_msg comment normal_small_header">長期吊りは上の30'</td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5257,7 +5211,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">31</td>
-        <td class="sys_msg normal_header"><label for="id31check"><i class="fas fa-angle-double-down fa-fw"></i>夜明け時の変化</label></td>
+        <td class="sys_msg normal_header"><label for="id31check"><i
+              class="fas fa-angle-double-down fa-fw"></i>夜明け時の変化</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5398,7 +5353,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">32</td>
-        <td class="sys_msg normal_header"><label for="id32check"><i class="fas fa-angle-double-down fa-fw"></i>司祭/司教の啓示、予言者の予言</label></td>
+        <td class="sys_msg normal_header"><label for="id32check"><i
+              class="fas fa-angle-double-down fa-fw"></i>司祭/司教の啓示、予言者の予言</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5486,7 +5442,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">33</td>
-        <td class="sys_msg normal_header"><label for="id33check"><i class="fas fa-angle-double-down fa-fw"></i>終了判定</label></td>
+        <td class="sys_msg normal_header"><label for="id33check"><i
+              class="fas fa-angle-double-down fa-fw"></i>終了判定</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5503,7 +5460,8 @@
       <!-- ********************************************************************************** -->
       <tr class="sys_msg normal_header">
         <td class="sys_msg normal_no_header" colspan="2">34</td>
-        <td class="sys_msg normal_header"><label for="id34check"><i class="fas fa-angle-double-down fa-fw"></i>トリックスターの陣営変化</label></td>
+        <td class="sys_msg normal_header"><label for="id34check"><i
+              class="fas fa-angle-double-down fa-fw"></i>トリックスターの陣営変化</label></td>
         <td class="sys_msg comment normal_small_header"></td>
       </tr>
       <!-- ********************************************************************************** -->
@@ -5582,18 +5540,12 @@
           <td class="sys_msg comment"></td>
         </tr>
       </tbody>
-      <!-- 
-<tr class="sys_msg">
-  <td class="sys_msg refrole"></td>
-  <td class="sys_msg refside"></td>
-  <td class="announce"></td>
-  <td class="sys_msg comment"></td>
-</tr>
- -->
+
       <!-- ********************************************************************************** -->
       <tr class="sys_msg effect_header">
         <td class="sys_msg effect_no_header" colspan="2"></td>
-        <td class="sys_msg effect_header"><label for="winnercheck"><i class="fas fa-angle-double-down fa-fw"></i>勝利陣営表示</label></td>
+        <td class="sys_msg effect_header"><label for="winnercheck"><i
+              class="fas fa-angle-double-down fa-fw"></i>勝利陣営表示</label></td>
         <td class="sys_msg effect_small_header comment"></td>
       </tr>
       <!-- ********************************************************************************** -->
