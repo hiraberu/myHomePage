@@ -222,6 +222,10 @@ LWの時は耐えしのぐ
 護衛では悪霊化はさせるが本人は死なない
 <a href="http://nejiten.halfmoon.jp/index.cgi?vid=16227&date=3&part=1" target="_blank" rel="noopener noreferrer">[16227村]</a>
 
+[499]人狼猫
+LW時はシスメが違う(「我に返り」ではなく「眠りから目覚めて」)
+<div class="announce sleep">人狼猫 アイナス は眠りから目覚めて、人狼猫 だと自覚しました。</div>
+
 [s12]
 背徳者が従者になっても妖魔がいなくなれば後追いはする
 
